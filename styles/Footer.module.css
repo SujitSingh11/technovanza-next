@@ -1,0 +1,71 @@
+.rootFooterGrid {
+  background: #1e1e1e;
+  padding: 15px;
+  color: #fff;
+}
+.logotext {
+  width: 30vh;
+}
+.footerLogoGrid {
+  display: flex;
+}
+.footerSocialGrid {
+  text-align: -webkit-center !important;
+}
+.iconButton {
+  padding: 10px;
+  margin: 0px 8px 0px 8px !important;
+  background: #fff !important;
+  transition: 0.2s;
+}
+.iconButton:hover {
+  background: #fff !important;
+  transform: scale(1.2);
+}
+.iconYoutube {
+  color: #1e1e1e;
+}
+.iconYoutube:hover {
+  color: #ff0000;
+}
+.iconFacebook {
+  color: #1e1e1e;
+}
+.iconFacebook:hover {
+  color: #3b5998;
+}
+.iconTwitter {
+  color: #1e1e1e;
+}
+.iconTwitter:hover {
+  color: #00acee;
+}
+.iconLinkedIn {
+  color: #1e1e1e;
+}
+.iconLinkedIn:hover {
+  color: #0e76a8;
+}
+.iconInsta {
+  color: #1e1e1e;
+}
+.iconInsta:hover {
+  color: #c32aa3;
+}
+
+.footerCreatorGrid {
+  text-align: right;
+}
+.loveIcon {
+  color: #ee0000;
+  font-size: 10px;
+  margin: 0px 3px 0px 3px;
+}
+
+@media only screen and (max-width: 600px) {
+  .footerCreatorGrid {
+  }
+  .footerSocialGrid {
+    margin-top: 20px !important;
+  }
+}

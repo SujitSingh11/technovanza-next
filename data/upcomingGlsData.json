@@ -1,0 +1,30 @@
+[
+    {
+        "SpeakerName":"V K SARASWAT",
+        "DayNumber":"08",
+        "Day":"Thr",
+        "Month":"Oct",
+        "Year":"2020",
+        "Time":"5:00 PM",
+        "Status":"CLOSED",
+        "IMG":"V_K_SARASWAT_9_Oct_2020.jpeg",
+        "Description":"<p>Grab an opportunity to catch this stalwart of India's defence ministry on the 8th of October at 5 p.m!</p><p>With the onset of October, Technovanza is ecstatic to announce the first speaker of the October leg of Guest Lecture Series, Mr. Vijay Kumar Saraswat!</p><p>Mr. V K Saraswat's experience as the Director General of the Defence Research and Development Organization has also earned him the role of the Chief Scientific Advisor to the Defence Minister of India. He also serves as an integral part of the NITI Aayog, the Indian Planning Commission. He has played a pivotal role in the development and induction of the Prithvi missile in India's defense arsenal. He has been bestowed with the Padma Shri and Padma Bhushan awards from the government of India.</p>",
+        "TalkOn":"Technology for India to Leap Frog",
+        "RegisterLink":"https://insider.in/technovanza-gls-v-k-saraswat-oct8-2020/event",
+        "YouTube_Link":""
+    },
+    {
+        "SpeakerName":"SURESH PRABHU",
+        "DayNumber":"16",
+        "Day":"Fri",
+        "Month":"Oct",
+        "Year":"2020",
+        "Time":"5:00 PM",
+        "Status":"OPEN",
+        "IMG":"SURESH_PRABHU_16_Oct_2020.jpg",
+        "Description":"<p>Catch Technovanza live on the <bold>16th of October at 5 p.m.</bold> to glean more from our guest!</p><p>Continuing our streak of bringing the most impactful personalities of our society to the forefront, Technovanza is excited to announce the next speaker of the October Guest Lecture Series, Mr. Suresh Prabhu</p><p>A chartered accountant by profession, Mr. Prabhu has served in many of India's central ministries, the most notable ones being the Railway Ministry,Civil Aviation industry. He is India's Sherpa to the G7 and G20 summits and is very vocal about socio-economic issues faced by today's world.<p>He has also been honoured with the Goud Saraswat Brahmin Samaj Maharath Award. He has been consistently featuring in the top five ministers in India in terms of performance and accessibility, which speaks volumes about his dedication and work ethics. He has also been honoured with the Goud Saraswat Brahmin Samaj Maharath Award.</p>",
+        "TalkOn":"Technology for India to Leap Frog",
+        "RegisterLink":"https://insider.in/technovanza-gls-suresh-prabhu-oct14-2020/event",
+        "YouTube_Link":""
+    }
+]

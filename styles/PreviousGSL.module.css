@@ -1,0 +1,50 @@
+.GLSlogoCont {
+  display: flex;
+  align-items: center;
+}
+.GLSlogoContIcon {
+  font-size: 35px;
+  color: #fff;
+}
+.GLSlogoContIcon:hover {
+  transform: scale(1.2);
+  color: #fff;
+}
+.GLSlogo {
+  width: 250px;
+}
+.GLSfeatureDiv {
+  margin-top: 20px;
+  width: 100%;
+  text-align: -webkit-center;
+}
+.GLSfeature {
+  width: 50vw;
+}
+.GLSVideoDiv {
+  height: 630px;
+  background: #000;
+}
+.GLSVideo {
+  margin: auto;
+}
+.rootGLSCardGrid {
+  margin: 30px 0px;
+}
+
+@media only screen and (max-width: 960px) {
+  .GLSVideoDiv {
+    height: 400px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .GLSVideoDiv {
+    height: 350px;
+  }
+  .rootGLSCardGrid {
+    text-align: -webkit-center;
+  }
+  .GLSfeature {
+    width: 90%;
+  }
+}

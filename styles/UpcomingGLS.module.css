@@ -1,0 +1,90 @@
+.GLSGrid {
+  border-bottom: 1px solid;
+  border-bottom-width: 1px;
+  padding: 44px 0px 44px 0px;
+  margin-bottom: 10px;
+  border-bottom-color: #fff;
+  transition: 0.5s;
+  color: #fff;
+  font-family: Anton;
+}
+.GLSGrid:hover {
+  border-bottom-color: rgb(252 151 121);
+  color: rgb(252 151 121);
+}
+.gslEvent {
+  display: flex;
+  align-items: center;
+  flex: 1 1 0%;
+}
+.dateBox {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  width: 118px;
+}
+.date {
+  font-size: 45px;
+  margin-right: 10px;
+}
+
+.day {
+  opacity: 0.5;
+}
+.glsTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.glsSpeakerName {
+  font-size: 35px;
+  font-family: Anton;
+}
+
+.registerButton {
+  border-color: rgb(252 151 121) !important;
+  border-width: 2.5px;
+  border-radius: 0px;
+  color: rgb(252 151 121) !important;
+}
+.registerButton:hover {
+  background: #fc97793b !important;
+}
+.glsInfo {
+  font-family: Nunito;
+  margin-top: 10px;
+}
+
+.speakerIMGGrid {
+  text-align: -webkit-right;
+}
+.speakerIMG {
+  width: 70%;
+  border: 3px solid rgb(252 151 121);
+}
+.glsStatus {
+  opacity: 0.5;
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 600px) {
+  .glsInfoGrid {
+    flex-direction: column-reverse;
+  }
+  .glsSpeakerName {
+    font-size: 26px;
+  }
+  .speakerIMGGrid {
+    text-align: -webkit-center;
+  }
+  .registerButton {
+    width: 90px;
+  }
+  .dayMonthBox {
+    font-size: 14px;
+  }
+  .date {
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,44 @@
+.cardroot {
+  width: 300px;
+  background: rgb(16 16 16) !important;
+  border-radius: 0px;
+  color: #fff !important;
+  height: 450px;
+  position: relative;
+  margin: 10px;
+  display: inline-block;
+}
+.cardIMG {
+  height: 270px;
+  transition: 0.5s;
+}
+.cardButtonsArea {
+  position: absolute;
+  bottom: 5px;
+}
+.cardInfo {
+  padding: 15px;
+}
+.speakerName {
+  font-family: Anton;
+  letter-spacing: 0.9px;
+}
+.cardDec {
+  margin: 0px;
+  padding-bottom: 25px;
+}
+.cardButtons {
+  width: 283px;
+  border-color: #fc9779 !important;
+  border-width: 2.5px;
+  border-radius: 0px;
+  color: #fc9779 !important;
+}
+.cardButtons:hover {
+  background: #fc977954 !important;
+}
+.GLSCardGrid {
+}
+
+@media only screen and (max-width: 600px) {
+}

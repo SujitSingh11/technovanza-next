@@ -1,0 +1,35 @@
+.root {
+  flex-grow: 1;
+}
+.GLSDiv {
+}
+.GLSLogoDiv {
+  width: 100%;
+  text-align: center;
+}
+.GLSLogo {
+  width: 400px;
+}
+.GLSLogoFeatureDiv {
+  text-align: center;
+}
+.GLSLogoFeature {
+  width: 50vw;
+}
+.rootGLSGrid {
+}
+.previousGLSGrid {
+  height: 300px;
+}
+.GLSLogoFeaturePre {
+  width: 70%;
+}
+
+@media only screen and (max-width: 600px) {
+  .GLSLogoFeatureDiv {
+    text-align: center;
+  }
+  .GLSLogoFeature {
+    width: 95% !important;
+  }
+}
