@@ -1,28 +1,11 @@
-.GLSlogoCont {
-  display: flex;
-  align-items: center;
-}
-.GLSlogoContIcon {
-  font-size: 35px !important;
-  color: #fff;
-}
-.GLSlogoContIcon:hover {
-  transform: scale(1.2);
-  color: #fff;
-}
-.GLSlogo {
-  width: 250px;
-}
 .GLSfeatureDiv {
   margin-top: 20px;
   width: 100%;
   text-align: -webkit-center;
 }
-.GLSfeature {
-  width: 50vw;
-}
 .GLSVideoDiv {
-  height: 630px;
+  height: 530px;
+  margin: 1em 4em;
   background: #000;
 }
 .GLSVideo {

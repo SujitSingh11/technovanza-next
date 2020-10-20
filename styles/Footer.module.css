@@ -1,70 +1,94 @@
+/*Footer*/
+
+.footerDiv {
+  background: #fcee0a;
+  width: 100%;
+  position: relative;
+}
+
+.footerDiv::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: url("/assets/footer.svg ") repeat-x top;
+  height: 39px;
+}
+
+.footerCont {
+  height: 250px;
+  margin-top: 4rem;
+}
+
+.footerGridCont {
+  height: 100%;
+}
+
+.footerLogoGrid {
+  height: 100px;
+}
+
 .rootFooterGrid {
   background: #1e1e1e;
   padding: 15px;
   color: #fff;
 }
-.logotext {
-  width: 30vh;
+.logoText {
+  width: 40vh;
 }
-.footerLogoGrid {
-  display: flex;
-}
+
 .footerSocialGrid {
   text-align: -webkit-center !important;
 }
+
+.footerSocialText {
+  font-family: Nunito;
+  font-size: 25px;
+  margin: 10px;
+}
+
 .iconButton {
   padding: 10px;
   margin: 0px 8px 0px 8px !important;
-  background: #fff !important;
-  transition: 0.2s;
+  background: #000000 !important;
+  transition: 0.3s !important;
 }
 .iconButton:hover {
-  background: #fff !important;
   transform: scale(1.2);
 }
 .iconYoutube {
-  color: #1e1e1e;
+  color: #ffffff;
 }
-.iconYoutube:hover {
+/* .iconYoutube:hover {
   color: #ff0000;
-}
+} */
 .iconFacebook {
-  color: #1e1e1e;
+  color: #ffffff;
 }
-.iconFacebook:hover {
+/* .iconFacebook:hover {
   color: #3b5998;
-}
+} */
 .iconTwitter {
-  color: #1e1e1e;
+  color: #ffffff;
 }
-.iconTwitter:hover {
+/* .iconTwitter:hover {
   color: #00acee;
-}
+} */
 .iconLinkedIn {
-  color: #1e1e1e;
+  color: #ffffff;
 }
-.iconLinkedIn:hover {
+/* .iconLinkedIn:hover {
   color: #0e76a8;
-}
+} */
 .iconInsta {
-  color: #1e1e1e;
+  color: #ffffff;
 }
-.iconInsta:hover {
+/* .iconInsta:hover {
   color: #c32aa3;
-}
-
-.footerCreatorGrid {
-  text-align: right;
-}
-.loveIcon {
-  color: #ee0000;
-  font-size: 10px;
-  margin: 0px 3px 0px 3px;
-}
+} */
 
 @media only screen and (max-width: 600px) {
-  .footerCreatorGrid {
-  }
   .footerSocialGrid {
     margin-top: 20px !important;
   }

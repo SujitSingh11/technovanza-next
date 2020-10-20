@@ -1,23 +1,18 @@
+import React from "react";
 import Head from "next/head";
-import Styles from "../styles/Home.module.css";
-import { Grid, Container, Typography } from "@material-ui/core";
+import { Container, Grid } from "@material-ui/core";
+
+import Style from "../styles/Test.module.css";
 import Particles from "react-particles-js";
 
-import Footer from "../components/footer";
-
-export default function Home() {
+const Test = () => {
   return (
-    <div className={Styles.root}>
-      <Head>
-        <title>Technovanza</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={Styles.main}>
-        <header className={Styles.headerParticles}>
+    <div className={Style.root}>
+      <Grid className={Style.headerRoot} container>
+        <Grid className={Style.headerDiv} lg={12} md sm xs item>
           <Particles
             params={{
-              fps_limit: 60,
+              fps_limit: 28,
               particles: {
                 collisions: {
                   enable: false,
@@ -82,14 +77,21 @@ export default function Home() {
               },
             }}
           />
-        </header>
-        <section></section>
-      </main>
-
-      <footer className={Styles.footer}>
-        <Footer />
-      </footer>
+        </Grid>
+      </Grid>
+      <Grid className={Style.sliderRoot} container>
+        <Grid className={Style.sliderDiv} lg={12} md sm xs item>
+          <Container className={Style.sliderCont}></Container>
+        </Grid>
+      </Grid>
+      <Grid className={Style.footerRoot} container>
+        <Grid className={Style.footerDiv} lg={12} md sm xs item>
+          <Container className={Style.footerCont}></Container>
+        </Grid>
+      </Grid>
       <script src="https://cdn.rawgit.com/progers/pathseg/master/pathseg.js"></script>
     </div>
   );
-}
+};
+
+export default Test;

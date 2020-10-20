@@ -1,17 +1,39 @@
 .GLSGrid {
-  border-bottom: 1px solid;
-  border-bottom-width: 1px;
-  padding: 44px 0px 44px 0px;
-  margin-bottom: 10px;
-  border-bottom-color: #fff;
+  border: 1px solid;
+  border-width: 3px;
+  padding: 15px;
+  border-color: #fcee0a;
   transition: 0.5s;
-  color: #fff;
+  color: #000;
   font-family: Anton;
+  margin: 10px 20px !important;
+  background: #fcee0a;
+  position: relative;
 }
-.GLSGrid:hover {
-  border-bottom-color: rgb(252 151 121);
-  color: rgb(252 151 121);
+.GLSGrid::before {
+  top: -3px;
+  left: -3px;
+  content: "";
+  height: 0;
+  width: 0;
+  border-color: #040114 transparent transparent;
+  border-style: solid;
+  border-width: 17px 17px 0 0;
+  position: absolute;
 }
+.GLSGrid::after {
+  bottom: -4px;
+  right: -4px;
+  content: "";
+  height: 0;
+  width: 0;
+  border-color: #040114 transparent transparent;
+  border-style: solid;
+  border-width: 17px 17px 0 0;
+  transform: rotate(180deg);
+  position: absolute;
+}
+
 .gslEvent {
   display: flex;
   align-items: center;
@@ -43,17 +65,48 @@
 }
 
 .registerButton {
-  border-color: rgb(252 151 121) !important;
-  border-width: 2.5px;
-  border-radius: 0px;
-  color: rgb(252 151 121) !important;
+  font-family: Nunito !important;
+  border-color: #fc043c !important;
+  border-width: 2.5px !important;
+  border-radius: 0px !important;
+  color: #ffffff !important;
+  background: #fc043c !important;
+  font-weight: 600 !important;
+  width: 200px;
 }
+
 .registerButton:hover {
-  background: #fc97793b !important;
+  background: #fc043c !important;
 }
+
+.registerButton::before {
+  top: -3px;
+  left: -3px;
+  content: "";
+  height: 0;
+  width: 0;
+  border-color: #fcee0a transparent transparent;
+  border-style: solid;
+  border-width: 17px 17px 0 0;
+  position: absolute;
+}
+.registerButton::after {
+  bottom: -3px;
+  right: -3px;
+  content: "";
+  height: 0;
+  width: 0;
+  border-color: #fcee0a transparent transparent;
+  border-style: solid;
+  border-width: 17px 17px 0 0;
+  transform: rotate(180deg);
+  position: absolute;
+}
+
 .glsInfo {
   font-family: Nunito;
   margin-top: 10px;
+  text-align: justify;
 }
 
 .speakerIMGGrid {
@@ -61,7 +114,7 @@
 }
 .speakerIMG {
   width: 70%;
-  border: 3px solid rgb(252 151 121);
+  border: 3px solid #fcee0a;
 }
 .glsStatus {
   opacity: 0.5;
@@ -73,7 +126,7 @@
     flex-direction: column-reverse;
   }
   .glsSpeakerName {
-    font-size: 26px;
+    font-size: 20px;
   }
   .speakerIMGGrid {
     text-align: -webkit-center;
@@ -86,5 +139,9 @@
   }
   .date {
     font-size: 30px;
+  }
+  .GLSGrid {
+    margin: 10px 0px !important;
+    padding: 10px;
   }
 }

@@ -1,9 +1,6 @@
-@font-face {
-  font-family: "Gang Wolfik";
-  src: url("/src/assets/fonts/Gang\ Wolfik.ttf") format("truetype");
-}
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap");
 
 body {
   margin: 0;
@@ -12,7 +9,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #1b1b1b;
+  background: #040114;
 }
 
 code {
@@ -23,4 +20,8 @@ code {
 #card-hover:hover > #card-img {
   height: 0px !important;
   transition: 0.4s ease-in-out;
+}
+
+#tsparticles {
+  height: 100%;
 }

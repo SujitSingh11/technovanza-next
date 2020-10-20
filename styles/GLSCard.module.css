@@ -1,8 +1,8 @@
 .cardroot {
   width: 300px;
-  background: rgb(16 16 16) !important;
-  border-radius: 0px;
-  color: #fff !important;
+  background: #02d7f2 !important;
+  border-radius: 0px !important;
+  color: #000000 !important;
   height: 450px;
   position: relative;
   margin: 10px;
@@ -28,15 +28,40 @@
   padding-bottom: 25px;
 }
 .cardButtons {
+  font-family: Nunito !important;
+  border-color: #fc043c !important;
+  border-width: 2.5px !important;
+  border-radius: 0px !important;
+  color: #ffffff !important;
+  background: #fc043c !important;
+  font-weight: 600 !important;
   width: 283px;
-  border-color: #fc9779 !important;
-  border-width: 2.5px;
-  border-radius: 0px;
-  color: #fc9779 !important;
 }
-.cardButtons:hover {
-  background: #fc977954 !important;
+
+.cardButtons::before {
+  top: -3px;
+  left: -3px;
+  content: "";
+  height: 0;
+  width: 0;
+  border-color: #02d7f2 transparent transparent;
+  border-style: solid;
+  border-width: 17px 17px 0 0;
+  position: absolute;
 }
+.cardButtons::after {
+  bottom: -3px;
+  right: -3px;
+  content: "";
+  height: 0;
+  width: 0;
+  border-color: #02d7f2 transparent transparent;
+  border-style: solid;
+  border-width: 17px 17px 0 0;
+  transform: rotate(180deg);
+  position: absolute;
+}
+
 .GLSCardGrid {
 }
 

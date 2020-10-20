@@ -1,28 +1,104 @@
 .root {
   flex-grow: 1;
 }
-.GLSDiv {
+
+.featureUpcomingCont {
+  margin: 3em 0em;
 }
-.GLSLogoDiv {
-  width: 100%;
-  text-align: center;
-}
-.GLSLogo {
-  width: 400px;
-}
-.GLSLogoFeatureDiv {
-  text-align: center;
-}
-.GLSLogoFeature {
-  width: 50vw;
-}
-.rootGLSGrid {
-}
-.previousGLSGrid {
-  height: 300px;
-}
-.GLSLogoFeaturePre {
+
+.featureUpcomingDiv {
+  border-style: solid;
+  border-width: 4px;
+  border-color: #02d9f4;
   width: 70%;
+  position: relative;
+}
+
+.featureUpcomingDivTop {
+  right: -16px;
+  top: -18px;
+  width: 27px;
+  height: 27px;
+  border-bottom: 4px solid #02d9f4;
+  background-color: #040114;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  border-radius: 3px;
+}
+.featureUpcomingDivBottom {
+  left: -16px;
+  bottom: -18px;
+  width: 27px;
+  height: 27px;
+  border-bottom: 4px solid #02d9f4;
+  background-color: #040114;
+  -webkit-transform: rotate(225deg);
+  transform: rotate(225deg);
+  position: absolute;
+  border-radius: 3px;
+}
+
+.featureUpcoming {
+  font-family: "Anton";
+  letter-spacing: 2px;
+  color: #02d9f4;
+  text-align: center;
+  font-size: 35px;
+}
+
+.previousGLSGridRoot {
+  margin: 3em 0em;
+}
+
+.previousGLSGridDiv {
+  display: grid;
+  grid-gap: 45px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.previousGLSGrid {
+  background: #02d7f2;
+  height: 400px;
+  position: relative;
+}
+
+.previousGLSGrid::before {
+  top: 0px;
+  left: 0px;
+  content: "";
+  height: 0;
+  width: 0;
+  border-color: #040114 transparent transparent;
+  border-style: solid;
+  border-width: 17px 17px 0 0;
+  position: absolute;
+}
+
+/* .previousGLSGrid::after {
+  bottom: 0px;
+  right: 0px;
+  content: "";
+  height: 0;
+  width: 0;
+  border-color: #040114 transparent transparent;
+  border-style: solid;
+  border-width: 17px 17px 0 0;
+  transform: rotate(180deg);
+  position: absolute;
+} */
+
+.previousGLSGrid::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -20px;
+  background: url("/assets/razor-bottom-yellow-d44fb6b7.svg") repeat-x bottom;
+  height: 23px;
+}
+
+.cardContent {
 }
 
 @media only screen and (max-width: 600px) {
@@ -31,5 +107,15 @@
   }
   .GLSLogoFeature {
     width: 95% !important;
+  }
+  .previousGLSGridDiv {
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+  }
+  .featureUpcoming {
+    font-size: 24px;
+  }
+  .featureUpcomingCont {
+    margin: 2em 0em;
   }
 }

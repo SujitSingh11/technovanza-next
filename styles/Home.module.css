@@ -1,29 +1,8 @@
-.rootHeaderGrid {
-  height: 70vh;
-  background: #292929;
+.main {
 }
-
-.headerGrid {
-  text-align: justify;
-  color: #fff;
-}
-
-.headerTitleDiv {
-}
-
-.headerTitle {
-  width: 50vh;
-  margin-bottom: 5px;
-}
-
-.headerDescription {
+.headerParticles {
+  height: 90vh;
 }
 
 @media only screen and (max-width: 600px) {
-  .headerTitleDiv {
-    text-align: -webkit-center;
-  }
-  .headerTitle {
-    width: 40vh;
-  }
 }

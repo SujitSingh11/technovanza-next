@@ -36,8 +36,12 @@ const Upcoming = ({ data }) => {
               )}
             </CardActionArea>
             <div className={Styles.glsRegister}>
-              <Button variant="outlined" className={Styles.registerButton}>
-                Register
+              <Button
+                size="large"
+                variant="outlined"
+                className={Styles.registerButton}
+              >
+                {data.Status === "CLOSED" ? "Watch" : "Register"}
               </Button>
             </div>
           </div>
