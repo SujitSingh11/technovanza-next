@@ -16,7 +16,7 @@ const Home = () => {
         <Grid justify="center" className={Styles.featureUpcomingCont} container>
           <Grid className={Styles.featureUpcomingDiv} item>
             <i className={Styles.featureUpcomingDivTop}></i>
-            <h1 className={Styles.featureUpcoming}>Upcoming Lectures</h1>
+            <h1 className={Styles.featureUpcoming}>UPCOMING LECTURES</h1>
             <i className={Styles.featureUpcomingDivBottom}></i>
           </Grid>
         </Grid>
@@ -26,6 +26,11 @@ const Home = () => {
           })}
         </Grid>
       </Container>
+      <div className={Styles.rootPreview}>
+        <div className={Styles.previewCardCont}></div>
+        <div className={Styles.previewCardCont}></div>
+        <div className={Styles.previewCardCont}></div>
+      </div>
       <Container maxWidth="lg" className={Styles.previousGLSGridRoot}>
         <div className={Styles.previousGLSGridDiv}>
           <div className={Styles.previousGLSGrid}>

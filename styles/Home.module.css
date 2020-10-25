@@ -1,8 +1,153 @@
 .main {
 }
+
+.navAppBar {
+  background: #fcee0a !important;
+  position: relative;
+}
+
+.rootNav {
+  position: relative;
+}
+
+.rootNav::after {
+  content: "";
+  bottom: -23px;
+  height: 23px;
+  width: 100%;
+  background: url("/assets/razor-bottom-yellow-d44fb6b7.svg") repeat-x bottom;
+  position: absolute;
+}
+
+.menuDesktop {
+  font-family: Nunito;
+  display: flex;
+  color: #000000;
+  font-size: 18px;
+  align-items: center;
+}
+
+.menuDesktopItem {
+  margin: 0px 15px !important;
+  text-decoration: none;
+  color: #252525;
+}
+
+.menuDesktopItem:hover {
+  color: #000000;
+}
+
+.cardButtons {
+  font-family: Nunito !important;
+  border-color: #fc043c !important;
+  border-width: 2.5px !important;
+  border-radius: 0px !important;
+  color: #ffffff !important;
+  background: #fc043c !important;
+  font-weight: 600 !important;
+  width: 120px;
+  margin-left: 10px !important;
+}
+
+.cardButtons::before {
+  top: -3px;
+  left: -3px;
+  content: "";
+  height: 0;
+  width: 0;
+  border-color: #fcee0a transparent transparent;
+  border-style: solid;
+  border-width: 17px 17px 0 0;
+  position: absolute;
+}
+.cardButtons::after {
+  bottom: -3px;
+  right: -3px;
+  content: "";
+  height: 0;
+  width: 0;
+  border-color: #fcee0a transparent transparent;
+  border-style: solid;
+  border-width: 17px 17px 0 0;
+  transform: rotate(180deg);
+  position: absolute;
+}
+
 .headerParticles {
   height: 90vh;
 }
 
+.menuButtonIcon {
+  width: 10px;
+  color: #000000 !important;
+}
+
+.rootPreview {
+  background: #000000;
+  padding: 50px 0px;
+}
+
+.previewTitleRoot {
+  padding: 10px 0px;
+}
+
+.previewTitle {
+  font-size: 50px;
+  color: #ffffff;
+  text-align: center;
+  font-family: Nunito;
+}
+
+.previewCardRoot {
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.previewCard {
+  height: 250px;
+  background: #2b2b2b !important;
+  border-radius: 5px;
+  text-decoration: none;
+  position: relative;
+}
+
+.previewCard:hover {
+  transform: scale(1.03);
+  transition: 0.3s;
+  cursor: pointer;
+}
+.previewCard::before {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  content: "";
+  z-index: 80;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.previewCardTitle {
+  font-family: Nunito;
+  bottom: 0px;
+  left: 20px;
+  position: absolute;
+  color: #ffffff;
+  z-index: 100;
+}
+
 @media only screen and (max-width: 600px) {
+  .menuDesktop {
+    display: none !important;
+  }
+  .previewCardRoot {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .menuButton {
+    display: none !important;
+  }
 }

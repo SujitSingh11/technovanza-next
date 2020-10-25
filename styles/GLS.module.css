@@ -94,11 +94,8 @@
   left: 0;
   right: 0;
   bottom: -20px;
-  background: url("/assets/razor-bottom-yellow-d44fb6b7.svg") repeat-x bottom;
+  background: url("/assets/razor-bottom-blue-d44fb6b7.svg") repeat-x bottom;
   height: 23px;
-}
-
-.cardContent {
 }
 
 @media only screen and (max-width: 600px) {
