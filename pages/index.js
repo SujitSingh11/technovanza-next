@@ -1,5 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
+import { useRouter } from "next/router";
+
 import Styles from "../styles/Home.module.css";
 import {
   Grid,
@@ -16,10 +18,13 @@ import MenuIcon from "@material-ui/icons/Menu";
 import AccountBalanceTwoToneIcon from "@material-ui/icons/AccountBalanceTwoTone";
 import GroupAddTwoToneIcon from "@material-ui/icons/GroupAddTwoTone";
 import EmojiPeopleTwoToneIcon from "@material-ui/icons/EmojiPeopleTwoTone";
+import WarningTwoToneIcon from "@material-ui/icons/WarningTwoTone";
 
 import Footer from "../components/footer";
 
 export default function Home() {
+  const router = useRouter();
+
   return (
     <div className={Styles.root}>
       <Head>
@@ -37,7 +42,7 @@ export default function Home() {
                 src="/Technovanza.svg"
               />
               <div className={Styles.menuDesktop}>
-                <Link href="/">
+                <Link href="/events">
                   <a className={Styles.menuDesktopItem}>Events</a>
                 </Link>
                 <Link href="/gls">
@@ -128,17 +133,29 @@ export default function Home() {
           />
         </header>
         <section className={Styles.infoRoot}>
-          <Container maxWidth="lg">
+          <Container className={Styles.infoRootCont} maxWidth="lg">
             <div>
               <div>
-                <h1 className={Styles.infoTitle}>Dates</h1>
-                <h2 className={Styles.infoDesc}>
-                  27th, 28th, 29th December, 2020
-                </h2>
-                <h1 className={Styles.infoTitle}>VJTI</h1>
-                <h2 className={Styles.infoDesc}>
-                  Veermata Jijabai Technological Institute, Matunga
-                </h2>
+                <div className={Styles.infoCollegeRoot}>
+                  <h1 className={Styles.infoTitle}>VJTI</h1>
+                  <h2 className={Styles.infoDesc}>
+                    Veermata Jijabai Technological Institute, Matunga
+                  </h2>
+                </div>
+                <Grid container>
+                  <Grid className={Styles.infoGridItem} lg={6} item>
+                    <WarningTwoToneIcon className={Styles.infoFeatureIcon} />
+                    <h2 className={Styles.infoDesc}>
+                      Participate in the festival from the comforts of your home
+                    </h2>
+                    <p>
+                      With all the safety concerns raising from COVID, we have
+                      shifted the event to an online platform. Experience a new
+                      form of Technovanza from the safe space of your home!
+                    </p>
+                  </Grid>
+                  <Grid className={Styles.infoGridItem} lg={6} item></Grid>
+                </Grid>
               </div>
               <div className={Styles.infoFeature}>
                 <Grid justify="space-around" container>
@@ -176,6 +193,13 @@ export default function Home() {
                 style={{
                   background:
                     "url('/assets/events-back.jpg') center center / cover",
+                }}
+                onClick={() => {
+                  window.scroll({
+                    top: 0,
+                    behavior: "smooth",
+                  });
+                  router.push("/gls");
                 }}
               >
                 <h2 className={Styles.previewCardTitle}>Events</h2>

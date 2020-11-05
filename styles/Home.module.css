@@ -17,7 +17,7 @@
 }
 
 .menuDesktop {
-  font-family: Nunito;
+  font-family: "Nunito", sans-serif;
   display: flex;
   color: #000000;
   font-size: 18px;
@@ -28,6 +28,7 @@
   margin: 0px 15px !important;
   text-decoration: none;
   color: #252525;
+  font-weight: 800 !important;
 }
 
 .menuDesktopItem:hover {
@@ -35,12 +36,13 @@
 }
 
 .cardButtons {
+  font-family: "Nunito", sans-serif !important;
   border-color: #fcee0a !important;
   border-width: 2.5px !important;
   border-radius: 0px !important;
   color: #000 !important;
   background: #fcee0a !important;
-  font-weight: 600 !important;
+  font-weight: 800 !important;
   width: 120px;
   margin-left: 10px !important;
 }
@@ -84,31 +86,62 @@
 }
 
 .infoRoot {
-  background: #5539b2;
-  color: #ffffff;
-  text-align: center;
-  line-height: 25px;
-  padding: 30px;
-  font-family: Nunito;
+  background: #3384e0;
+  color: #000;
+  position: relative;
 }
 
+.infoRoot::after {
+  content: "";
+  bottom: -23px;
+  height: 23px;
+  width: 100%;
+  background: url("/assets/razor-bottom-yellow-d44fb6b7.svg") repeat-x bottom;
+  position: absolute;
+  text-align: left !important;
+}
+
+.infoRoot::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: url("/assets/footer.svg ") repeat-x top;
+  height: 39px;
+}
+
+.infoRootCont {
+  text-align: center;
+  line-height: 25px;
+  padding: 50px 0px;
+  font-family: "Nunito", sans-serif;
+}
+.infoCollegeRoot {
+  margin-bottom: 30px;
+}
 .infoTitle {
   font-size: 50px;
-  font-weight: 500 !important;
+  font-weight: 800 !important;
+}
+
+.infoGridItem {
+  padding: 20px;
 }
 
 .infoFeature {
-  margin-top: 85px;
+  margin-top: 25px;
 }
 
 .infoFeatureIcon {
-  color: "#fff";
+  color: #000;
   font-size: 75px !important;
 }
 
 .infoFeatureDetail {
   font-size: 20px;
   margin: 10px 0px;
+  font-weight: 800 !important;
 }
 
 .rootPreview {
@@ -124,7 +157,7 @@
   font-size: 50px;
   color: #ffffff;
   text-align: center;
-  font-family: Nunito;
+  font-family: "Nunito", sans-serif;
 }
 
 .previewCardRoot {
@@ -167,7 +200,7 @@
 }
 
 .previewCardTitle {
-  font-family: Nunito;
+  font-family: "Nunito", sans-serif;
   bottom: 0px;
   left: 20px;
   position: absolute;
