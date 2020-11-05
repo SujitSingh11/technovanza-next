@@ -1,8 +1,5 @@
-.main {
-}
-
 .navAppBar {
-  background: #fcee0a !important;
+  background: #3384e0 !important;
   position: relative;
 }
 
@@ -38,15 +35,19 @@
 }
 
 .cardButtons {
-  font-family: Nunito !important;
-  border-color: #fc043c !important;
+  border-color: #fcee0a !important;
   border-width: 2.5px !important;
   border-radius: 0px !important;
-  color: #ffffff !important;
-  background: #fc043c !important;
+  color: #000 !important;
+  background: #fcee0a !important;
   font-weight: 600 !important;
   width: 120px;
   margin-left: 10px !important;
+}
+
+.cardButtons:hover {
+  background: #fcee0a !important;
+  box-shadow: 0 0 3px #fcee0a;
 }
 
 .cardButtons::before {
@@ -55,7 +56,7 @@
   content: "";
   height: 0;
   width: 0;
-  border-color: #fcee0a transparent transparent;
+  border-color: #3384e0 transparent transparent;
   border-style: solid;
   border-width: 17px 17px 0 0;
   position: absolute;
@@ -66,7 +67,7 @@
   content: "";
   height: 0;
   width: 0;
-  border-color: #fcee0a transparent transparent;
+  border-color: #3384e0 transparent transparent;
   border-style: solid;
   border-width: 17px 17px 0 0;
   transform: rotate(180deg);
@@ -80,6 +81,34 @@
 .menuButtonIcon {
   width: 10px;
   color: #000000 !important;
+}
+
+.infoRoot {
+  background: #5539b2;
+  color: #ffffff;
+  text-align: center;
+  line-height: 25px;
+  padding: 30px;
+  font-family: Nunito;
+}
+
+.infoTitle {
+  font-size: 50px;
+  font-weight: 500 !important;
+}
+
+.infoFeature {
+  margin-top: 85px;
+}
+
+.infoFeatureIcon {
+  color: "#fff";
+  font-size: 75px !important;
+}
+
+.infoFeatureDetail {
+  font-size: 20px;
+  margin: 10px 0px;
 }
 
 .rootPreview {
@@ -101,20 +130,30 @@
 .previewCardRoot {
   display: grid;
   grid-gap: 25px;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 .previewCard {
   height: 250px;
-  background: #2b2b2b !important;
-  border-radius: 5px;
+  background: #02d7f2 !important;
+  border-radius: 0px;
   text-decoration: none;
   position: relative;
 }
 
+.previewCard::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -20px;
+  background: url("/assets/razor-bottom-blue-d44fb6b7.svg") repeat-x bottom;
+  height: 23px;
+}
+
 .previewCard:hover {
   transform: scale(1.03);
-  transition: 0.3s;
+  transition: 0.3s ease-in;
   cursor: pointer;
 }
 .previewCard::before {
@@ -132,7 +171,7 @@
   bottom: 0px;
   left: 20px;
   position: absolute;
-  color: #ffffff;
+  color: #000;
   z-index: 100;
 }
 

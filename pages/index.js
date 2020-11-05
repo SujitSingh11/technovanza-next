@@ -13,6 +13,9 @@ import Particles from "react-particles-js";
 
 import MenuOpenIcon from "@material-ui/icons/MenuOpen";
 import MenuIcon from "@material-ui/icons/Menu";
+import AccountBalanceTwoToneIcon from "@material-ui/icons/AccountBalanceTwoTone";
+import GroupAddTwoToneIcon from "@material-ui/icons/GroupAddTwoTone";
+import EmojiPeopleTwoToneIcon from "@material-ui/icons/EmojiPeopleTwoTone";
 
 import Footer from "../components/footer";
 
@@ -26,7 +29,7 @@ export default function Home() {
 
       <main className={Styles.main}>
         <nav className={Styles.rootNav}>
-          <AppBar className={Styles.navAppBar} position="static">
+          <AppBar className={Styles.navAppBar} position="static" elevation={0}>
             <Toolbar>
               <img
                 style={{ marginRight: "auto" }}
@@ -64,7 +67,7 @@ export default function Home() {
                   enable: true,
                 },
                 number: {
-                  value: 350,
+                  value: 450,
                   density: {
                     enable: false,
                   },
@@ -72,8 +75,8 @@ export default function Home() {
                 line_linked: {
                   enable: true,
                   distance: 32,
-                  opacity: 0.5,
-                  color: "#02d7f2",
+                  opacity: 0.7,
+                  color: "#34d2de",
                 },
                 move: {
                   speed: 1.0,
@@ -124,6 +127,44 @@ export default function Home() {
             }}
           />
         </header>
+        <section className={Styles.infoRoot}>
+          <Container maxWidth="lg">
+            <div>
+              <div>
+                <h1 className={Styles.infoTitle}>Dates</h1>
+                <h2 className={Styles.infoDesc}>
+                  27th, 28th, 29th December, 2020
+                </h2>
+                <h1 className={Styles.infoTitle}>VJTI</h1>
+                <h2 className={Styles.infoDesc}>
+                  Veermata Jijabai Technological Institute, Matunga
+                </h2>
+              </div>
+              <div className={Styles.infoFeature}>
+                <Grid justify="space-around" container>
+                  <Grid item>
+                    <AccountBalanceTwoToneIcon
+                      className={Styles.infoFeatureIcon}
+                    />
+                    <p className={Styles.infoFeatureDetail}>150 colleges</p>
+                  </Grid>
+                  <Grid item>
+                    <GroupAddTwoToneIcon className={Styles.infoFeatureIcon} />
+                    <p className={Styles.infoFeatureDetail}>80,000 Footfall</p>
+                  </Grid>
+                  <Grid item>
+                    <EmojiPeopleTwoToneIcon
+                      className={Styles.infoFeatureIcon}
+                    />
+                    <p className={Styles.infoFeatureDetail}>
+                      4,000 Participants
+                    </p>
+                  </Grid>
+                </Grid>
+              </div>
+            </div>
+          </Container>
+        </section>
         <section className={Styles.rootPreview}>
           <div className={Styles.previewTitleRoot}>
             <h1 className={Styles.previewTitle}>What's In Store</h1>
@@ -138,15 +179,6 @@ export default function Home() {
                 }}
               >
                 <h2 className={Styles.previewCardTitle}>Events</h2>
-              </div>
-              <div
-                className={Styles.previewCard}
-                style={{
-                  background:
-                    "url('/assets/events-back.jpg') center center / cover",
-                }}
-              >
-                <h2 className={Styles.previewCardTitle}>Workshops</h2>
               </div>
               <div
                 className={Styles.previewCard}
