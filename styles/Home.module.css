@@ -129,7 +129,7 @@
 
 .previewCardRoot {
   display: grid;
-  grid-gap: 25px;
+  grid-gap: 40px;
   grid-template-columns: 1fr 1fr;
 }
 
@@ -182,6 +182,9 @@
   .previewCardRoot {
     grid-template-columns: 1fr;
     grid-gap: 20px;
+  }
+  .previewCard {
+    margin-top: 20px;
   }
 }
 

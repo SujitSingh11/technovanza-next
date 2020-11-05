@@ -200,7 +200,10 @@ export default function Home() {
       <footer className={Styles.footer}>
         <Footer />
       </footer>
-      <script src="https://cdn.rawgit.com/progers/pathseg/master/pathseg.js"></script>
+      <script
+        src="https://cdn.rawgit.com/progers/pathseg/master/pathseg.js"
+        defer
+      ></script>
     </div>
   );
 }
