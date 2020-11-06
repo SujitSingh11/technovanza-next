@@ -25,6 +25,11 @@ import Footer from "../components/footer";
 export default function Home() {
   const router = useRouter();
 
+  function sendMail() {
+    const mail = "mailto:sujitkumarsingh29@gmail.com";
+    window.open(mail, "_blank");
+  }
+
   return (
     <div className={Styles.root}>
       <Head>
@@ -142,9 +147,8 @@ export default function Home() {
                     Veermata Jijabai Technological Institute, Matunga
                   </h2>
                 </div>
-                <Grid container>
-                  <Grid className={Styles.infoGridItem} lg={6} item>
-                    <WarningTwoToneIcon className={Styles.infoFeatureIcon} />
+                <Grid justify="space-between" container>
+                  <Grid className={Styles.infoGridItem} lg={5} item>
                     <h2 className={Styles.infoDesc}>
                       Participate in the festival from the comforts of your home
                     </h2>
@@ -154,7 +158,7 @@ export default function Home() {
                       form of Technovanza from the safe space of your home!
                     </p>
                   </Grid>
-                  <Grid className={Styles.infoGridItem} lg={6} item></Grid>
+                  <Grid className={Styles.infoGridItem} lg={5} item></Grid>
                 </Grid>
               </div>
               <div className={Styles.infoFeature}>
@@ -190,27 +194,29 @@ export default function Home() {
             <div className={Styles.previewCardRoot}>
               <div
                 className={Styles.previewCard}
-                style={{
-                  background:
-                    "url('/assets/events-back.jpg') center center / cover",
-                }}
                 onClick={() => {
                   window.scroll({
                     top: 0,
                     behavior: "smooth",
                   });
-                  router.push("/gls");
+                  router.push({ pathname: "/events", query: "/gls.svg" });
                 }}
               >
                 <h2 className={Styles.previewCardTitle}>Events</h2>
               </div>
               <div
                 className={Styles.previewCard}
-                style={{
-                  background:
-                    "url('/assets/events-back.jpg') center center / cover",
+                onClick={() => {
+                  window.scroll({
+                    top: 0,
+                    behavior: "smooth",
+                  });
+                  router.push({ pathname: "/gls", query: "/gls.svg" });
                 }}
               >
+                <div className={Styles.previewCardLogoDiv}>
+                  <img className={Styles.previewCardLogo} src="/gls.svg" />
+                </div>
                 <h2 className={Styles.previewCardTitle}>
                   Guest Lecture Series
                 </h2>

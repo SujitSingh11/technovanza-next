@@ -198,7 +198,13 @@
   z-index: 80;
   background-color: rgba(0, 0, 0, 0.2);
 }
-
+.previewCardLogoDiv {
+  margin-top: 50px;
+  text-align: center;
+}
+.previewCardLogo {
+  width: 20rem;
+}
 .previewCardTitle {
   font-family: "Nunito", sans-serif;
   bottom: 0px;

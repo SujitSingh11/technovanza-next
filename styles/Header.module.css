@@ -1,10 +1,21 @@
 .GLSlogoCont {
   display: flex;
   align-items: center;
-  background-color: #fcee0a;
+  background-color: #3384e0;
+  position: relative;
 }
+
+.GLSlogoCont::after {
+  content: "";
+  bottom: -23px;
+  height: 23px;
+  width: 100%;
+  background: url("/assets/razor-bottom-yellow-d44fb6b7.svg") repeat-x bottom;
+  position: absolute;
+}
+
 .GLSlogoContIcon {
-  font-size: 35px !important;
+  font-size: 30px !important;
   color: #000000;
 }
 .GLSlogoContIcon:hover {
@@ -13,5 +24,5 @@
   color: #000000;
 }
 .GLSlogo {
-  width: 250px;
+  width: 180px;
 }

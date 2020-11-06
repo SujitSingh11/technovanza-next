@@ -1,13 +1,13 @@
 .GLSGrid {
   border: 1px solid;
   border-width: 3px;
-  padding: 12px;
-  border-color: #fcee0a;
+  padding: 10px;
+  border-color: #3384e0;
   transition: 0.5s;
   color: #000;
   font-family: Anton;
   margin: 10px 20px !important;
-  background: #fcee0a;
+  background: #3384e0;
   position: relative;
 }
 .GLSGrid::before {
@@ -16,7 +16,7 @@
   content: "";
   height: 0;
   width: 0;
-  border-color: #040114 transparent transparent;
+  border-color: #000 transparent transparent;
   border-style: solid;
   border-width: 17px 17px 0 0;
   position: absolute;
@@ -27,7 +27,7 @@
   content: "";
   height: 0;
   width: 0;
-  border-color: #040114 transparent transparent;
+  border-color: #000 transparent transparent;
   border-style: solid;
   border-width: 17px 17px 0 0;
   transform: rotate(180deg);
@@ -46,7 +46,7 @@
   width: 118px;
 }
 .date {
-  font-size: 45px;
+  font-size: 40px;
   margin-right: 10px;
 }
 
@@ -60,23 +60,23 @@
   width: 100%;
 }
 .glsSpeakerName {
-  font-size: 35px;
+  font-size: 30px;
   font-family: Anton;
 }
 
 .registerButton {
-  font-family: Nunito !important;
-  border-color: #fc043c !important;
+  font-family: "Nunito", sans-serif;
+  border-color: #5539b2 !important;
   border-width: 2.5px !important;
   border-radius: 0px !important;
-  color: #ffffff !important;
-  background: #fc043c !important;
+  color: #000 !important;
+  background: #5539b2 !important;
   font-weight: 600 !important;
   width: 200px;
 }
 
 .registerButton:hover {
-  background: #fc043c !important;
+  background: #5539b2 !important;
 }
 
 .registerButton::before {
@@ -85,7 +85,7 @@
   content: "";
   height: 0;
   width: 0;
-  border-color: #fcee0a transparent transparent;
+  border-color: #3384e0 transparent transparent;
   border-style: solid;
   border-width: 17px 17px 0 0;
   position: absolute;
@@ -96,7 +96,7 @@
   content: "";
   height: 0;
   width: 0;
-  border-color: #fcee0a transparent transparent;
+  border-color: #3384e0 transparent transparent;
   border-style: solid;
   border-width: 17px 17px 0 0;
   transform: rotate(180deg);
@@ -104,7 +104,7 @@
 }
 
 .glsInfo {
-  font-family: Nunito;
+  font-family: "Nunito", sans-serif;
   margin-top: 10px;
   text-align: justify;
 }
@@ -114,7 +114,7 @@
 }
 .speakerIMG {
   width: 70%;
-  border: 3px solid #fcee0a;
+  border: 3px solid #3384e0;
 }
 .glsStatus {
   opacity: 0.5;
