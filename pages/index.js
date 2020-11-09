@@ -3,8 +3,10 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 
 import firebase from "firebase";
+
 import "firebase/auth";
 import "firebase/firestore";
+import "firebase/analytics";
 
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useCollectionData } from "react-firebase-hooks/firestore";
