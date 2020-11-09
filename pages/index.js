@@ -6,7 +6,6 @@ import firebase from "firebase";
 
 import "firebase/auth";
 import "firebase/firestore";
-import "firebase/analytics";
 
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useCollectionData } from "react-firebase-hooks/firestore";
@@ -45,11 +44,10 @@ const firebaseConfig = {
 
 if (!firebase.apps.length) {
   firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
 }
 
 const auth = firebase.auth();
-const firestore = firebase.firestore();
+//const firestore = firebase.firestore();
 
 export default function Home() {
   const [user] = useAuthState(auth);
@@ -64,6 +62,7 @@ export default function Home() {
     const provider = new firebase.auth.GoogleAuthProvider();
     auth.signInWithPopup(provider);
   };
+
   console.log(auth.currentUser);
   return (
     <div className={Styles.root}>
