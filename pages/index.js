@@ -250,7 +250,7 @@ export default function Home() {
                     top: 0,
                     behavior: "smooth",
                   });
-                  router.push({ pathname: "/events", query: "/gls.svg" });
+                  router.push({ pathname: "/events" });
                 }}
               >
                 <h2 className={Styles.previewCardTitle}>Events</h2>
@@ -262,7 +262,7 @@ export default function Home() {
                     top: 0,
                     behavior: "smooth",
                   });
-                  router.push({ pathname: "/gls", query: "/gls.svg" });
+                  router.push({ pathname: "/gls" });
                 }}
               >
                 <div className={Styles.previewCardLogoDiv}>
