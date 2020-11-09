@@ -1,11 +1,10 @@
 .cardroot {
-  width: 300px;
+  width: 280px;
   background: #02d7f2 !important;
   border-radius: 0px !important;
   color: #000000 !important;
-  height: 450px;
+  height: 420px;
   position: relative;
-  margin: 10px;
   display: inline-block;
 }
 .cardIMG {
@@ -15,9 +14,6 @@
 .cardButtonsArea {
   position: absolute;
   bottom: 5px;
-}
-.cardInfo {
-  padding: 15px;
 }
 .speakerName {
   font-family: Anton;
@@ -35,7 +31,7 @@
   color: #ffffff !important;
   background: #fc043c !important;
   font-weight: 600 !important;
-  width: 283px;
+  width: 263px;
 }
 
 .cardButtons::before {

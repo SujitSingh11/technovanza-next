@@ -10,61 +10,63 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 
 function Footer() {
   return (
-    <Grid className={Styles.footerRoot} container>
-      <Grid className={Styles.footerDiv} lg={12} md sm xs item>
-        <Container className={Styles.footerCont}>
-          <Grid
-            className={Styles.footerGridCont}
-            justify="space-between"
-            container
-          >
+    <footer>
+      <Grid className={Styles.footerRoot} container>
+        <Grid className={Styles.footerDiv} lg={12} md sm xs item>
+          <Container className={Styles.footerCont}>
             <Grid
-              className={Styles.footerLogoGrid}
-              lg={12}
-              md={12}
-              sm={12}
-              xs={12}
-              item
+              className={Styles.footerGridCont}
+              justify="space-between"
+              container
             >
-              <img
-                alt="technoLogoText"
-                src="/Technovanza.svg"
-                className={Styles.logoText}
-              />
+              <Grid
+                className={Styles.footerLogoGrid}
+                lg={12}
+                md={12}
+                sm={12}
+                xs={12}
+                item
+              >
+                <img
+                  alt="technoLogoText"
+                  src="/Technovanza.svg"
+                  className={Styles.logoText}
+                />
+              </Grid>
+              <Grid
+                className={Styles.footerSocialGrid}
+                lg={12}
+                md={12}
+                sm={12}
+                xs={12}
+                item
+              >
+                <div>
+                  <h4 className={Styles.footerSocialText}>Follow Us At</h4>
+                </div>
+                <div>
+                  <IconButton className={Styles.iconButton}>
+                    <InstagramIcon className={Styles.iconInsta} />
+                  </IconButton>
+                  <IconButton className={Styles.iconButton}>
+                    <FacebookIcon className={Styles.iconFacebook} />
+                  </IconButton>
+                  <IconButton className={Styles.iconButton}>
+                    <YouTubeIcon className={Styles.iconYoutube} />
+                  </IconButton>
+                  <IconButton className={Styles.iconButton}>
+                    <TwitterIcon className={Styles.iconTwitter} />
+                  </IconButton>
+                  <IconButton className={Styles.iconButton}>
+                    <LinkedInIcon className={Styles.iconLinkedIn} />
+                  </IconButton>
+                </div>
+              </Grid>
             </Grid>
-            <Grid
-              className={Styles.footerSocialGrid}
-              lg={12}
-              md={12}
-              sm={12}
-              xs={12}
-              item
-            >
-              <div>
-                <h4 className={Styles.footerSocialText}>Follow Us At</h4>
-              </div>
-              <div>
-                <IconButton className={Styles.iconButton}>
-                  <InstagramIcon className={Styles.iconInsta} />
-                </IconButton>
-                <IconButton className={Styles.iconButton}>
-                  <FacebookIcon className={Styles.iconFacebook} />
-                </IconButton>
-                <IconButton className={Styles.iconButton}>
-                  <YouTubeIcon className={Styles.iconYoutube} />
-                </IconButton>
-                <IconButton className={Styles.iconButton}>
-                  <TwitterIcon className={Styles.iconTwitter} />
-                </IconButton>
-                <IconButton className={Styles.iconButton}>
-                  <LinkedInIcon className={Styles.iconLinkedIn} />
-                </IconButton>
-              </div>
-            </Grid>
-          </Grid>
-        </Container>
+          </Container>
+        </Grid>
       </Grid>
-    </Grid>
+    </footer>
     // <Grid alignItems="center" className={Styles.rootFooterGrid} container>
     //   <Grid
     //     className={Styles.footerLogoGrid}

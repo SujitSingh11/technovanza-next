@@ -2,6 +2,13 @@ import Head from "next/head";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
+import firebase from "firebase";
+import "firebase/auth";
+import "firebase/firestore";
+
+import { useAuthState } from "react-firebase-hooks/auth";
+import { useCollectionData } from "react-firebase-hooks/firestore";
+
 import Styles from "../styles/Home.module.css";
 import {
   Grid,
@@ -22,7 +29,28 @@ import WarningTwoToneIcon from "@material-ui/icons/WarningTwoTone";
 
 import Footer from "../components/footer";
 
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyDIFlrAHUb_xrR4SadMIXkC2oTJ4gLi23I",
+  authDomain: "technovanza-3e853.firebaseapp.com",
+  databaseURL: "https://technovanza-3e853.firebaseio.com",
+  projectId: "technovanza-3e853",
+  storageBucket: "technovanza-3e853.appspot.com",
+  messagingSenderId: "163729170268",
+  appId: "1:163729170268:web:e60535731c1c2aebebeb99",
+  measurementId: "G-6T8LTS2VJT",
+};
+
+if (!firebase.apps.length) {
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+}
+
+const auth = firebase.auth();
+const firestore = firebase.firestore();
+
 export default function Home() {
+  const [user] = useAuthState(auth);
   const router = useRouter();
 
   function sendMail() {
@@ -30,6 +58,11 @@ export default function Home() {
     window.open(mail, "_blank");
   }
 
+  const signInWithGoogle = () => {
+    const provider = new firebase.auth.GoogleAuthProvider();
+    auth.signInWithPopup(provider);
+  };
+  console.log(auth.currentUser);
   return (
     <div className={Styles.root}>
       <Head>
@@ -54,7 +87,21 @@ export default function Home() {
                   <a className={Styles.menuDesktopItem}>Speakers</a>
                 </Link>
                 <Link href="/">
-                  <Button className={Styles.cardButtons}>Login</Button>
+                  {user ? (
+                    <Button
+                      onClick={() => auth.signOut()}
+                      className={Styles.cardButtons}
+                    >
+                      Logout
+                    </Button>
+                  ) : (
+                    <Button
+                      onClick={signInWithGoogle}
+                      className={Styles.cardButtons}
+                    >
+                      Login
+                    </Button>
+                  )}
                 </Link>
               </div>
               <IconButton
@@ -148,7 +195,7 @@ export default function Home() {
                   </h2>
                 </div>
                 <Grid justify="space-between" container>
-                  <Grid className={Styles.infoGridItem} lg={5} item>
+                  <Grid className={Styles.infoGridItem} lg={5} xs={12} item>
                     <h2 className={Styles.infoDesc}>
                       Participate in the festival from the comforts of your home
                     </h2>
@@ -158,7 +205,10 @@ export default function Home() {
                       form of Technovanza from the safe space of your home!
                     </p>
                   </Grid>
-                  <Grid className={Styles.infoGridItem} lg={5} item></Grid>
+                  <Grid className={Styles.infoGridItem} lg={5} xs={12} item>
+                    <h2 className={Styles.infoDesc}>Dates</h2>
+                    <p>27th, 28th, 29th December, 2020</p>
+                  </Grid>
                 </Grid>
               </div>
               <div className={Styles.infoFeature}>
@@ -227,13 +277,12 @@ export default function Home() {
         <section></section>
       </main>
 
-      <footer className={Styles.footer}>
-        <Footer />
-      </footer>
+      <Footer />
+
       <script
         src="https://cdn.rawgit.com/progers/pathseg/master/pathseg.js"
         defer
-      ></script>
+      />
     </div>
   );
 }
