@@ -1,14 +1,24 @@
-[{
-    "SpeakerName": "RADHANATH SWAMI",
-    "DayNumber": "12",
-    "Day": "Fri",
-    "Month": "Oct",
-    "Year": "2020",
-    "Time": "7:30 PM",
-    "Status": "OPEN",
-    "IMG": "Radhanath_Swami.jpg",
-    "Description": "<p>Radhanath Swami is an American Gaudiya Vaishnav guru. He has advocated the practice of Bhakti Yoga and has been a prominent spiritual teacher for the last 40 years. He serves as an integral member of the Governing Body Commission for the International Society for Krishna Consciousness (ISKCON). He has played a pivotal role in the organisation's plan for sustaining 1.2 million children using mid-day meals. He also helped in setting up the Bhaktivedanta Hospital in Mumbai.Elite universities of the world such as Oxford, Cambridge, Princeton, Harvard, Columbia and Stanford alongside multinational corporations such as HSBC, Microsoft, Facebook, Starbucks, Google, Intel and Oracle, have had the privilege of having him as a guest speaker. He is known the world over for his humanitarian activities, bringing joy and peace to all whose souls he has touched.</p><p> Catch Technovanza live on the 12th of October at 7:30 p.m. to know the one of the most important person in the world responsible for spreading the word of peace and prayer.</p>",
-    "TalkOn": "Technology for India to Leap Frog",
-    "RegisterLink": "https://insider.in/technovanza-gls-suresh-prabhu-oct14-2020/event",
-    "YouTube_Link": ""
-}]
+{
+    "Quarantine Edition":[
+        {
+            "SpeakerName": "RADHANATH SWAMI",
+            "DayNumber": "12",
+            "Day": "Fri",
+            "Month": "Oct",
+            "Year": "2020",
+            "Time": "7:30 PM",
+            "Status": "OPEN",
+            "IMG": "Radhanath_Swami.jpg",
+            "Description": "<p>Radhanath Swami is an American Gaudiya Vaishnav guru. He has advocated the practice of Bhakti Yoga and has been a prominent spiritual teacher for the last 40 years. He serves as an integral member of the Governing Body Commission for the International Society for Krishna Consciousness (ISKCON). He has played a pivotal role in the organisation's plan for sustaining 1.2 million children using mid-day meals. He also helped in setting up the Bhaktivedanta Hospital in Mumbai.Elite universities of the world such as Oxford, Cambridge, Princeton, Harvard, Columbia and Stanford alongside multinational corporations such as HSBC, Microsoft, Facebook, Starbucks, Google, Intel and Oracle, have had the privilege of having him as a guest speaker. He is known the world over for his humanitarian activities, bringing joy and peace to all whose souls he has touched.</p><p> Catch Technovanza live on the 12th of October at 7:30 p.m. to know the one of the most important person in the world responsible for spreading the word of peace and prayer.</p>",
+            "TalkOn": "Technology for India to Leap Frog",
+            "RegisterLink": "https://insider.in/technovanza-gls-suresh-prabhu-oct14-2020/event",
+            "YouTube_Link": ""
+        }
+    ],
+    "Hourglass Edition":[
+
+    ],
+    "Previous GLS":[
+        
+    ]
+}
