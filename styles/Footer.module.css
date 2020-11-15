@@ -17,46 +17,31 @@
 }
 
 .footerCont {
-  height: 250px;
+  min-height: 80px;
   margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.footerGridCont {
-  height: 100%;
+.footerCopy {
+  font-weight: 700;
+  font-family: "Nunito", sans-serif !important;
 }
 
-.footerLogoGrid {
-  height: 100px;
-}
-
-.rootFooterGrid {
-  background: #1e1e1e;
-  padding: 15px;
-  color: #fff;
-}
-.logoText {
-  width: 40vh;
-}
-
-.footerSocialGrid {
-  text-align: -webkit-center !important;
-}
-
-.footerSocialText {
-  font-family: Nunito;
-  font-size: 25px;
-  margin: 10px;
+.footerSocial {
+  margin: 10px 0;
 }
 
 .iconButton {
-  padding: 10px;
   margin: 0px 8px 0px 8px !important;
   background: #000000 !important;
-  transition: 0.3s !important;
+  transition: 0.2s !important;
 }
 .iconButton:hover {
   transform: scale(1.2);
 }
+
 .iconYoutube {
   color: #ffffff;
 }
@@ -89,7 +74,11 @@
 } */
 
 @media only screen and (max-width: 600px) {
-  .footerSocialGrid {
-    margin-top: 20px !important;
+  .footerSocial {
+    text-align: center !important;
+    width: 100% !important;
+  }
+  .footerSocialDiv {
+    margin-bottom: 20px;
   }
 }

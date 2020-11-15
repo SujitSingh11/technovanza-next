@@ -124,6 +124,14 @@ function SideMenu() {
             <Divider />
             <List className={Styles.sideMenuListRoot}>
               <ListItem button className={Styles.sideMenuListItem}>
+                <Link href="/">
+                  <ListItemText
+                    primary="Home"
+                    className={Styles.sideMenuListItemText}
+                  />
+                </Link>
+              </ListItem>
+              <ListItem button className={Styles.sideMenuListItem}>
                 <Link href="/events">
                   <ListItemText
                     primary="Events"

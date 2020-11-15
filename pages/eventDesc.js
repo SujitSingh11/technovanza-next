@@ -94,7 +94,7 @@ function EventDesc() {
                 </div>
                 <div>
                   <p className={Styles.contactText}>
-                    Kimya Gaikwad : 9892445543
+                    Event Manager : +919999999999
                   </p>
                 </div>
               </Grid>
