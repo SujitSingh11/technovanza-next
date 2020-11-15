@@ -1,0 +1,131 @@
+.headerRoot {
+  margin-top: 40px;
+}
+
+.headerImgRoot {
+  background: #ffffff;
+}
+
+.headerImg {
+  width: 100%;
+}
+.headerMetaRoot {
+  margin: 0 30px !important;
+  color: #fff;
+}
+
+.headerTitle {
+  font-family: "Anton", sans-serif !important;
+  letter-spacing: 2px;
+  font-size: 40px;
+  margin: 10px 0px;
+}
+
+.headerMeta {
+  margin: 40px 0;
+  display: flex;
+  align-items: center;
+}
+.headerMetaDesc {
+  font-size: 30px;
+  margin-left: 20px;
+  font-weight: 600;
+}
+.eventIntroRoot {
+  margin: 30px 0;
+  background: #fcee0a;
+  padding: 10px;
+}
+
+.eventIntroHeaderRoot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+.eventIntroHeader {
+  font-family: "Anton", sans-serif !important;
+  letter-spacing: 2px;
+  font-size: 40px;
+  margin: 10px 0px;
+}
+
+.registerButton {
+  font-family: "Nunito", sans-serif !important;
+  border-color: #3384e0 !important;
+  border-width: 2.5px !important;
+  border-radius: 0px !important;
+  color: #000 !important;
+  background: #3384e0 !important;
+  font-weight: 800 !important;
+  width: 200px;
+  margin-left: 10px !important;
+  height: 45px;
+}
+
+.registerButton:hover {
+  background: #3384e0 !important;
+  box-shadow: 0 0 3px #3384e0;
+}
+
+.registerButton::before {
+  top: -3px;
+  left: -3px;
+  content: "";
+  height: 0;
+  width: 0;
+  border-color: #fcee0a transparent transparent;
+  border-style: solid;
+  border-width: 17px 17px 0 0;
+  position: absolute;
+}
+.registerButton::after {
+  bottom: -3px;
+  right: -3px;
+  content: "";
+  height: 0;
+  width: 0;
+  border-color: #fcee0a transparent transparent;
+  border-style: solid;
+  border-width: 17px 17px 0 0;
+  transform: rotate(180deg);
+  position: absolute;
+}
+
+.eventIntro {
+  font-family: "Nunito", sans-serif !important;
+  text-align: justify;
+  font-weight: 600 !important;
+  padding-bottom: 60px;
+  margin: 10px 0 0 0;
+}
+
+.problemRoot {
+  margin: 50px 0;
+}
+
+.problem {
+  padding: 20px 40px;
+  background: #fcee0a;
+}
+
+.contact {
+  padding: 20px 40px;
+  background: #3384e0;
+}
+
+.contactText {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Nunito", sans-serif !important;
+}
+
+.marginBottom {
+  margin-bottom: 30px;
+}
+@media only screen and (max-width: 600px) {
+  .registerButton {
+    width: 120px;
+  }
+}

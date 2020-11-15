@@ -1,6 +1,5 @@
 .navAppBar {
   background: #3384e0 !important;
-  position: relative;
 }
 
 .rootNav {
@@ -16,73 +15,8 @@
   position: absolute;
 }
 
-.menuDesktop {
-  font-family: "Nunito", sans-serif;
-  display: flex;
-  color: #000000;
-  font-size: 18px;
-  align-items: center;
-}
-
-.menuDesktopItem {
-  margin: 0px 15px !important;
-  text-decoration: none;
-  color: #252525;
-  font-weight: 800 !important;
-}
-
-.menuDesktopItem:hover {
-  color: #000000;
-}
-
-.cardButtons {
-  font-family: "Nunito", sans-serif !important;
-  border-color: #fcee0a !important;
-  border-width: 2.5px !important;
-  border-radius: 0px !important;
-  color: #000 !important;
-  background: #fcee0a !important;
-  font-weight: 800 !important;
-  width: 120px;
-  margin-left: 10px !important;
-}
-
-.cardButtons:hover {
-  background: #fcee0a !important;
-  box-shadow: 0 0 3px #fcee0a;
-}
-
-.cardButtons::before {
-  top: -3px;
-  left: -3px;
-  content: "";
-  height: 0;
-  width: 0;
-  border-color: #3384e0 transparent transparent;
-  border-style: solid;
-  border-width: 17px 17px 0 0;
-  position: absolute;
-}
-.cardButtons::after {
-  bottom: -3px;
-  right: -3px;
-  content: "";
-  height: 0;
-  width: 0;
-  border-color: #3384e0 transparent transparent;
-  border-style: solid;
-  border-width: 17px 17px 0 0;
-  transform: rotate(180deg);
-  position: absolute;
-}
-
 .headerParticles {
   height: 90vh;
-}
-
-.menuButtonIcon {
-  width: 10px;
-  color: #000000 !important;
 }
 
 .infoRoot {
@@ -202,9 +136,15 @@
   margin-top: 50px;
   text-align: center;
 }
+
 .previewCardLogo {
   width: 20rem;
 }
+
+.eventIcon {
+  width: 20rem;
+}
+
 .previewCardTitle {
   font-family: "Nunito", sans-serif;
   bottom: 0px;
@@ -234,11 +174,5 @@
     font-size: 15px;
     margin: 10px 0px;
     font-weight: 800 !important;
-  }
-}
-
-@media only screen and (min-width: 600px) {
-  .menuButton {
-    display: none !important;
   }
 }

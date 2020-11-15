@@ -1,9 +1,11 @@
 import React from "react";
 import { useRouter } from "next/router";
-import { IconButton } from "@material-ui/core";
+import { IconButton, AppBar, Toolbar } from "@material-ui/core";
 import Styles from "../styles/Header.module.css";
 
 import KeyboardBackspaceIcon from "@material-ui/icons/KeyboardBackspace";
+
+import SideMenu from "./sideMenu";
 
 function GlsHeader() {
   const router = useRouter();
@@ -13,16 +15,23 @@ function GlsHeader() {
   };
 
   return (
-    <div className={Styles.GLSlogoCont}>
-      <div>
-        <IconButton onClick={handleBack}>
-          <KeyboardBackspaceIcon className={Styles.GLSlogoContIcon} />
-        </IconButton>
-      </div>
-      <div className={Styles.GLSlogoContBox}>
-        <img className={Styles.GLSlogo} alt="glsLogo" src="/gls.svg" />
-      </div>
-    </div>
+    <nav className={Styles.rootNav}>
+      <AppBar className={Styles.logoCont} position="static">
+        <Toolbar>
+          <div>
+            <IconButton onClick={handleBack}>
+              <KeyboardBackspaceIcon className={Styles.logoContIcon} />
+            </IconButton>
+          </div>
+          <div className={Styles.logoContBox}>
+            <img className={Styles.logo} alt="Logo" src="/gls.svg" />
+          </div>
+          <div className={Styles.menuRoot}>
+            <SideMenu />
+          </div>
+        </Toolbar>
+      </AppBar>
+    </nav>
   );
 }
 

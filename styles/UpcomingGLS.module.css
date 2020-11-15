@@ -62,21 +62,22 @@
 .glsSpeakerName {
   font-size: 30px;
   font-family: Anton;
+  text-transform: uppercase;
 }
 
 .registerButton {
   font-family: "Nunito", sans-serif;
-  border-color: #5539b2 !important;
+  border-color: #fcee0a !important;
   border-width: 2.5px !important;
   border-radius: 0px !important;
   color: #000 !important;
-  background: #5539b2 !important;
+  background: #fcee0a !important;
   font-weight: 600 !important;
   width: 200px;
 }
 
 .registerButton:hover {
-  background: #5539b2 !important;
+  background: #fcee0a !important;
 }
 
 .registerButton::before {
@@ -126,7 +127,7 @@
     flex-direction: column-reverse;
   }
   .glsSpeakerName {
-    font-size: 20px;
+    font-size: 18.5px;
   }
   .speakerIMGGrid {
     text-align: -webkit-center;

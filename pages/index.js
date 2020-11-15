@@ -1,74 +1,35 @@
 import Head from "next/head";
-import Link from "next/link";
 import { useRouter } from "next/router";
 
-import firebase from "firebase";
-
-import "firebase/auth";
-import "firebase/firestore";
-
-import { useAuthState } from "react-firebase-hooks/auth";
-import { useCollectionData } from "react-firebase-hooks/firestore";
-
 import Styles from "../styles/Home.module.css";
-import {
-  Grid,
-  Container,
-  AppBar,
-  Toolbar,
-  Button,
-  IconButton,
-} from "@material-ui/core";
+import { Grid, Container, AppBar, Toolbar } from "@material-ui/core";
 import Particles from "react-particles-js";
 
-import MenuOpenIcon from "@material-ui/icons/MenuOpen";
-import MenuIcon from "@material-ui/icons/Menu";
 import AccountBalanceTwoToneIcon from "@material-ui/icons/AccountBalanceTwoTone";
 import GroupAddTwoToneIcon from "@material-ui/icons/GroupAddTwoTone";
 import EmojiPeopleTwoToneIcon from "@material-ui/icons/EmojiPeopleTwoTone";
-import WarningTwoToneIcon from "@material-ui/icons/WarningTwoTone";
+import EmojiEventsTwoToneIcon from "@material-ui/icons/EmojiEventsTwoTone";
 
 import Footer from "../components/footer";
-
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyDIFlrAHUb_xrR4SadMIXkC2oTJ4gLi23I",
-  authDomain: "technovanza-3e853.firebaseapp.com",
-  databaseURL: "https://technovanza-3e853.firebaseio.com",
-  projectId: "technovanza-3e853",
-  storageBucket: "technovanza-3e853.appspot.com",
-  messagingSenderId: "163729170268",
-  appId: "1:163729170268:web:e60535731c1c2aebebeb99",
-  measurementId: "G-6T8LTS2VJT",
-};
-
-if (!firebase.apps.length) {
-  firebase.initializeApp(firebaseConfig);
-}
-
-const auth = firebase.auth();
-//const firestore = firebase.firestore();
+import SideMenu from "../components/sideMenu";
 
 export default function Home() {
-  const [user] = useAuthState(auth);
   const router = useRouter();
 
-  function sendMail() {
-    const mail = "mailto:sujitkumarsingh29@gmail.com";
-    window.open(mail, "_blank");
-  }
+  // function sendMail() {
+  //   const mail = "mailto:sujitkumarsingh29@gmail.com";
+  //   window.open(mail, "_blank");
+  // }
 
-  const signInWithGoogle = () => {
-    const provider = new firebase.auth.GoogleAuthProvider();
-    auth.signInWithPopup(provider);
-  };
-
-  console.log(auth.currentUser);
   return (
     <div className={Styles.root}>
       <Head>
         <title>Technovanza</title>
         <link rel="icon" href="/favicon.ico" />
+        <script
+          src="https://cdn.rawgit.com/progers/pathseg/master/pathseg.js"
+          defer
+        />
       </Head>
 
       <main className={Styles.main}>
@@ -80,39 +41,7 @@ export default function Home() {
                 alt="LOGO"
                 src="/Technovanza.svg"
               />
-              <div className={Styles.menuDesktop}>
-                <Link href="/events">
-                  <a className={Styles.menuDesktopItem}>Events</a>
-                </Link>
-                <Link href="/gls">
-                  <a className={Styles.menuDesktopItem}>Speakers</a>
-                </Link>
-                <Link href="/">
-                  {user ? (
-                    <Button
-                      onClick={() => auth.signOut()}
-                      className={Styles.cardButtons}
-                    >
-                      Logout
-                    </Button>
-                  ) : (
-                    <Button
-                      onClick={signInWithGoogle}
-                      className={Styles.cardButtons}
-                    >
-                      Login
-                    </Button>
-                  )}
-                </Link>
-              </div>
-              <IconButton
-                edge="end"
-                className={Styles.menuButton}
-                color="inherit"
-                aria-label="menu"
-              >
-                <MenuIcon className={Styles.menuButtonIcon} />
-              </IconButton>
+              <SideMenu />
             </Toolbar>
           </AppBar>
         </nav>
@@ -253,6 +182,11 @@ export default function Home() {
                   router.push({ pathname: "/events" });
                 }}
               >
+                <div className={Styles.previewCardLogoDiv}>
+                  <EmojiEventsTwoToneIcon
+                    style={{ height: "8rem", width: "150px" }}
+                  />
+                </div>
                 <h2 className={Styles.previewCardTitle}>Events</h2>
               </div>
               <div
@@ -279,11 +213,6 @@ export default function Home() {
       </main>
 
       <Footer />
-
-      <script
-        src="https://cdn.rawgit.com/progers/pathseg/master/pathseg.js"
-        defer
-      />
     </div>
   );
 }

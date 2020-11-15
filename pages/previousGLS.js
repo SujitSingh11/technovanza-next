@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import Head from "next/head";
+
 import { Grid, Container } from "@material-ui/core";
 import Styles from "../styles/PreviousGSL.module.css";
 import ReactPlayer from "react-player/youtube";
@@ -16,6 +18,10 @@ const PreviousGLS = () => {
 
   return (
     <div className={Styles.root}>
+      <Head>
+        <title>Technovanza | Previous GLS</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Header />
       <div className={Styles.GLSVideoDiv}>
         <ReactPlayer

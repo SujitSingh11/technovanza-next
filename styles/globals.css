@@ -25,3 +25,19 @@ code {
 #tsparticles {
   height: 100%;
 }
+
+.MuiDrawer-paper {
+  width: 50% !important;
+  background: #fcee0a !important;
+}
+.MuiListItemText-primary {
+  font-family: "Nunito", sans-serif !important;
+  font-weight: 800 !important;
+  font-size: 18px !important;
+}
+
+@media only screen and (min-width: 600px) {
+  .MuiDrawer-paper {
+    width: 20% !important;
+  }
+}

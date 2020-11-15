@@ -1,11 +1,12 @@
-.GLSlogoCont {
-  display: flex;
-  align-items: center;
-  background-color: #3384e0;
+.logoCont {
+  background-color: #3384e0 !important;
+}
+
+.rootNav {
   position: relative;
 }
 
-.GLSlogoCont::after {
+.logoCont::after {
   content: "";
   bottom: -23px;
   height: 23px;
@@ -14,15 +15,20 @@
   position: absolute;
 }
 
-.GLSlogoContIcon {
+.logoContIcon {
   font-size: 30px !important;
   color: #000000;
 }
-.GLSlogoContIcon:hover {
+.logoContIcon:hover {
   transform: scale(1.2);
   transition: 0.3s;
   color: #000000;
 }
-.GLSlogo {
+
+.logo {
   width: 180px;
+}
+
+.menuRoot {
+  margin-left: auto;
 }
