@@ -1,10 +1,10 @@
 import React from "react";
 import Head from "next/head";
-import Styles from "../styles/EventDesc.module.css";
+import Styles from "../../styles/EventDesc.module.css";
 import { Grid, Container, Button } from "@material-ui/core";
 
-import Header from "../components/header";
-import Footer from "../components/footer";
+import Header from "../../components/header";
+import Footer from "../../components/footer";
 
 function EventDesc() {
   return (

@@ -1,9 +1,4 @@
-.eventGridItem {
-  height: 400px;
-  background: #02d7f2;
-}
-
-.eventGridItemOdd {
-  height: 400px;
-  background: #000;
+.mainContent {
+  margin: 30px 0;
+  color: #fff;
 }

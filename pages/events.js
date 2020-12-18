@@ -1,8 +1,8 @@
 import React from "react";
 import Head from "next/head";
 
-import { Grid } from "@material-ui/core";
-import Style from "../styles/Events.module.css";
+import { Grid, Container } from "@material-ui/core";
+import Styles from "../styles/Events.module.css";
 
 import Header from "../components/header";
 import Footer from "../components/footer";
@@ -15,13 +15,13 @@ function Events() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <section>
-        <Grid className={Style.eventGridRoot} container>
-          <Grid className={Style.eventGridItem} lg={6} xs={12} item></Grid>
-          <Grid className={Style.eventGridItemOdd} lg={6} xs={12} item></Grid>
-          <Grid className={Style.eventGridItemOdd} lg={6} xs={12} item></Grid>
-          <Grid className={Style.eventGridItem} lg={6} xs={12} item></Grid>
-        </Grid>
+      <section className={Styles.mainContent}>
+        <Container maxWidth="lg">
+          <div>
+            <h1>I-Code</h1>
+          </div>
+          <div></div>
+        </Container>
       </section>
       <Footer />
     </div>
