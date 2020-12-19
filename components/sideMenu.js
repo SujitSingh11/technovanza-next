@@ -16,25 +16,10 @@ import {
   Avatar,
 } from "@material-ui/core";
 
-import firebase from "firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
+import firebaseClient from "../firebaseClient";
 
-const firebaseConfig = {
-  apiKey: process.env.apiKey,
-  authDomain: process.env.authDomain,
-  databaseURL: process.env.databaseURL,
-  projectId: process.env.projectId,
-  storageBucket: process.env.storageBucket,
-  messagingSenderId: process.env.messagingSenderId,
-  appId: process.env.appId,
-  measurementId: process.env.measurementId,
-};
-
-if (!firebase.apps.length) {
-  firebase.initializeApp(firebaseConfig);
-}
-
-const auth = firebase.auth();
+const auth = firebaseClient.auth();
 
 function SideMenu() {
   const [user] = useAuthState(auth);
@@ -46,15 +31,31 @@ function SideMenu() {
 
   useEffect(() => {
     if (user) {
-      const authUser = firebase.auth().currentUser;
+      const authUser = firebaseClient.auth().currentUser;
       setname(authUser.displayName);
       setphotoUrl(authUser.photoURL);
       setuid(authUser.uid);
+      checkFirestore(authUser);
     }
   }, [user]);
 
+  const checkFirestore = async (authUser) => {
+    const firestore = firebaseClient.firestore();
+    const usersRef = firestore.collection("users").doc(authUser.uid);
+    const doc = await usersRef.get();
+    if (!doc.exists) {
+      const data = {
+        uid: authUser.uid,
+        displayName: authUser.displayName,
+        photoURL: authUser.photoURL,
+        email: authUser.email,
+      };
+      await usersRef.set(data, { merge: true });
+    }
+  };
+
   const signInWithGoogle = async () => {
-    const provider = new firebase.auth.GoogleAuthProvider();
+    const provider = new firebaseClient.auth.GoogleAuthProvider();
     await auth.signInWithPopup(provider);
     setOpen(true);
   };
