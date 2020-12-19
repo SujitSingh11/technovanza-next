@@ -20,14 +20,14 @@ import firebase from "firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDIFlrAHUb_xrR4SadMIXkC2oTJ4gLi23I",
-  authDomain: "technovanza-3e853.firebaseapp.com",
-  databaseURL: "https://technovanza-3e853.firebaseio.com",
-  projectId: "technovanza-3e853",
-  storageBucket: "technovanza-3e853.appspot.com",
-  messagingSenderId: "163729170268",
-  appId: "1:163729170268:web:e60535731c1c2aebebeb99",
-  measurementId: "G-6T8LTS2VJT",
+  apiKey: process.env.apiKey,
+  authDomain: process.env.authDomain,
+  databaseURL: process.env.databaseURL,
+  projectId: process.env.projectId,
+  storageBucket: process.env.storageBucket,
+  messagingSenderId: process.env.messagingSenderId,
+  appId: process.env.appId,
+  measurementId: process.env.measurementId,
 };
 
 if (!firebase.apps.length) {

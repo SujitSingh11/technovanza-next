@@ -1,0 +1,25 @@
+[
+    {
+        "Department": "I-CODE",
+        "Events":[
+            {
+                "Event":"Ultimate Coder",
+                "Description":"",
+                "Date":"",
+                "Prize":"",
+                "GamePlan":"",
+                "Logo":"",
+                "Contact":[
+                    {
+                        "Name":"Sujit Singh",
+                        "Number": "9191919191"
+                    },
+                    {
+                        "Name":"Sujit Singh",
+                        "Number": "9191919191"
+                    }
+                ]
+            }
+        ] 
+    }
+]
