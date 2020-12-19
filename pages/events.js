@@ -17,10 +17,35 @@ function Events() {
       <Header />
       <section className={Styles.mainContent}>
         <Container maxWidth="lg">
-          <div>
-            <h1>I-Code</h1>
+          <Grid
+            justify="center"
+            className={Styles.featureUpcomingCont}
+            container
+          >
+            <Grid className={Styles.featureUpcomingDiv} item>
+              <i className={Styles.featureUpcomingDivTop}></i>
+              <h1 className={Styles.featureUpcoming}>I-CODE</h1>
+              <i className={Styles.featureUpcomingDivBottom}></i>
+            </Grid>
+          </Grid>
+
+          <div className={Styles.previewCardRoot}>
+            <div
+              className={Styles.previewCard}
+              onClick={() => {
+                window.scroll({
+                  top: 0,
+                  behavior: "smooth",
+                });
+                router.push({ pathname: "/gls" });
+              }}
+            >
+              <div className={Styles.previewCardLogoDiv}>
+                <img className={Styles.previewCardLogo} src="/gls.svg" />
+              </div>
+              <h2 className={Styles.previewCardTitle}>Guest Lecture Series</h2>
+            </div>
           </div>
-          <div></div>
         </Container>
       </section>
       <Footer />
