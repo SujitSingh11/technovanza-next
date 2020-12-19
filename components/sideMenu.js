@@ -148,7 +148,7 @@ function SideMenu() {
                 </Link>
               </ListItem>
               <ListItem button className={Styles.sideMenuListItem}>
-                <Link href="/previousGLS">
+                <Link href="/previousgls/previousGLS">
                   <ListItemText
                     primary="Previous GLS"
                     className={Styles.sideMenuListItemText}

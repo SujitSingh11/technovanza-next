@@ -2,12 +2,12 @@ import React, { useState, useEffect } from "react";
 import Head from "next/head";
 
 import { Grid, Container } from "@material-ui/core";
-import Styles from "../styles/PreviousGSL.module.css";
+import Styles from "../../styles/PreviousGSL.module.css";
 import ReactPlayer from "react-player/youtube";
 
-import PreviousGLSCard from "../components/previousGLSCard";
-import Footer from "../components/footer";
-import Header from "../components/header";
+import PreviousGLSCard from "../../components/previousGLSCard";
+import Footer from "../../components/footer";
+import Header from "../../components/header";
 
 const PreviousGLS = () => {
   const [url, setUrl] = useState("");
