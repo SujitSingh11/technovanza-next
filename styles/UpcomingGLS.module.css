@@ -118,8 +118,9 @@
   border: 3px solid #3384e0;
 }
 .glsStatus {
-  opacity: 0.5;
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 @media only screen and (max-width: 600px) {

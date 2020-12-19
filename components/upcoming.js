@@ -40,8 +40,11 @@ const Upcoming = ({ data }) => {
                 size="large"
                 variant="outlined"
                 className={Styles.registerButton}
+                onClick={() => {
+                  window.open(data.YouTube_Link);
+                }}
               >
-                {data.Status === "CLOSED" ? "Watch" : "Register"}
+                Watch
               </Button>
             </div>
           </div>
@@ -55,7 +58,7 @@ const Upcoming = ({ data }) => {
             >
               <Grid lg={8} md={8} sm={12} xs={12} item>
                 <p className={Styles.glsStatus}>
-                  <i>{data.Status}</i>
+                  <i>{data.TalkOn}</i>
                 </p>
                 <div dangerouslySetInnerHTML={{ __html: data.Description }} />
               </Grid>
