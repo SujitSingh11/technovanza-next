@@ -1,6 +1,6 @@
 .cardroot {
   width: 280px;
-  background: #02d7f2 !important;
+  background: #3384e0 !important;
   border-radius: 0px !important;
   color: #000000 !important;
   height: 420px;
@@ -25,12 +25,12 @@
 }
 .cardButtons {
   font-family: Nunito !important;
-  border-color: #fc043c !important;
+  border-color: #fcee0a !important;
   border-width: 2.5px !important;
   border-radius: 0px !important;
-  color: #ffffff !important;
-  background: #fc043c !important;
-  font-weight: 600 !important;
+  color: #000 !important;
+  background: #fcee0a !important;
+  font-weight: 700 !important;
   width: 263px;
 }
 
@@ -40,7 +40,7 @@
   content: "";
   height: 0;
   width: 0;
-  border-color: #02d7f2 transparent transparent;
+  border-color: #3384e0 transparent transparent;
   border-style: solid;
   border-width: 17px 17px 0 0;
   position: absolute;
@@ -51,7 +51,7 @@
   content: "";
   height: 0;
   width: 0;
-  border-color: #02d7f2 transparent transparent;
+  border-color: #3384e0 transparent transparent;
   border-style: solid;
   border-width: 17px 17px 0 0;
   transform: rotate(180deg);

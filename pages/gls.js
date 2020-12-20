@@ -1,5 +1,7 @@
 import React from "react";
 import Head from "next/head";
+import { useRouter } from "next/router";
+
 import { Grid, Container } from "@material-ui/core";
 import Styles from "../styles/GLS.module.css";
 
@@ -10,6 +12,7 @@ import Footer from "../components/footer";
 import UpcomingData from "../data/upcomingGlsData.json";
 
 const Home = () => {
+  const router = useRouter();
   return (
     <>
       <Head>
@@ -43,17 +46,50 @@ const Home = () => {
         </div>
         <Container maxWidth="lg" className={Styles.previousGLSGridRoot}>
           <div className={Styles.previousGLSGridDiv}>
-            <div className={Styles.previousGLSGrid}>
-              <div className={Styles.cardIcon}></div>
-              <div className={Styles.cardContent}></div>
+            <div
+              className={Styles.previousGLSGrid}
+              onClick={() => {
+                window.scroll({
+                  top: 0,
+                  behavior: "smooth",
+                });
+                router.push({ pathname: "/previousgls/Quarantine%20Edition" });
+              }}
+            >
+              <div className={Styles.cardIcon}>
+                <img className={Styles.QEIcon} src="/glsQE.svg" />
+              </div>
+              <h2 className={Styles.previousCardTitle}>Quarantine Edition</h2>
             </div>
-            <div className={Styles.previousGLSGrid}>
-              <div className={Styles.cardIcon}></div>
-              <div className={Styles.cardContent}></div>
+            <div
+              className={Styles.previousGLSGrid}
+              onClick={() => {
+                window.scroll({
+                  top: 0,
+                  behavior: "smooth",
+                });
+                router.push({ pathname: "/previousgls/Quarantine_Edition" });
+              }}
+            >
+              <div className={Styles.cardIcon}>
+                <img className={Styles.QEIcon} src="/glsQE.svg" />
+              </div>
+              <h2 className={Styles.previousCardTitle}>Hourglass Edition</h2>
             </div>
-            <div className={Styles.previousGLSGrid}>
-              <div className={Styles.cardIcon}></div>
-              <div className={Styles.cardContent}></div>
+            <div
+              className={Styles.previousGLSGrid}
+              onClick={() => {
+                window.scroll({
+                  top: 0,
+                  behavior: "smooth",
+                });
+                router.push({ pathname: "/previousgls/Quarantine_Edition" });
+              }}
+            >
+              <div className={Styles.cardIcon}>
+                <img className={Styles.QEIcon} src="/gls.svg" />
+              </div>
+              <h2 className={Styles.previousCardTitle}>Previous GLS</h2>
             </div>
           </div>
         </Container>

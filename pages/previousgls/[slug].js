@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Head from "next/head";
+import { useRouter } from "next/router";
 
 import { Grid, Container } from "@material-ui/core";
 import Styles from "../../styles/PreviousGSL.module.css";
@@ -9,17 +10,39 @@ import PreviousGLSCard from "../../components/previousGLSCard";
 import Footer from "../../components/footer";
 import Header from "../../components/header";
 
+import PreviousData from "../../data/previousGlsData.json";
+
 const PreviousGLS = () => {
-  const [url, setUrl] = useState("");
+  const router = useRouter();
+
+  const [url, setUrl] = useState("https://www.youtube.com/watch?v=ugCkL-R4QW8");
+  const [data, setData] = useState([]);
 
   useEffect(() => {
-    setUrl("https://www.youtube.com/watch?v=WN1lLhHgJfA");
-  }, []);
+    selectData(router.query);
+  }, [router.query.slug]);
+
+  const selectData = (query) => {
+    switch (query) {
+      case "Quarantine_Edition":
+        setData(PreviousGLSCard.Quarantine_Edition);
+        break;
+      case "Hourglass_Edition":
+        setData(PreviousGLSCard.Hourglass_Edition);
+        break;
+      case "Previous_GLS":
+        setData(PreviousGLSCard.Previous_GLS);
+        break;
+      default:
+        setData(PreviousGLSCard.Quarantine_Edition);
+        break;
+    }
+  };
 
   return (
     <div className={Styles.root}>
       <Head>
-        <title>Technovanza | Previous GLS</title>
+        <title>Technovanza | {router.query.slug}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
@@ -41,10 +64,9 @@ const PreviousGLS = () => {
           spacing={2}
           container
         >
-          <PreviousGLSCard />
-          <PreviousGLSCard />
-          <PreviousGLSCard />
-          <PreviousGLSCard />
+          {PreviousData.Quarantine_Edition.map((speaker) => {
+            return <PreviousGLSCard info={speaker} />;
+          })}
         </Grid>
       </Container>
       <Footer />

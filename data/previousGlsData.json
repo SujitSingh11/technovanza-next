@@ -1,7 +1,7 @@
 {
-    "Quarantine Edition":[
+    "Quarantine_Edition":[
         {
-            "SpeakerName": "Mr. Subhash Chandra Garg",
+            "SpeakerName": "Subhash Garg",
             "DayNumber": "19",
             "Month": "Jun",
             "Year": "2020",
@@ -56,10 +56,10 @@
             "YouTube_Link": " https://www.youtube.com/watch?v=RvLS_CQZKpw"
         }
     ],
-    "Hourglass Edition":[
+    "Hourglass_Edition":[
         
     ],
-    "Previous GLS":[
+    "Previous_GLS":[
         
     ]
 }

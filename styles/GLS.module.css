@@ -59,19 +59,39 @@
 
 .previousGLSGrid {
   background: #02d7f2;
-  height: 350px;
+  height: 300px;
   position: relative;
 }
 
+.cardIcon {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.QEIcon {
+  width: 65%;
+}
+
+.previousCardTitle {
+  font-family: "Nunito", sans-serif;
+  bottom: 0px;
+  left: 30px;
+  position: absolute;
+  color: #000;
+  z-index: 100;
+  font-size: 25px;
+}
+
 .previousGLSGrid::before {
-  top: 0px;
-  left: 0px;
+  top: -1px;
+  left: -1px;
   content: "";
   height: 0;
   width: 0;
   border-color: #000 transparent transparent;
   border-style: solid;
-  border-width: 17px 17px 0 0;
+  border-width: 18px 18px 0 0;
   position: absolute;
 }
 
@@ -96,6 +116,12 @@
   bottom: -20px;
   background: url("/assets/razor-bottom-blue-d44fb6b7.svg") repeat-x bottom;
   height: 23px;
+}
+
+.previousGLSGrid:hover {
+  transform: scale(1.03);
+  transition: 0.3ms ease-in-out;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 600px) {

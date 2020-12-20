@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import { useRouter } from "next/router";
 
 import { Grid, Container } from "@material-ui/core";
 import Styles from "../styles/Events.module.css";
@@ -8,6 +9,7 @@ import Header from "../components/header";
 import Footer from "../components/footer";
 
 function Events() {
+  const router = useRouter();
   return (
     <div>
       <Head>
@@ -37,13 +39,13 @@ function Events() {
                   top: 0,
                   behavior: "smooth",
                 });
-                router.push({ pathname: "/gls" });
+                router.push({ pathname: "/event/uc" });
               }}
             >
               <div className={Styles.previewCardLogoDiv}>
-                <img className={Styles.previewCardLogo} src="/gls.svg" />
+                <img className={Styles.previewCardLogo} src="/events/FNF.svg" />
               </div>
-              <h2 className={Styles.previewCardTitle}>Guest Lecture Series</h2>
+              <h2 className={Styles.previewCardTitle}>Codehunt</h2>
             </div>
           </div>
         </Container>

@@ -91,12 +91,12 @@
 }
 
 .previewCardLogoDiv {
-  margin-top: 50px;
+  margin-top: 10px;
   text-align: center;
 }
 
 .previewCardLogo {
-  width: 20rem;
+  height: 180px;
 }
 
 .previewCardTitle {

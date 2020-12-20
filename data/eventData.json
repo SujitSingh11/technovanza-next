@@ -3,17 +3,12 @@
         "Department": "I-CODE",
         "Events":[
             {
-                "Event":"Ultimate Coder",
+                "Event":"Codehunt",
                 "Description":"",
                 "Date":"",
                 "Prize":"",
-                "GamePlan":"",
-                "Logo":"",
+                "Logo":"/events/CODEHUNT.svg",
                 "Contact":[
-                    {
-                        "Name":"Sujit Singh",
-                        "Number": "9191919191"
-                    },
                     {
                         "Name":"Sujit Singh",
                         "Number": "9191919191"
