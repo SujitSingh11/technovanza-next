@@ -167,5 +167,19 @@
         "TalkOn": "The Magic of Entrepreneurship",
         "RegisterLink": "",
         "YouTube_Link": "https://youtu.be/WZPCNnP7Up0"
+    },
+    {
+        "SpeakerName": "Dr. Bernard Foing",
+        "DayNumber": "23",
+        "Day": "Wed",
+        "Month": "Dec",
+        "Year": "2020",
+        "Time": "5:15 PM",
+        "Status": "OPEN",
+        "IMG": "SURESH_PRABHU_16_Oct_2020.jpg",
+        "Description": "<p>Dr. Foing is a senior scientist at the European Space Agency, one of the world's leading institutions devoted to unravelling the secrets of the cosmos. He is also the Executive Director of the International Lunar Exploration Working Group. He has also headed the first European mission to the Moon, Smart-1.</p>",
+        "TalkOn": "The Magic of Entrepreneurship",
+        "RegisterLink": "https://insider.in/vjti-technovanza-gls-dr-bernard-foing-dec23-2020/event",
+        "YouTube_Link": ""
     }
 ]

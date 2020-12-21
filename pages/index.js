@@ -141,7 +141,7 @@ export default function Home() {
                   </Grid>
                 </Grid>
               </div>
-              <div className={Styles.infoFeature}>
+              {/* <div className={Styles.infoFeature}>
                 <Grid justify="space-around" container>
                   <Grid item>
                     <AccountBalanceTwoToneIcon
@@ -162,7 +162,7 @@ export default function Home() {
                     </p>
                   </Grid>
                 </Grid>
-              </div>
+              </div> */}
             </div>
           </Container>
         </section>

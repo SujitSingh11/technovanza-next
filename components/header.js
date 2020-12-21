@@ -24,7 +24,11 @@ function GlsHeader() {
             </IconButton>
           </div>
           <div className={Styles.logoContBox}>
-            <img className={Styles.logo} alt="Logo" src="/gls.svg" />
+            {router.pathname.includes("gls") ? (
+              <img className={Styles.logo} alt="Logo" src="/gls.svg" />
+            ) : (
+              <></>
+            )}
           </div>
           <div className={Styles.menuRoot}>
             <SideMenu />

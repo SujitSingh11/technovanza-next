@@ -1,0 +1,156 @@
+.rootContainer {
+  margin-bottom: 5%;
+}
+
+.featureUpcomingCont {
+  margin: 3em 0em;
+}
+
+.featureUpcomingDiv {
+  border-style: solid;
+  border-width: 4px;
+  border-color: #02d7f2;
+  width: 40%;
+  position: relative;
+}
+
+.featureUpcomingDivTop {
+  right: -16px;
+  top: -18px;
+  width: 27px;
+  height: 27px;
+  border-bottom: 4px solid #02d7f2;
+  background-color: #000;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  border-radius: 3px;
+}
+.featureUpcomingDivBottom {
+  left: -16px;
+  bottom: -18px;
+  width: 27px;
+  height: 27px;
+  border-bottom: 4px solid #02d7f2;
+  background-color: #000;
+  -webkit-transform: rotate(225deg);
+  transform: rotate(225deg);
+  position: absolute;
+  border-radius: 3px;
+}
+
+.featureUpcoming {
+  font-family: "Anton";
+  letter-spacing: 3px;
+  color: #02d7f2;
+  text-align: center;
+  font-size: 35px;
+  margin: 10px;
+}
+
+.previewCardRoot {
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.previewCard {
+  height: 250px;
+  background: #fcee0a !important;
+  border-radius: 0px;
+  text-decoration: none;
+  position: relative;
+}
+
+.previewCard::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -20px;
+  background: url("/assets/razor-bottom-yellow-d44fb6b7.svg") repeat-x bottom;
+  height: 23px;
+}
+
+.previewCard:hover {
+  transform: scale(1.03);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.previewCard::before {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  content: "";
+  z-index: 80;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.previewCardLogoDiv {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.previewCardLogo {
+  width: 20rem;
+}
+
+.previewCardTitle {
+  font-family: "Nunito", sans-serif;
+  bottom: 0px;
+  left: 20px;
+  position: absolute;
+  color: #000;
+  z-index: 100;
+}
+
+.cardContain {
+  height: 100%;
+}
+.cardContainLeft {
+  padding: 20px;
+}
+
+.cardContainName {
+  font-family: "Anton", sans-serif;
+  font-size: 25px;
+  margin: 0px 0px 5px 0px;
+}
+
+.cardContainBio {
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+  margin: 0px;
+}
+
+.cardContainContact {
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+  margin: 10px 0 5px 0;
+}
+
+.large {
+  height: 100px !important;
+  width: 100px !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .previewCardRoot {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  .previewCard {
+    margin-top: 20px;
+  }
+  .featureUpcomingDiv {
+    width: 70%;
+  }
+  .featureUpcoming {
+    font-size: 24px;
+  }
+  .featureUpcomingCont {
+    margin: 2em 0em;
+  }
+}

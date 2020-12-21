@@ -148,6 +148,14 @@ function SideMenu() {
                   />
                 </Link>
               </ListItem>
+              <ListItem button className={Styles.sideMenuListItem}>
+                <Link href="/organisers">
+                  <ListItemText
+                    primary="Organisers"
+                    className={Styles.sideMenuListItemText}
+                  />
+                </Link>
+              </ListItem>
             </List>
             <Divider />
           </div>
