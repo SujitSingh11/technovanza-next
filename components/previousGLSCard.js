@@ -12,7 +12,7 @@ import {
 import Styles from "../styles/GLSCard.module.css";
 import { Scrollbars } from "react-custom-scrollbars";
 
-function PreviousGLSCard({ info }) {
+function PreviousGLSCard({ info, changeURL }) {
   const [onHover, setOnHover] = useState(false);
 
   return (
@@ -51,7 +51,10 @@ function PreviousGLSCard({ info }) {
                   <p className={Styles.glsStatus}>
                     <i>{info.TalkOn}</i>
                   </p>
-                  <div dangerouslySetInnerHTML={{ __html: info.Description }} />
+                  <div
+                    className={Styles.glsDesc}
+                    dangerouslySetInnerHTML={{ __html: info.Description }}
+                  />
                 </Scrollbars>
               </Fade>
             ) : (
@@ -68,6 +71,9 @@ function PreviousGLSCard({ info }) {
             className={Styles.cardButtons}
             variant="outlined"
             size="medium"
+            onClick={() => {
+              changeURL(info.YouTube_Link);
+            }}
           >
             Watch
           </Button>

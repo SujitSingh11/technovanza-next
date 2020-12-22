@@ -1,19 +1,23 @@
 .navAppBar {
-  background: #3384e0 !important;
+  background: #000 !important;
 }
 
 .rootNav {
   position: relative;
 }
 
-.rootNav::after {
+.logo {
+  margin-top: 20px;
+  height: 30px !important;
+}
+/* .rootNav::after {
   content: "";
   bottom: -23px;
   height: 23px;
   width: 100%;
   background: url("/assets/razor-bottom-blueDark-d44fb6b7.svg") repeat-x bottom;
   position: absolute;
-}
+} */
 
 .headerParticles {
   height: 90vh;

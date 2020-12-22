@@ -136,6 +136,13 @@
   width: 100px !important;
 }
 
+@media only screen and (max-width: 1000px) {
+  .previewCardRoot {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .previewCardRoot {
     grid-template-columns: 1fr;
@@ -143,6 +150,7 @@
   }
   .previewCard {
     margin-top: 20px;
+    height: 270px;
   }
   .cardContainLeft {
     padding: 20px;

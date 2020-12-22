@@ -65,7 +65,13 @@ const PreviousGLS = () => {
           container
         >
           {PreviousData.Quarantine_Edition.map((speaker) => {
-            return <PreviousGLSCard info={speaker} />;
+            return (
+              <PreviousGLSCard
+                info={speaker}
+                changeURL={(link) => setUrl(link)}
+                key={speaker.SpeakerName}
+              />
+            );
           })}
         </Grid>
       </Container>

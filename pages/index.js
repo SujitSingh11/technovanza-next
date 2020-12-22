@@ -39,7 +39,8 @@ export default function Home() {
               <img
                 style={{ marginRight: "auto" }}
                 alt="LOGO"
-                src="/Technovanza.svg"
+                src="/TechnovanzaWhite.svg"
+                className={Styles.logo}
               />
               <SideMenu />
             </Toolbar>
