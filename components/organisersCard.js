@@ -11,7 +11,15 @@ function OrganisersCard() {
         alignItems="center"
         container
       >
-        <Grid className={Styles.cardContainLeft} lg={3} sm md xs xl item>
+        <Grid
+          className={Styles.cardContainLeft}
+          lg={3}
+          sm={3}
+          md={3}
+          xs={4}
+          xl={3}
+          item
+        >
           <Avatar
             variant="rounded"
             alt="Remy Sharp"

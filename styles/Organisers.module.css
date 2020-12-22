@@ -144,6 +144,9 @@
   .previewCard {
     margin-top: 20px;
   }
+  .cardContainLeft {
+    padding: 20px;
+  }
   .featureUpcomingDiv {
     width: 70%;
   }
