@@ -16,25 +16,31 @@ const PreviousGLS = () => {
   const router = useRouter();
 
   const [url, setUrl] = useState("https://www.youtube.com/watch?v=ugCkL-R4QW8");
+  const [title, setTitle] = useState("");
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    selectData(router.query);
+    selectData(router.query.slug);
   }, [router.query.slug]);
 
   const selectData = (query) => {
+    console.log(query);
     switch (query) {
-      case "Quarantine_Edition":
+      case "Quarantine Edition":
         setData(PreviousGLSCard.Quarantine_Edition);
+        setTitle("Quarantine Edition");
         break;
-      case "Hourglass_Edition":
+      case "Hourglass Edition":
         setData(PreviousGLSCard.Hourglass_Edition);
+        setTitle("Hourglass Edition");
         break;
-      case "Previous_GLS":
+      case "Previous GLS":
         setData(PreviousGLSCard.Previous_GLS);
+        setTitle("Previous GLS");
         break;
       default:
         setData(PreviousGLSCard.Quarantine_Edition);
+        setTitle("Previous GLS");
         break;
     }
   };
@@ -46,6 +52,14 @@ const PreviousGLS = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
+      <Grid justify="center" className={Styles.featureUpcomingCont} container>
+        <Grid className={Styles.featureUpcomingDiv} item>
+          <i className={Styles.featureUpcomingDivTop}></i>
+          <h1 className={Styles.featureUpcoming}>{title}</h1>
+          <i className={Styles.featureUpcomingDivBottom}></i>
+        </Grid>
+      </Grid>
+
       <div className={Styles.GLSVideoDiv}>
         <ReactPlayer
           className={Styles.GLSVideo}

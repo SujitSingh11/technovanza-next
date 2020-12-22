@@ -15,6 +15,52 @@
   margin: 30px 0px !important;
 }
 
+.featureUpcomingCont {
+  margin: 3em 0em;
+}
+
+.featureUpcomingDiv {
+  border-style: solid;
+  border-width: 4px;
+  border-color: #02d7f2;
+  width: 40%;
+  position: relative;
+}
+
+.featureUpcomingDivTop {
+  right: -16px;
+  top: -18px;
+  width: 27px;
+  height: 27px;
+  border-bottom: 4px solid #02d7f2;
+  background-color: #000;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  border-radius: 3px;
+}
+.featureUpcomingDivBottom {
+  left: -16px;
+  bottom: -18px;
+  width: 27px;
+  height: 27px;
+  border-bottom: 4px solid #02d7f2;
+  background-color: #000;
+  -webkit-transform: rotate(225deg);
+  transform: rotate(225deg);
+  position: absolute;
+  border-radius: 3px;
+}
+
+.featureUpcoming {
+  font-family: "Anton";
+  letter-spacing: 3px;
+  color: #02d7f2;
+  text-align: center;
+  font-size: 35px;
+  margin: 10px;
+}
+
 @media only screen and (max-width: 960px) {
   .GLSVideoDiv {
     height: 400px;
