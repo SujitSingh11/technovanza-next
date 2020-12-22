@@ -76,4 +76,13 @@
   .GLSfeature {
     width: 90%;
   }
+  .featureUpcomingDiv {
+    width: 70%;
+  }
+  .featureUpcoming {
+    font-size: 24px;
+  }
+  .featureUpcomingCont {
+    margin: 2em 0em;
+  }
 }

@@ -27,19 +27,19 @@ const PreviousGLS = () => {
     console.log(query);
     switch (query) {
       case "Quarantine Edition":
-        setData(PreviousGLSCard.Quarantine_Edition);
+        setData(PreviousData.Quarantine_Edition);
         setTitle("Quarantine Edition");
         break;
       case "Hourglass Edition":
-        setData(PreviousGLSCard.Hourglass_Edition);
+        setData(PreviousData.Hourglass_Edition);
         setTitle("Hourglass Edition");
         break;
       case "Previous GLS":
-        setData(PreviousGLSCard.Previous_GLS);
+        setData(PreviousData.Previous_GLS);
         setTitle("Previous GLS");
         break;
       default:
-        setData(PreviousGLSCard.Quarantine_Edition);
+        setData(PreviousData.Quarantine_Edition);
         setTitle("Previous GLS");
         break;
     }
@@ -78,7 +78,7 @@ const PreviousGLS = () => {
           spacing={2}
           container
         >
-          {PreviousData.Quarantine_Edition.map((speaker) => {
+          {data.map((speaker) => {
             return (
               <PreviousGLSCard
                 info={speaker}
