@@ -100,7 +100,7 @@ const Home = () => {
               }}
             >
               <div className={Styles.cardIcon}>
-                <img className={Styles.QEIcon} src="/glsQE.svg" />
+                <img className={Styles.QEIcon} src="/hourglass.svg" />
               </div>
               <h2 className={Styles.previousCardTitle}>Hourglass Edition</h2>
             </div>
