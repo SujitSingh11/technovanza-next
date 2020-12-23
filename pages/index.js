@@ -5,9 +5,6 @@ import Styles from "../styles/Home.module.css";
 import { Grid, Container, AppBar, Toolbar } from "@material-ui/core";
 import Particles from "react-particles-js";
 
-import AccountBalanceTwoToneIcon from "@material-ui/icons/AccountBalanceTwoTone";
-import GroupAddTwoToneIcon from "@material-ui/icons/GroupAddTwoTone";
-import EmojiPeopleTwoToneIcon from "@material-ui/icons/EmojiPeopleTwoTone";
 import EmojiEventsTwoToneIcon from "@material-ui/icons/EmojiEventsTwoTone";
 
 import Footer from "../components/footer";
@@ -15,11 +12,12 @@ import SideMenu from "../components/sideMenu";
 
 export default function Home() {
   const router = useRouter();
-
+  const particlesColors = ["#ff7445", "#2effcc", "#ffffff", "#fcee0a"];
   // function sendMail() {
   //   const mail = "mailto:sujitkumarsingh29@gmail.com";
   //   window.open(mail, "_blank");
   // }
+  // var item = items[Math.floor(Math.random() * items.length)];
 
   return (
     <div className={Styles.root}>
@@ -35,7 +33,7 @@ export default function Home() {
       <main className={Styles.main}>
         <nav className={Styles.rootNav}>
           <AppBar className={Styles.navAppBar} position="static" elevation={0}>
-            <Toolbar>
+            <Toolbar className={Styles.navToolBar}>
               <img
                 style={{ marginRight: "auto" }}
                 alt="LOGO"
@@ -64,7 +62,10 @@ export default function Home() {
                   enable: true,
                   distance: 32,
                   opacity: 0.7,
-                  color: "#34d2de",
+                  color:
+                    particlesColors[
+                      Math.floor(Math.random() * particlesColors.length)
+                    ],
                 },
                 move: {
                   speed: 1.0,
@@ -131,9 +132,9 @@ export default function Home() {
                       Participate in the festival from the comforts of your home
                     </h2>
                     <p>
-                      With all the safety concerns raising from COVID, we have
-                      shifted the event to an online platform. Experience a new
-                      form of Technovanza from the safe space of your home!
+                      With all the safety concerns raising from CHINA VIRUS, we
+                      have shifted the event to an online platform. Experience a
+                      new form of Technovanza from the safe space of your home!
                     </p>
                   </Grid>
                   <Grid className={Styles.infoGridItem} lg={5} xs={12} item>

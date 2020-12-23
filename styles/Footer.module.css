@@ -1,9 +1,10 @@
 /*Footer*/
 
 .footerDiv {
-  background: #3384e0;
+  background: #9345ff;
   width: 100%;
   position: relative;
+  color: #171717;
 }
 
 .footerDiv::before {
@@ -27,6 +28,7 @@
 .footerCopy {
   font-weight: 700;
   font-family: "Nunito", sans-serif !important;
+  font-size: 16px;
 }
 
 .footerSocial {
