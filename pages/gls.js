@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
 
@@ -13,8 +13,12 @@ import UpcomingData from "../data/upcomingGlsData.json";
 
 const Home = () => {
   const router = useRouter();
-  const [data] = useState(UpcomingData.reverse());
+  const [data, setData] = useState([]);
   const [showMore, setShowMore] = useState(false);
+
+  useEffect(() => {
+    setData(UpcomingData.reverse());
+  }, []);
 
   const handleShowMore = () => {
     setShowMore(!showMore);
@@ -44,6 +48,8 @@ const Home = () => {
             {data.map((data, index) => {
               if (index <= 5) {
                 return <Upcoming data={data} key={index} />;
+              } else {
+                return;
               }
             })}
           </Grid>
@@ -54,6 +60,8 @@ const Home = () => {
               {data.map((data, index) => {
                 if (index > 5) {
                   return <Upcoming data={data} key={index} />;
+                } else {
+                  return;
                 }
               })}
             </Grid>
