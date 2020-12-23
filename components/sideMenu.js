@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import Styles from "../styles/SideMenu.module.css";
 
 import MenuIcon from "@material-ui/icons/Menu";
@@ -22,6 +23,7 @@ import firebaseClient from "../firebaseClient";
 const auth = firebaseClient.auth();
 
 function SideMenu() {
+  const router = useRouter();
   const [user] = useAuthState(auth);
 
   const [name, setname] = useState("");
@@ -84,7 +86,13 @@ function SideMenu() {
         aria-label="menu"
         onClick={toggleDrawer}
       >
-        <MenuIcon className={Styles.menuButtonIcon} />
+        <MenuIcon
+          className={
+            router.pathname === "/"
+              ? Styles.menuButtonIcon
+              : Styles.menuButtonIconBlack
+          }
+        />
       </IconButton>
       <Drawer anchor="right" open={open} onClose={toggleDrawer}>
         <div
@@ -143,7 +151,7 @@ function SideMenu() {
               <ListItem button className={Styles.sideMenuListItem}>
                 <Link href="/gls">
                   <ListItemText
-                    primary="GLS 2020"
+                    primary="GLS"
                     className={Styles.sideMenuListItemText}
                   />
                 </Link>

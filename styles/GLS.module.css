@@ -124,6 +124,29 @@
   cursor: pointer;
 }
 
+.viewMore {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.viewMoreButton {
+  color: #02d7f2 !important;
+  font-family: "Nunito", sans-serif !important;
+  padding: 10px 30% !important;
+  border: 3px solid #02d7f2 !important;
+  font-weight: 700 !important;
+  font-size: 15px !important;
+}
+
+.viewMoreHide {
+  display: none;
+}
+
+.viewMoreDiv {
+  display: none;
+}
+
 @media only screen and (max-width: 600px) {
   .GLSLogoFeatureDiv {
     text-align: center;

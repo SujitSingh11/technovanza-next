@@ -3,6 +3,11 @@
   color: #fff !important;
 }
 
+.menuButtonIconBlack {
+  width: 15px;
+  color: #000 !important;
+}
+
 .menuOpen {
   color: #000;
 }

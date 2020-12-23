@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
 
-import { Grid, Container } from "@material-ui/core";
+import { Grid, Container, Button } from "@material-ui/core";
 import Styles from "../styles/GLS.module.css";
 
 import Header from "../components/header";
@@ -13,6 +13,13 @@ import UpcomingData from "../data/upcomingGlsData.json";
 
 const Home = () => {
   const router = useRouter();
+  const [data] = useState(UpcomingData.reverse());
+  const [showMore, setShowMore] = useState(false);
+
+  const handleShowMore = () => {
+    setShowMore(!showMore);
+  };
+
   return (
     <>
       <Head>
@@ -34,16 +41,29 @@ const Home = () => {
             </Grid>
           </Grid>
           <Grid className={Styles.rootGLSGrid} container>
-            {UpcomingData.map((data, index) => {
-              return <Upcoming data={data} key={index} />;
+            {data.map((data, index) => {
+              if (index <= 5) {
+                return <Upcoming data={data} key={index} />;
+              }
             })}
           </Grid>
+          <div
+            className={showMore ? Styles.viewMoreDivShow : Styles.viewMoreDiv}
+          >
+            <Grid className={Styles.rootGLSGrid} container>
+              {data.map((data, index) => {
+                if (index > 5) {
+                  return <Upcoming data={data} key={index} />;
+                }
+              })}
+            </Grid>
+          </div>
+          <div className={showMore ? Styles.viewMoreHide : Styles.viewMore}>
+            <Button onClick={handleShowMore} className={Styles.viewMoreButton}>
+              View More
+            </Button>
+          </div>
         </Container>
-        <div className={Styles.rootPreview}>
-          <div className={Styles.previewCardCont}></div>
-          <div className={Styles.previewCardCont}></div>
-          <div className={Styles.previewCardCont}></div>
-        </div>
         <Container maxWidth="lg" className={Styles.previousGLSGridRoot}>
           <div className={Styles.previousGLSGridDiv}>
             <div
