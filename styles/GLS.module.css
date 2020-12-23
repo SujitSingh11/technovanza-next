@@ -137,6 +137,7 @@
   border: 3px solid #02d7f2 !important;
   font-weight: 700 !important;
   font-size: 15px !important;
+  border-radius: 0px !important;
 }
 
 .viewMoreHide {
