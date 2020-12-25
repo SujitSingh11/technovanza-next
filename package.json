@@ -19,6 +19,7 @@
     "react-dom": "16.13.1",
     "react-firebase-hooks": "^2.2.0",
     "react-particles-js": "^3.3.0",
-    "react-player": "^2.6.2"
+    "react-player": "^2.6.2",
+    "react-unity-webgl": "^8.0.2"
   }
 }

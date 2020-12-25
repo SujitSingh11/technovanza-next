@@ -13,6 +13,7 @@ import SideMenu from "../components/sideMenu";
 export default function Home() {
   const router = useRouter();
   const particlesColors = ["#ff7445", "#2effcc", "#ffffff", "#fcee0a"];
+
   // function sendMail() {
   //   const mail = "mailto:sujitkumarsingh29@gmail.com";
   //   window.open(mail, "_blank");
@@ -211,9 +212,7 @@ export default function Home() {
             </div>
           </Container>
         </section>
-        <section></section>
       </main>
-
       <Footer />
     </div>
   );

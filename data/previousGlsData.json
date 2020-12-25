@@ -57,9 +57,40 @@
         }
     ],
     "Hourglass_Edition":[
-        
+        {
+            "SpeakerName": "Dr. APJ Abdul Kalam",
+            "DayNumber": "",
+            "Month": "",
+            "Year": "2009",
+            "Time":"",
+            "IMG": "Garrett Brown.jpg",
+            "Description": "<p>During his visit to VJTI Technovanza in 2009, he addressed the awestruck audience on the topic “Technology Education Empowers”. He spelt the humble beginnings of Technovanza with his wise words- “The youth of today should work towards taking technology towards society. It is great to see all you youngsters take that up as a challenge.”</p>",
+            "TalkOn": "Technology Education Empowers",
+            "YouTube_Link": ""
+        }
     ],
     "Previous_GLS":[
-        
+        {
+            "SpeakerName": "Dr. APJ Abdul Kalam",
+            "DayNumber": "",
+            "Month": "",
+            "Year": "2009",
+            "Time":"",
+            "IMG": "Garrett Brown.jpg",
+            "Description": "<p>During his visit to VJTI Technovanza in 2009, he addressed the awestruck audience on the topic “Technology Education Empowers”. He spelt the humble beginnings of Technovanza with his wise words- “The youth of today should work towards taking technology towards society. It is great to see all you youngsters take that up as a challenge.”</p>",
+            "TalkOn": "Technology Education Empowers",
+            "YouTube_Link": ""
+        },
+        {
+            "SpeakerName": "Mr. Boman Irani",
+            "DayNumber": "",
+            "Month": "",
+            "Year": "2009",
+            "Time":"",
+            "IMG": "Garrett Brown.jpg",
+            "Description": "<p>Mr. Boman Irani, in his Guest Lecture at VJTI Technovanza adressed over 1500 students in the VJTI Quadrangle. He inspired the highly energetic crowd as he shared his life story</p>",
+            "TalkOn": "Technology Education Empowers",
+            "YouTube_Link": ""
+        }
     ]
 }

@@ -4,7 +4,7 @@
   background: #9345ff;
   width: 100%;
   position: relative;
-  color: #171717;
+  color: #000;
 }
 
 .footerDiv::before {

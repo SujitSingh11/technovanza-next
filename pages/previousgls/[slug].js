@@ -15,7 +15,7 @@ import PreviousData from "../../data/previousGlsData.json";
 const PreviousGLS = () => {
   const router = useRouter();
 
-  const [url, setUrl] = useState("https://www.youtube.com/watch?v=ugCkL-R4QW8");
+  const [url, setUrl] = useState("");
   const [title, setTitle] = useState("");
   const [data, setData] = useState([]);
 
@@ -29,18 +29,22 @@ const PreviousGLS = () => {
       case "Quarantine Edition":
         setData(PreviousData.Quarantine_Edition);
         setTitle("Quarantine Edition");
+        setUrl(PreviousData.Quarantine_Edition[0].YouTube_Link);
         break;
       case "Hourglass Edition":
         setData(PreviousData.Hourglass_Edition);
         setTitle("Hourglass Edition");
+        setUrl(PreviousData.Hourglass_Edition[0].YouTube_Link);
         break;
       case "Previous GLS":
         setData(PreviousData.Previous_GLS);
         setTitle("Previous GLS");
+        setUrl(PreviousData.Previous_GLS[0].YouTube_Link);
         break;
       default:
         setData(PreviousData.Quarantine_Edition);
         setTitle("Previous GLS");
+        setUrl(PreviousData.Quarantine_Edition[0].YouTube_Link);
         break;
     }
   };
