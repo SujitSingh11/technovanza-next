@@ -86,7 +86,13 @@ const PreviousGLS = () => {
             return (
               <PreviousGLSCard
                 info={speaker}
-                changeURL={(link) => setUrl(link)}
+                changeURL={(link) => {
+                  setUrl(link);
+                  window.scroll({
+                    top: 200,
+                    behavior: "smooth",
+                  });
+                }}
                 key={speaker.SpeakerName}
               />
             );

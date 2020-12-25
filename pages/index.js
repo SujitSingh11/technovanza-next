@@ -83,7 +83,7 @@ export default function Home() {
               },
               polygon: {
                 enable: true,
-                scale: 1.3,
+                scale: 1.2,
                 type: "inline",
                 move: {
                   radius: 1000,
