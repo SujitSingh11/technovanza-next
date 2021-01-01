@@ -45,7 +45,7 @@ export default function Home() {
           content="Technovanza 2020 is arriving on 27th, 28th and 29th of january"
         />
 
-        <meta property="og:url" content="https://technovanza.vercel.app/" />
+        <meta property="og:url" content="https://technovanza.org/" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Technovanza" />
         <meta
@@ -58,11 +58,8 @@ export default function Home() {
         />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta property="twitter:domain" content="technovanza.vercel.app" />
-        <meta
-          property="twitter:url"
-          content="https://technovanza.vercel.app/"
-        />
+        <meta property="twitter:domain" content="technovanza.org" />
+        <meta property="twitter:url" content="https://technovanza.org/" />
         <meta name="twitter:title" content="Technovanza" />
         <meta
           name="twitter:description"
