@@ -32,6 +32,19 @@ export default function Home() {
           src="https://cdn.rawgit.com/progers/pathseg/master/pathseg.js"
           defer
         />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="keywords"
+          content="Technovanza VJTI Matunga Mumbai college"
+        />
+        <meta property="og:title" content="Technovanza" />
+        <meta
+          property="og:description"
+          content="Technovanza 2020 is arriving on 27th, 28th and 29th of january."
+        />
+        <meta property="og:image" content="/favicon.ico" />
       </Head>
 
       <main className={Styles.main}>

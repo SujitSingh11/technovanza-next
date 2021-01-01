@@ -29,22 +29,6 @@ const Home = () => {
       <Head>
         <title>Technovanza | GLS</title>
         <link rel="icon" href="/favicon.ico" />
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta
-          name="keywords"
-          content="Technovanza VJTI Matunga Mumbai college"
-        />
-        <meta property="og:title" content="Tech" />
-        <meta
-          property="og:description"
-          content="Technovanza 2020 is arriving on 27th, 28th and 29th of january."
-        />
-        <meta
-          property="og:image"
-          content="https://ahrefs.com/blog/wp-content/uploads/2019/12/fb-how-to-become-an-seo-expert.png"
-        />
       </Head>
       <div className={Styles.root}>
         <Header />
