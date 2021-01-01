@@ -52,7 +52,10 @@ export default function Home() {
           property="og:description"
           content="Technovanza 2020 is arriving on 27th, 28th and 29th of january"
         />
-        <meta property="og:image" content="https://ibb.co/gZNTXVG" />
+        <meta
+          property="og:image"
+          content="https://i.ibb.co/n0QMWDW/Meta-img.png"
+        />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="technovanza.vercel.app" />
@@ -65,7 +68,10 @@ export default function Home() {
           name="twitter:description"
           content="Technovanza 2020 is arriving on 27th, 28th and 29th of january"
         />
-        <meta name="twitter:image" content="https://ibb.co/gZNTXVG" />
+        <meta
+          name="twitter:image"
+          content="https://i.ibb.co/n0QMWDW/Meta-img.png"
+        />
       </Head>
 
       <main className={Styles.main}>
