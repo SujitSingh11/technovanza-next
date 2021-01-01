@@ -42,9 +42,15 @@ export default function Home() {
         <meta property="og:title" content="Technovanza" />
         <meta
           property="og:description"
-          content="Technovanza 2020 is arriving on 27th, 28th and 29th of january."
+          content="Technovanza 2020 is arriving on 27th, 28th and 29th of january"
         />
-        <meta property="og:image" content="/favicon.ico" />
+        <meta property="og:site_name" content="Technovanza" />
+        <meta property="og:url" content="https://technovanza.org/" />
+        <meta property="og:image" content="/android-chrome-192x192.ico" />
+        <meta property="twitter:title" content="Technovanza" />
+        <meta property="twitter:image" content="/android-chrome-192x192.ico" />
+        <meta property="twitter:url" content="https://technovanza.org/" />
+        <meta property="twitter:card" content="summary" />
       </Head>
 
       <main className={Styles.main}>
