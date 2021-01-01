@@ -96,7 +96,7 @@ const Home = () => {
                   top: 0,
                   behavior: "smooth",
                 });
-                router.push({ pathname: "/previousgls/Quarantine_Edition" });
+                router.push({ pathname: "/previousgls/Hourglass_Edition" });
               }}
             >
               <div className={Styles.cardIcon}>

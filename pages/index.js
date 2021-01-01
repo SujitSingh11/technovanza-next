@@ -6,6 +6,9 @@ import { Grid, Container, AppBar, Toolbar } from "@material-ui/core";
 import Particles from "react-particles-js";
 
 import EmojiEventsTwoToneIcon from "@material-ui/icons/EmojiEventsTwoTone";
+import AccountBalanceTwoToneIcon from "@material-ui/icons/AccountBalanceTwoTone";
+import GroupAddTwoToneIcon from "@material-ui/icons/GroupAddTwoTone";
+import EmojiPeopleTwoToneIcon from "@material-ui/icons/EmojiPeopleTwoTone";
 
 import Footer from "../components/footer";
 import SideMenu from "../components/sideMenu";
@@ -48,13 +51,13 @@ export default function Home() {
         <header className={Styles.headerParticles}>
           <Particles
             params={{
-              fps_limit: 100,
+              fps_limit: 165,
               particles: {
                 collisions: {
                   enable: true,
                 },
                 number: {
-                  value: 450,
+                  value: 400,
                   density: {
                     enable: false,
                   },
@@ -69,7 +72,7 @@ export default function Home() {
                     ],
                 },
                 move: {
-                  speed: 1.0,
+                  speed: 1.5,
                 },
                 opacity: {
                   anim: {
@@ -95,7 +98,7 @@ export default function Home() {
                 draw: {
                   enable: true,
                   stroke: {
-                    color: "rgba(255, 255, 255, .2)",
+                    color: "rgba(255, 255, 255, .3)",
                   },
                 },
               },
@@ -117,57 +120,71 @@ export default function Home() {
             }}
           />
         </header>
-        <section className={Styles.infoRoot}>
-          <Container className={Styles.infoRootCont} maxWidth="lg">
-            <div>
-              <div>
-                <div className={Styles.infoCollegeRoot}>
-                  <h1 className={Styles.infoTitle}>VJTI</h1>
-                  <h2 className={Styles.infoDesc}>
-                    Veermata Jijabai Technological Institute, Matunga
-                  </h2>
-                </div>
-                <Grid justify="space-between" container>
-                  <Grid className={Styles.infoGridItem} lg={5} xs={12} item>
-                    <h2 className={Styles.infoDesc}>
-                      Participate in the festival from the comforts of your home
-                    </h2>
-                    <p>
-                      With all the safety concerns raising from CHINA VIRUS, we
-                      have shifted the event to an online platform. Experience a
-                      new form of Technovanza from the safe space of your home!
-                    </p>
-                  </Grid>
-                  <Grid className={Styles.infoGridItem} lg={5} xs={12} item>
-                    <h2 className={Styles.infoDesc}>Dates</h2>
-                    <p>27th, 28th, 29th December, 2020</p>
-                  </Grid>
-                </Grid>
+        <section className={Styles.aboutRootSection}>
+          <Grid className={Styles.aboutRootGrid} container>
+            <Grid
+              lg={12}
+              md={12}
+              sm={12}
+              xs={12}
+              className={Styles.aboutTechno}
+              item
+            >
+              <div className={Styles.infoCollegeRoot}>
+                <h2 className={Styles.infoTitle}>TECHNOVANZA 2020</h2>
+                <p className={Styles.infoDesc}>
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                  The point of using Lorem Ipsum is that it has a more-or-less
+                  normal distribution of letters, as opposed to using 'Content
+                  here, content here', making it look like readable English.
+                  Many desktop publishing packages and web page editors now use
+                  Lorem Ipsum as their default model text, and a search for
+                  'lorem ipsum' will uncover many web sites still in their
+                  infancy. Various versions have evolved over the years,
+                  sometimes by accident, sometimes on purpose (injected humour
+                  and the like).
+                </p>
               </div>
-              {/* <div className={Styles.infoFeature}>
-                <Grid justify="space-around" container>
-                  <Grid item>
-                    <AccountBalanceTwoToneIcon
-                      className={Styles.infoFeatureIcon}
-                    />
-                    <p className={Styles.infoFeatureDetail}>150 colleges</p>
-                  </Grid>
-                  <Grid item>
-                    <GroupAddTwoToneIcon className={Styles.infoFeatureIcon} />
-                    <p className={Styles.infoFeatureDetail}>80,000 Footfall</p>
-                  </Grid>
-                  <Grid item>
-                    <EmojiPeopleTwoToneIcon
-                      className={Styles.infoFeatureIcon}
-                    />
-                    <p className={Styles.infoFeatureDetail}>
-                      4,000 Participants
-                    </p>
-                  </Grid>
-                </Grid>
-              </div> */}
-            </div>
-          </Container>
+            </Grid>
+            <Grid
+              lg={6}
+              md={6}
+              sm={12}
+              xs={12}
+              className={Styles.aboutLeft}
+              item
+            >
+              <div className={Styles.infoCollegeRoot}>
+                <h2 className={Styles.infoSubTitle}>
+                  Participate in the festival from the comforts of your home
+                </h2>
+                <p className={Styles.infoDesc}>
+                  With all the safety concerns raising from COVID-19, we have
+                  shifted the event to an online platform. Experience a new form
+                  of Technovanza from the safe space of your home!
+                </p>
+              </div>
+            </Grid>
+            <Grid
+              lg={6}
+              md={6}
+              sm={12}
+              xs={12}
+              className={Styles.aboutRight}
+              item
+            >
+              <div className={Styles.infoCollegeRoot}>
+                <h2 className={Styles.infoSubTitle}>Important Dates</h2>
+                <p className={Styles.infoDesc}>
+                  It was popularised in the 1960s with the release of Letraset
+                  sheets containing Lorem Ipsum passages, and more recently with
+                  desktop publishing software like Aldus PageMaker including
+                  versions of Lorem Ipsum.
+                </p>
+              </div>
+            </Grid>
+          </Grid>
         </section>
         <section className={Styles.rootPreview}>
           <div className={Styles.previewTitleRoot}>

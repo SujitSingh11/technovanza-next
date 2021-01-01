@@ -58,15 +58,37 @@
     ],
     "Hourglass_Edition":[
         {
-            "SpeakerName": "Dr. APJ Abdul Kalam",
-            "DayNumber": "",
-            "Month": "",
-            "Year": "2009",
-            "Time":"",
-            "IMG": "Garrett Brown.jpg",
-            "Description": "<p>During his visit to VJTI Technovanza in 2009, he addressed the awestruck audience on the topic “Technology Education Empowers”. He spelt the humble beginnings of Technovanza with his wise words- “The youth of today should work towards taking technology towards society. It is great to see all you youngsters take that up as a challenge.”</p>",
-            "TalkOn": "Technology Education Empowers",
-            "YouTube_Link": ""
+            "SpeakerName": "Dr. Prakash Amte",
+            "DayNumber": "11",
+            "Month": "Sept",
+            "Year": "2020",
+            "Time":"6:00 p.m",
+            "IMG": "prakash amte.png",
+            "Description": "<p>Dr. Prakash Amte  is a social worker who started the Lok Biradari Prakalp, an organisation that aimed at aiding the tribals in the dense forests of Gadchiroli District.  He also established the Amte Animal Park, which tends to the care of injured animals. He and his wife Smt. Mandakini Amte also established Anandwan, a smart village and Somnath, a facility to treat patients of leprosy from Anandwan. Dr. Amte and his wife Smt. Mandakini Amte have been honoured with the Ramon Magsaysay Award in 2008 and the ICMR Lifetime Achievement Award by Bill Gates!”</p>",
+            "TalkOn": "",
+            "YouTube_Link": "https://www.youtube.com/watch?v=wWgNt2Sth5s"
+        },
+        {
+            "SpeakerName": "Mr. G Madhavan Nair",
+            "DayNumber": "6",
+            "Month": "Sept",
+            "Year": "2020",
+            "Time":"5:30 p.m",
+            "IMG": "G Madhavan Nair.jpg",
+            "Description": "<p>Mr. Nair has, in the past, not only borne the title of Chairman of the Indian Space Research Organisation (ISRO) but also served as the Secretary of the Department of Space in India. As Project Director of the Polar Satellite Launch Vehicle (PSLV), he spearheaded India's progress in space exploration. He has contributed massively in the success of the Geosynchronous Satellite Launch Vehicle (GSLV) and many more projects dedicated to space exploration.”</p>",
+            "TalkOn": "",
+            "YouTube_Link": "https://www.youtube.com/watch?v=vwx9_xTBTNw"
+        },
+        {
+            "SpeakerName": "Mr. Nadir Godrej",
+            "DayNumber": "4",
+            "Month": "Sept",
+            "Year": "2020",
+            "Time":"5:30 p.m",
+            "IMG": "Nadir Godrej.jpg",
+            "Description": "<p>Mr. Nadir Godrej, being an influential person in the Indian business circuit, serves as the managing director of Godrej Industries, one of Indian's prominent public sector companies. He also holds the post of an independent director on the boards of other business giants like Tata Teleservices, Mahindra & Mahindra and Taj Hotels!”</p>",
+            "TalkOn": "",
+            "YouTube_Link": "https://www.youtube.com/watch?v=REbppR96zE8"
         }
     ],
     "Previous_GLS":[

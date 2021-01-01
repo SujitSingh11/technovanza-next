@@ -176,10 +176,24 @@
         "Year": "2020",
         "Time": "5:15 PM",
         "Status": "OPEN",
-        "IMG": "",
-        "Description": "<p>Dr. Foing is a senior scientist at the European Space Agency, one of the world's leading institutions devoted to unravelling the secrets of the cosmos. He is also the Executive Director of the International Lunar Exploration Working Group. He has also headed the first European mission to the Moon, Smart-1.</p>",
-        "TalkOn": "The Magic of Entrepreneurship",
+        "IMG": "Dr. Foing.jpg",
+        "Description": "<p>With the world about to step into another uncertain year, all of us could use another reason to hope. Technovanza unveils it's new speaker with a bright vision for space exploration, Dr.Bernard Foing!</p><p>Dr. Foing is a senior scientist at the European Space Agency, one of the world's leading institutions devoted to unravelling the secrets of the cosmos. He is also the Executive Director of the International Lunar Exploration Working Group. He has also headed the first European mission to the Moon, Smart-1.</p>",
+        "TalkOn": "Senior Scientist at the European Space Agency",
         "RegisterLink": "https://insider.in/vjti-technovanza-gls-dr-bernard-foing-dec23-2020/event",
-        "YouTube_Link": ""
+        "YouTube_Link": "https://www.youtube.com/watch?v=up6K6t9r5nM"
+    },
+    {
+        "SpeakerName": "Mr Vinod Dham",
+        "DayNumber": "27",
+        "Day": "Sun",
+        "Month": "Dec",
+        "Year": "2020",
+        "Time": "11:00 AM",
+        "Status": "OPEN",
+        "IMG": "Vinod Dham.jpg",
+        "Description": "<p>Mr. Vinod Dham, also known as the Father of Pentium for laying the foundation for Intel's revolutionary microprocessor, has been a protagonist in the silicon industry for the past 40 years. His leadership in Intel's 386 compaction, i486 and Pentium Processor projects spearheaded Intel's capabilities and saw it rise to the ranks of the world's best semiconductor companies.</p><p>His contributions haven't gone unnoticed. He was named the top 25 executives in the silicon industry for his idea of the Pentium processor. He was also named in the list of top 100 influential Asian Americans in the US. He has been exhibited in the Smithsonian Museum among the influential Asian Americans in the US.</p>",
+        "TalkOn": "Father of Pentium Chip",
+        "RegisterLink": "",
+        "YouTube_Link": "https://www.youtube.com/watch?v=U6_syZR34bQ"
     }
 ]

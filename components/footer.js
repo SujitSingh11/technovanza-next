@@ -22,19 +22,46 @@ function Footer() {
               </Grid>
               <Grid className={Styles.footerSocial} item>
                 <div className={Styles.footerSocialDiv}>
-                  <IconButton className={Styles.iconButton}>
+                  <IconButton
+                    onClick={() => {
+                      window.open("https://instagram.com/technovanza");
+                    }}
+                    className={Styles.iconButton}
+                  >
                     <InstagramIcon className={Styles.iconInsta} />
                   </IconButton>
-                  <IconButton className={Styles.iconButton}>
+                  <IconButton
+                    onClick={() => {
+                      window.open("https://www.facebook.com/technovanza");
+                    }}
+                    className={Styles.iconButton}
+                  >
                     <FacebookIcon className={Styles.iconFacebook} />
                   </IconButton>
-                  <IconButton className={Styles.iconButton}>
+                  <IconButton
+                    onClick={() => {
+                      window.open("https://youtube.com/c/TechnovanzaVJTI");
+                    }}
+                    className={Styles.iconButton}
+                  >
                     <YouTubeIcon className={Styles.iconYoutube} />
                   </IconButton>
-                  <IconButton className={Styles.iconButton}>
+                  <IconButton
+                    onClick={() => {
+                      window.open("https://twitter.com/Technovanza");
+                    }}
+                    className={Styles.iconButton}
+                  >
                     <TwitterIcon className={Styles.iconTwitter} />
                   </IconButton>
-                  <IconButton className={Styles.iconButton}>
+                  <IconButton
+                    onClick={() => {
+                      window.open(
+                        "https://www.linkedin.com/company/technovanza-vjti"
+                      );
+                    }}
+                    className={Styles.iconButton}
+                  >
                     <LinkedInIcon className={Styles.iconLinkedIn} />
                   </IconButton>
                 </div>

@@ -31,24 +31,6 @@
         ] 
     },
     {
-        "Department": "E-Mech",
-        "Events":[
-            {
-                "Event":"FnF",
-                "Description":"Imagine that you are in a Mustang, racing down a road at top speed of 200 kmph. As you glide over the curves of the road you feel your control over the car and admire the making of both the car and the road. We invite you to make your own arena for FnF. Include as many as curves you want. Include as many as obstacles you want to test the car. Make it unmatchable but at the same time make it a great experience for the driver as well. Let's give them a thrilling and never felt experience.",
-                "Date":"",
-                "Prize":"",
-                "Logo":"/events/FNF.svg",
-                "Contact":[
-                    {
-                        "Name":"Sujit Singh",
-                        "Number": "9191919191"
-                    }
-                ]
-            }
-        ] 
-    },
-    {
         "Department": "E-build",
         "Events":[
             {

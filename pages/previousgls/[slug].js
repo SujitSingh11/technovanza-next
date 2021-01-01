@@ -26,24 +26,24 @@ const PreviousGLS = () => {
   const selectData = (query) => {
     console.log(query);
     switch (query) {
-      case "Quarantine Edition":
+      case "Quarantine_Edition":
         setData(PreviousData.Quarantine_Edition);
         setTitle("Quarantine Edition");
         setUrl(PreviousData.Quarantine_Edition[0].YouTube_Link);
         break;
-      case "Hourglass Edition":
+      case "Hourglass_Edition":
         setData(PreviousData.Hourglass_Edition);
         setTitle("Hourglass Edition");
         setUrl(PreviousData.Hourglass_Edition[0].YouTube_Link);
         break;
-      case "Previous GLS":
+      case "Previous_GLS":
         setData(PreviousData.Previous_GLS);
         setTitle("Previous GLS");
         setUrl(PreviousData.Previous_GLS[0].YouTube_Link);
         break;
       default:
         setData(PreviousData.Quarantine_Edition);
-        setTitle("Previous GLS");
+        setTitle("Quarantine Edition");
         setUrl(PreviousData.Quarantine_Edition[0].YouTube_Link);
         break;
     }
@@ -64,7 +64,7 @@ const PreviousGLS = () => {
         </Grid>
       </Grid>
 
-      <div className={Styles.GLSVideoDiv}>
+      <Container className={Styles.GLSVideoDiv}>
         <ReactPlayer
           className={Styles.GLSVideo}
           controls
@@ -72,7 +72,7 @@ const PreviousGLS = () => {
           height="100%"
           width="100%"
         />
-      </div>
+      </Container>
 
       <Container maxWidth="lg">
         <Grid

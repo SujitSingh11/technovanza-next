@@ -124,6 +124,19 @@ function SideMenu() {
                 <p className={Styles.menuUIDTitle}>Techno ID</p>
                 <p className={Styles.menuUID}>{uid.slice(0, 10)}</p>
               </div>
+              <Divider />
+              <div className={Styles.menuItemDivUID}>
+                <List className={Styles.sideMenuListRoot}>
+                  <ListItem button className={Styles.sideMenuListItem}>
+                    <Link href="/">
+                      <ListItemText
+                        primary="My Events"
+                        className={Styles.sideMenuListItemText}
+                      />
+                    </Link>
+                  </ListItem>
+                </List>
+              </div>
             </div>
           ) : (
             <></>

@@ -20,9 +20,9 @@
 } */
 
 .headerParticles {
-  height: 90vh;
+  height: 80vh;
 }
-
+/* 
 .infoRoot {
   background: #fcee0a;
   color: #000;
@@ -55,31 +55,99 @@
   padding: 50px 0px;
   font-family: "Nunito", sans-serif;
 }
-.infoCollegeRoot {
-  margin-bottom: 30px;
-}
-.infoTitle {
-  font-size: 50px;
-  font-weight: 800 !important;
+*/
+
+.aboutRootSection {
+  height: 700px;
+  margin-top: 20px;
+  position: relative;
 }
 
-.infoGridItem {
-  padding: 20px;
+.aboutRootSection::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: url("/assets/footer.svg ") repeat-x top;
+  height: 39px;
+}
+
+.aboutRootGrid {
+  height: 100%;
+}
+
+.aboutTechno {
+  background-color: #171717;
+  text-align: center;
+  line-height: 25px;
+  font-family: "Nunito", sans-serif;
+  color: #e5e5e5;
+  display: flex;
+  align-items: center;
+}
+
+.aboutLeft {
+  background-color: #2effcc;
+  display: flex;
+  align-items: center;
+}
+
+.aboutRight {
+  color: #000;
+  background-color: #9345ff;
+  display: flex;
+  align-items: center;
 }
 
 .infoFeature {
   margin-top: 25px;
 }
 
+.infoFeatureItem {
+  text-align: center;
+  border-bottom: 0.5px solid #e5e5e5;
+}
+
 .infoFeatureIcon {
-  color: #000;
+  color: #e5e5e5;
   font-size: 75px !important;
 }
 
 .infoFeatureDetail {
+  color: #e5e5e5;
   font-size: 20px;
   margin: 10px 0px;
-  font-weight: 800 !important;
+  font-weight: 700 !important;
+  font-family: "Nunito", sans-serif;
+}
+
+.infoCollegeRoot {
+  margin: 10px 10%;
+  text-align: center;
+}
+
+.infoTitle {
+  font-size: 42px;
+  line-height: 40px;
+  font-weight: 700 !important;
+  font-family: "Nunito", sans-serif;
+}
+
+.infoSubTitle {
+  font-size: 28px;
+  font-weight: 700 !important;
+  font-family: "Nunito", sans-serif;
+}
+
+.infoDesc {
+  font-size: 16px;
+  font-weight: 400 !important;
+  font-family: "Nunito", sans-serif;
+}
+
+.infoGridItem {
+  padding: 20px;
 }
 
 .rootPreview {
@@ -93,7 +161,7 @@
 
 .previewTitle {
   font-size: 50px;
-  color: #ffffff;
+  color: #e5e5e5;
   text-align: center;
   font-family: "Nunito", sans-serif;
 }
@@ -138,6 +206,7 @@
 }
 .previewCardLogoDiv {
   margin-top: 50px;
+  height: 110px;
   text-align: center;
 }
 .previewCardLogo {
@@ -150,9 +219,10 @@
 
 .previewCardTitle {
   font-family: "Nunito", sans-serif;
-  bottom: 0px;
+  /* bottom: 0px;
   left: 20px;
-  position: absolute;
+  position: absolute; */
+  text-align: center;
   color: #000;
   z-index: 100;
 }
@@ -163,19 +233,33 @@
   }
   .previewCardRoot {
     grid-template-columns: 1fr;
-    grid-gap: 20px;
+    grid-gap: 30px;
   }
   .previewCard {
     margin-top: 20px;
   }
   .infoFeatureIcon {
-    color: #000;
+    color: #e5e5e5;
     font-size: 55px !important;
+  }
+  .infoTitle {
+    font-size: 32px;
   }
 
   .infoFeatureDetail {
     font-size: 15px;
     margin: 10px 0px;
     font-weight: 800 !important;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .previewCardRoot {
+    grid-template-columns: 1fr;
+    grid-gap: 40px;
+  }
+  .aboutRootSection {
+    height: 900px;
+    margin-top: 20px;
   }
 }
