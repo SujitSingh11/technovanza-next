@@ -42,7 +42,7 @@ export default function Home() {
         <meta property="og:title" content="Technovanza" />
         <meta
           property="og:description"
-          content="Aare shubham isske baat kar raha hu"
+          content="Technovanza 2020 is arriving on 27th, 28th and 29th of january"
         />
         <meta property="og:site_name" content="Technovanza" />
         <meta property="og:url" content="https://technovanza.org/" />
