@@ -6,9 +6,6 @@ import { Grid, Container, AppBar, Toolbar } from "@material-ui/core";
 import Particles from "react-particles-js";
 
 import EmojiEventsTwoToneIcon from "@material-ui/icons/EmojiEventsTwoTone";
-import AccountBalanceTwoToneIcon from "@material-ui/icons/AccountBalanceTwoTone";
-import GroupAddTwoToneIcon from "@material-ui/icons/GroupAddTwoTone";
-import EmojiPeopleTwoToneIcon from "@material-ui/icons/EmojiPeopleTwoTone";
 
 import Footer from "../components/footer";
 import SideMenu from "../components/sideMenu";
@@ -16,12 +13,6 @@ import SideMenu from "../components/sideMenu";
 export default function Home() {
   const router = useRouter();
   const particlesColors = ["#ff7445", "#2effcc", "#ffffff", "#fcee0a"];
-
-  // function sendMail() {
-  //   const mail = "mailto:sujitkumarsingh29@gmail.com";
-  //   window.open(mail, "_blank");
-  // }
-  // var item = items[Math.floor(Math.random() * items.length)];
 
   return (
     <div className={Styles.root}>
@@ -32,7 +23,8 @@ export default function Home() {
           src="https://cdn.rawgit.com/progers/pathseg/master/pathseg.js"
           defer
         />
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="UTF-8" />
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta

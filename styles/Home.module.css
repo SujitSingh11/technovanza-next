@@ -245,7 +245,9 @@
   .infoTitle {
     font-size: 32px;
   }
-
+  .infoDesc {
+    text-align: justify;
+  }
   .infoFeatureDetail {
     font-size: 15px;
     margin: 10px 0px;
