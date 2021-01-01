@@ -29,12 +29,7 @@ function OrganisersCard() {
         </Grid>
         <Grid className={Styles.cardContainRight} lg={9} sm md xs xl item>
           <h3 className={Styles.cardContainName}>Neeraj</h3>
-          <span className={Styles.cardContainBio}>
-            Lorem ipsum, or lipsum as it is sometimes known, is dummy text used
-            in laying out print, graphic or web designs. The passage is
-            attributed to an unknown typesetter in the 15th century who is
-            thought to have scrambled parts of Cicero's.
-          </span>
+
           <p className={Styles.cardContainContact}>
             <b>Phone: </b>+919090909009
           </p>

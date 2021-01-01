@@ -1,9 +1,10 @@
 .rootContainer {
   margin-bottom: 5%;
+  min-height: 65vh;
 }
 
 .featureUpcomingCont {
-  margin: 3em 0em;
+  margin: 5em 0em;
 }
 
 .featureUpcomingDiv {
@@ -55,7 +56,7 @@
 }
 
 .previewCard {
-  height: 250px;
+  height: 170px;
   background: #fcee0a !important;
   border-radius: 0px;
   text-decoration: none;
@@ -150,7 +151,7 @@
   }
   .previewCard {
     margin-top: 20px;
-    height: 270px;
+    height: 170px;
   }
   .cardContainLeft {
     padding: 20px;
