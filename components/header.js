@@ -11,7 +11,7 @@ function GlsHeader() {
   const router = useRouter();
 
   const handleBack = () => {
-    router.push("/");
+    router.back();
   };
 
   return (
