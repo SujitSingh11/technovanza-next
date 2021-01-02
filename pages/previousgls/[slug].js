@@ -9,7 +9,7 @@ import ReactPlayer from "react-player/youtube";
 import PreviousGLSCard from "../../components/previousGLSCard";
 import Footer from "../../components/footer";
 import Header from "../../components/header";
-import ScrollUp from "../components/scrollUp";
+import ScrollUp from "../../components/scrollUp";
 
 import PreviousData from "../../data/previousGlsData.json";
 
@@ -19,6 +19,7 @@ const PreviousGLS = () => {
   const [url, setUrl] = useState("");
   const [title, setTitle] = useState("");
   const [data, setData] = useState([]);
+  const [autoPlay, setAutoPlay] = useState(false);
 
   useEffect(() => {
     selectData(router.query.slug);
@@ -73,6 +74,7 @@ const PreviousGLS = () => {
           url={url}
           height="100%"
           width="100%"
+          playing={autoPlay}
         />
       </Container>
 
@@ -90,6 +92,7 @@ const PreviousGLS = () => {
                 info={speaker}
                 changeURL={(link) => {
                   setUrl(link);
+                  setAutoPlay(true);
                   window.scroll({
                     top: 200,
                     behavior: "smooth",
