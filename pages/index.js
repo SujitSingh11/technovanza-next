@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import Styles from "../styles/Home.module.css";
 import { Grid, Container, AppBar, Toolbar } from "@material-ui/core";
 import Particles from "react-particles-js";
+import ScrollUp from "../components/scrollUp";
 
 import EmojiEventsTwoToneIcon from "@material-ui/icons/EmojiEventsTwoTone";
 
@@ -23,9 +24,9 @@ export default function Home() {
           src="https://cdn.rawgit.com/progers/pathseg/master/pathseg.js"
           defer
         />
-        <meta charset="UTF-8" />
-        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta charSet="UTF-8" />
+        <meta httpEquiv="content-type" content="text/html; charset=UTF-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="keywords"
@@ -62,8 +63,8 @@ export default function Home() {
           content="https://i.ibb.co/n0QMWDW/Meta-img.png"
         />
       </Head>
-
       <main className={Styles.main}>
+        <ScrollUp />
         <nav className={Styles.rootNav}>
           <AppBar className={Styles.navAppBar} position="static" elevation={0}>
             <Toolbar className={Styles.navToolBar}>

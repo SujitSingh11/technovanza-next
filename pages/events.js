@@ -7,6 +7,7 @@ import Styles from "../styles/Events.module.css";
 
 import Header from "../components/header";
 import Footer from "../components/footer";
+import ScrollUp from "../components/scrollUp";
 
 import eventData from "../data/eventData.json";
 
@@ -20,6 +21,7 @@ function Events() {
       </Head>
       <Header />
       <section className={Styles.mainContent}>
+        <ScrollUp />
         {eventData.map((department, index) => {
           return (
             <Container maxWidth="lg" key={index}>

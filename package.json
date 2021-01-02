@@ -20,6 +20,7 @@
     "react-firebase-hooks": "^2.2.0",
     "react-particles-js": "^3.3.0",
     "react-player": "^2.6.2",
+    "react-scroll-up-button": "^1.6.4",
     "react-unity-webgl": "^8.0.2"
   }
 }

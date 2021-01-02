@@ -9,6 +9,7 @@ import ReactPlayer from "react-player/youtube";
 import PreviousGLSCard from "../../components/previousGLSCard";
 import Footer from "../../components/footer";
 import Header from "../../components/header";
+import ScrollUp from "../components/scrollUp";
 
 import PreviousData from "../../data/previousGlsData.json";
 
@@ -56,6 +57,7 @@ const PreviousGLS = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
+      <ScrollUp />
       <Grid justify="center" className={Styles.featureUpcomingCont} container>
         <Grid className={Styles.featureUpcomingDiv} item>
           <i className={Styles.featureUpcomingDivTop}></i>

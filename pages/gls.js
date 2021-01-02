@@ -8,6 +8,7 @@ import Styles from "../styles/GLS.module.css";
 import Header from "../components/header";
 import Upcoming from "../components/upcoming";
 import Footer from "../components/footer";
+import ScrollUp from "../components/scrollUp";
 
 import UpcomingData from "../data/upcomingGlsData.json";
 
@@ -31,6 +32,7 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={Styles.root}>
+        <ScrollUp />
         <Header />
         <Container maxWidth="md">
           <Grid
