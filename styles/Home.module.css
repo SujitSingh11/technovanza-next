@@ -11,6 +11,10 @@
   margin-right: auto;
 }
 
+.player {
+  height: 100%;
+}
+
 .hero {
   margin-top: 50px;
   width: 100%;
@@ -216,9 +220,6 @@
     font-size: 15px;
     margin: 10px 0px;
     font-weight: 800 !important;
-  }
-  .headerParticles {
-    height: 100%;
   }
   .aboutTechno {
     padding-top: 25px;

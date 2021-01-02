@@ -1,6 +1,7 @@
 import Head from "next/head";
+import React, { useEffect, useState } from "react";
+
 import { useRouter } from "next/router";
-import { isMobile } from "react-device-detect";
 import ReactPlayer from "react-player/file";
 
 import Styles from "../styles/Home.module.css";
@@ -13,7 +14,46 @@ import EmojiEventsTwoToneIcon from "@material-ui/icons/EmojiEventsTwoTone";
 import Footer from "../components/footer";
 import SideMenu from "../components/sideMenu";
 
+function isTouchDevice() {
+  if (typeof window === "undefined") return false;
+  const prefixes = " -webkit- -moz- -o- -ms- ".split(" ");
+  function mq(query) {
+    return typeof window !== "undefined" && window.matchMedia(query).matches;
+  }
+  if (
+    "ontouchstart" in window ||
+    (window?.DocumentTouch && document instanceof DocumentTouch)
+  )
+    return true;
+  const query = ["(", prefixes.join("touch-enabled),("), "heartz", ")"].join(
+    ""
+  );
+  return mq(query);
+}
+
 export default function Home() {
+  const [isTouch, setIsTouch] = useState(false);
+  useEffect(() => {
+    const {
+      isAndroid,
+      isIPad13,
+      isIPhone13,
+      isWinPhone,
+      isMobileSafari,
+      isTablet,
+    } = require("react-device-detect");
+    setIsTouch(
+      isTouch ||
+        isAndroid ||
+        isIPad13 ||
+        isIPhone13 ||
+        isWinPhone ||
+        isMobileSafari ||
+        isTablet ||
+        isTouchDevice()
+    );
+  }, []);
+
   const router = useRouter();
   const particlesColors = ["#ff7445", "#2effcc", "#ffffff", "#fcee0a"];
 
@@ -79,8 +119,8 @@ export default function Home() {
             </Toolbar>
           </AppBar>
         </nav>
-        <header className={Styles.headerParticles}>
-          {isMobile ? (
+        <header>
+          {isTouch ? (
             <div className={Styles.player}>
               <ReactPlayer
                 url="/target.webm"
@@ -93,76 +133,78 @@ export default function Home() {
               />
             </div>
           ) : (
-            <Particles
-              params={{
-                fps_limit: 165,
-                particles: {
-                  collisions: {
-                    enable: true,
-                  },
-                  number: {
-                    value: 400,
-                    density: {
-                      enable: false,
-                    },
-                  },
-                  line_linked: {
-                    enable: true,
-                    distance: 32,
-                    opacity: 0.7,
-                    color:
-                      particlesColors[
-                        Math.floor(Math.random() * particlesColors.length)
-                      ],
-                  },
-                  move: {
-                    speed: 1.5,
-                  },
-                  opacity: {
-                    anim: {
+            <div className={Styles.headerParticles}>
+              <Particles
+                params={{
+                  fps_limit: 165,
+                  particles: {
+                    collisions: {
                       enable: true,
-                      opacity_min: 0.05,
-                      speed: 1,
-                      sync: true,
                     },
-                    value: 0.4,
-                  },
-                },
-                polygon: {
-                  enable: true,
-                  scale: 1.2,
-                  type: "inline",
-                  move: {
-                    radius: 1000,
-                  },
-                  url: "/assets/mask.svg",
-                  inline: {
-                    arrangement: "equidistant",
-                  },
-                  draw: {
-                    enable: true,
-                    stroke: {
-                      color: "rgba(255, 255, 255, .3)",
+                    number: {
+                      value: 400,
+                      density: {
+                        enable: false,
+                      },
                     },
-                  },
-                },
-                retina_detect: false,
-                interactivity: {
-                  events: {
-                    onhover: {
+                    line_linked: {
                       enable: true,
-                      mode: "bubble",
+                      distance: 32,
+                      opacity: 0.7,
+                      color:
+                        particlesColors[
+                          Math.floor(Math.random() * particlesColors.length)
+                        ],
+                    },
+                    move: {
+                      speed: 1.5,
+                    },
+                    opacity: {
+                      anim: {
+                        enable: true,
+                        opacity_min: 0.05,
+                        speed: 1,
+                        sync: true,
+                      },
+                      value: 0.4,
                     },
                   },
-                  modes: {
-                    bubble: {
-                      size: 10,
-                      distance: 50,
+                  polygon: {
+                    enable: true,
+                    scale: 1.2,
+                    type: "inline",
+                    move: {
+                      radius: 1000,
+                    },
+                    url: "/assets/mask.svg",
+                    inline: {
+                      arrangement: "equidistant",
+                    },
+                    draw: {
+                      enable: true,
+                      stroke: {
+                        color: "rgba(255, 255, 255, .3)",
+                      },
                     },
                   },
-                },
-              }}
-            />
+                  retina_detect: false,
+                  interactivity: {
+                    events: {
+                      onhover: {
+                        enable: true,
+                        mode: "bubble",
+                      },
+                    },
+                    modes: {
+                      bubble: {
+                        size: 10,
+                        distance: 50,
+                      },
+                    },
+                  },
+                }}
+              />
+            </div>
           )}
         </header>
         <section className={Styles.aboutRootSection}>
@@ -176,7 +218,7 @@ export default function Home() {
               item
             >
               <div className={Styles.infoCollegeRoot}>
-                <h2 className={Styles.infoTitle}>TECHNOVANZA 2020</h2>
+                <h2 className={Styles.infoTitle}>ABOUT US</h2>
                 <p className={Styles.infoDesc}>
                   Technovanza is the annual technical fest of Veermata Jijabai
                   Technological Institute, where students strive for excellence
