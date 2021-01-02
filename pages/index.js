@@ -81,15 +81,17 @@ export default function Home() {
         </nav>
         <header className={Styles.headerParticles}>
           {isMobile ? (
-            <ReactPlayer
-              url="/target.webm"
-              width="100%"
-              height="100%"
-              playing={true}
-              loop={true}
-              muted={true}
-              volume={0}
-            />
+            <div className={Styles.player}>
+              <ReactPlayer
+                url="/target.webm"
+                width="100%"
+                height="100%"
+                playing={true}
+                loop={true}
+                muted={true}
+                volume={0}
+              />
+            </div>
           ) : (
             <Particles
               params={{
