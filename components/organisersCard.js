@@ -4,7 +4,6 @@ import Styles from "../styles/Organisers.module.css";
 import { Grid } from "@material-ui/core";
 
 function OrganisersCard({ info }) {
-  console.log(info);
   return (
     <div className={Styles.previewCard}>
       <Grid
@@ -18,19 +17,19 @@ function OrganisersCard({ info }) {
           lg={3}
           sm={3}
           md={3}
-          xs={4}
+          xs={12}
           xl={3}
           item
         >
           <Image
             alt="Remy Sharp"
             src={`/organisers/${info.IMG}`}
-            height="110"
-            width="110"
             className={Styles.large}
+            height="150"
+            width="150"
           />
         </Grid>
-        <Grid className={Styles.cardContainRight} lg={9} sm md xs xl item>
+        <Grid className={Styles.cardContainRight} lg={9} sm md xs={12} xl item>
           <h3 className={Styles.cardContainName}>{info.Name}</h3>
           {!info.Phone ? (
             <></>

@@ -110,8 +110,9 @@
 .cardContain {
   height: 100%;
 }
+
 .cardContainLeft {
-  padding: 20px;
+  padding: 20px !important;
 }
 
 .cardContainName {
@@ -151,10 +152,11 @@
   }
   .previewCard {
     margin-top: 20px;
-    height: 170px;
+    min-height: 320px;
+    padding: 5px;
   }
   .cardContainLeft {
-    padding: 20px;
+    text-align: center;
   }
   .featureUpcomingDiv {
     width: 70%;
