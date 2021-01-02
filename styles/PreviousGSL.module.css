@@ -68,7 +68,9 @@
 }
 @media only screen and (max-width: 600px) {
   .GLSVideoDiv {
-    height: 350px;
+    height: 250px;
+    padding: 0 !important;
+    margin: 0 !important;
   }
   .rootGLSCardGrid {
     text-align: -webkit-center;

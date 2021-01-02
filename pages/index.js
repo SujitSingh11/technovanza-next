@@ -1,5 +1,7 @@
 import Head from "next/head";
+
 import { useRouter } from "next/router";
+import { isMobile } from "react-device-detect";
 
 import Styles from "../styles/Home.module.css";
 import { Grid, Container, AppBar, Toolbar } from "@material-ui/core";
@@ -17,6 +19,7 @@ export default function Home() {
 
   return (
     <div className={Styles.root}>
+      <ScrollUp />
       <Head>
         <title>Technovanza</title>
         <link rel="icon" href="/favicon.ico" />
@@ -64,12 +67,10 @@ export default function Home() {
         />
       </Head>
       <main className={Styles.main}>
-        <ScrollUp />
         <nav className={Styles.rootNav}>
           <AppBar className={Styles.navAppBar} position="static" elevation={0}>
             <Toolbar className={Styles.navToolBar}>
               <img
-                style={{ marginRight: "auto" }}
                 alt="LOGO"
                 src="/TechnovanzaWhite.svg"
                 className={Styles.logo}
@@ -79,76 +80,80 @@ export default function Home() {
           </AppBar>
         </nav>
         <header className={Styles.headerParticles}>
-          <Particles
-            params={{
-              fps_limit: 165,
-              particles: {
-                collisions: {
-                  enable: true,
-                },
-                number: {
-                  value: 400,
-                  density: {
-                    enable: false,
-                  },
-                },
-                line_linked: {
-                  enable: true,
-                  distance: 32,
-                  opacity: 0.7,
-                  color:
-                    particlesColors[
-                      Math.floor(Math.random() * particlesColors.length)
-                    ],
-                },
-                move: {
-                  speed: 1.5,
-                },
-                opacity: {
-                  anim: {
+          {isMobile ? (
+            <img alt="hero" src="/mobile.png" className={Styles.hero} />
+          ) : (
+            <Particles
+              params={{
+                fps_limit: 165,
+                particles: {
+                  collisions: {
                     enable: true,
-                    opacity_min: 0.05,
-                    speed: 1,
-                    sync: true,
                   },
-                  value: 0.4,
-                },
-              },
-              polygon: {
-                enable: true,
-                scale: 1.2,
-                type: "inline",
-                move: {
-                  radius: 1000,
-                },
-                url: "/assets/mask.svg",
-                inline: {
-                  arrangement: "equidistant",
-                },
-                draw: {
-                  enable: true,
-                  stroke: {
-                    color: "rgba(255, 255, 255, .3)",
+                  number: {
+                    value: 400,
+                    density: {
+                      enable: false,
+                    },
                   },
-                },
-              },
-              retina_detect: false,
-              interactivity: {
-                events: {
-                  onhover: {
+                  line_linked: {
                     enable: true,
-                    mode: "bubble",
+                    distance: 32,
+                    opacity: 0.7,
+                    color:
+                      particlesColors[
+                        Math.floor(Math.random() * particlesColors.length)
+                      ],
+                  },
+                  move: {
+                    speed: 1.5,
+                  },
+                  opacity: {
+                    anim: {
+                      enable: true,
+                      opacity_min: 0.05,
+                      speed: 1,
+                      sync: true,
+                    },
+                    value: 0.4,
                   },
                 },
-                modes: {
-                  bubble: {
-                    size: 10,
-                    distance: 50,
+                polygon: {
+                  enable: true,
+                  scale: 1.2,
+                  type: "inline",
+                  move: {
+                    radius: 1000,
+                  },
+                  url: "/assets/mask.svg",
+                  inline: {
+                    arrangement: "equidistant",
+                  },
+                  draw: {
+                    enable: true,
+                    stroke: {
+                      color: "rgba(255, 255, 255, .3)",
+                    },
                   },
                 },
-              },
-            }}
-          />
+                retina_detect: false,
+                interactivity: {
+                  events: {
+                    onhover: {
+                      enable: true,
+                      mode: "bubble",
+                    },
+                  },
+                  modes: {
+                    bubble: {
+                      size: 10,
+                      distance: 50,
+                    },
+                  },
+                },
+              }}
+            />
+          )}
         </header>
         <section className={Styles.aboutRootSection}>
           <Grid className={Styles.aboutRootGrid} container>
@@ -163,17 +168,23 @@ export default function Home() {
               <div className={Styles.infoCollegeRoot}>
                 <h2 className={Styles.infoTitle}>TECHNOVANZA 2020</h2>
                 <p className={Styles.infoDesc}>
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                  The point of using Lorem Ipsum is that it has a more-or-less
-                  normal distribution of letters, as opposed to using 'Content
-                  here, content here', making it look like readable English.
-                  Many desktop publishing packages and web page editors now use
-                  Lorem Ipsum as their default model text, and a search for
-                  'lorem ipsum' will uncover many web sites still in their
-                  infancy. Various versions have evolved over the years,
-                  sometimes by accident, sometimes on purpose (injected humour
-                  and the like).
+                  Technovanza is the annual technical fest of Veermata Jijabai
+                  Technological Institute, where students strive for excellence
+                  while giving back to the community. Over the last 18 years,
+                  Technovanza has grown to become of the most popular
+                  Techno-managerial events in the country and continues to awe
+                  its audience with the quality of events it hosts. From
+                  conducting competitive events, where people all over India can
+                  showcase their talents to hosting exhibitions with ISRO, BARC
+                  and LIGO along with a glorious lineup of dignitaries from
+                  various fields like Dr. A.P.J Abdul Kalam, Mr. Ratan Tata, Dr.
+                  A.S. Kiran Kumar, Mr. Harsha Bhogle, Sophia: the humanoid
+                  robot and many more, Technovanza keeps getting better each
+                  year. Keeping up with our motto of “Taking Technology to the
+                  society”, we continue to deliver an exuberant event, virtually
+                  this year! So, join us from the comfort of your homes, while
+                  we bring to you opportunities and exposure from the world
+                  over.
                 </p>
               </div>
             </Grid>
