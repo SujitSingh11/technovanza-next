@@ -23,6 +23,10 @@ export default async function handler(req, res) {
           if (!doc.exists) {
             throw "Partner TechnoID Invalid";
           } else {
+            // Validation
+            // 1.
+            // 2.
+
             await eventRef.update({
               registration: admin.firestore.FieldValue.arrayUnion({
                 uid1: user1Ref,
@@ -37,6 +41,8 @@ export default async function handler(req, res) {
         }
       } else {
         const user1Ref = firestore.collection("users").doc(uid1);
+
+        // Validation
 
         await eventRef.update({
           registration: admin.firestore.FieldValue.arrayUnion({

@@ -2,7 +2,8 @@ import React from "react";
 import Styles from "../styles/Organisers.module.css";
 import { Grid, Avatar } from "@material-ui/core";
 
-function OrganisersCard() {
+function OrganisersCard({ info }) {
+  console.log(info);
   return (
     <div className={Styles.previewCard}>
       <Grid
@@ -23,16 +24,20 @@ function OrganisersCard() {
           <Avatar
             variant="rounded"
             alt="Remy Sharp"
-            src="/Neeraj.jpg"
+            src={`/organisers/${info.IMG}`}
             className={Styles.large}
           />
         </Grid>
         <Grid className={Styles.cardContainRight} lg={9} sm md xs xl item>
-          <h3 className={Styles.cardContainName}>Neeraj</h3>
+          <h3 className={Styles.cardContainName}>{info.Name}</h3>
+          {!info.Phone ? (
+            <></>
+          ) : (
+            <p className={Styles.cardContainContact}>
+              <b>Phone: </b>+91-{info.Phone}
+            </p>
+          )}
 
-          <p className={Styles.cardContainContact}>
-            <b>Phone: </b>+919090909009
-          </p>
           <p className={Styles.cardContainContact}>
             <b>Email: </b>dummy@email.com
           </p>

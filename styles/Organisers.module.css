@@ -51,7 +51,7 @@
 
 .previewCardRoot {
   display: grid;
-  grid-gap: 40px;
+  grid-gap: 50px;
   grid-template-columns: 1fr 1fr;
 }
 
@@ -118,6 +118,7 @@
   font-family: "Anton", sans-serif;
   font-size: 25px;
   margin: 0px 0px 5px 0px;
+  letter-spacing: 1px;
 }
 
 .cardContainBio {
@@ -135,19 +136,20 @@
 .large {
   height: 100px !important;
   width: 100px !important;
+  transform: scale(1.1);
 }
 
 @media only screen and (max-width: 1000px) {
   .previewCardRoot {
     grid-template-columns: 1fr;
-    grid-gap: 20px;
+    grid-gap: 50px;
   }
 }
 
 @media only screen and (max-width: 600px) {
   .previewCardRoot {
     grid-template-columns: 1fr;
-    grid-gap: 20px;
+    grid-gap: 50px;
   }
   .previewCard {
     margin-top: 20px;

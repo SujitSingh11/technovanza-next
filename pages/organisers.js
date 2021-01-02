@@ -8,6 +8,8 @@ import Footer from "../components/footer";
 
 import OrganisersCard from "../components/organisersCard";
 
+import OrganisersData from "../data/organisers.json";
+
 function Organisers() {
   return (
     <>
@@ -21,10 +23,9 @@ function Organisers() {
           </Grid>
         </Grid>
         <div className={Styles.previewCardRoot}>
-          <OrganisersCard />
-          <OrganisersCard />
-          <OrganisersCard />
-          <OrganisersCard />
+          {OrganisersData.map((data, index) => {
+            return <OrganisersCard key={index} info={data} />;
+          })}
         </div>
       </Container>
       <Footer />

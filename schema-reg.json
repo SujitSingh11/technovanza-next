@@ -1,3 +1,11 @@
 {
-    "registration"
+    "UC":{
+        "registration":[
+            {
+                "teamName": "TN",
+                "uid1":"user/docRef",
+                "uid2":"user/docRef"
+            }
+        ]
+    }
 }
