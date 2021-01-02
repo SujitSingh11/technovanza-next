@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Styles from "../styles/Organisers.module.css";
-import { Grid, Avatar } from "@material-ui/core";
+import { Grid } from "@material-ui/core";
 
 function OrganisersCard({ info }) {
   console.log(info);
@@ -41,7 +41,8 @@ function OrganisersCard({ info }) {
           )}
 
           <p className={Styles.cardContainContact}>
-            <b>Email: </b>dummy@email.com
+            <b>Email: </b>
+            {info.Email}
           </p>
         </Grid>
       </Grid>
