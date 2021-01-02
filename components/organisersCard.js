@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import Styles from "../styles/Organisers.module.css";
 import { Grid, Avatar } from "@material-ui/core";
 
@@ -21,10 +22,11 @@ function OrganisersCard({ info }) {
           xl={3}
           item
         >
-          <Avatar
-            variant="rounded"
+          <Image
             alt="Remy Sharp"
             src={`/organisers/${info.IMG}`}
+            height="110"
+            width="110"
             className={Styles.large}
           />
         </Grid>
