@@ -1,7 +1,7 @@
 import Head from "next/head";
-
 import { useRouter } from "next/router";
 import { isMobile } from "react-device-detect";
+import ReactPlayer from "react-player/file";
 
 import Styles from "../styles/Home.module.css";
 import { Grid, Container, AppBar, Toolbar } from "@material-ui/core";
@@ -81,7 +81,15 @@ export default function Home() {
         </nav>
         <header className={Styles.headerParticles}>
           {isMobile ? (
-            <img alt="hero" src="/mobile.png" className={Styles.hero} />
+            <ReactPlayer
+              url="/target.webm"
+              width="100%"
+              height="100%"
+              playing={true}
+              loop={true}
+              muted={true}
+              volume={0}
+            />
           ) : (
             <Particles
               params={{
