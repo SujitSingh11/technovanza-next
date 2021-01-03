@@ -65,8 +65,6 @@ const EventDesc = () => {
     }
   };
 
-  console.log(user.uid);
-
   return (
     <>
       <Head>
