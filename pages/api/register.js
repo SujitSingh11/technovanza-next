@@ -91,12 +91,12 @@ export default async function handler(req, res) {
       }
     } catch (error) {
       console.log(error);
-      res.statusCode = 500;
+      res.statusCode = 208;
       res.setHeader("Content-Type", "application/json");
       return res.end(JSON.stringify({ error: error }));
     }
   } else {
-    res.statusCode = 500;
+    res.statusCode = 400;
     res.setHeader("Content-Type", "application/json");
     return res.end(JSON.stringify({ error: "Bad Request" }));
   }

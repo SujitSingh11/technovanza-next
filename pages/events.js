@@ -11,7 +11,7 @@ import ScrollUp from "../components/scrollUp";
 
 import eventData from "../data/eventData.json";
 
-function Events() {
+const Events = () => {
   const router = useRouter();
   return (
     <div>
@@ -71,6 +71,6 @@ function Events() {
       <Footer />
     </div>
   );
-}
+};
 
 export default Events;

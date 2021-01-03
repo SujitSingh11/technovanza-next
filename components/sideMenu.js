@@ -94,16 +94,15 @@ function SideMenu() {
           }
         />
       </IconButton>
-      <Drawer anchor="right" open={open} onClose={toggleDrawer}>
+      <Drawer anchor="right" open={open}>
         <div
           role="presentation"
-          onClick={toggleDrawer}
           onKeyDown={toggleDrawer}
           className={Styles.sideMenuRoot}
         >
           <div>
             <Divider />
-            <IconButton>
+            <IconButton onClick={toggleDrawer}>
               <KeyboardArrowRightIcon className={Styles.menuOpen} />
             </IconButton>
             <Divider />

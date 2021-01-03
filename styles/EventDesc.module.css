@@ -19,6 +19,7 @@
   letter-spacing: 2px;
   font-size: 40px;
   margin: 10px 0px;
+  font-weight: 500;
 }
 
 .headerMeta {
@@ -32,9 +33,10 @@
   font-weight: 600;
 }
 .eventIntroRoot {
-  margin: 20px 0;
-  background: #fcee0a;
+  margin-top: 50px;
+  background: #171717;
   padding: 10px;
+  color: #fff;
 }
 
 .eventIntroHeaderRoot {
@@ -49,6 +51,7 @@
   letter-spacing: 2px;
   font-size: 40px;
   margin: 10px 0px;
+  font-weight: 500;
 }
 
 .registerButton {
@@ -60,7 +63,6 @@
   background: #3384e0 !important;
   font-weight: 800 !important;
   width: 200px;
-  margin-left: 10px !important;
   height: 45px;
 }
 
@@ -75,7 +77,7 @@
   content: "";
   height: 0;
   width: 0;
-  border-color: #fcee0a transparent transparent;
+  border-color: #000 transparent transparent;
   border-style: solid;
   border-width: 17px 17px 0 0;
   position: absolute;
@@ -86,7 +88,90 @@
   content: "";
   height: 0;
   width: 0;
-  border-color: #fcee0a transparent transparent;
+  border-color: #000 transparent transparent;
+  border-style: solid;
+  border-width: 17px 17px 0 0;
+  transform: rotate(180deg);
+  position: absolute;
+}
+
+.problemButton {
+  font-family: "Nunito", sans-serif !important;
+  border-color: #3384e0 !important;
+  border-width: 2.5px !important;
+  border-radius: 0px !important;
+  color: #000 !important;
+  background: #3384e0 !important;
+  font-weight: 800 !important;
+  width: 200px;
+  height: 45px;
+}
+
+.problemButton:hover {
+  background: #3384e0 !important;
+  box-shadow: 0 0 3px #3384e0;
+}
+
+.problemButton::before {
+  top: -3px;
+  left: -3px;
+  content: "";
+  height: 0;
+  width: 0;
+  border-color: #2effcc transparent transparent;
+  border-style: solid;
+  border-width: 17px 17px 0 0;
+  position: absolute;
+}
+.problemButton::after {
+  bottom: -3px;
+  right: -3px;
+  content: "";
+  height: 0;
+  width: 0;
+  border-color: #2effcc transparent transparent;
+  border-style: solid;
+  border-width: 17px 17px 0 0;
+  transform: rotate(180deg);
+  position: absolute;
+}
+
+.registerButton2 {
+  font-family: "Nunito", sans-serif !important;
+  border-color: #2effcc !important;
+  border-width: 2.5px !important;
+  border-radius: 0px !important;
+  color: #000 !important;
+  background: #2effcc !important;
+  font-weight: 800 !important;
+  width: 200px;
+  height: 40px;
+  margin: 25px 25px 0 0 !important;
+}
+
+.registerButton2:hover {
+  background: #2effcc !important;
+  box-shadow: 0 0 3px #2effcc;
+}
+
+.registerButton2::before {
+  top: -3px;
+  left: -3px;
+  content: "";
+  height: 0;
+  width: 0;
+  border-color: #191919 transparent transparent;
+  border-style: solid;
+  border-width: 17px 17px 0 0;
+  position: absolute;
+}
+.registerButton2::after {
+  bottom: -3px;
+  right: -3px;
+  content: "";
+  height: 0;
+  width: 0;
+  border-color: #191919 transparent transparent;
   border-style: solid;
   border-width: 17px 17px 0 0;
   transform: rotate(180deg);
@@ -102,17 +187,25 @@
 }
 
 .problemRoot {
-  margin: 50px 0;
+  margin-bottom: 50px;
 }
 
 .problem {
-  padding: 20px 40px;
-  background: #fcee0a;
+  padding: 20px 60px;
+  background: #2effcc;
+}
+
+.headerTitleProblem {
+  font-family: "Anton", sans-serif !important;
+  letter-spacing: 2px;
+  font-size: 40px;
+  margin: 10px 0px;
+  font-weight: 500;
 }
 
 .contact {
-  padding: 20px 40px;
-  background: #3384e0;
+  padding: 20px 60px;
+  background: #9345ff;
 }
 
 .contactText {
@@ -124,8 +217,215 @@
 .marginBottom {
   margin-bottom: 30px;
 }
+
+.regSection {
+  min-height: 350px;
+  margin: 60px 0;
+}
+
+.regCont {
+  display: flex;
+  justify-content: center;
+}
+
+.regRoot {
+  background-color: #191919;
+  border: 1px solid #191919;
+  position: relative;
+}
+
+.regRoot::before {
+  top: -3px;
+  left: -3px;
+  content: "";
+  height: 0;
+  width: 0;
+  border-color: #000 transparent transparent;
+  border-style: solid;
+  border-width: 17px 17px 0 0;
+  position: absolute;
+}
+.regRoot::after {
+  bottom: -3px;
+  right: -3px;
+  content: "";
+  height: 0;
+  width: 0;
+  border-color: #000 transparent transparent;
+  border-style: solid;
+  border-width: 17px 17px 0 0;
+  transform: rotate(180deg);
+  position: absolute;
+}
+
+.regHead {
+  height: 40px;
+  border-bottom: 1px solid #191919;
+}
+
+.regHeadItems {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 20px;
+  height: 100%;
+}
+
+.regCircle {
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: #252525;
+  border-radius: 9999px;
+  margin: 0 15px 0 0;
+}
+
+.regBody {
+  height: 100%;
+  padding: 5px 25px 25px 25px;
+}
+
+.regTitle {
+  font-family: "Anton", sans-serif !important;
+  letter-spacing: 2px;
+  font-size: 30px;
+  margin: 0 0 10px 0;
+  color: #e5e5e5;
+  font-weight: 500;
+}
+
+.reg {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+
+.regButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.regItem {
+  font-family: "Nunito", sans-serif !important;
+  font-weight: 500;
+  margin: 5px 0;
+  font-size: 18px;
+  color: #e5e5e5;
+}
+
+.regInputTeam {
+  font-family: "Nunito", sans-serif !important;
+  font-weight: 500;
+  margin-left: 52px;
+  padding: 8px;
+  background-color: #252525;
+  border: none;
+  outline: none;
+  width: 79%;
+  border-bottom: 1px #2effcc solid;
+  color: #e5e5e5;
+  font-size: 15px;
+}
+
+.regInput {
+  font-family: "Nunito", sans-serif !important;
+  font-weight: 500;
+  margin-left: 17px;
+  padding: 8px;
+  background-color: #252525;
+  border: none;
+  outline: none;
+  width: 79%;
+  border-bottom: 1px #2effcc solid;
+  color: #e5e5e5;
+  font-size: 15px;
+}
+
+.regInputPT {
+  font-family: "Nunito", sans-serif !important;
+  font-weight: 500;
+  margin-left: 10px;
+  padding: 8px;
+  background-color: #252525;
+  border: none;
+  outline: none;
+  width: 79%;
+  border-bottom: 1px #2effcc solid;
+  color: #e5e5e5;
+  font-size: 15px;
+}
+.regInputPN {
+  font-family: "Nunito", sans-serif !important;
+  font-weight: 500;
+  margin-left: 21px;
+  padding: 8px;
+  background-color: #252525;
+  border: none;
+  outline: none;
+  width: 79%;
+  border-bottom: 1px #2effcc solid;
+  color: #e5e5e5;
+  font-size: 15px;
+}
+
+.regRadioRoot {
+  display: inline !important;
+}
+
+.regRadioRadio {
+  color: #2effcc !important;
+}
+
+.regRadioSubLable {
+  color: #e5e5e5 !important;
+  font-family: "Nunito", sans-serif !important;
+  font-weight: 500 !important;
+}
+
+.regArrow {
+  color: #2effcc !important;
+  margin-right: 5px;
+}
+
 @media only screen and (max-width: 600px) {
+  .problem {
+    padding: 20px 20px;
+    background: #2effcc;
+  }
+  .contact {
+    padding: 20px 20px;
+    background: #9345ff;
+  }
+  .problemCont {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
   .registerButton {
-    width: 120px;
+    width: 250px;
+  }
+  .reg {
+    display: block;
+    margin-top: 15px;
+  }
+  .regInputTeam {
+    margin: 0;
+    width: 90%;
+  }
+  .regInput {
+    margin: 0;
+    width: 90%;
+  }
+  .regInputPT {
+    margin: 0;
+    width: 90%;
+  }
+  .regInputPN {
+    margin: 0;
+    width: 90%;
+  }
+  .registerButton2 {
+    width: 100%;
   }
 }
