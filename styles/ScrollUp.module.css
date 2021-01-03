@@ -4,7 +4,7 @@
   bottom: 20px;
   transition: right 0.5s;
   cursor: pointer;
-  background-color: #e5e5e5;
+  background-color: #fcee0a;
   font-size: 20px;
   padding: 4px;
   height: 25px;
@@ -15,7 +15,6 @@
 .AnyClassForContainer:hover {
   transform: scale(1.15);
   transition: 0.2s ease-in-out;
-  background-color: #979797;
 }
 
 .AnyClassForTransition {

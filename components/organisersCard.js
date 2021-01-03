@@ -38,7 +38,6 @@ function OrganisersCard({ info }) {
               <b>Phone: </b>+91-{info.Phone}
             </p>
           )}
-
           <p className={Styles.cardContainContact}>
             <b>Email: </b>
             {info.Email}
