@@ -130,6 +130,7 @@ export default function Home() {
                 loop={true}
                 muted={true}
                 volume={0}
+                playsinline={true}
               />
             </div>
           ) : (
