@@ -12,7 +12,7 @@ import ScrollUp from "../components/scrollUp";
 
 import UpcomingData from "../data/upcomingGlsData.json";
 
-const Home = () => {
+const GLS = () => {
   const router = useRouter();
   const [data, setData] = useState([]);
   const [showMore, setShowMore] = useState(false);
@@ -129,4 +129,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default GLS;
