@@ -18,7 +18,7 @@ const GLS = () => {
   const [showMore, setShowMore] = useState(false);
 
   useEffect(() => {
-    setData(UpcomingData.reverse());
+    setData(UpcomingData);
   }, []);
 
   const handleShowMore = () => {

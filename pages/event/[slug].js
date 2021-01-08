@@ -34,6 +34,7 @@ const EventDesc = () => {
   const [user] = useAuthState(auth);
   const [phone, setPhone] = useState("");
   const [participation, setParticipation] = useState("individual");
+  const [numOfTeam, setNumOfTeam] = useState("1");
   const [technoID, setTechnoID] = useState("");
   const [partPhone, setPartPhone] = useState("");
 
@@ -42,6 +43,9 @@ const EventDesc = () => {
   };
   const handleParticipation = (event) => {
     setParticipation(event.target.value);
+  };
+  const handleNumOfTeam = (event) => {
+    setNumOfTeam(event.target.value);
   };
   const handleTechnoID = (event) => {
     setTechnoID(event.target.value);
@@ -63,6 +67,44 @@ const EventDesc = () => {
     } catch (error) {
       console.log(error);
     }
+  };
+
+  const TeamMates = () => {
+    let partners = [];
+    for (let i = 1; i <= numOfTeam; i++) {
+      partners.push(
+        <div key={i}>
+          <div className={Styles.regTeamTitleDiv}>
+            <p className={Styles.regTeamTitle}>Partner {i}</p>
+          </div>
+          <div className={Styles.reg}>
+            <lable htmlFor="technoid" className={Styles.regItem}>
+              Partner TechnoID :
+            </lable>
+            <input
+              type="text"
+              id="technoid"
+              name="technoid"
+              className={Styles.regInputPT}
+            />
+          </div>
+          {/* <div className={Styles.reg}>
+            <lable htmlFor="pcontact" className={Styles.regItem}>
+              Partner Number :
+            </lable>
+            <input
+              type="text"
+              id="pcontact"
+              name="pcontact"
+              className={Styles.regInputPN}
+              onChange={() => handlePartPhone(e)}
+              value={partPhone}
+            />
+          </div> */}
+        </div>
+      );
+    }
+    return partners;
   };
 
   return (
@@ -214,45 +256,77 @@ const EventDesc = () => {
                       <FormControlLabel
                         value="partner"
                         control={<Radio className={Styles.regRadioRadio} />}
-                        label="With Partner"
+                        label="With Partners"
                         className={Styles.regRadioSubLable}
                       />
                     </RadioGroup>
                   </FormControl>
                 </div>
+
                 {participation === "partner" ? (
                   <>
                     <div className={Styles.reg}>
-                      <lable htmlFor="technoID" className={Styles.regItem}>
-                        Partner TechnoID :
+                      <lable htmlFor="contact" className={Styles.regItem}>
+                        Number of teammates :
                       </lable>
-                      <input
-                        type="text"
-                        id="technoID"
-                        name="technoID"
-                        className={Styles.regInputPT}
-                      />
+                      <select
+                        className={Styles.regTeamSelect}
+                        name="numTeam"
+                        id="numTeam"
+                        value={numOfTeam}
+                        onChange={handleNumOfTeam}
+                      >
+                        <option
+                          className={Styles.regTeamSelectOption}
+                          value="1"
+                        >
+                          1
+                        </option>
+                        <option
+                          className={Styles.regTeamSelectOption}
+                          value="2"
+                        >
+                          2
+                        </option>
+                        <option
+                          className={Styles.regTeamSelectOption}
+                          value="3"
+                        >
+                          3
+                        </option>
+                        <option
+                          className={Styles.regTeamSelectOption}
+                          value="4"
+                        >
+                          4
+                        </option>
+                        <option
+                          className={Styles.regTeamSelectOption}
+                          value="5"
+                        >
+                          5
+                        </option>
+                      </select>
                     </div>
-                    <div className={Styles.reg}>
-                      <lable htmlFor="pcontact" className={Styles.regItem}>
-                        Partner Number :
-                      </lable>
-                      <input
-                        type="text"
-                        id="pcontact"
-                        name="pcontact"
-                        className={Styles.regInputPN}
-                      />
-                    </div>
+                    <TeamMates />
                   </>
                 ) : (
                   <></>
                 )}
+
                 <div className={Styles.regButton}>
-                  <Button onClick={() => {}} className={Styles.registerButton2}>
+                  <Button
+                    onClick={() => handleRegistration({})}
+                    className={Styles.registerButton2}
+                  >
                     Register
                   </Button>
-                  <Button className={Styles.registerButton2}>Clear</Button>
+                  <Button
+                    onClick={handleClear}
+                    className={Styles.registerButton2}
+                  >
+                    Clear
+                  </Button>
                 </div>
               </div>
             </div>
