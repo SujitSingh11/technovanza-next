@@ -42,6 +42,18 @@ code {
   font-weight: 500;
 }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 @media only screen and (max-width: 900px) {
   .MuiDrawer-paper {
     width: 35% !important;
@@ -50,6 +62,6 @@ code {
 
 @media only screen and (max-width: 600px) {
   .MuiDrawer-paper {
-    width: 50% !important;
+    width: 60% !important;
   }
 }
