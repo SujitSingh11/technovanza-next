@@ -79,7 +79,7 @@ const EventDesc = () => {
           </div>
           <div className={Styles.reg}>
             <lable htmlFor="technoid" className={Styles.regItem}>
-              Partner TechnoID :
+              TechnoID :
             </lable>
             <input
               type="text"
@@ -90,7 +90,7 @@ const EventDesc = () => {
           </div>
           <div className={Styles.reg}>
             <lable htmlFor="pcontact" className={Styles.regItem}>
-              Partner Number :
+              Number :
             </lable>
             <input
               type="text"
@@ -182,14 +182,16 @@ const EventDesc = () => {
               className={Styles.problemRoot}
             >
               <Grid lg={6} xs={12} className={Styles.problem} item>
-                <div className={Styles.marginBottom}>
-                  <h1 className={Styles.headerTitleProblem}>
-                    Problem Statement
-                  </h1>
-                </div>
-                <div>
-                  <Button className={Styles.problemButton}>Download</Button>
-                </div>
+                <Container maxWidth="xs">
+                  <div className={Styles.marginBottom}>
+                    <h1 className={Styles.headerTitleProblem}>
+                      Problem Statement
+                    </h1>
+                  </div>
+                  <div>
+                    <Button className={Styles.problemButton}>Download</Button>
+                  </div>
+                </Container>
               </Grid>
               <Grid lg={6} xs={12} className={Styles.contact} item>
                 <div className={Styles.marginBottom}>

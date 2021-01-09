@@ -38,6 +38,11 @@
 
 .menuUIDTitle {
   font-weight: 800;
+  margin: 10px 0 5px 0;
+}
+
+.technoID:hover {
+  background-color: #d8d8d8;
 }
 
 .menuLogout {

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import Styles from "../styles/SideMenu.module.css";
+import { CopyToClipboard } from "react-copy-to-clipboard";
 
 import MenuIcon from "@material-ui/icons/Menu";
 import KeyboardArrowRightIcon from "@material-ui/icons/KeyboardArrowRight";
@@ -15,6 +16,7 @@ import {
   ListItemText,
   Button,
   Avatar,
+  Tooltip,
 } from "@material-ui/core";
 
 import { useAuthState } from "react-firebase-hooks/auth";
@@ -30,6 +32,7 @@ function SideMenu() {
   const [photoUrl, setphotoUrl] = useState("");
   const [uid, setuid] = useState("");
   const [open, setOpen] = useState(false);
+  const [copied, setCopied] = useState(false);
 
   useEffect(() => {
     if (user) {
@@ -121,9 +124,16 @@ function SideMenu() {
               <Divider />
               <div className={Styles.menuItemDivUID}>
                 <p className={Styles.menuUIDTitle}>Techno ID</p>
-                <p className={Styles.menuUID}>{uid.slice(0, 10)}</p>
+                <CopyToClipboard text={uid} onCopy={() => setCopied(true)}>
+                  <Tooltip
+                    title={!copied ? "Click to copy" : "Copied!"}
+                    placement="left"
+                  >
+                    <p className={Styles.technoID}>{uid}</p>
+                  </Tooltip>
+                </CopyToClipboard>
               </div>
-              <Divider />
+              {/* <Divider />
               <div className={Styles.menuItemDivUID}>
                 <List className={Styles.sideMenuListRoot}>
                   <ListItem button className={Styles.sideMenuListItem}>
@@ -135,7 +145,7 @@ function SideMenu() {
                     </Link>
                   </ListItem>
                 </List>
-              </div>
+              </div> */}
             </div>
           ) : (
             <></>
