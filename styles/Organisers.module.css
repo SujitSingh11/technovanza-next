@@ -52,7 +52,7 @@
 .previewCardRoot {
   display: grid;
   grid-gap: 50px;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
 }
 
 .previewCard {

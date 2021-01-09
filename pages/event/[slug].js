@@ -88,7 +88,7 @@ const EventDesc = () => {
               className={Styles.regInputPT}
             />
           </div>
-          {/* <div className={Styles.reg}>
+          <div className={Styles.reg}>
             <lable htmlFor="pcontact" className={Styles.regItem}>
               Partner Number :
             </lable>
@@ -100,7 +100,7 @@ const EventDesc = () => {
               onChange={() => handlePartPhone(e)}
               value={partPhone}
             />
-          </div> */}
+          </div>
         </div>
       );
     }

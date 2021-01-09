@@ -14,7 +14,7 @@ function Organisers() {
   return (
     <>
       <Header />
-      <Container className={Styles.rootContainer} maxWidth="lg">
+      <Container maxWidth="lg">
         <Grid justify="center" className={Styles.featureUpcomingCont} container>
           <Grid className={Styles.featureUpcomingDiv} item>
             <i className={Styles.featureUpcomingDivTop}></i>
@@ -22,6 +22,8 @@ function Organisers() {
             <i className={Styles.featureUpcomingDivBottom}></i>
           </Grid>
         </Grid>
+      </Container>
+      <Container className={Styles.rootContainer} maxWidth="sm">
         <div className={Styles.previewCardRoot}>
           {OrganisersData.map((data, index) => {
             return <OrganisersCard key={index} info={data} />;
