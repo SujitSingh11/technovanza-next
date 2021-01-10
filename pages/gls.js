@@ -10,15 +10,13 @@ import Upcoming from "../components/upcoming";
 import Footer from "../components/footer";
 import ScrollUp from "../components/scrollUp";
 
-import UpcomingData from "../data/upcomingGlsData.json";
-
-const GLS = () => {
+const GLS = ({ res }) => {
   const router = useRouter();
   const [data, setData] = useState([]);
   const [showMore, setShowMore] = useState(false);
 
   useEffect(() => {
-    setData(UpcomingData);
+    setData(res);
   }, []);
 
   const handleShowMore = () => {
@@ -130,3 +128,13 @@ const GLS = () => {
 };
 
 export default GLS;
+
+GLS.getInitialProps = async (ctx) => {
+  const upcomingGlsData = fetch(
+    `${process.env.domain}/data/upcomingGlsData.json`
+  );
+  const res = await (await upcomingGlsData).json();
+  return {
+    res,
+  };
+};

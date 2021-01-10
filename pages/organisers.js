@@ -8,9 +8,7 @@ import Footer from "../components/footer";
 
 import OrganisersCard from "../components/organisersCard";
 
-import OrganisersData from "../data/organisers.json";
-
-function Organisers() {
+function Organisers({ res }) {
   return (
     <>
       <Header />
@@ -25,7 +23,7 @@ function Organisers() {
       </Container>
       <Container className={Styles.rootContainer} maxWidth="sm">
         <div className={Styles.previewCardRoot}>
-          {OrganisersData.map((data, index) => {
+          {res.map((data, index) => {
             return <OrganisersCard key={index} info={data} />;
           })}
         </div>
@@ -36,3 +34,11 @@ function Organisers() {
 }
 
 export default Organisers;
+
+Organisers.getInitialProps = async (ctx) => {
+  const organisers = fetch(`${process.env.domain}/data/organisers.json`);
+  const res = await (await organisers).json();
+  return {
+    res,
+  };
+};

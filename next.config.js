@@ -13,6 +13,7 @@ module.exports = (phase, { defaultConfig }) => {
         messagingSenderId: "163729170268",
         appId: "1:163729170268:web:e60535731c1c2aebebeb99",
         measurementId: "G-6T8LTS2VJT",
+        domain: "http://localhost:3000",
       },
     };
   }
@@ -28,6 +29,7 @@ module.exports = (phase, { defaultConfig }) => {
       messagingSenderId: "163729170268",
       appId: "1:163729170268:web:e60535731c1c2aebebeb99",
       measurementId: "G-6T8LTS2VJT",
+      domain: "https://technovanza.vercel.app",
     },
   };
 };

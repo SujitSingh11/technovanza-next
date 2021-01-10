@@ -9,9 +9,7 @@ import Header from "../components/header";
 import Footer from "../components/footer";
 import ScrollUp from "../components/scrollUp";
 
-import eventData from "../data/eventData.json";
-
-const Events = () => {
+const Events = ({ res }) => {
   const router = useRouter();
   return (
     <div>
@@ -22,7 +20,7 @@ const Events = () => {
       <Header />
       <section className={Styles.mainContent}>
         <ScrollUp />
-        {eventData.map((department, index) => {
+        {res.map((department, index) => {
           return (
             <Container maxWidth="lg" key={index}>
               <Grid
@@ -86,3 +84,11 @@ const Events = () => {
 };
 
 export default Events;
+
+Events.getInitialProps = async (ctx) => {
+  const eventData = fetch(`${process.env.domain}/data/eventData.json`);
+  const res = await (await eventData).json();
+  return {
+    res,
+  };
+};

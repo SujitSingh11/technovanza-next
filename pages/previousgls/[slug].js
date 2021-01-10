@@ -11,9 +11,7 @@ import Footer from "../../components/footer";
 import Header from "../../components/header";
 import ScrollUp from "../../components/scrollUp";
 
-import PreviousData from "../../data/previousGlsData.json";
-
-const PreviousGLS = () => {
+const PreviousGLS = ({ res }) => {
   const router = useRouter();
 
   const [url, setUrl] = useState("");
@@ -29,24 +27,24 @@ const PreviousGLS = () => {
     console.log(query);
     switch (query) {
       case "Quarantine_Edition":
-        setData(PreviousData.Quarantine_Edition);
+        setData(res.Quarantine_Edition);
         setTitle("Quarantine Edition");
-        setUrl(PreviousData.Quarantine_Edition[0].YouTube_Link);
+        setUrl(res.Quarantine_Edition[0].YouTube_Link);
         break;
       case "Hourglass_Edition":
-        setData(PreviousData.Hourglass_Edition);
+        setData(res.Hourglass_Edition);
         setTitle("Hourglass Edition");
-        setUrl(PreviousData.Hourglass_Edition[0].YouTube_Link);
+        setUrl(res.Hourglass_Edition[0].YouTube_Link);
         break;
       case "Previous_GLS":
-        setData(PreviousData.Previous_GLS);
+        setData(res.Previous_GLS);
         setTitle("Previous GLS");
-        setUrl(PreviousData.Previous_GLS[0].YouTube_Link);
+        setUrl(res.Previous_GLS[0].YouTube_Link);
         break;
       default:
-        setData(PreviousData.Quarantine_Edition);
+        setData(res.Quarantine_Edition);
         setTitle("Quarantine Edition");
-        setUrl(PreviousData.Quarantine_Edition[0].YouTube_Link);
+        setUrl(res.Quarantine_Edition[0].YouTube_Link);
         break;
     }
   };
@@ -110,3 +108,11 @@ const PreviousGLS = () => {
 };
 
 export default PreviousGLS;
+
+PreviousGLS.getInitialProps = async (ctx) => {
+  const PreviousData = fetch(`${process.env.domain}/data/PreviousGlsData.json`);
+  const res = await (await PreviousData).json();
+  return {
+    res,
+  };
+};

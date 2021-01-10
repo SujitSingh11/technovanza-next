@@ -24,7 +24,7 @@ import firebaseClient from "../../../firebaseClient";
 const auth = firebaseClient.auth();
 
 const api = axios.create({
-  baseURL: "https://technovanza.vercel.app/api/",
+  baseURL: `${process.env.domain}/api/`,
   timeout: 10000,
   headers: {
     "Content-Type": "application/json",
@@ -116,7 +116,7 @@ const EventDesc = ({ res }) => {
   return (
     <>
       <Head>
-        <title>Technovanza | {event.Event}</title>
+        <title>Technovanza | {router.query.event}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
@@ -576,7 +576,7 @@ const EventDesc = ({ res }) => {
 export default EventDesc;
 
 EventDesc.getInitialProps = async (ctx) => {
-  const eventData = fetch("https://technovanza.vercel.app/data/eventData.json");
+  const eventData = fetch(`${process.env.domain}/data/eventData.json`);
   const res = await (await eventData).json();
   return {
     res,
