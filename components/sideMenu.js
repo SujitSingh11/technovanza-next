@@ -156,34 +156,38 @@ function SideMenu() {
             <List className={Styles.sideMenuListRoot}>
               <ListItem button className={Styles.sideMenuListItem}>
                 <Link href="/">
-                  <ListItemText
-                    primary="Home"
-                    className={Styles.sideMenuListItemText}
-                  />
+                  <ListItemText className={Styles.sideMenuListItemText}>
+                    <a href="/events" className={Styles.sideMenuListItemA}>
+                      Home
+                    </a>
+                  </ListItemText>
                 </Link>
               </ListItem>
               <ListItem button className={Styles.sideMenuListItem}>
                 <Link href="/events">
-                  <ListItemText
-                    primary="Events"
-                    className={Styles.sideMenuListItemText}
-                  />
+                  <ListItemText className={Styles.sideMenuListItemText}>
+                    <a href="/events" className={Styles.sideMenuListItemA}>
+                      Events
+                    </a>
+                  </ListItemText>
                 </Link>
               </ListItem>
               <ListItem button className={Styles.sideMenuListItem}>
                 <Link href="/gls">
-                  <ListItemText
-                    primary="GLS"
-                    className={Styles.sideMenuListItemText}
-                  />
+                  <ListItemText className={Styles.sideMenuListItemText}>
+                    <a href="/gls" className={Styles.sideMenuListItemA}>
+                      GLS
+                    </a>
+                  </ListItemText>
                 </Link>
               </ListItem>
               <ListItem button className={Styles.sideMenuListItem}>
                 <Link href="/organisers">
-                  <ListItemText
-                    primary="Organisers"
-                    className={Styles.sideMenuListItemText}
-                  />
+                  <ListItemText className={Styles.sideMenuListItemText}>
+                    <a href="/organisers" className={Styles.sideMenuListItemA}>
+                      Organisers
+                    </a>
+                  </ListItemText>
                 </Link>
               </ListItem>
             </List>

@@ -96,10 +96,16 @@
 }
 
 .infoTitle {
-  font-size: 42px;
+  font-size: 32px;
   line-height: 40px;
-  font-weight: 700 !important;
-  font-family: "Nunito", sans-serif;
+  font-weight: 300 !important;
+  letter-spacing: 1px;
+  font-family: "Anton", sans-serif;
+  text-transform: uppercase;
+}
+
+.logoInfo {
+  width: 350px !important;
 }
 
 .infoSubTitle {
@@ -193,6 +199,23 @@
   text-align: center;
   color: #000;
   z-index: 100;
+}
+
+.aboutUsLabel {
+  font-size: 50px;
+  color: #e5e5e5;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+}
+
+.aboutUsRoot {
+}
+
+.aboutUsGridRoot {
+}
+
+.aboutUsGrid {
+  height: 400px;
 }
 
 @media only screen and (max-width: 600px) {

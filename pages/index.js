@@ -218,7 +218,14 @@ export default function Home() {
               item
             >
               <div className={Styles.infoCollegeRoot}>
-                <h2 className={Styles.infoTitle}>ABOUT US</h2>
+                <h2 className={Styles.infoTitle}>
+                  Veermata Jijabai Technological Institute Presents
+                </h2>
+                <img
+                  alt="LOGO"
+                  src="/TechnovanzaWhite.svg"
+                  className={Styles.logoInfo}
+                />
                 <p className={Styles.infoDesc}>
                   Technovanza is the annual technical fest of Veermata Jijabai
                   Technological Institute, where students strive for excellence
@@ -285,7 +292,7 @@ export default function Home() {
           </div>
           <Container maxWidth="lg">
             <div className={Styles.previewCardRoot}>
-              <div
+              <a
                 className={Styles.previewCard}
                 onClick={() => {
                   window.scroll({
@@ -294,15 +301,16 @@ export default function Home() {
                   });
                   router.push({ pathname: "/events" });
                 }}
+                href="/events"
               >
                 <div className={Styles.previewCardLogoDiv}>
                   <EmojiEventsTwoToneIcon
-                    style={{ height: "8rem", width: "150px" }}
+                    style={{ height: "8rem", width: "150px", color: "#000" }}
                   />
                 </div>
                 <h2 className={Styles.previewCardTitle}>Technovanza Events</h2>
-              </div>
-              <div
+              </a>
+              <a
                 className={Styles.previewCard}
                 onClick={() => {
                   window.scroll({
@@ -311,6 +319,7 @@ export default function Home() {
                   });
                   router.push({ pathname: "/gls" });
                 }}
+                href="/gls"
               >
                 <div className={Styles.previewCardLogoDiv}>
                   <img className={Styles.previewCardLogo} src="/gls.svg" />
@@ -318,10 +327,33 @@ export default function Home() {
                 <h2 className={Styles.previewCardTitle}>
                   Guest Lecture Series
                 </h2>
-              </div>
+              </a>
             </div>
           </Container>
         </section>
+        {/* <section>
+          <div className={Styles.aboutUsRoot}>
+            <h1 className={Styles.aboutUsLabel}>About Us</h1>
+            <Grid className={Styles.aboutUsGridRoot} container>
+              <Grid
+                className={Styles.aboutUsGrid}
+                lg={6}
+                md={6}
+                sm={12}
+                xs={12}
+                item
+              ></Grid>
+              <Grid
+                className={Styles.aboutUsGrid}
+                lg={6}
+                md={6}
+                sm={12}
+                xs={12}
+                item
+              ></Grid>
+            </Grid>
+          </div>
+        </section> */}
       </main>
       <Footer />
     </div>
