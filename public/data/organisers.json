@@ -1,0 +1,25 @@
+[
+    {
+        "Name":"Shrenil Chovatiya ",
+        "Phone":"9867082257",
+        "IMG":"Shrenil Chovatiya.jpg",
+        "Email":"shrenil.chovatiya@technovanza.org"
+    },  
+    {
+        "Name":"Vedika Sankpal ",
+        "Phone":"7620027951",
+        "IMG":"Vedika Sankpal_.jpg",
+        "Email":"vedika.sankpal@technovanza.org"
+    },  
+    {
+        "Name":"Chinmay Desai",
+        "IMG":"Chinmay Desai.jpg",
+        "Email":"chinmay.desai@technovanza.org"
+    },  
+    {
+        "Name":"Abhinav Venkatadri",
+        "Phone":"8104936651",
+        "IMG":"Abhinav Venkatadri.jpg",
+        "Email":"abhinav.venkatadri@technovanza.org"
+    }
+]

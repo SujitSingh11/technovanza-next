@@ -8,6 +8,7 @@
         "Date": "",
         "Prize": "",
         "Logo": "/events/VRC.svg",
+        "LogoI": "/events/VRC_W.svg",
         "Contact": [
           {
             "Name": "Sujit Singh",
@@ -21,6 +22,8 @@
         "Date": "",
         "Prize": "",
         "Logo": "/events/ROBOMAZE.svg",
+        "LogoI": "/events/ROBOMAZE_W.svg",
+
         "Contact": [
           {
             "Name": "Sujit Singh",
@@ -39,6 +42,7 @@
         "Date": "",
         "Prize": "",
         "Logo": "/events/TECHNOHUNT.svg",
+        "LogoI": "/events/TECHNOHUNT_W.svg",
         "Contact": [
           {
             "Name": "Shubham Shirpurkar",
@@ -56,6 +60,7 @@
         "Date": "",
         "Prize": "",
         "Logo": "/events/SHERKLOCKED.svg",
+        "LogoI": "/events/SHERKLOCKED_W.svg",
         "Contact": [
           {
             "Name": "Pranay Patil",
@@ -73,6 +78,7 @@
         "Date": "",
         "Prize": "",
         "Logo": "/events/JAVA_GURU.svg",
+        "LogoI": "/events/JAVA_GURU_W.svg",
         "Contact": [
           {
             "Name": "Rachit Bubna",
@@ -90,6 +96,7 @@
         "Date": "",
         "Prize": "",
         "Logo": "/events/ULTIMATE_CODER.svg",
+        "LogoI": "/events/ULTIMATE_CODER_W.svg",
         "Contact": [
           {
             "Name": "Saurabh Sawant",
@@ -107,6 +114,7 @@
         "Date": "",
         "Prize": "",
         "Logo": "/events/Technohunt.svg",
+        "LogoI": "/events/Technohunt_W.svg",
         "Contact": [
           {
             "Name": "Jerrly Abraham",
@@ -129,6 +137,7 @@
         "Date": "",
         "Prize": "",
         "Logo": "/events/CodeStorm.svg",
+        "LogoI": "/events/CodeStorm_W.svg",
         "Contact": [
           {
             "Name": "Sujit Singh",
@@ -142,6 +151,7 @@
         "Date": "",
         "Prize": "",
         "Logo": "/events/EPORTFOLIO.svg",
+        "LogoI": "/events/EPORTFOLIO_W.svg",
         "Contact": [
           {
             "Name": "Sujit Singh",
@@ -160,6 +170,7 @@
         "Date": "",
         "Prize": "",
         "Logo": "/events/PeRUSE.svg",
+        "LogoI": "/events/PeRUSE_W.svg",
         "Contact": [
           {
             "Name": "Sujit Singh",
@@ -178,6 +189,7 @@
         "Date": "",
         "Prize": "",
         "Logo": "/events/SmartCity.svg",
+        "LogoI": "/events/SmartCity_W.svg",
         "Contact": [
           {
             "Name": "Sujit Singh",

@@ -56,6 +56,18 @@
   grid-template-columns: 1fr 1fr;
 }
 
+.previewCardRootICode {
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.previewCardRootSingle {
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: 1fr;
+}
+
 .previewCard {
   height: 250px;
   background: #02d7f2 !important;
@@ -122,6 +134,11 @@
     grid-template-columns: 1fr;
     grid-gap: 20px;
   }
+  .previewCardRootICode {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+
   .previewCard {
     margin-top: 20px;
   }

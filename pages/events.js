@@ -39,7 +39,16 @@ const Events = () => {
                 </Grid>
               </Grid>
 
-              <div className={Styles.previewCardRoot}>
+              <div
+                className={
+                  department.Department === "I-CODE"
+                    ? Styles.previewCardRootICode
+                    : department.Department === "Knowland" ||
+                      department.Department === "E-build"
+                    ? Styles.previewCardRootSingle
+                    : Styles.previewCardRoot
+                }
+              >
                 {department.Events.map((event, index) => {
                   return (
                     <div
@@ -50,13 +59,16 @@ const Events = () => {
                           top: 0,
                           behavior: "smooth",
                         });
-                        router.push({ pathname: "/event/uc" });
+                        router.push({
+                          pathname: `/event/${department.Department}/${event.Event}`,
+                        });
                       }}
                     >
                       <div className={Styles.previewCardLogoDiv}>
                         <img
                           className={Styles.previewCardLogo}
                           src={event.Logo}
+                          alt={event.Event}
                         />
                       </div>
                       <h2 className={Styles.previewCardTitle}>{event.Event}</h2>

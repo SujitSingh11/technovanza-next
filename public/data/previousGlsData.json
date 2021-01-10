@@ -1,0 +1,118 @@
+{
+    "Quarantine_Edition":[
+        {
+            "SpeakerName": "Subhash Garg",
+            "DayNumber": "19",
+            "Month": "Jun",
+            "Year": "2020",
+            "Time":"6:00 p.m",
+            "IMG": "Subhash Chandra Garg.jpg",
+            "Description": "<p>Mr. Garg shared his expert opinion on the topic and built his address around three key concepts: Economy, Technology and COVID-19. He spoke about how economy affects all of us and how the goods and services purchased are made a part of building capital. He then acknowledged the key importance of technology and emphasized the power of the digital era as “the software drives the machine”. He addressed how Digitalization has helped and has been a major boon in these unprecedented times, and termed this period a Digital-1.0.</p>",
+            "TalkOn": "Economic Change Post the Pandemic",
+            "YouTube_Link": "https://www.youtube.com/watch?v=ugCkL-R4QW8"
+        },
+        {
+            "SpeakerName": "Mr. Gabe Gabrielle",
+            "DayNumber": "20",
+            "Month": "Jun",
+            "Year": "2020",
+            "Time":"6:30 p.m",
+            "IMG": "Gabe Gabrielle.jpg",
+            "Description": "<p>Mr. Gabe spoke about infinity and beyond. He not only shared his work with NASA but also anecdotes that motivate you to achieve success in life. He spoke about the future breakthroughs. He is a perfect example of, 'Follow your dreams, the rest will all fall into place.' He adds with humour that he wasn't always an academic genius, but he slowly worked his way in achieving his true ambition. He basically gave insight in his life at NASA and through videos and photos showed us how interesting is the job of an engineer at a space centre.</p>",
+            "TalkOn": "Infinity and Beyond- Mars Rover Mission",
+            "YouTube_Link": "https://www.youtube.com/watch?v=GwwmWnyBytI"
+        },
+        {
+            "SpeakerName": "Mr. Shailesh Kumar",
+            "DayNumber": "21",
+            "Month": "Jun",
+            "Year": "2020",
+            "Time":"11:00 a.m",
+            "IMG": "Shailesh Kumar.jpg",
+            "Description": "<p>The prime topic of focus was AI in general, the future of AI application and the usage of AI to transform living in the future were some of the important topics discussed during the session. Under the following topics, the overall journey of AI comprising the infrastructure and automation along with the influence of AI on Data Science, IoT, Agriculture, education and augmented reality was covered in deep. He concluded the session with questions related to Supply Value chain, renewable energy sector, the effect of COVID-19 on AI and Data Bias were addressed.</p>",
+            "TalkOn": "Artificial Intelligence and Digital Transformation of India",
+            "YouTube_Link": "https://www.youtube.com/watch?v=UfcKRxGCajY"
+        },
+        {
+            "SpeakerName": "MC Dathan",
+            "DayNumber": "26",
+            "Month": "Jun",
+            "Year": "2020",
+            "Time":"5:00 p.m",
+            "IMG": "MC Dathan.jpg",
+            "Description": "<p>Sir's famous words- Learn, Gain, Return helps in every aspect of our life. Sir spoke about the advancement in the field of technology. Sir addressed about skill development where the skill of every individual is defined by how much an individual works and puts efforts in work! Sir gave insight on the ISRO and Chandrayaan-1. Sir gave promising ideas on the sustainable development about solar energy. Sir concluded by explaining the need to keep on advancing, and creating more efficient ways to ease our work, lifestyle and health by thinking more than just the existing.</p>",
+            "TalkOn": "Advancements in the field of Technology",
+            "YouTube_Link": "https://www.youtube.com/watch?v=6wr2Qmkoyi8"
+        },
+        {
+            "SpeakerName": "Mr. Garrett Brown",
+            "DayNumber": "29",
+            "Month": "Jun",
+            "Year": "2020",
+            "Time":"6:30 p.m",
+            "IMG": "Garrett Brown.jpg",
+            "Description": "<p>Mr. Brown engrossed the eager audience with his wholesome storytelling, where he began with talking about how he came about to being an inventor. He stressed on how a little bit of vision and a tad bit more of perseverance would lead to something exceptional. He showed the audience a ton of videos and old photographs, where he exactly mapped out the sketches of building the Steadicam. He took the audience on a journey of the sets of the evergreen movies like: The Shining, Rocky, Star Wars: Return of the Jedi, Indiana Jones, Titanic and many more, leaving the audience spell bounded. He concluded with how he considers the Steadicam to be an instrument and it just barely allows a gifted human being to do this amazing trick: to run along with their ever-moving corpus!</p>",
+            "TalkOn": "The Steadicam",
+            "YouTube_Link": " https://www.youtube.com/watch?v=RvLS_CQZKpw"
+        }
+    ],
+    "Hourglass_Edition":[
+        {
+            "SpeakerName": "Dr. Prakash Amte",
+            "DayNumber": "11",
+            "Month": "Sept",
+            "Year": "2020",
+            "Time":"6:00 p.m",
+            "IMG": "prakash amte.png",
+            "Description": "<p>Dr. Prakash Amte  is a social worker who started the Lok Biradari Prakalp, an organisation that aimed at aiding the tribals in the dense forests of Gadchiroli District.  He also established the Amte Animal Park, which tends to the care of injured animals. He and his wife Smt. Mandakini Amte also established Anandwan, a smart village and Somnath, a facility to treat patients of leprosy from Anandwan. Dr. Amte and his wife Smt. Mandakini Amte have been honoured with the Ramon Magsaysay Award in 2008 and the ICMR Lifetime Achievement Award by Bill Gates!”</p>",
+            "TalkOn": "",
+            "YouTube_Link": "https://www.youtube.com/watch?v=wWgNt2Sth5s"
+        },
+        {
+            "SpeakerName": "Mr. G Madhavan Nair",
+            "DayNumber": "6",
+            "Month": "Sept",
+            "Year": "2020",
+            "Time":"5:30 p.m",
+            "IMG": "G Madhavan Nair.jpg",
+            "Description": "<p>Mr. Nair has, in the past, not only borne the title of Chairman of the Indian Space Research Organisation (ISRO) but also served as the Secretary of the Department of Space in India. As Project Director of the Polar Satellite Launch Vehicle (PSLV), he spearheaded India's progress in space exploration. He has contributed massively in the success of the Geosynchronous Satellite Launch Vehicle (GSLV) and many more projects dedicated to space exploration.”</p>",
+            "TalkOn": "",
+            "YouTube_Link": "https://www.youtube.com/watch?v=vwx9_xTBTNw"
+        },
+        {
+            "SpeakerName": "Mr. Nadir Godrej",
+            "DayNumber": "4",
+            "Month": "Sept",
+            "Year": "2020",
+            "Time":"5:30 p.m",
+            "IMG": "Nadir Godrej.jpg",
+            "Description": "<p>Mr. Nadir Godrej, being an influential person in the Indian business circuit, serves as the managing director of Godrej Industries, one of Indian's prominent public sector companies. He also holds the post of an independent director on the boards of other business giants like Tata Teleservices, Mahindra & Mahindra and Taj Hotels!”</p>",
+            "TalkOn": "",
+            "YouTube_Link": "https://www.youtube.com/watch?v=REbppR96zE8"
+        }
+    ],
+    "Previous_GLS":[
+        {
+            "SpeakerName": "Dr. APJ Abdul Kalam",
+            "DayNumber": "",
+            "Month": "",
+            "Year": "2009",
+            "Time":"",
+            "IMG": "Garrett Brown.jpg",
+            "Description": "<p>During his visit to VJTI Technovanza in 2009, he addressed the awestruck audience on the topic “Technology Education Empowers”. He spelt the humble beginnings of Technovanza with his wise words- “The youth of today should work towards taking technology towards society. It is great to see all you youngsters take that up as a challenge.”</p>",
+            "TalkOn": "Technology Education Empowers",
+            "YouTube_Link": ""
+        },
+        {
+            "SpeakerName": "Mr. Boman Irani",
+            "DayNumber": "",
+            "Month": "",
+            "Year": "2009",
+            "Time":"",
+            "IMG": "Garrett Brown.jpg",
+            "Description": "<p>Mr. Boman Irani, in his Guest Lecture at VJTI Technovanza adressed over 1500 students in the VJTI Quadrangle. He inspired the highly energetic crowd as he shared his life story</p>",
+            "TalkOn": "Technology Education Empowers",
+            "YouTube_Link": ""
+        }
+    ]
+}

@@ -14,81 +14,185 @@ const firestore = admin.firestore();
 export default async function handler(req, res) {
   if (req.method === "POST") {
     try {
-      const { uid1, uid2, solo, event, team } = req.body;
-      const eventRef = firestore.collection("events").doc(event);
-      const eventDoc = await (await eventRef.get()).data();
+      const {
+        uid,
+        phone,
+        participants,
+        solo,
+        event,
+        teamName,
+        numOfTeam,
+      } = req.body;
 
-      if (uid1 === "") {
+      // Primary User Validation
+      if (uid === "") {
         throw "TechnoID Empty";
       } else {
-        const user1Ref = firestore.collection("users").doc(uid1);
+        const user1Ref = firestore.collection("users").doc(uid);
         const doc = await user1Ref.get();
         if (!doc.exists) {
           throw "TechnoID Invalid";
-        }
-      }
-
-      if (!solo) {
-        if (uid2 === "") {
-          throw "Partner TechnoID Empty";
         } else {
-          const user2Ref = firestore.collection("users").doc(uid2);
-          const doc = await user2Ref.get();
-
-          if (!doc.exists) {
-            throw "Partner TechnoID Invalid";
-          } else {
-            // Validation
-            eventDoc.registration.map((data) => {
-              if (data.hasOwnProperty("uid1") && data.uid1 === uid1) {
-                throw "Already Registered";
-              } else if (data.hasOwnProperty("uid2") && data.uid2 === uid1) {
-                throw "Already registered with TechnoID: " + data.uid2;
-              } else if (data.hasOwnProperty("uid1") && data.uid1 === uid2) {
-                throw "Partner Already Registered";
-              } else if (data.hasOwnProperty("uid2") && data.uid2 === uid2) {
-                throw "Partner Already registered with TechnoID: " + data.uid2;
-              }
-            });
-
-            await eventRef.update({
-              registration: admin.firestore.FieldValue.arrayUnion({
-                uid1: uid1,
-                uid2: uid2,
-                solo: solo,
-                team: team,
-              }),
-            });
-
-            res.statusCode = 200;
-            res.setHeader("Content-Type", "application/json");
-            return res.end(
-              JSON.stringify({ message: "Registration Successful" })
-            );
+          if (phone !== "" || phone !== doc.data().phone) {
+            await user1Ref.set({ phone: phone }, { merge: true });
           }
         }
+      }
+
+      const eventRef = firestore
+        .collection(`events/${event}/Registration`)
+        .doc(uid);
+      const eventRegDoc = await eventRef.get();
+
+      if (eventRegDoc.exists) {
+        throw "Already Registered";
+      }
+
+      // Partner Validation
+      const eventSnapshot = await firestore
+        .collection(`events/${event}/Registration`)
+        .get();
+
+      eventSnapshot.docs.map((doc) => {
+        doc.data().participants.forEach((participant) => {
+          if (participant !== "") {
+            if (uid === participant) {
+              throw "Already registered as a partner";
+            }
+            if (!solo) {
+              participants.map((p) => {
+                if (p.pid !== "") {
+                  if (p.pid === participant) {
+                    throw "Partner Already Registered";
+                  }
+                } else {
+                  return;
+                }
+              });
+            }
+          }
+        });
+      });
+
+      if (solo) {
+        await eventRef.update(
+          {
+            uid: uid,
+            teamName: teamName,
+            solo: solo,
+          },
+          { merge: true }
+        );
       } else {
-        // Validation
-        eventDoc.registration.map((data) => {
-          if (data.hasOwnProperty("uid1") && data.uid1 === uid1) {
-            throw "Already Registered";
-          } else if (data.hasOwnProperty("uid2") && data.uid2 === uid1) {
-            throw "Already registered with TechnoID: " + data.uid2;
+        const partArr = [];
+
+        participants.forEach((element) => {
+          if (element.pid !== "") {
+            if (element.pid !== uid) {
+              partArr.push(element.pid);
+            } else {
+              throw "User itself cannot be Teammate";
+            }
           }
         });
 
-        await eventRef.update({
-          registration: admin.firestore.FieldValue.arrayUnion({
-            uid1: uid1,
-            solo: solo,
-            team: team,
-          }),
-        });
+        // Check if participants user exist
+        const partRef = firestore.collection("users");
 
-        res.statusCode = 200;
-        res.setHeader("Content-Type", "application/json");
-        return res.end(JSON.stringify({ message: "Registration Successful" }));
+        if (numOfTeam >= 1) {
+          const doc = await partRef.doc(participants[0].pid).get();
+          if (!doc.exists) {
+            throw "Teammate TechnoID Invalid: " + participants[0].pid;
+          } else {
+            if (
+              participants[0].pnum !== "" ||
+              participants[0].pnum !== doc.data().phone
+            ) {
+              await partRef
+                .doc(participants[0].pid)
+                .set({ phone: participants[0].pnum }, { merge: true });
+            }
+          }
+        }
+
+        if (numOfTeam >= 2) {
+          const doc = await partRef.doc(participants[1].pid).get();
+          if (!doc.exists) {
+            throw "Teammate TechnoID Invalid: " + participants[1].pid;
+          } else {
+            if (
+              participants[1].pnum !== "" ||
+              participants[1].pnum !== doc.data().phone
+            ) {
+              await partRef
+                .doc(participants[1].pid)
+                .set({ phone: participants[1].pnum }, { merge: true });
+            }
+          }
+        }
+
+        if (numOfTeam >= 3) {
+          const doc = await partRef.doc(participants[2].pid).get();
+          if (!doc.exists) {
+            throw "Teammate TechnoID Invalid: " + participants[2].pid;
+          } else {
+            if (
+              participants[2].pnum !== "" ||
+              participants[2].pnum !== doc.data().phone
+            ) {
+              await partRef
+                .doc(participants[2].pid)
+                .set({ phone: participants[3].pnum }, { merge: true });
+            }
+          }
+        }
+
+        if (numOfTeam >= 4) {
+          const doc = await partRef.doc(participants[3].pid).get();
+          if (!doc.exists) {
+            throw "Teammate TechnoID Invalid: " + participants[3].pid;
+          } else {
+            if (
+              participants[3].pnum !== "" ||
+              participants[3].pnum !== doc.data().phone
+            ) {
+              await partRef
+                .doc(participants[3].pid)
+                .set({ phone: participants[4].pnum }, { merge: true });
+            }
+          }
+        }
+
+        if (numOfTeam >= 5) {
+          const doc = await partRef.doc(participants[4].pid).get();
+          if (!doc.exists) {
+            throw "Teammate TechnoID Invalid: " + participants[4].pid;
+          } else {
+            if (
+              participants[4].pnum !== "" ||
+              participants[4].pnum !== doc.data().phone
+            ) {
+              await partRef
+                .doc(participants[4].pid)
+                .set({ phone: phone }, { merge: true });
+            }
+          }
+        }
+
+        await eventRef.update(
+          {
+            uid: uid,
+            teamName: teamName,
+            solo: solo,
+            participants: partArr,
+          },
+          { merge: true }
+        );
       }
+
+      res.statusCode = 200;
+      res.setHeader("Content-Type", "application/json");
+      return res.end(JSON.stringify({ message: "Registration Successful" }));
     } catch (error) {
       console.log(error);
       res.statusCode = 208;

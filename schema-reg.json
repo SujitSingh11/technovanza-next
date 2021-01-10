@@ -1,11 +1,36 @@
 {
-    "UC":{
-        "registration":[
-            {
-                "teamName": "TN",
-                "uid1":"user/docRef",
-                "uid2":"user/docRef"
-            }
-        ]
+  "events": {
+    "UC": {
+      "Registrations": {
+        "UID": {
+          "teamName": "Team Name",
+          "uid": "Primary user ID",
+          "solo": false,
+          "participation": ["Participant 1 ID", "Participant N ID"]
+        },
+        "UID": {
+          "teamName": "Team Name",
+          "uid": "Primary user ID",
+          "solo": false,
+          "participation": ["Participant 1 ID", "Participant N ID"]
+        }
+      }
+    },
+    "VRC": {
+      "Registrations": {
+        "UID": {
+          "teamName": "Team Name",
+          "uid": "Primary user ID",
+          "solo": false,
+          "participation": ["Participant 1 ID", "Participant N ID"]
+        },
+        "UID": {
+          "teamName": "Team Name",
+          "uid": "Primary user ID",
+          "solo": false,
+          "participation": ["Participant 1 ID", "Participant N ID"]
+        }
+      }
     }
+  }
 }
