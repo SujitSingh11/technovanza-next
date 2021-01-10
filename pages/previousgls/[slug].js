@@ -111,7 +111,6 @@ export default PreviousGLS;
 PreviousGLS.getInitialProps = async (ctx) => {
   const PreviousData = fetch(`${process.env.domain}/data/previousGlsData.json`);
   const res = await (await PreviousData).json();
-  console.log(process.env.domain);
   return {
     res,
   };
