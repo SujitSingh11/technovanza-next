@@ -322,7 +322,11 @@ export default function Home() {
                 href="/gls"
               >
                 <div className={Styles.previewCardLogoDiv}>
-                  <img className={Styles.previewCardLogo} src="/gls.svg" />
+                  <img
+                    alt="gls"
+                    className={Styles.previewCardLogo}
+                    src="/gls.svg"
+                  />
                 </div>
                 <h2 className={Styles.previewCardTitle}>
                   Guest Lecture Series

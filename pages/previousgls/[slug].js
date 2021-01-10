@@ -24,7 +24,6 @@ const PreviousGLS = ({ res }) => {
   }, [router.query.slug]);
 
   const selectData = (query) => {
-    console.log(query);
     switch (query) {
       case "Quarantine_Edition":
         setData(res.Quarantine_Edition);
@@ -112,6 +111,7 @@ export default PreviousGLS;
 PreviousGLS.getInitialProps = async (ctx) => {
   const PreviousData = fetch(`${process.env.domain}/data/PreviousGlsData.json`);
   const res = await (await PreviousData).json();
+  console.log(process.env.domain);
   return {
     res,
   };

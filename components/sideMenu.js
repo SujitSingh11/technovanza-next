@@ -151,7 +151,7 @@ function SideMenu() {
             <></>
           )}
 
-          <div>
+          <nav>
             <Divider />
             <List className={Styles.sideMenuListRoot}>
               <ListItem button className={Styles.sideMenuListItem}>
@@ -192,7 +192,7 @@ function SideMenu() {
               </ListItem>
             </List>
             <Divider />
-          </div>
+          </nav>
 
           <div className={Styles.menuLogout}>
             {user ? (
