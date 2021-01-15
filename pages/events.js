@@ -49,7 +49,7 @@ const Events = ({ res }) => {
               >
                 {department.Events.map((event, index) => {
                   return (
-                    <div
+                    <a
                       key={index}
                       className={Styles.previewCard}
                       onClick={() => {
@@ -61,6 +61,7 @@ const Events = ({ res }) => {
                           pathname: `/event/${department.Department}/${event.Event}`,
                         });
                       }}
+                      href={`/event/${department.Department}/${event.Event}`}
                     >
                       <div className={Styles.previewCardLogoDiv}>
                         <img
@@ -70,7 +71,7 @@ const Events = ({ res }) => {
                         />
                       </div>
                       <h2 className={Styles.previewCardTitle}>{event.Event}</h2>
-                    </div>
+                    </a>
                   );
                 })}
               </div>
