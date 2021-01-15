@@ -167,4 +167,7 @@
   .featureUpcomingCont {
     margin: 2em 0em;
   }
+  .cardContainRight {
+    padding: 15px !important;
+  }
 }

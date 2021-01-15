@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { Grid, IconButton, Container } from "@material-ui/core";
 import Styles from "../styles/Footer.module.css";
 
@@ -22,48 +23,41 @@ function Footer() {
               </Grid>
               <Grid className={Styles.footerSocial} item>
                 <div className={Styles.footerSocialDiv}>
-                  <IconButton
-                    onClick={() => {
-                      window.open("https://instagram.com/technovanza");
-                    }}
-                    className={Styles.iconButton}
-                  >
-                    <InstagramIcon className={Styles.iconInsta} />
-                  </IconButton>
-                  <IconButton
-                    onClick={() => {
-                      window.open("https://www.facebook.com/technovanza");
-                    }}
-                    className={Styles.iconButton}
-                  >
-                    <FacebookIcon className={Styles.iconFacebook} />
-                  </IconButton>
-                  <IconButton
-                    onClick={() => {
-                      window.open("https://youtube.com/c/TechnovanzaVJTI");
-                    }}
-                    className={Styles.iconButton}
-                  >
-                    <YouTubeIcon className={Styles.iconYoutube} />
-                  </IconButton>
-                  <IconButton
-                    onClick={() => {
-                      window.open("https://twitter.com/Technovanza");
-                    }}
-                    className={Styles.iconButton}
-                  >
-                    <TwitterIcon className={Styles.iconTwitter} />
-                  </IconButton>
-                  <IconButton
-                    onClick={() => {
-                      window.open(
-                        "https://www.linkedin.com/company/technovanza-vjti"
-                      );
-                    }}
-                    className={Styles.iconButton}
-                  >
-                    <LinkedInIcon className={Styles.iconLinkedIn} />
-                  </IconButton>
+                  <Link href="https://instagram.com/technovanza">
+                    <a target="_blank">
+                      <IconButton className={Styles.iconButton}>
+                        <InstagramIcon className={Styles.iconInsta} />
+                      </IconButton>
+                    </a>
+                  </Link>
+                  <Link href="https://www.facebook.com/technovanza">
+                    <a target="_blank">
+                      <IconButton className={Styles.iconButton}>
+                        <FacebookIcon className={Styles.iconFacebook} />
+                      </IconButton>
+                    </a>
+                  </Link>
+                  <Link href="https://youtube.com/c/TechnovanzaVJTI">
+                    <a target="_blank">
+                      <IconButton className={Styles.iconButton}>
+                        <YouTubeIcon className={Styles.iconYoutube} />
+                      </IconButton>
+                    </a>
+                  </Link>
+                  <Link href="https://twitter.com/Technovanza">
+                    <a target="_blank">
+                      <IconButton className={Styles.iconButton}>
+                        <TwitterIcon className={Styles.iconTwitter} />
+                      </IconButton>
+                    </a>
+                  </Link>
+                  <Link href="https://www.linkedin.com/company/technovanza-vjti">
+                    <a target="_blank">
+                      <IconButton className={Styles.iconButton}>
+                        <LinkedInIcon className={Styles.iconLinkedIn} />
+                      </IconButton>
+                    </a>
+                  </Link>
                 </div>
               </Grid>
             </Grid>

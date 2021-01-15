@@ -201,6 +201,17 @@
   z-index: 100;
 }
 
+.previousTechRoot {
+  height: 500px;
+}
+
+.previousTechTitle {
+  font-size: 50px;
+  color: #e5e5e5;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+}
+
 .aboutUsLabel {
   font-size: 50px;
   color: #e5e5e5;
@@ -209,13 +220,18 @@
 }
 
 .aboutUsRoot {
+  color: #e5e5e5;
 }
 
-.aboutUsGridRoot {
+.aboutUsLI {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-family: "Nunito", sans-serif;
+  text-align: justify;
 }
 
 .aboutUsGrid {
-  height: 400px;
+  padding: 20px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -246,6 +262,13 @@
   }
   .aboutTechno {
     padding-top: 25px;
+  }
+  .aboutUsCont {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .previousTechRoot {
+    height: 400px;
   }
 }
 

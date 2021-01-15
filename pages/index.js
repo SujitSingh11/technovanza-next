@@ -2,7 +2,7 @@ import Head from "next/head";
 import React, { useEffect, useState } from "react";
 
 import { useRouter } from "next/router";
-import ReactPlayer from "react-player/file";
+import ReactPlayer from "react-player";
 
 import Styles from "../styles/Home.module.css";
 import { Grid, Container, AppBar, Toolbar } from "@material-ui/core";
@@ -342,29 +342,77 @@ export default function Home() {
             </div>
           </Container>
         </section>
-        {/* <section>
-          <div className={Styles.aboutUsRoot}>
-            <h1 className={Styles.aboutUsLabel}>About Us</h1>
-            <Grid className={Styles.aboutUsGridRoot} container>
-              <Grid
-                className={Styles.aboutUsGrid}
-                lg={6}
-                md={6}
-                sm={12}
-                xs={12}
-                item
-              ></Grid>
-              <Grid
-                className={Styles.aboutUsGrid}
-                lg={6}
-                md={6}
-                sm={12}
-                xs={12}
-                item
-              ></Grid>
-            </Grid>
+        <section>
+          <div>
+            <h1 className={Styles.previousTechTitle}>Technovanza '19</h1>
+            <div className={Styles.previousTechRoot}>
+              <ReactPlayer
+                url="https://www.youtube.com/watch?v=1ar1i4r9DOU"
+                width="100%"
+                height="100%"
+                controls
+              />
+            </div>
           </div>
-        </section> */}
+        </section>
+        <section>
+          <div className={Styles.aboutUsRoot}>
+            <Container className={Styles.aboutUsCont} maxWidth="lg">
+              <h1 className={Styles.aboutUsLabel}>About Us</h1>
+              <Grid
+                alignItems="center"
+                className={Styles.aboutUsGridRoot}
+                container
+              >
+                <Grid
+                  className={Styles.aboutUsGrid}
+                  lg={6}
+                  md={6}
+                  sm={12}
+                  xs={12}
+                  item
+                >
+                  <ul className={Styles.aboutUsUL}>
+                    <li className={Styles.aboutUsLI}>
+                      Due to inundating creativity and thirst for innovation of
+                      our students and with the constant guidance of our
+                      unparalleled faculty, Technovanza was born in 2000.
+                    </li>
+                    <li className={Styles.aboutUsLI}>
+                      Keeping in mind our core values of working as a team with
+                      integrity and professionalism and the ultimate aim of
+                      “Taking Technology to the Society”, Technovanza has grown
+                      over the last 19 years to become one of the most popular
+                      and awaited techno-management events in the country.
+                    </li>
+                    <li className={Styles.aboutUsLI}>
+                      Reaching out to students, industry and the society in
+                      general, Technovanza 2020 promises to be bigger than ever!
+                    </li>
+                  </ul>
+                </Grid>
+                <Grid
+                  className={Styles.aboutUsGrid}
+                  lg={6}
+                  md={6}
+                  sm={12}
+                  xs={12}
+                  item
+                >
+                  <ReactPlayer
+                    url="/target.webm"
+                    width="100%"
+                    height="100%"
+                    playing={true}
+                    loop={true}
+                    muted={true}
+                    playsinline={true}
+                  />
+                </Grid>
+              </Grid>
+            </Container>
+          </div>
+        </section>
       </main>
       <Footer />
     </div>
