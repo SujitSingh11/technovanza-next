@@ -414,9 +414,11 @@ export default function Home() {
                   <></>
                 )}
               </Grid>
-              <h1 className="glitch" data-text="See you in January">
-                See you in January
-              </h1>
+              <Container>
+                <h1 className="glitch" data-text="See you in January">
+                  See you in January
+                </h1>
+              </Container>
             </Container>
           </div>
         </section>
