@@ -3,15 +3,7 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 
 import Styles from "../../../styles/EventDesc.module.css";
-import {
-  Grid,
-  Container,
-  Button,
-  Radio,
-  RadioGroup,
-  FormControlLabel,
-  FormControl,
-} from "@material-ui/core";
+import { Grid, Container, Button } from "@material-ui/core";
 
 import Header from "../../../components/header";
 import Footer from "../../../components/footer";
