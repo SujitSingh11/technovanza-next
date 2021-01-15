@@ -214,7 +214,7 @@ export default function Home() {
             </div>
           )}
         </header>
-        <section className={Styles.aboutRootSection}>
+        <section>
           <Grid className={Styles.aboutRootGrid} container>
             <Grid
               lg={12}

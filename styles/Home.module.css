@@ -273,6 +273,12 @@
   .previousTechRoot {
     height: 400px;
   }
+  .logoInfo {
+    width: 250px !important;
+  }
+  .previewCardLogo {
+    width: 250px !important;
+  }
 }
 
 @media only screen and (max-width: 800px) {
