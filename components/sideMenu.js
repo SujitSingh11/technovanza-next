@@ -129,7 +129,7 @@ function SideMenu() {
                     title={!copied ? "Click to copy" : "Copied!"}
                     placement="left"
                   >
-                    <p className={Styles.technoID}>{uid.slice(0, 6)}</p>
+                    <p className={Styles.technoID}>Click to copy</p>
                   </Tooltip>
                 </CopyToClipboard>
               </div>

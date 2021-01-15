@@ -46,6 +46,12 @@
   margin: 10px 0 5px 0;
 }
 
+.technoID {
+  border: dashed 2px #1e1e1e;
+  margin: 15px 40px;
+  padding: 2px;
+}
+
 .technoID:hover {
   background-color: #d8d8d8;
 }

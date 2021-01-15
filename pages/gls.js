@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
+import { NextSeo } from "next-seo";
 
 import { Grid, Container, Button } from "@material-ui/core";
 import Styles from "../styles/GLS.module.css";
@@ -81,7 +82,7 @@ const GLS = ({ res }) => {
                   top: 0,
                   behavior: "smooth",
                 });
-                router.push({ pathname: "/previousgls/Quarantine_Edition" });
+                //router.push({ pathname: "/previousgls/Quarantine_Edition" });
               }}
               href="/previousgls/Quarantine_Edition"
             >
@@ -97,7 +98,7 @@ const GLS = ({ res }) => {
                   top: 0,
                   behavior: "smooth",
                 });
-                router.push({ pathname: "/previousgls/Hourglass_Edition" });
+                //router.push({ pathname: "/previousgls/Hourglass_Edition" });
               }}
               href="/previousgls/Hourglass_Edition"
             >
@@ -113,9 +114,9 @@ const GLS = ({ res }) => {
                   top: 0,
                   behavior: "smooth",
                 });
-                router.push({ pathname: "/previousgls/Quarantine_Edition" });
+                //router.push({ pathname: "/previousgls/Previous_GLS" });
               }}
-              href="/previousgls/Quarantine_Edition"
+              href="/previousgls/Previous_GLS"
             >
               <div className={Styles.cardIcon}>
                 <img className={Styles.QEIcon} src="/gls.svg" />

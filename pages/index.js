@@ -1,5 +1,6 @@
 import Head from "next/head";
 import React, { useEffect, useState } from "react";
+import { SiteLinksSearchBoxJsonLd } from "next-seo";
 
 import { useRouter } from "next/router";
 import ReactPlayer from "react-player";
@@ -115,6 +116,7 @@ export default function Home() {
           content="https://i.ibb.co/n0QMWDW/Meta-img.png"
         />
       </Head>
+
       <main className={Styles.main}>
         <nav className={Styles.rootNav}>
           <AppBar className={Styles.navAppBar} position="static" elevation={0}>

@@ -16,6 +16,7 @@
     "firebase": "^8.0.1",
     "firebase-admin": "^9.4.2",
     "next": "^10.0.4",
+    "next-seo": "^4.17.0",
     "react": "16.13.1",
     "react-copy-to-clipboard": "^5.0.2",
     "react-custom-scrollbars": "^4.2.1",
