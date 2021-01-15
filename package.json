@@ -25,5 +25,8 @@
     "react-particles-js": "^3.3.0",
     "react-player": "^2.6.2",
     "react-scroll-up-button": "^1.6.4"
+  },
+  "devDependencies": {
+    "globby": "^11.0.2"
   }
 }

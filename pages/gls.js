@@ -74,7 +74,7 @@ const GLS = ({ res }) => {
         </Container>
         <Container maxWidth="lg" className={Styles.previousGLSGridRoot}>
           <div className={Styles.previousGLSGridDiv}>
-            <div
+            <a
               className={Styles.previousGLSGrid}
               onClick={() => {
                 window.scroll({
@@ -83,13 +83,14 @@ const GLS = ({ res }) => {
                 });
                 router.push({ pathname: "/previousgls/Quarantine_Edition" });
               }}
+              href="/previousgls/Quarantine_Edition"
             >
               <div className={Styles.cardIcon}>
                 <img className={Styles.QEIcon} src="/glsQE.svg" />
               </div>
               <h2 className={Styles.previousCardTitle}>Quarantine Edition</h2>
-            </div>
-            <div
+            </a>
+            <a
               className={Styles.previousGLSGrid}
               onClick={() => {
                 window.scroll({
@@ -98,13 +99,14 @@ const GLS = ({ res }) => {
                 });
                 router.push({ pathname: "/previousgls/Hourglass_Edition" });
               }}
+              href="/previousgls/Hourglass_Edition"
             >
               <div className={Styles.cardIcon}>
                 <img className={Styles.QEIcon} src="/hourglass.svg" />
               </div>
               <h2 className={Styles.previousCardTitle}>Hourglass Edition</h2>
-            </div>
-            <div
+            </a>
+            <a
               className={Styles.previousGLSGrid}
               onClick={() => {
                 window.scroll({
@@ -113,12 +115,13 @@ const GLS = ({ res }) => {
                 });
                 router.push({ pathname: "/previousgls/Quarantine_Edition" });
               }}
+              href="/previousgls/Quarantine_Edition"
             >
               <div className={Styles.cardIcon}>
                 <img className={Styles.QEIcon} src="/gls.svg" />
               </div>
               <h2 className={Styles.previousCardTitle}>Previous GLS</h2>
-            </div>
+            </a>
           </div>
         </Container>
         <Footer />

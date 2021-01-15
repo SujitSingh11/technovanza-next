@@ -1,5 +1,14 @@
 const { PHASE_DEVELOPMENT_SERVER } = require("next/constants");
 
+module.exports = {
+  webpack: (config, { isServer }) => {
+    if (isServer) {
+      require("./src/utils/sitemap.js");
+    }
+    return config;
+  },
+};
+
 module.exports = (phase, { defaultConfig }) => {
   if (phase === PHASE_DEVELOPMENT_SERVER) {
     return {
