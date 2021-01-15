@@ -391,24 +391,28 @@ export default function Home() {
                     </li>
                   </ul>
                 </Grid>
-                <Grid
-                  className={Styles.aboutUsGrid}
-                  lg={6}
-                  md={6}
-                  sm={12}
-                  xs={12}
-                  item
-                >
-                  <ReactPlayer
-                    url="/target.webm"
-                    width="100%"
-                    height="100%"
-                    playing={true}
-                    loop={true}
-                    muted={true}
-                    playsinline={true}
-                  />
-                </Grid>
+                {!isTouch ? (
+                  <Grid
+                    className={Styles.aboutUsGrid}
+                    lg={6}
+                    md={6}
+                    sm={12}
+                    xs={12}
+                    item
+                  >
+                    <ReactPlayer
+                      url="/target.webm"
+                      width="100%"
+                      height="100%"
+                      playing={true}
+                      loop={true}
+                      muted={true}
+                      playsinline={true}
+                    />
+                  </Grid>
+                ) : (
+                  <></>
+                )}
               </Grid>
               <h1 className="glitch" data-text="See you in January">
                 See you in January
