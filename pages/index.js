@@ -2,7 +2,7 @@ import Head from "next/head";
 import React, { useEffect, useState } from "react";
 
 import { useRouter } from "next/router";
-import ReactPlayer from "react-player";
+import ReactPlayer from "react-player/youtube";
 
 import Styles from "../styles/Home.module.css";
 import { Grid, Container, AppBar, Toolbar } from "@material-ui/core";
@@ -33,6 +33,7 @@ function isTouchDevice() {
 
 export default function Home() {
   const [isTouch, setIsTouch] = useState(false);
+  const [isMobileSafari, setIsMobileSafari] = useState(false);
   useEffect(() => {
     const {
       isAndroid,
@@ -50,8 +51,9 @@ export default function Home() {
         isWinPhone ||
         isMobileSafari ||
         isTablet ||
-        isTouchDevice()
+        isTouchDevice(isMobileSafari)
     );
+    setIsMobileSafari();
   }, []);
 
   const router = useRouter();
@@ -130,7 +132,7 @@ export default function Home() {
           {isTouch ? (
             <div className={Styles.player}>
               <ReactPlayer
-                url="/target.webm"
+                url="https://www.youtube.com/watch?v=y86q8Yxb68w"
                 width="100%"
                 height="100%"
                 playing={true}
