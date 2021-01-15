@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for https://technovanza.vercel.app/</title>
+  <link>https://technovanza.vercel.app/</link>
+
+<item>
+     <link>https://technovanza.vercel.app/</link>
+     <title>Technovanza</title>
+     <description>Technovanza 2020 is arriving on 27th, 28th and 29th of january</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://technovanza.vercel.app/events</link>
+     <title>Technovanza | Events</title>
+     <description>Technovanza | Events</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://technovanza.vercel.app/gls</link>
+     <title>Technovanza | GLS</title>
+     <description>Technovanza | GLS</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://technovanza.vercel.app/event/Virtual%20Bot/VRC</link>
+     <title>Technovanza | VRC</title>
+     <description>Technovanza | VRC</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://technovanza.vercel.app/event/Virtual%20Bot/RoboMaze</link>
+     <title>Technovanza | RoboMaze</title>
+     <description>Technovanza | RoboMaze</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://technovanza.vercel.app/event/I-CODE/TechnoHunt</link>
+     <title>Technovanza | TechnoHunt</title>
+     <description>Technovanza | TechnoHunt</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://technovanza.vercel.app/event/I-CODE/Sherlocked</link>
+     <title>Technovanza | Sherlocked</title>
+     <description>Technovanza | Sherlocked</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://technovanza.vercel.app/event/I-CODE/JavaGuru</link>
+     <title>Technovanza | JavaGuru</title>
+     <description>Technovanza | JavaGuru</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://technovanza.vercel.app/event/I-CODE/Ultimate%20Coder</link>
+     <title>Technovanza | Ultimate Coder</title>
+     <description>Technovanza | Ultimate Coder</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://technovanza.vercel.app/event/I-CODE/C%20Way</link>
+     <title>Technovanza | C Way</title>
+     <description>Technovanza | C Way</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://technovanza.vercel.app/event/Code-if-you-can/Codestorm</link>
+     <title>Technovanza | Codestorm</title>
+     <description>Technovanza | Codestorm</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://technovanza.vercel.app/event/Code-if-you-can/EPortfolio</link>
+     <title>Technovanza | EPortfolio</title>
+     <description>Technovanza | EPortfolio</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://technovanza.vercel.app/event/Knowland/PeRUSE</link>
+     <title>Technovanza | PeRUSE</title>
+     <description>Technovanza | PeRUSE</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://technovanza.vercel.app/event/E-build/SmartCity</link>
+     <title>Technovanza | SmartCity</title>
+     <description>Technovanza | SmartCity</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://technovanza.vercel.app/previousgls/Quarantine_Edition</link>
+     <title>Technovanza | Quarantine_Edition</title>
+     <description>Technovanza | Quarantine_Edition</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://technovanza.vercel.app/previousgls/Hourglass_Edition</link>
+     <title>Technovanza | Hourglass_Edition</title>
+     <description>Technovanza | Hourglass_Edition</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://technovanza.vercel.app/events/problem/E-Portfolio2020.pdf</link>
+     <title></title>
+     
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>3</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>
+  

@@ -62,6 +62,7 @@ export default function Home() {
       <ScrollUp />
       <Head>
         <title>Technovanza</title>
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="icon" href="/favicon.ico" />
         <script
           src="https://cdn.rawgit.com/progers/pathseg/master/pathseg.js"
@@ -75,10 +76,26 @@ export default function Home() {
           name="keywords"
           content="Technovanza VJTI Matunga Mumbai college"
         />
-
+        <meta name="robots" content="noindex" />
         <meta
           name="description"
-          content="Technovanza 2020 is arriving on 27th, 28th and 29th of january"
+          content="Technovanza is the annual technical fest of Veermata Jijabai
+                  Technological Institute, where students strive for excellence
+                  while giving back to the community. Over the last 18 years,
+                  Technovanza has grown to become of the most popular
+                  Techno-managerial events in the country and continues to awe
+                  its audience with the quality of events it hosts. From
+                  conducting competitive events, where people all over India can
+                  showcase their talents to hosting exhibitions with ISRO, BARC
+                  and LIGO along with a glorious lineup of dignitaries from
+                  various fields like Dr. A.P.J Abdul Kalam, Mr. Ratan Tata, Dr.
+                  A.S. Kiran Kumar, Mr. Harsha Bhogle, Sophia: the humanoid
+                  robot and many more, Technovanza keeps getting better each
+                  year. Keeping up with our motto of “Taking Technology to the
+                  society”, we continue to deliver an exuberant event, virtually
+                  this year! So, join us from the comfort of your homes, while
+                  we bring to you opportunities and exposure from the world
+                  over."
         />
 
         <meta property="og:url" content="https://technovanza.org/" />
@@ -86,7 +103,23 @@ export default function Home() {
         <meta property="og:title" content="Technovanza" />
         <meta
           property="og:description"
-          content="Technovanza 2020 is arriving on 27th, 28th and 29th of january"
+          content="Technovanza is the annual technical fest of Veermata Jijabai
+                  Technological Institute, where students strive for excellence
+                  while giving back to the community. Over the last 18 years,
+                  Technovanza has grown to become of the most popular
+                  Techno-managerial events in the country and continues to awe
+                  its audience with the quality of events it hosts. From
+                  conducting competitive events, where people all over India can
+                  showcase their talents to hosting exhibitions with ISRO, BARC
+                  and LIGO along with a glorious lineup of dignitaries from
+                  various fields like Dr. A.P.J Abdul Kalam, Mr. Ratan Tata, Dr.
+                  A.S. Kiran Kumar, Mr. Harsha Bhogle, Sophia: the humanoid
+                  robot and many more, Technovanza keeps getting better each
+                  year. Keeping up with our motto of “Taking Technology to the
+                  society”, we continue to deliver an exuberant event, virtually
+                  this year! So, join us from the comfort of your homes, while
+                  we bring to you opportunities and exposure from the world
+                  over."
         />
         <meta
           property="og:image"
@@ -99,7 +132,23 @@ export default function Home() {
         <meta name="twitter:title" content="Technovanza" />
         <meta
           name="twitter:description"
-          content="Technovanza 2020 is arriving on 27th, 28th and 29th of january"
+          content="Technovanza is the annual technical fest of Veermata Jijabai
+                  Technological Institute, where students strive for excellence
+                  while giving back to the community. Over the last 18 years,
+                  Technovanza has grown to become of the most popular
+                  Techno-managerial events in the country and continues to awe
+                  its audience with the quality of events it hosts. From
+                  conducting competitive events, where people all over India can
+                  showcase their talents to hosting exhibitions with ISRO, BARC
+                  and LIGO along with a glorious lineup of dignitaries from
+                  various fields like Dr. A.P.J Abdul Kalam, Mr. Ratan Tata, Dr.
+                  A.S. Kiran Kumar, Mr. Harsha Bhogle, Sophia: the humanoid
+                  robot and many more, Technovanza keeps getting better each
+                  year. Keeping up with our motto of “Taking Technology to the
+                  society”, we continue to deliver an exuberant event, virtually
+                  this year! So, join us from the comfort of your homes, while
+                  we bring to you opportunities and exposure from the world
+                  over."
         />
         <meta
           name="twitter:image"
