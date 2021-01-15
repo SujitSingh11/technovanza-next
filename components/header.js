@@ -26,6 +26,13 @@ function GlsHeader() {
           <div className={Styles.logoContBox}>
             {router.pathname.includes("gls") ? (
               <img className={Styles.logo} alt="Logo" src="/gls.svg" />
+            ) : router.pathname.includes("events") ||
+              router.pathname.includes("event") ? (
+              <img
+                className={Styles.logoEvent}
+                alt="Logo"
+                src="/event logo.svg"
+              />
             ) : (
               <></>
             )}
