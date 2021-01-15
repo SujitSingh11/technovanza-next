@@ -1,6 +1,6 @@
 .cardroot {
   width: 280px;
-  background: #fcee0a !important;
+  background: #2effcc !important;
   border-radius: 0px !important;
   color: #000000 !important;
   height: 420px;
@@ -40,7 +40,7 @@
   content: "";
   height: 0;
   width: 0;
-  border-color: #fcee0a transparent transparent;
+  border-color: #2effcc transparent transparent;
   border-style: solid;
   border-width: 17px 17px 0 0;
   position: absolute;
@@ -51,7 +51,7 @@
   content: "";
   height: 0;
   width: 0;
-  border-color: #fcee0a transparent transparent;
+  border-color: #2effcc transparent transparent;
   border-style: solid;
   border-width: 17px 17px 0 0;
   transform: rotate(180deg);

@@ -1,6 +1,5 @@
 import React from "react";
 import Head from "next/head";
-import { useRouter } from "next/router";
 
 import { Grid, Container } from "@material-ui/core";
 import Styles from "../styles/Events.module.css";
@@ -10,7 +9,6 @@ import Footer from "../components/footer";
 import ScrollUp from "../components/scrollUp";
 
 const Events = ({ res }) => {
-  const router = useRouter();
   return (
     <div>
       <Head>

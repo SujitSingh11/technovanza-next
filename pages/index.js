@@ -329,8 +329,10 @@ export default function Home() {
                 href="/events"
               >
                 <div className={Styles.previewCardLogoDiv}>
-                  <EmojiEventsTwoToneIcon
-                    style={{ height: "8rem", width: "150px", color: "#000" }}
+                  <img
+                    alt="eventLogo"
+                    className={Styles.previewCardLogoEvent}
+                    src="/event logo.svg"
                   />
                 </div>
                 <h2 className={Styles.previewCardTitle}>Technovanza Events</h2>
