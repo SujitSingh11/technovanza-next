@@ -1,6 +1,7 @@
 import firebase from "firebase/app";
 import "firebase/auth";
 import "firebase/firestore";
+import "firebase/analytics";
 
 const firebaseConfig = {
   apiKey: process.env.apiKey,
@@ -15,6 +16,7 @@ const firebaseConfig = {
 
 try {
   firebase.initializeApp(firebaseConfig);
+  if ("measurementId" in firebaseConfig) firebase.analytics();
 } catch (err) {
   if (!/already exists/.test(err.message)) {
     console.error("Firebase initialization error", err.stack);
