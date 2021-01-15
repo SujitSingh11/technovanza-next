@@ -306,7 +306,7 @@ export default function Home() {
                     top: 0,
                     behavior: "smooth",
                   });
-                  router.push({ pathname: "/events" });
+                  //router.push({ pathname: "/events" });
                 }}
                 href="/events"
               >
@@ -324,7 +324,7 @@ export default function Home() {
                     top: 0,
                     behavior: "smooth",
                   });
-                  router.push({ pathname: "/gls" });
+                  //router.push({ pathname: "/gls" });
                 }}
                 href="/gls"
               >
@@ -410,6 +410,9 @@ export default function Home() {
                   />
                 </Grid>
               </Grid>
+              <h1 className="glitch" data-text="See you in January">
+                See you in January
+              </h1>
             </Container>
           </div>
         </section>

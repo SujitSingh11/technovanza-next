@@ -57,9 +57,9 @@ const Events = ({ res }) => {
                           top: 0,
                           behavior: "smooth",
                         });
-                        router.push({
-                          pathname: `/event/${department.Department}/${event.Event}`,
-                        });
+                        // router.push({
+                        //   pathname: `/event/${department.Department}/${event.Event}`,
+                        // });
                       }}
                       href={`/event/${department.Department}/${event.Event}`}
                     >

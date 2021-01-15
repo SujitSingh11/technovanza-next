@@ -155,40 +155,32 @@ function SideMenu() {
             <Divider />
             <List className={Styles.sideMenuListRoot}>
               <ListItem button className={Styles.sideMenuListItem}>
-                <Link href="/">
-                  <ListItemText className={Styles.sideMenuListItemText}>
-                    <a href="/events" className={Styles.sideMenuListItemA}>
-                      Home
-                    </a>
-                  </ListItemText>
-                </Link>
+                <ListItemText className={Styles.sideMenuListItemText}>
+                  <a href="/" className={Styles.sideMenuListItemA}>
+                    Home
+                  </a>
+                </ListItemText>
               </ListItem>
               <ListItem button className={Styles.sideMenuListItem}>
-                <Link href="/events">
-                  <ListItemText className={Styles.sideMenuListItemText}>
-                    <a href="/events" className={Styles.sideMenuListItemA}>
-                      Events
-                    </a>
-                  </ListItemText>
-                </Link>
+                <ListItemText className={Styles.sideMenuListItemText}>
+                  <a href="/events" className={Styles.sideMenuListItemA}>
+                    Events
+                  </a>
+                </ListItemText>
               </ListItem>
               <ListItem button className={Styles.sideMenuListItem}>
-                <Link href="/gls">
-                  <ListItemText className={Styles.sideMenuListItemText}>
-                    <a href="/gls" className={Styles.sideMenuListItemA}>
-                      GLS
-                    </a>
-                  </ListItemText>
-                </Link>
+                <ListItemText className={Styles.sideMenuListItemText}>
+                  <a href="/gls" className={Styles.sideMenuListItemA}>
+                    GLS
+                  </a>
+                </ListItemText>
               </ListItem>
               <ListItem button className={Styles.sideMenuListItem}>
-                <Link href="/organisers">
-                  <ListItemText className={Styles.sideMenuListItemText}>
-                    <a href="/organisers" className={Styles.sideMenuListItemA}>
-                      Organisers
-                    </a>
-                  </ListItemText>
-                </Link>
+                <ListItemText className={Styles.sideMenuListItemText}>
+                  <a href="/organisers" className={Styles.sideMenuListItemA}>
+                    Organisers
+                  </a>
+                </ListItemText>
               </ListItem>
             </List>
             <Divider />
