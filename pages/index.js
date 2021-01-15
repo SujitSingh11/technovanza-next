@@ -2,7 +2,7 @@ import Head from "next/head";
 import React, { useEffect, useState } from "react";
 
 import { useRouter } from "next/router";
-import ReactPlayer from "react-player/youtube";
+import ReactPlayer from "react-player";
 
 import Styles from "../styles/Home.module.css";
 import { Grid, Container, AppBar, Toolbar } from "@material-ui/core";
@@ -130,17 +130,31 @@ export default function Home() {
         </nav>
         <header>
           {isTouch ? (
-            <div className={Styles.player}>
-              <ReactPlayer
-                url="https://www.youtube.com/watch?v=y86q8Yxb68w"
-                width="100%"
-                height="100%"
-                playing={true}
-                loop={true}
-                muted={true}
-                playsinline={true}
-              />
-            </div>
+            isMobileSafari ? (
+              <div className={Styles.playerSafari}>
+                <ReactPlayer
+                  url="https://www.youtube.com/watch?v=y86q8Yxb68w"
+                  width="100%"
+                  height="100%"
+                  playing={true}
+                  loop={true}
+                  muted={true}
+                  playsinline={true}
+                />
+              </div>
+            ) : (
+              <div className={Styles.player}>
+                <ReactPlayer
+                  url="/target.webm"
+                  width="100%"
+                  height="100%"
+                  playing={true}
+                  loop={true}
+                  muted={true}
+                  playsinline={true}
+                />
+              </div>
+            )
           ) : (
             <div className={Styles.headerParticles}>
               <Particles
