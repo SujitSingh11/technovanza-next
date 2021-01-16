@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "next/head";
 
 import { Grid, Container } from "@material-ui/core";
 import Styles from "../styles/Organisers.module.css";
@@ -11,6 +12,10 @@ import OrganisersCard from "../components/organisersCard";
 function Organisers({ res }) {
   return (
     <>
+      <Head>
+        <title>Technovanza | Organisers</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Header />
       <Container maxWidth="lg">
         <Grid justify="center" className={Styles.featureUpcomingCont} container>
