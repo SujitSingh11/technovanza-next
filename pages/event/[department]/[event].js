@@ -105,7 +105,7 @@ const EventDesc = ({ res }) => {
                 <Container maxWidth="xs">
                   <div className={Styles.marginBottom}>
                     <h1 className={Styles.headerTitleProblem}>
-                      Problem Statement
+                      Event Proposal
                     </h1>
                   </div>
                   <div>
