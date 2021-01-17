@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import Head from "next/head";
-import { useRouter } from "next/router";
 import { NextSeo } from "next-seo";
 
 import { Grid, Container, Button } from "@material-ui/core";
@@ -12,7 +11,6 @@ import Footer from "../components/footer";
 import ScrollUp from "../components/scrollUp";
 
 const GLS = ({ res }) => {
-  const router = useRouter();
   const [data, setData] = useState([]);
   const [showMore, setShowMore] = useState(false);
 
@@ -37,6 +35,12 @@ const GLS = ({ res }) => {
         <meta httpEquiv="content-type" content="text/html; charset=UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <meta
+          name="keywords"
+          content="Technovanza VJTI Matunga Mumbai college GLS Guest Leacture Series"
+        />
+        <meta name="robots" content="noindex" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="technovanza.org" />
@@ -77,6 +81,7 @@ const GLS = ({ res }) => {
             { url: "https://i.ibb.co/n0QMWDW/Meta-img.png" },
           ],
           site_name: "SiteName",
+          type: "website",
         }}
         twitter={{
           handle: "@handle",

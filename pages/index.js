@@ -1,16 +1,13 @@
 import Head from "next/head";
 import React, { useEffect, useState } from "react";
-import { SiteLinksSearchBoxJsonLd } from "next-seo";
+import { NextSeo } from "next-seo";
 
-import { useRouter } from "next/router";
 import ReactPlayer from "react-player";
 
 import Styles from "../styles/Home.module.css";
 import { Grid, Container, AppBar, Toolbar } from "@material-ui/core";
 import Particles from "react-particles-js";
 import ScrollUp from "../components/scrollUp";
-
-import EmojiEventsTwoToneIcon from "@material-ui/icons/EmojiEventsTwoTone";
 
 import Footer from "../components/footer";
 import SideMenu from "../components/sideMenu";
@@ -57,14 +54,12 @@ export default function Home() {
     setIsMobileSafari();
   }, []);
 
-  const router = useRouter();
   const particlesColors = ["#ff7445", "#2effcc", "#ffffff", "#fcee0a"];
 
   return (
     <div className={Styles.root}>
       <ScrollUp />
       <Head>
-        <title>Technovanza</title>
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="icon" href="/favicon.ico" />
         <script
@@ -77,27 +72,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="keywords"
-          content="Technovanza VJTI Matunga Mumbai college"
+          content="Technovanza VJTI Matunga Mumbai college GLS"
         />
         <meta name="robots" content="noindex" />
-        <meta
-          name="description"
-          content="Technovanza is the annual technical fest of VJTI, where students strive for excellence while giving back to the community. Over the last 18 years, it has grown to become of the most popular Techno-managerial events in the country and continues to awe its audience with the quality of events it hosts : From conducting competitive events, where people all over India can showcase their talents to hosting exhibitions and dignitaries from various fields, Technovanza keeps getting better each year. Keeping up with our motto of “Taking Technology to the society”, we continue to deliver an exuberant event, virtually this year!
-"
-        />
-
-        <meta property="og:url" content="https://technovanza.org/" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Technovanza" />
-        <meta
-          property="og:description"
-          content="Technovanza is the annual technical fest of VJTI, where students strive for excellence while giving back to the community. Over the last 18 years, it has grown to become of the most popular Techno-managerial events in the country and continues to awe its audience with the quality of events it hosts : From conducting competitive events, where people all over India can showcase their talents to hosting exhibitions and dignitaries from various fields, Technovanza keeps getting better each year. Keeping up with our motto of “Taking Technology to the society”, we continue to deliver an exuberant event, virtually this year!
-"
-        />
-        <meta
-          property="og:image"
-          content="https://i.ibb.co/n0QMWDW/Meta-img.png"
-        />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="technovanza.org" />
@@ -105,14 +82,47 @@ export default function Home() {
         <meta name="twitter:title" content="Technovanza" />
         <meta
           name="twitter:description"
-          content="Technovanza is the annual technical fest of VJTI, where students strive for excellence while giving back to the community. Over the last 18 years, it has grown to become of the most popular Techno-managerial events in the country and continues to awe its audience with the quality of events it hosts : From conducting competitive events, where people all over India can showcase their talents to hosting exhibitions and dignitaries from various fields, Technovanza keeps getting better each year. Keeping up with our motto of “Taking Technology to the society”, we continue to deliver an exuberant event, virtually this year!
-"
+          content="Technovanza is the annual technical fest of VJTI, where students strive for excellence while giving back to the community. Over the last 18 years, it has grown to become of the most popular Techno-managerial events in the country and continues to awe its audience with the quality of events it hosts : From conducting competitive events, where people all over India can showcase their talents to hosting exhibitions and dignitaries from various fields, Technovanza keeps getting better each year. Keeping up with our motto of “Taking Technology to the society”, we continue to deliver an exuberant event, virtually this year!"
         />
         <meta
           name="twitter:image"
           content="https://i.ibb.co/n0QMWDW/Meta-img.png"
         />
       </Head>
+      <NextSeo
+        title="Technovanza | VJTI"
+        description="Technovanza is the annual technical fest of VJTI, where students strive for excellence while giving back to the community. Over the last 18 years, it has grown to become of the most popular Techno-managerial events in the country and continues to awe its audience with the quality of events it hosts : From conducting competitive events, where people all over India can showcase their talents to hosting exhibitions and dignitaries from various fields, Technovanza keeps getting better each year. Keeping up with our motto of “Taking Technology to the society”, we continue to deliver an exuberant event, virtually this year!"
+        canonical="https://www.technovanza.org"
+        openGraph={{
+          url: "https://www.technovanza.org",
+          title: "Technovanza | VJTI",
+          description:
+            "Technovanza is the annual technical fest of VJTI, where students strive for excellence while giving back to the community. Over the last 18 years, it has grown to become of the most popular Techno-managerial events in the country and continues to awe its audience with the quality of events it hosts : From conducting competitive events, where people all over India can showcase their talents to hosting exhibitions and dignitaries from various fields, Technovanza keeps getting better each year. Keeping up with our motto of “Taking Technology to the society”, we continue to deliver an exuberant event, virtually this year!",
+          images: [
+            {
+              url: "https://i.ibb.co/n0QMWDW/Meta-img.png",
+              width: 800,
+              height: 600,
+              alt: "Og Image Alt",
+            },
+            {
+              url: "https://i.ibb.co/n0QMWDW/Meta-img.png",
+              width: 900,
+              height: 800,
+              alt: "Og Image Alt Second",
+            },
+            { url: "https://i.ibb.co/n0QMWDW/Meta-img.png" },
+            { url: "https://i.ibb.co/n0QMWDW/Meta-img.png" },
+          ],
+          site_name: "SiteName",
+          type: "website",
+        }}
+        twitter={{
+          handle: "@handle",
+          site: "https://www.technovanza.org/",
+          cardType: "summary_large_image",
+        }}
+      />
 
       <main className={Styles.main}>
         <nav className={Styles.rootNav}>
