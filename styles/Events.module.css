@@ -173,8 +173,11 @@
     grid-template-columns: 1fr;
     grid-gap: 20px;
   }
-
   .previewCard {
+    margin-top: 20px;
+  }
+  .previewCardUC {
+    grid-column: auto;
     margin-top: 20px;
   }
 }
