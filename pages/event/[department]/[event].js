@@ -229,10 +229,10 @@ const EventDesc = ({ res }) => {
 
 export default EventDesc;
 
-EventDesc.getInitialProps = async (ctx) => {
+export async function getServerSideProps(context) {
   const eventData = fetch(`${process.env.domain}/data/eventData.json`);
   const res = await (await eventData).json();
   return {
-    res,
+    props: { res },
   };
-};
+}
