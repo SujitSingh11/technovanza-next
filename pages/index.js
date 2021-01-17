@@ -72,7 +72,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="keywords"
-          content="Technovanza VJTI Matunga Mumbai college GLS"
+          content="Technovanza VJTI Matunga Mumbai college GLS Events workshops hackaton"
         />
         <meta name="robots" content="noindex" />
 
@@ -139,31 +139,17 @@ export default function Home() {
         </nav>
         <header>
           {isTouch ? (
-            isMobileSafari ? (
-              <div className={Styles.playerSafari}>
-                <ReactPlayer
-                  url="https://www.youtube.com/watch?v=y86q8Yxb68w"
-                  width="100%"
-                  height="100%"
-                  playing={true}
-                  loop={true}
-                  muted={true}
-                  playsinline={true}
-                />
-              </div>
-            ) : (
-              <div className={Styles.player}>
-                <ReactPlayer
-                  url="/target.webm"
-                  width="100%"
-                  height="100%"
-                  playing={true}
-                  loop={true}
-                  muted={true}
-                  playsinline={true}
-                />
-              </div>
-            )
+            <div className={Styles.player}>
+              <ReactPlayer
+                url="/target.webm"
+                width="100%"
+                height="100%"
+                playing={true}
+                loop={true}
+                muted={true}
+                playsinline={true}
+              />
+            </div>
           ) : (
             <div className={Styles.headerParticles}>
               <Particles

@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import { NextSeo } from "next-seo";
 
 import { Grid, Container } from "@material-ui/core";
 import Styles from "../styles/Events.module.css";
@@ -12,9 +13,69 @@ const Events = ({ res }) => {
   return (
     <div>
       <Head>
-        <title>Technovanza | Events</title>
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="icon" href="/favicon.ico" />
+        <script
+          src="https://cdn.rawgit.com/progers/pathseg/master/pathseg.js"
+          defer
+        />
+        <meta charSet="UTF-8" />
+        <meta httpEquiv="content-type" content="text/html; charset=UTF-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="keywords"
+          content="Technovanza VJTI Matunga Mumbai college GLS Events workshops hackaton"
+        />
+        <meta name="robots" content="noindex" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="technovanza.org" />
+        <meta property="twitter:url" content="https://technovanza.org/events" />
+        <meta name="twitter:title" content="Technovanza | Events" />
+        <meta
+          name="twitter:description"
+          content="Technovanza is the annual technical fest of VJTI, where students strive for excellence while giving back to the community. Over the last 18 years, it has grown to become of the most popular Techno-managerial events in the country and continues to awe its audience with the quality of events it hosts : From conducting competitive events, where people all over India can showcase their talents to hosting exhibitions and dignitaries from various fields, Technovanza keeps getting better each year. Keeping up with our motto of “Taking Technology to the society”, we continue to deliver an exuberant event, virtually this year!"
+        />
+        <meta
+          name="twitter:image"
+          content="https://i.ibb.co/n0QMWDW/Meta-img.png"
+        />
       </Head>
+      <NextSeo
+        title="Technovanza | Events"
+        description="Technovanza is the annual technical fest of VJTI, where students strive for excellence while giving back to the community. Over the last 18 years, it has grown to become of the most popular Techno-managerial events in the country and continues to awe its audience with the quality of events it hosts : From conducting competitive events, where people all over India can showcase their talents to hosting exhibitions and dignitaries from various fields, Technovanza keeps getting better each year. Keeping up with our motto of “Taking Technology to the society”, we continue to deliver an exuberant event, virtually this year!"
+        canonical="https://www.technovanza.org/events"
+        openGraph={{
+          url: "https://www.technovanza.org/events",
+          title: "Technovanza | Events",
+          description:
+            "Technovanza is the annual technical fest of VJTI, where students strive for excellence while giving back to the community. Over the last 18 years, it has grown to become of the most popular Techno-managerial events in the country and continues to awe its audience with the quality of events it hosts : From conducting competitive events, where people all over India can showcase their talents to hosting exhibitions and dignitaries from various fields, Technovanza keeps getting better each year. Keeping up with our motto of “Taking Technology to the society”, we continue to deliver an exuberant event, virtually this year!",
+          images: [
+            {
+              url: "https://i.ibb.co/n0QMWDW/Meta-img.png",
+              width: 800,
+              height: 600,
+              alt: "Og Image Alt",
+            },
+            {
+              url: "https://i.ibb.co/n0QMWDW/Meta-img.png",
+              width: 900,
+              height: 800,
+              alt: "Og Image Alt Second",
+            },
+            { url: "https://i.ibb.co/n0QMWDW/Meta-img.png" },
+            { url: "https://i.ibb.co/n0QMWDW/Meta-img.png" },
+          ],
+          site_name: "SiteName",
+          type: "website",
+        }}
+        twitter={{
+          handle: "@handle",
+          site: "https://www.technovanza.org/events",
+          cardType: "summary_large_image",
+        }}
+      />
       <Header />
       <section className={Styles.mainContent}>
         <ScrollUp />
@@ -49,7 +110,11 @@ const Events = ({ res }) => {
                   return (
                     <a
                       key={index}
-                      className={Styles.previewCard}
+                      className={
+                        event.Event === "Ultimate Coder"
+                          ? Styles.previewCardUC
+                          : Styles.previewCard
+                      }
                       onClick={() => {
                         window.scroll({
                           top: 0,

@@ -76,6 +76,15 @@
   position: relative;
 }
 
+.previewCardUC {
+  height: 250px;
+  background: #02d7f2 !important;
+  border-radius: 0px;
+  text-decoration: none;
+  position: relative;
+  grid-column: 1 / span 2;
+}
+
 .previewCard::after {
   content: "";
   position: absolute;
@@ -93,6 +102,32 @@
 }
 
 .previewCard::before {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  content: "";
+  z-index: 80;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.previewCardUC::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -20px;
+  background: url("/assets/razor-bottom-blue-d44fb6b7.svg") repeat-x bottom;
+  height: 23px;
+}
+
+.previewCardUC:hover {
+  transform: scale(1.03);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.previewCardUC::before {
   top: 0;
   bottom: 0;
   right: 0;

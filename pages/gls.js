@@ -45,7 +45,7 @@ const GLS = ({ res }) => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="technovanza.org" />
         <meta property="twitter:url" content="https://technovanza.org/gls" />
-        <meta name="twitter:title" content="Technovanza" />
+        <meta name="twitter:title" content="Technovanza | GLS" />
         <meta
           name="twitter:description"
           content="The motto of GLS is to steer the all around development of students so that they can unlock their potential and become individuals of the highest caliber, who not only go on to have valuable contributions in their field of expertise, but also establish themselves as concerned citizens of the society. With a renowned lineup of Guest Lectures over the years, Technovanza has always been a prime platform, where the flame of expertise is effectively transferred to many torches. The pioneers of diverse fields have graced Technovanza with their presence, illuminating more and more minds to new areas of interest."

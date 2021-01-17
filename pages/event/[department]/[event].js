@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Head from "next/head";
+import { NextSeo } from "next-seo";
 import { useRouter } from "next/router";
 
 import Styles from "../../../styles/EventDesc.module.css";
@@ -42,9 +43,71 @@ const EventDesc = ({ res }) => {
   return (
     <>
       <Head>
-        <title>Technovanza | {router.query.event}</title>
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="icon" href="/favicon.ico" />
+        <script
+          src="https://cdn.rawgit.com/progers/pathseg/master/pathseg.js"
+          defer
+        />
+        <meta charSet="UTF-8" />
+        <meta httpEquiv="content-type" content="text/html; charset=UTF-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="keywords"
+          content={`Technovanza VJTI Matunga Mumbai college GLS Events workshops hackaton ${router.query.event}`}
+        />
+        <meta name="robots" content="noindex" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="technovanza.org" />
+        <meta
+          property="twitter:url"
+          content={`https://www.technovanza.org/event/${router.query.event}`}
+        />
+        <meta
+          name="twitter:title"
+          content={`Technovanza | ${router.query.event}`}
+        />
+        <meta name="twitter:description" content={event.Description} />
+        <meta
+          name="twitter:image"
+          content="https://i.ibb.co/n0QMWDW/Meta-img.png"
+        />
       </Head>
+      <NextSeo
+        title={`Technovanza | ${router.query.event}`}
+        description={event.Description}
+        canonical={`https://www.technovanza.org/event/${router.query.event}`}
+        openGraph={{
+          url: `https://www.technovanza.org/event/${router.query.event}`,
+          title: `Technovanza | ${router.query.event}`,
+          description: event.Description,
+          images: [
+            {
+              url: "https://i.ibb.co/n0QMWDW/Meta-img.png",
+              width: 800,
+              height: 600,
+              alt: "Og Image Alt",
+            },
+            {
+              url: "https://i.ibb.co/n0QMWDW/Meta-img.png",
+              width: 900,
+              height: 800,
+              alt: "Og Image Alt Second",
+            },
+            { url: "https://i.ibb.co/n0QMWDW/Meta-img.png" },
+            { url: "https://i.ibb.co/n0QMWDW/Meta-img.png" },
+          ],
+          site_name: "SiteName",
+          type: "website",
+        }}
+        twitter={{
+          handle: "@handle",
+          site: `https://www.technovanza.org/event/${router.query.event}`,
+          cardType: "summary_large_image",
+        }}
+      />
       <Header />
       <ScrollUp />
       <main>
