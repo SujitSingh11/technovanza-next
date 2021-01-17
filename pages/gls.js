@@ -146,7 +146,7 @@ const GLS = ({ res }) => {
               href="/previousgls/Quarantine_Edition"
             >
               <div className={Styles.cardIcon}>
-                <img className={Styles.QEIcon} src="/glsQE.svg" />
+                <img alt="glsQE" className={Styles.QEIcon} src="/glsQE.svg" />
               </div>
               <h2 className={Styles.previousCardTitle}>Quarantine Edition</h2>
             </a>
@@ -162,7 +162,11 @@ const GLS = ({ res }) => {
               href="/previousgls/Hourglass_Edition"
             >
               <div className={Styles.cardIcon}>
-                <img className={Styles.QEIcon} src="/hourglass.svg" />
+                <img
+                  alt="glsHE"
+                  className={Styles.QEIcon}
+                  src="/hourglass.svg"
+                />
               </div>
               <h2 className={Styles.previousCardTitle}>Hourglass Edition</h2>
             </a>
@@ -178,7 +182,7 @@ const GLS = ({ res }) => {
               href="/previousgls/Previous_GLS"
             >
               <div className={Styles.cardIcon}>
-                <img className={Styles.QEIcon} src="/gls.svg" />
+                <img alt="glsPE" className={Styles.QEIcon} src="/gls.svg" />
               </div>
               <h2 className={Styles.previousCardTitle}>Previous GLS</h2>
             </a>

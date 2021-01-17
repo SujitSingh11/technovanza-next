@@ -22,7 +22,7 @@ function OrganisersCard({ info }) {
           item
         >
           <Image
-            alt="Remy Sharp"
+            alt={`${info.Name}`}
             src={`/organisers/${info.IMG}`}
             className={Styles.large}
             height="150"

@@ -30,7 +30,7 @@ function PreviousGLSCard({ info, changeURL }) {
           <CardMedia
             id="card-img"
             component="img"
-            alt="GLS Speaker"
+            alt={info.SpeakerName}
             height="140"
             image={"/speakers/" + info.IMG}
             title="GLS Speaker"
