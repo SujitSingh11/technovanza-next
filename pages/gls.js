@@ -57,9 +57,9 @@ const GLS = ({ res }) => {
         canonical="https://www.technovanza.org/gls"
         openGraph={{
           url: "https://www.technovanza.org/gls",
-          title: "Technovanza | VJTI",
+          title: "Technovanza | GLS",
           description:
-            "Technovanza is the annual technical fest of VJTI, where students strive for excellence while giving back to the community. Over the last 18 years, it has grown to become of the most popular Techno-managerial events in the country and continues to awe its audience with the quality of events it hosts : From conducting competitive events, where people all over India can showcase their talents to hosting exhibitions and dignitaries from various fields, Technovanza keeps getting better each year. Keeping up with our motto of “Taking Technology to the society”, we continue to deliver an exuberant event, virtually this year!",
+            "The motto of GLS is to steer the all around development of students so that they can unlock their potential and become individuals of the highest caliber, who not only go on to have valuable contributions in their field of expertise, but also establish themselves as concerned citizens of the society. With a renowned lineup of Guest Lectures over the years, Technovanza has always been a prime platform, where the flame of expertise is effectively transferred to many torches. The pioneers of diverse fields have graced Technovanza with their presence, illuminating more and more minds to new areas of interest.",
           images: [
             {
               url: "https://i.ibb.co/n0QMWDW/Meta-img.png",
