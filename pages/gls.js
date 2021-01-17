@@ -27,9 +27,63 @@ const GLS = ({ res }) => {
   return (
     <>
       <Head>
-        <title>Technovanza | GLS</title>
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="icon" href="/favicon.ico" />
+        <script
+          src="https://cdn.rawgit.com/progers/pathseg/master/pathseg.js"
+          defer
+        />
+        <meta charSet="UTF-8" />
+        <meta httpEquiv="content-type" content="text/html; charset=UTF-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="technovanza.org" />
+        <meta property="twitter:url" content="https://technovanza.org/gls" />
+        <meta name="twitter:title" content="Technovanza" />
+        <meta
+          name="twitter:description"
+          content="The motto of GLS is to steer the all around development of students so that they can unlock their potential and become individuals of the highest caliber, who not only go on to have valuable contributions in their field of expertise, but also establish themselves as concerned citizens of the society. With a renowned lineup of Guest Lectures over the years, Technovanza has always been a prime platform, where the flame of expertise is effectively transferred to many torches. The pioneers of diverse fields have graced Technovanza with their presence, illuminating more and more minds to new areas of interest."
+        />
+        <meta
+          name="twitter:image"
+          content="https://i.ibb.co/n0QMWDW/Meta-img.png"
+        />
       </Head>
+      <NextSeo
+        title="Technovanza | GLS"
+        description="The motto of GLS is to steer the all around development of students so that they can unlock their potential and become individuals of the highest caliber, who not only go on to have valuable contributions in their field of expertise, but also establish themselves as concerned citizens of the society. With a renowned lineup of Guest Lectures over the years, Technovanza has always been a prime platform, where the flame of expertise is effectively transferred to many torches. The pioneers of diverse fields have graced Technovanza with their presence, illuminating more and more minds to new areas of interest."
+        canonical="https://www.technovanza.org/gls"
+        openGraph={{
+          url: "https://www.technovanza.org/gls",
+          title: "Technovanza | VJTI",
+          description:
+            "Technovanza is the annual technical fest of VJTI, where students strive for excellence while giving back to the community. Over the last 18 years, it has grown to become of the most popular Techno-managerial events in the country and continues to awe its audience with the quality of events it hosts : From conducting competitive events, where people all over India can showcase their talents to hosting exhibitions and dignitaries from various fields, Technovanza keeps getting better each year. Keeping up with our motto of “Taking Technology to the society”, we continue to deliver an exuberant event, virtually this year!",
+          images: [
+            {
+              url: "https://i.ibb.co/n0QMWDW/Meta-img.png",
+              width: 800,
+              height: 600,
+              alt: "Og Image Alt",
+            },
+            {
+              url: "https://i.ibb.co/n0QMWDW/Meta-img.png",
+              width: 900,
+              height: 800,
+              alt: "Og Image Alt Second",
+            },
+            { url: "https://i.ibb.co/n0QMWDW/Meta-img.png" },
+            { url: "https://i.ibb.co/n0QMWDW/Meta-img.png" },
+          ],
+          site_name: "SiteName",
+        }}
+        twitter={{
+          handle: "@handle",
+          site: "https://www.technovanza.org/",
+          cardType: "summary_large_image",
+        }}
+      />
       <div className={Styles.root}>
         <ScrollUp />
         <Header />

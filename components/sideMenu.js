@@ -49,13 +49,7 @@ function SideMenu() {
     const usersRef = firestore.collection("users").doc(authUser.uid);
     const doc = await usersRef.get();
     if (!doc.exists) {
-      const data = {
-        uid: authUser.uid,
-        displayName: authUser.displayName,
-        photoURL: authUser.photoURL,
-        email: authUser.email,
-      };
-      await usersRef.set(data, { merge: true });
+      router.push("/login");
     }
   };
 
