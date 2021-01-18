@@ -10,6 +10,7 @@ import PreviousGLSCard from "../../components/previousGLSCard";
 import Footer from "../../components/footer";
 import Header from "../../components/header";
 import ScrollUp from "../../components/scrollUp";
+import PreviousGLSPhotos from "../../components/previousGLSPhotos";
 
 const PreviousGLS = ({ res }) => {
   const router = useRouter();
@@ -63,7 +64,7 @@ const PreviousGLS = ({ res }) => {
           <i className={Styles.featureUpcomingDivBottom}></i>
         </Grid>
       </Grid>
-
+      {router.query.slug === "Previous_GLS" ? <PreviousGLSPhotos /> : <></>}
       <Container className={Styles.GLSVideoDiv}>
         <ReactPlayer
           className={Styles.GLSVideo}
@@ -74,7 +75,6 @@ const PreviousGLS = ({ res }) => {
           playing={autoPlay}
         />
       </Container>
-
       <Container maxWidth="lg">
         <Grid
           justify="flex-start"
@@ -91,7 +91,7 @@ const PreviousGLS = ({ res }) => {
                   setUrl(link);
                   setAutoPlay(true);
                   window.scroll({
-                    top: 200,
+                    top: router.query.slug === "Previous_GLS" ? 650 : 200,
                     behavior: "smooth",
                   });
                 }}
