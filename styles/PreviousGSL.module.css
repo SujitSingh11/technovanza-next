@@ -27,6 +27,20 @@
   position: relative;
 }
 
+.previewTitleRoot {
+  padding: 10px 0px;
+}
+
+.previewTitle {
+  font-size: 50px;
+  color: #e5e5e5;
+  text-align: center;
+  font-family: "Anton", sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin: 0;
+}
+
 .featureUpcomingDivTop {
   right: -16px;
   top: -18px;

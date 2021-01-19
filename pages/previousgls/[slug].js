@@ -6,7 +6,7 @@ import { Grid, Container } from "@material-ui/core";
 import Styles from "../../styles/PreviousGSL.module.css";
 import ReactPlayer from "react-player/youtube";
 
-import PreviousGLSCard from "../../components/previousGLSCard";
+import GLSCard from "../../components/glsCard";
 import Footer from "../../components/footer";
 import Header from "../../components/header";
 import ScrollUp from "../../components/scrollUp";
@@ -75,6 +75,9 @@ const PreviousGLS = ({ res }) => {
           playing={autoPlay}
         />
       </Container>
+      <div className={Styles.previewTitleRoot}>
+        <h1 className={Styles.previewTitle}>Playlist</h1>
+      </div>
       <Container maxWidth="lg">
         <Grid
           justify="flex-start"
@@ -83,10 +86,10 @@ const PreviousGLS = ({ res }) => {
           spacing={2}
           container
         >
-          {data.map((speaker) => {
+          {data.map((speaker, index) => {
             return (
-              <PreviousGLSCard
-                info={speaker}
+              <GLSCard
+                data={speaker}
                 changeURL={(link) => {
                   setUrl(link);
                   setAutoPlay(true);
@@ -95,7 +98,7 @@ const PreviousGLS = ({ res }) => {
                     behavior: "smooth",
                   });
                 }}
-                key={speaker.SpeakerName}
+                key={index}
               />
             );
           })}
