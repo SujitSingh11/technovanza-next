@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 import { Grid } from "@material-ui/core";
 import YouTubeIcon from "@material-ui/icons/YouTube";
@@ -10,10 +11,12 @@ function GlsCard({ data }) {
       <div className={Styles.GLSplaylist}>
         <div className={Styles.GLSplaylistCover}>
           <a target="_blank" href={data.YouTube_Link}>
-            <img
+            <Image
               className={Styles.GLSplaylistImg}
               alt={data.SpeakerName}
               src={"/speakers/" + data.IMG}
+              height={320}
+              width={300}
             />
           </a>
           <a target="_blank" href={data.YouTube_Link}>
