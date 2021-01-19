@@ -2,11 +2,11 @@ import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import { NextSeo } from "next-seo";
 
-import { Grid, Container, Button } from "@material-ui/core";
+import { Grid, Container } from "@material-ui/core";
 import Styles from "../styles/GLS.module.css";
 
 import Header from "../components/header";
-import Upcoming from "../components/upcoming";
+import GlsCard from "../components/glsCard";
 import Footer from "../components/footer";
 import ScrollUp from "../components/scrollUp";
 
@@ -104,7 +104,8 @@ const GLS = ({ res }) => {
               <i className={Styles.featureUpcomingDivBottom}></i>
             </Grid>
           </Grid>
-          <Grid className={Styles.rootGLSGrid} container>
+        </Container>
+        {/* <Grid className={Styles.rootGLSGrid} container>
             {data.map((data, index) => {
               if (index <= 5) {
                 return <Upcoming data={data} key={index} />;
@@ -130,7 +131,26 @@ const GLS = ({ res }) => {
             <Button onClick={handleShowMore} className={Styles.viewMoreButton}>
               View More
             </Button>
-          </div>
+          </div> */}
+        <Container maxWidth="lg">
+          <Grid className={Styles.rootGLS} container>
+            {data.map((data, index) => (
+              <GlsCard data={data} key={index} />
+            ))}
+          </Grid>
+        </Container>
+        <Container maxWidth="md">
+          <Grid
+            justify="center"
+            className={Styles.featureUpcomingCont}
+            container
+          >
+            <Grid className={Styles.featureUpcomingDiv} item>
+              <i className={Styles.featureUpcomingDivTop}></i>
+              <h1 className={Styles.featureUpcoming}>GLS so far...</h1>
+              <i className={Styles.featureUpcomingDivBottom}></i>
+            </Grid>
+          </Grid>
         </Container>
         <Container maxWidth="lg" className={Styles.previousGLSGridRoot}>
           <div className={Styles.previousGLSGridDiv}>

@@ -3,7 +3,7 @@
 }
 
 .featureUpcomingCont {
-  margin: 3em 0em;
+  margin: 4em 0em;
 }
 
 .featureUpcomingDiv {
@@ -45,6 +45,7 @@
   color: #02d7f2;
   text-align: center;
   font-size: 35px;
+  margin: 15px;
 }
 
 .previousGLSGridRoot {
