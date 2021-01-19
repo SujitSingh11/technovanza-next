@@ -88,6 +88,10 @@ export default function Home() {
           name="twitter:image"
           content="https://i.ibb.co/n0QMWDW/Meta-img.png"
         />
+        <meta
+          name="google-site-verification"
+          content="uGO9l44wXKFaNzJi3TjxNn3usbdk5SiR60suDKdwumY"
+        />
       </Head>
       <NextSeo
         title="Technovanza | VJTI"
