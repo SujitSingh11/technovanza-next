@@ -10,6 +10,7 @@
         "Logo": "/events/VRC.svg",
         "LogoI": "/events/VRC_W.svg",
         "regLink": "https://forms.gle/GTaEqKQTUWvs6joX7",
+        "EPLink": "",
         "Contact": [
           {
             "Name": "Darshan Kedari",
@@ -25,7 +26,7 @@
         "Logo": "/events/ROBOMAZE.svg",
         "LogoI": "/events/ROBOMAZE_W.svg",
         "regLink": "https://forms.gle/sjMTpotsdSkyZ1cA9",
-
+        "EPLink": "RoboMaze.pdf",
         "Contact": [
           {
             "Name": "Dheetilekha Nath",
@@ -46,6 +47,7 @@
         "Logo": "/events/TECHNOHUNT.svg",
         "LogoI": "/events/TECHNOHUNT_W.svg",
         "regLink": "https://forms.gle/8iF2EJ1d4pnHdwFu6",
+        "EPLink": "TECHNOHUNT2020.pdf",
         "Contact": [
           {
             "Name": "Shubham Shirpurkar",
@@ -65,6 +67,7 @@
         "Logo": "/events/SHERKLOCKED.svg",
         "LogoI": "/events/SHERKLOCKED_W.svg",
         "regLink": "https://forms.gle/7KWgGbxohn1KLdGT6",
+        "EPLink": "SHERLOCKED2020.pdf",
         "Contact": [
           {
             "Name": "Pranay Patil",
@@ -84,6 +87,7 @@
         "Logo": "/events/JAVA_GURU.svg",
         "LogoI": "/events/JAVA_GURU_W.svg",
         "regLink": "https://forms.gle/Bj1j1dWS1xK8SPCy",
+        "EPLink": "JAVAGURU2020.pdf",
         "Contact": [
           {
             "Name": "Rachit Bubna",
@@ -103,6 +107,7 @@
         "Logo": "/events/ULTIMATE_CODER.svg",
         "LogoI": "/events/ULTIMATE_CODER_W.svg",
         "regLink": "https://forms.gle/a1ktKwETFTZ3ofiv6",
+        "EPLink": "ULTIMATECODER2020.pdf",
         "Contact": [
           {
             "Name": "Saurabh Sawant",
@@ -122,6 +127,7 @@
         "Logo": "/events/C_WAY.svg",
         "LogoI": "/events/C_WAY_W.svg",
         "regLink": "https://forms.gle/5a9gq6DbFQVJK8TeA",
+        "EPLink": "C-WAY2020.pdf",
         "Contact": [
           {
             "Name": "Jerrly Abraham",
@@ -146,6 +152,7 @@
         "Logo": "/events/CodeStorm.svg",
         "LogoI": "/events/CodeStorm_W.svg",
         "regLink": "https://forms.gle/GEKVLLyxH3tHin8j9",
+        "EPLink": "",
         "Contact": [
           {
             "Name": "Dheetilekha Nath",
@@ -161,6 +168,7 @@
         "Logo": "/events/EPORTFOLIO.svg",
         "LogoI": "/events/EPORTFOLIO_W.svg",
         "regLink": "https://forms.gle/dK3End49iMNibeXf6",
+        "EPLink": "E-Portfolio2020.pdf",
         "Contact": [
           {
             "Name": "Devdatta Dokhale",
@@ -181,6 +189,28 @@
         "Logo": "/events/PeRUSE.svg",
         "LogoI": "/events/PeRUSE_W.svg",
         "regLink": "https://forms.gle/nW2AEjZjb2QLmmkE6",
+        "EPLink": "",
+        "Contact": [
+          {
+            "Name": "Abhay Kaul",
+            "Number": "9682589676"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Department": "Escapar",
+    "Events": [
+      {
+        "Event": "Treasure Hunt",
+        "Description": "Your worst nightmare of being trapped comes live! Welcome to the 'Castel of Demise' with walls engraved with mysteries and the only way to escape is to SURVIVE. Challenges awaits you on every step leading you to precarious departure. Get a move endeavouring for the ultimate title- \"Survival of the Fittest\"! Lose only to find yourself in dire straits. If you believe you are tenacious to face the challenges, then buckle up to escape the dicey situation. It’s time to test your survival skills, problem solving strategy and how swift is your decision making skill. Let the game BEGIN!",
+        "Date": "",
+        "Prize": "",
+        "Logo": "/events/VIRTUAL_TREASURE_HUNT.svg",
+        "LogoI": "/events/VIRTUAL_TREASURE_HUNT_W.svg",
+        "regLink": "https://forms.gle/nW2AEjZjb2QLmmkE6",
+        "EPLink": "",
         "Contact": [
           {
             "Name": "Abhay Kaul",
@@ -201,6 +231,7 @@
         "Logo": "/events/SmartCity.svg",
         "LogoI": "/events/SmartCity_W.svg",
         "regLink": "https://forms.gle/w2cLDZKbdNuWaE7Y8",
+        "EPLink": "",
         "Contact": [
           {
             "Name": "Ritvik Hariharan",

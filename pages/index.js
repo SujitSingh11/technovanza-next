@@ -302,6 +302,125 @@ export default function Home() {
             </Grid>
           </Grid>
         </section>
+        <section>
+          <div className={Styles.previewTitleRoot}>
+            <h1 className={Styles.previewTitle}>Events Schedule</h1>
+          </div>
+          <Container maxWidth="md">
+            <div className={Styles.scheduleRoot}>
+              <div className={Styles.schedule}>
+                <div className={Styles.scheduleDate}>
+                  <span>30 Jan 2021</span>
+                </div>
+                <div className={Styles.scheduleEvent}>
+                  <span>Javaguru, Technohunt</span>
+                </div>
+                <div className={Styles.scheduleTime}>
+                  <span>10AM - 2PM</span>
+                </div>
+              </div>
+              <div className={Styles.schedule}>
+                <div className={Styles.scheduleDate}>
+                  <span>30 Jan 2021</span>
+                </div>
+                <div className={Styles.scheduleEvent}>
+                  <span>CodeStorm</span>
+                </div>
+                <div className={Styles.scheduleTime}>
+                  <span>10AM Onwards</span>
+                </div>
+              </div>
+              <div className={Styles.schedule}>
+                <div className={Styles.scheduleDate}>
+                  <span>30 Jan 2021</span>
+                </div>
+                <div className={Styles.scheduleEvent}>
+                  <span>Project on problem statement</span>
+                </div>
+                <div className={Styles.scheduleTime}>
+                  <span>3PM Onwards</span>
+                </div>
+              </div>
+              <div className={Styles.schedule}>
+                <div className={Styles.scheduleDate}>
+                  <span>30 Jan 2021</span>
+                </div>
+                <div className={Styles.scheduleEvent}>
+                  <span>Eportfolio</span>
+                </div>
+                <div className={Styles.scheduleTime}>
+                  <span>3PM - 6PM</span>
+                </div>
+              </div>
+              <div className={Styles.schedule}>
+                <div className={Styles.scheduleDate}>
+                  <span>31 Jan 2021</span>
+                </div>
+                <div className={Styles.scheduleEvent}>
+                  <span>C-Way, Sherlocked</span>
+                </div>
+                <div className={Styles.scheduleTime}>
+                  <span>10AM - 2PM</span>
+                </div>
+              </div>
+              <div className={Styles.schedule}>
+                <div className={Styles.scheduleDate}>
+                  <span>31 Jan 2021</span>
+                </div>
+                <div className={Styles.scheduleEvent}>
+                  <span>Ultimate Coder</span>
+                </div>
+                <div className={Styles.scheduleTime}>
+                  <span>3PM - 7PM</span>
+                </div>
+              </div>
+              <div className={Styles.schedule}>
+                <div className={Styles.scheduleDate}>
+                  <span>31 Jan 2021</span>
+                </div>
+                <div className={Styles.scheduleEvent}>
+                  <span>Smartcity (School Cup)</span>
+                </div>
+                <div className={Styles.scheduleTime}>
+                  <span>10AM - 1PM</span>
+                </div>
+              </div>
+              <div className={Styles.schedule}>
+                <div className={Styles.scheduleDate}>
+                  <span>31 Jan 2021</span>
+                </div>
+                <div className={Styles.scheduleEvent}>
+                  <span>Smartcity (College Cup)</span>
+                </div>
+                <div className={Styles.scheduleTime}>
+                  <span>2PM - 5PM</span>
+                </div>
+              </div>
+              <div className={Styles.schedule}>
+                <div className={Styles.scheduleDate}>
+                  <span>06 Feb 2021</span>
+                </div>
+                <div className={Styles.scheduleEvent}>
+                  <span>VRC</span>
+                </div>
+                <div className={Styles.scheduleTime}>
+                  <span>10AM Onwards</span>
+                </div>
+              </div>
+              <div className={Styles.schedule}>
+                <div className={Styles.scheduleDate}>
+                  <span>06 Feb 2021</span>
+                </div>
+                <div className={Styles.scheduleEvent}>
+                  <span>Robomaze</span>
+                </div>
+                <div className={Styles.scheduleTime}>
+                  <span>10AM Onwards</span>
+                </div>
+              </div>
+            </div>
+          </Container>
+        </section>
         <section className={Styles.rootPreview}>
           <div className={Styles.previewTitleRoot}>
             <h1 className={Styles.previewTitle}>What's In Store</h1>

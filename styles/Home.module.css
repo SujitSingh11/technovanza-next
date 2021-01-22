@@ -245,7 +245,53 @@
   padding: 20px;
 }
 
-@media only screen and (max-width: 600px) {
+/*Secdule CSS*/
+
+.scheduleRoot {
+  color: #fff;
+  font-family: "Anton", sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+}
+
+.schedule {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px rgb(58, 73, 97) solid;
+}
+
+.scheduleDate {
+  border-right: 2px rgb(58, 73, 97) solid;
+  margin: 15px 0 15px 0px;
+  padding-right: 15px;
+}
+
+.scheduleEvent {
+  margin: 15px auto 15px 15px;
+}
+
+@media (max-width: 768px) {
+  .previewCardRoot {
+    grid-template-columns: 1fr;
+    grid-gap: 40px;
+  }
+  .aboutRootSection {
+    height: 165vh;
+    margin-top: 20px;
+  }
+  .scheduleRoot {
+    font-size: 1.4rem;
+  }
+  .scheduleDate {
+    margin: 10px 0 10px 0px;
+    padding-right: 10px;
+  }
+  .scheduleEvent {
+    margin: 10px auto 10px 10px;
+  }
+}
+
+@media (max-width: 576px) {
   .menuDesktop {
     display: none !important;
   }
@@ -287,15 +333,27 @@
   .previewCardLogo {
     width: 250px !important;
   }
+  .scheduleRoot {
+    font-size: 0.9rem;
+  }
+  .scheduleDate {
+    margin: 10px 0 10px 0px;
+    padding-right: 10px;
+  }
+  .scheduleEvent {
+    margin: 10px auto 10px 10px;
+  }
 }
 
-@media only screen and (max-width: 800px) {
-  .previewCardRoot {
-    grid-template-columns: 1fr;
-    grid-gap: 40px;
+@media (max-width: 320px) {
+  .scheduleRoot {
+    font-size: 0.7rem;
   }
-  .aboutRootSection {
-    height: 165vh;
-    margin-top: 20px;
+  .scheduleDate {
+    margin: 10px 0 10px 0px;
+    padding-right: 10px;
+  }
+  .scheduleEvent {
+    margin: 10px auto 10px 10px;
   }
 }

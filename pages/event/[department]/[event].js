@@ -172,13 +172,19 @@ const EventDesc = ({ res }) => {
                     </h1>
                   </div>
                   <div>
-                    <Button
-                      href="/events/problem/E-Portfolio2020.pdf"
-                      className={Styles.problemButton}
-                      download
-                    >
-                      Download
-                    </Button>
+                    {event.EPLink != "" ? (
+                      <Button
+                        href={`/events/problem/${event.EPLink}`}
+                        className={Styles.problemButton}
+                        download
+                      >
+                        Download
+                      </Button>
+                    ) : (
+                      <Button className={Styles.problemButton} disabled>
+                        Coming Soon
+                      </Button>
+                    )}
                   </div>
                 </Container>
               </Grid>
