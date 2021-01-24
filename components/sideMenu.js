@@ -54,9 +54,13 @@ function SideMenu() {
   };
 
   const signInWithGoogle = async () => {
-    const provider = new firebaseClient.auth.GoogleAuthProvider();
-    await auth.signInWithPopup(provider);
-    setOpen(true);
+    try {
+      const provider = new firebaseClient.auth.GoogleAuthProvider();
+      await auth.signInWithPopup(provider);
+      setOpen(true);
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   const signOut = () => {

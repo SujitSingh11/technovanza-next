@@ -38,7 +38,14 @@ const EventDesc = ({ res }) => {
     });
   }, [res]);
 
-  // console.log(user ? true : false);
+  const signInWithGoogle = async () => {
+    try {
+      const provider = new firebaseClient.auth.GoogleAuthProvider();
+      await auth.signInWithPopup(provider);
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   return (
     <>
@@ -142,7 +149,23 @@ const EventDesc = ({ res }) => {
                   />
                   <span className={Styles.headerMetaDesc}>Online</span>
                 </div>
-                <Button className={Styles.registerButton}>Register</Button>
+                {user ? (
+                  <Button
+                    onClick={() => {
+                      window.open(event.regLink, "_blank");
+                    }}
+                    className={Styles.registerButton}
+                  >
+                    Register
+                  </Button>
+                ) : (
+                  <Button
+                    onClick={signInWithGoogle}
+                    className={Styles.registerButton}
+                  >
+                    Login
+                  </Button>
+                )}
               </Container>
             </Grid>
           </Grid>

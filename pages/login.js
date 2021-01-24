@@ -54,7 +54,7 @@ const Login = () => {
         age,
       };
       await usersRef.set(data, { merge: true });
-      router.push("/events");
+      router.back();
     } catch (error) {
       console.log(error);
     }
