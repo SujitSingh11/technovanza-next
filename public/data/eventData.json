@@ -179,6 +179,51 @@
     ]
   },
   {
+    "Department": "E-build",
+    "Events": [
+      {
+        "Event": "SmartCity (School Cup)",
+        "Description": "Greater cities of world are on verge of being reduced to a total chaos. As the city grows and population increases leading to larger demand of basic amenities. With large demand and small supply, the cities are being overrun by lower living standards. Show us how would you plan a city if you were given a chance. You better make it smart and future sustainable that the future is ever evolving and ever demanding new technologies.",
+        "Date": "",
+        "Prize": "",
+        "Logo": "/events/SmartCity.svg",
+        "LogoI": "/events/SmartCity_W.svg",
+        "regLink": "https://forms.gle/w2cLDZKbdNuWaE7Y8",
+        "EPLink": "",
+        "Contact": [
+          {
+            "Name": "Ritvik Hariharan",
+            "Number": "9769920777"
+          },
+          {
+            "Name": "Vedika Sankpal",
+            "Number": "7620027951"
+          }
+        ]
+      },
+      {
+        "Event": "SmartCity (College Cup)",
+        "Description": "Greater cities of world are on verge of being reduced to a total chaos. As the city grows and population increases leading to larger demand of basic amenities. With large demand and small supply, the cities are being overrun by lower living standards. Show us how would you plan a city if you were given a chance. You better make it smart and future sustainable that the future is ever evolving and ever demanding new technologies.",
+        "Date": "",
+        "Prize": "",
+        "Logo": "/events/SmartCity.svg",
+        "LogoI": "/events/SmartCity_W.svg",
+        "regLink": "https://forms.gle/w2cLDZKbdNuWaE7Y8",
+        "EPLink": "",
+        "Contact": [
+          {
+            "Name": "Ritvik Hariharan",
+            "Number": "9769920777"
+          },
+          {
+            "Name": "Vedika Sankpal",
+            "Number": "7620027951"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "Department": "Knowland",
     "Events": [
       {
@@ -215,31 +260,6 @@
           {
             "Name": "Abhay Kaul",
             "Number": "9682589676"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "Department": "E-build",
-    "Events": [
-      {
-        "Event": "SmartCity",
-        "Description": "Greater cities of world are on verge of being reduced to a total chaos. As the city grows and population increases leading to larger demand of basic amenities. With large demand and small supply, the cities are being overrun by lower living standards. Show us how would you plan a city if you were given a chance. You better make it smart and future sustainable that the future is ever evolving and ever demanding new technologies.",
-        "Date": "",
-        "Prize": "",
-        "Logo": "/events/SmartCity.svg",
-        "LogoI": "/events/SmartCity_W.svg",
-        "regLink": "https://forms.gle/w2cLDZKbdNuWaE7Y8",
-        "EPLink": "",
-        "Contact": [
-          {
-            "Name": "Ritvik Hariharan",
-            "Number": "9769920777"
-          },
-          {
-            "Name": "Vedika Sankpal",
-            "Number": "7620027951"
           }
         ]
       }
