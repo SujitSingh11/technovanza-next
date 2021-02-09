@@ -235,4 +235,20 @@
   .registerButton {
     width: 250px;
   }
+  .headerMetaRoot {
+    margin: 0px !important;
+  }
+  .contactText {
+    font-size: 16px;
+  }
+  .headerTitleProblem {
+    font-size: 32px;
+    margin: 0;
+  }
+  .headerMetaDesc {
+    font-size: 25px;
+  }
+  .headerMeta {
+    margin: 25px 0;
+  }
 }

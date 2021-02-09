@@ -5,7 +5,8 @@
       {
         "Event": "VRC",
         "Description": "We have finally received the package and now it is time to deliver on our next task. The eighth mission entails a thrilling battle as we unveil our theme for this year. VRC 8.0 recounts the tale of Uri - The Surgical Strike, one of the major events of this decade. Join us as we watch the battle unfold in this exciting simulation of what happened that fateful day. The directives have been received and the timer has started. Are you ready to relive this momentous day through our carefully built simulation? Come join us in this fight!",
-        "Date": "",
+        "date": "11th, 13th, 14th Mar 2021",
+        "Time": "",
         "Prize": "",
         "Logo": "/events/VRC.svg",
         "LogoI": "/events/VRC_W.svg",
@@ -21,7 +22,8 @@
       {
         "Event": "RoboMaze",
         "Description": "World has seen desperate time this year and would be seeing more in near future. But what kept us going through this time was our dear front line warriors who are working day and night. But they are not the only one who kept the world from collapsing to nothing, deliveryman that were constantly running around bringing us medicines and groceries risking their lives also helped us survive this pandemic. Now it's time we see what does it take to be in their place. Put yourself in their shoes and run errands of the whole and see and feel what they go through everyday.",
-        "Date": "",
+        "date": "11th, 13th, 14th Mar 2021",
+        "Time": "",
         "Prize": "",
         "Logo": "/events/ROBOMAZE.svg",
         "LogoI": "/events/ROBOMAZE_W.svg",
@@ -42,7 +44,7 @@
       {
         "Event": "TechnoHunt",
         "Description": "A treasure Hunt based on technology and Harry Potter. The Wizarding World is rife with the rumors of the Dark Lord’s return. As the newest members of the Order of the Phoenix, you have been tasked to find the veracity of these rumors. Will you prove yourself a worthy member or will you find yourself becoming the next Pettigrew? Only one way to find out!",
-        "Date": "",
+        "date": "13th Mar 2021",
         "Prize": "",
         "Logo": "/events/TECHNOHUNT.svg",
         "LogoI": "/events/TECHNOHUNT_W.svg",
@@ -62,7 +64,7 @@
       {
         "Event": "Sherlocked",
         "Description": "An event based on Sherlock Holmes and his favorite pastime - puzzles, with a dash of Money Heist. As the revered problem solving duo of Sherlock Holmes and Dr. John Watson, help the Professor’s team to carry out the heist successfully with your intelligence. But a big plot twist awaits. /Que empiece la aventura/",
-        "Date": "",
+        "date": "14th Mar 2021",
         "Prize": "",
         "Logo": "/events/SHERKLOCKED.svg",
         "LogoI": "/events/SHERKLOCKED_W.svg",
@@ -82,7 +84,7 @@
       {
         "Event": "JavaGuru",
         "Description": "DEA Special Agent Hank Schrader is on the hunt for the drug lord Heisenberg and his accomplice, Jesse Pinkman. He’s recruiting a team and you have been chosen! If you deem yourself worthy, then join us on this thrilling adventure and help Mr. Schrader catch Heisenberg and Jesse Pinkman",
-        "Date": "",
+        "date": "13th Mar 2021",
         "Prize": "",
         "Logo": "/events/JAVA_GURU.svg",
         "LogoI": "/events/JAVA_GURU_W.svg",
@@ -102,7 +104,7 @@
       {
         "Event": "Ultimate Coder",
         "Description": "A coding challenge that takes you on a journey through time featuring Dark. You have just woken up and you see an envelope on your bedside nightstand. It’s from your future self warning you about the apocalypse. Every decision you make can affect the timeline. Will you find a way to fix the messed up timelines? Do you have what it takes?",
-        "Date": "",
+        "date": "14th Mar 2021",
         "Prize": "",
         "Logo": "/events/ULTIMATE_CODER.svg",
         "LogoI": "/events/ULTIMATE_CODER_W.svg",
@@ -122,7 +124,7 @@
       {
         "Event": "C Way",
         "Description": "A Tale of Unity, Betrayal and the Battle for Supremacy! Go on and Adventure with Captain Jack Sparrow on the hunt for a treasure.",
-        "Date": "",
+        "date": "14th Mar 2021",
         "Prize": "",
         "Logo": "/events/C_WAY.svg",
         "LogoI": "/events/C_WAY_W.svg",
@@ -147,7 +149,7 @@
       {
         "Event": "Codestorm",
         "Description": "World is growing smarter and smarter everyday. New problems arises and the coders code solutions for them. As the problems get more and more complicated, the coders come together and brainstorm for the solution. We invite all the coders in the world to come and 'Codestorm' a solution for a difficult problem which only a few have tried to solve so far.",
-        "Date": "",
+        "date": "13th Mar 2021",
         "Prize": "",
         "Logo": "/events/CodeStorm.svg",
         "LogoI": "/events/CodeStorm_W.svg",
@@ -163,7 +165,7 @@
       {
         "Event": "EPortfolio",
         "Description": "Feast your readers eyes before you feast their mind. Presentation makes all the difference when it comes to selecting between two. One would always opt for something that is presented in such a way that it is easy to understand at a glance and is also attractive to eyes. Make a website out of your resume and showcase your skills and projects on it in a pleasing manner to leave a mark on the reader's mind that will never be smothered by anyone else.",
-        "Date": "",
+        "date": "13th Mar 2021",
         "Prize": "",
         "Logo": "/events/EPORTFOLIO.svg",
         "LogoI": "/events/EPORTFOLIO_W.svg",
@@ -184,7 +186,7 @@
       {
         "Event": "SmartCity (School Cup)",
         "Description": "Greater cities of world are on verge of being reduced to a total chaos. As the city grows and population increases leading to larger demand of basic amenities. With large demand and small supply, the cities are being overrun by lower living standards. Show us how would you plan a city if you were given a chance. You better make it smart and future sustainable that the future is ever evolving and ever demanding new technologies.",
-        "Date": "",
+        "date": "13th Mar 2021",
         "Prize": "",
         "Logo": "/events/SmartCity.svg",
         "LogoI": "/events/SmartCity_W.svg",
@@ -204,7 +206,7 @@
       {
         "Event": "SmartCity (College Cup)",
         "Description": "Greater cities of world are on verge of being reduced to a total chaos. As the city grows and population increases leading to larger demand of basic amenities. With large demand and small supply, the cities are being overrun by lower living standards. Show us how would you plan a city if you were given a chance. You better make it smart and future sustainable that the future is ever evolving and ever demanding new technologies.",
-        "Date": "",
+        "date": "14th Mar 2021",
         "Prize": "",
         "Logo": "/events/SmartCity.svg",
         "LogoI": "/events/SmartCity_W.svg",
@@ -229,7 +231,7 @@
       {
         "Event": "PeRUSE",
         "Description": "New year vibes have passed, all the joy that was felt on 1st of January is fading away. Nature is showing its furious side, cities and cities are being evacuated but to where? No one knows. The doomsday bunkers are to be opened but the password to these bunker is unknown. They are operated by three labs which are spread all over the world and they only communicate using code language that no one knows. It's your chance to show how powerful your mind is. Decode the messages and save the world from this doomsday",
-        "Date": "",
+        "date": "11th Mar 2021",
         "Prize": "",
         "Logo": "/events/PeRUSE.svg",
         "LogoI": "/events/PeRUSE_W.svg",
@@ -250,7 +252,7 @@
       {
         "Event": "Treasure Hunt",
         "Description": "Your worst nightmare of being trapped comes live! Welcome to the 'Castel of Demise' with walls engraved with mysteries and the only way to escape is to SURVIVE. Challenges awaits you on every step leading you to precarious departure. Get a move endeavouring for the ultimate title- \"Survival of the Fittest\"! Lose only to find yourself in dire straits. If you believe you are tenacious to face the challenges, then buckle up to escape the dicey situation. It’s time to test your survival skills, problem solving strategy and how swift is your decision making skill. Let the game BEGIN!",
-        "Date": "",
+        "date": "11th Mar 2021",
         "Prize": "",
         "Logo": "/events/VIRTUAL_TREASURE_HUNT.svg",
         "LogoI": "/events/VIRTUAL_TREASURE_HUNT_W.svg",

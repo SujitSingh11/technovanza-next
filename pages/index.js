@@ -1,4 +1,6 @@
 import Head from "next/head";
+import Link from "next/link";
+
 import React, { useEffect, useState } from "react";
 import { NextSeo } from "next-seo";
 
@@ -293,10 +295,9 @@ export default function Home() {
               <div className={Styles.infoCollegeRoot}>
                 <h2 className={Styles.infoSubTitle}>Important Dates</h2>
                 <p className={Styles.infoDesc}>
-                  It was popularised in the 1960s with the release of Letraset
-                  sheets containing Lorem Ipsum passages, and more recently with
-                  desktop publishing software like Aldus PageMaker including
-                  versions of Lorem Ipsum.
+                  Events are shecduled for weekends so it won't conflict with
+                  your college please make note of this days <br />
+                  <br /> 11th, 12th, 13th, 14th March 2021
                 </p>
               </div>
             </Grid>
@@ -305,6 +306,10 @@ export default function Home() {
         <section>
           <div className={Styles.previewTitleRoot}>
             <h1 className={Styles.previewTitle}>Events Schedule</h1>
+            <p className={Styles.previewSubTitle}>
+              Make sure you login into this website before registering to any
+              events
+            </p>
           </div>
           <Container maxWidth="md">
             <div className={Styles.scheduleRoot}>
@@ -313,7 +318,11 @@ export default function Home() {
                   <span>11 Mar 2021</span>
                 </div>
                 <div className={Styles.scheduleEvent}>
-                  <span>PeRuse</span>
+                  <span>
+                    <Link href="/event/Knowland/PeRUSE">
+                      <a>PeRuse</a>
+                    </Link>
+                  </span>
                 </div>
                 <div className={Styles.scheduleTime}>
                   <span>11AM - 3PM</span>
@@ -324,7 +333,11 @@ export default function Home() {
                   <span>12 Mar 2021</span>
                 </div>
                 <div className={Styles.scheduleEvent}>
-                  <span>Treasurehunt</span>
+                  <span>
+                    <Link href="/event/Escapar/Treasure%20Hunt">
+                      <a>Treasurehunt</a>
+                    </Link>
+                  </span>
                 </div>
                 <div className={Styles.scheduleTime}>
                   <span>6AM - 8PM</span>
@@ -335,7 +348,11 @@ export default function Home() {
                   <span>13 Mar 2021</span>
                 </div>
                 <div className={Styles.scheduleEvent}>
-                  <span>Javaguru</span>
+                  <span>
+                    <Link href="/event/I-CODE/JavaGuru">
+                      <a>Javaguru</a>
+                    </Link>
+                  </span>
                 </div>
                 <div className={Styles.scheduleTime}>
                   <span>10AM - 2PM</span>
@@ -346,7 +363,11 @@ export default function Home() {
                   <span>13 Mar 2021</span>
                 </div>
                 <div className={Styles.scheduleEvent}>
-                  <span>Technohunt</span>
+                  <span>
+                    <Link href="/event/I-CODE/TechnoHunt">
+                      <a>Technohunt</a>
+                    </Link>
+                  </span>
                 </div>
                 <div className={Styles.scheduleTime}>
                   <span>10AM - 2PM</span>
@@ -357,7 +378,11 @@ export default function Home() {
                   <span>13 Mar 2021</span>
                 </div>
                 <div className={Styles.scheduleEvent}>
-                  <span>Codestorm</span>
+                  <span>
+                    <Link href="/event/Code-if-you-can/Codestorm">
+                      <a>Codestorm</a>
+                    </Link>
+                  </span>
                 </div>
                 <div className={Styles.scheduleTime}>
                   <span>10AM - 12:30PM</span>
@@ -368,7 +393,11 @@ export default function Home() {
                   <span>13 Mar 2021</span>
                 </div>
                 <div className={Styles.scheduleEvent}>
-                  <span>Smartcity (School cup)</span>
+                  <span>
+                    <Link href="/event/E-build/SmartCity%20(School%20Cup)">
+                      <a>Smartcity (School cup)</a>
+                    </Link>
+                  </span>
                 </div>
                 <div className={Styles.scheduleTime}>
                   <span>3PM - 6PM</span>
@@ -379,7 +408,11 @@ export default function Home() {
                   <span>13 Mar 2021</span>
                 </div>
                 <div className={Styles.scheduleEvent}>
-                  <span>Eportfolio</span>
+                  <span>
+                    <Link href="/event/Code-if-you-can/EPortfolio">
+                      <a>Eportfolio</a>
+                    </Link>
+                  </span>
                 </div>
                 <div className={Styles.scheduleTime}>
                   <span>3PM - 6PM</span>
@@ -390,7 +423,11 @@ export default function Home() {
                   <span>14 Mar 2021</span>
                 </div>
                 <div className={Styles.scheduleEvent}>
-                  <span>C-way</span>
+                  <span>
+                    <Link href="/event/I-CODE/C%20Way">
+                      <a>C-way</a>
+                    </Link>
+                  </span>
                 </div>
                 <div className={Styles.scheduleTime}>
                   <span>10PM - 2PM</span>
@@ -401,7 +438,11 @@ export default function Home() {
                   <span>14 Mar 2021</span>
                 </div>
                 <div className={Styles.scheduleEvent}>
-                  <span>Shrelocked</span>
+                  <span>
+                    <Link href="/event/I-CODE/Sherlocked">
+                      <a>Shrelocked</a>
+                    </Link>
+                  </span>
                 </div>
                 <div className={Styles.scheduleTime}>
                   <span>10PM - 2PM</span>
@@ -412,7 +453,11 @@ export default function Home() {
                   <span>14 Mar 2021</span>
                 </div>
                 <div className={Styles.scheduleEvent}>
-                  <span>Ultimate coder</span>
+                  <span>
+                    <Link href="/event/I-CODE/Ultimate%20Coder">
+                      <a>Ultimate Coder</a>
+                    </Link>
+                  </span>
                 </div>
                 <div className={Styles.scheduleTime}>
                   <span>3PM - 7PM</span>
@@ -434,7 +479,11 @@ export default function Home() {
                   <span>14 Mar 2021</span>
                 </div>
                 <div className={Styles.scheduleEvent}>
-                  <span>Smartcity (College Cup)</span>
+                  <span>
+                    <Link href="/event/E-build/SmartCity%20(College%20Cup)">
+                      <a>Smartcity (College Cup)</a>
+                    </Link>
+                  </span>
                 </div>
                 <div className={Styles.scheduleTime}>
                   <span>2PM - 5PM</span>
@@ -453,11 +502,15 @@ export default function Home() {
                   </div>
                 </div>
                 <div className={Styles.scheduleEvent}>
-                  <span>Robomaze</span>
+                  <span>
+                    <Link href="/event/Virtual%20Bot/RoboMaze">
+                      <a>Robomaze</a>
+                    </Link>
+                  </span>
                 </div>
                 <div className={Styles.scheduleTime}>
                   <div>
-                    <span>10AM onwards</span>
+                    <span>10AM Onward</span>
                   </div>
                   <div>
                     <span>10PM - 2PM</span>
@@ -480,11 +533,15 @@ export default function Home() {
                   </div>
                 </div>
                 <div className={Styles.scheduleEvent}>
-                  <span>VRC 8.0</span>
+                  <span>
+                    <Link href="/event/Virtual%20Bot/VRC">
+                      <a>VRC 8.0</a>
+                    </Link>
+                  </span>
                 </div>
                 <div className={Styles.scheduleTime}>
                   <div>
-                    <span>10AM onwards</span>
+                    <span>10AM Onward</span>
                   </div>
                   <div>
                     <span>10PM - 2PM</span>
@@ -621,8 +678,8 @@ export default function Home() {
                 )}
               </Grid>
               <Container>
-                <h1 className="glitch" data-text="See you in Maruary">
-                  See you in Maruary
+                <h1 className="glitch" data-text="See you in March">
+                  See you in March
                 </h1>
               </Container>
             </Container>

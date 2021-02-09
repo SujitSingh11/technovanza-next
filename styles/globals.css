@@ -17,6 +17,11 @@ code {
     monospace;
 }
 
+a {
+  text-decoration: none;
+  color: #e5e5e5;
+}
+
 #card-hover:hover > #card-img {
   height: 0px !important;
   transition: 0.4s ease-in-out;

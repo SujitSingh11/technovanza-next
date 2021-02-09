@@ -40,6 +40,7 @@
   background: #000000 !important;
   transition: 0.2s !important;
 }
+
 .iconButton:hover {
   transform: scale(1.2);
 }
@@ -82,5 +83,13 @@
   }
   .footerSocialDiv {
     margin-bottom: 20px;
+  }
+  .iconButton {
+    margin: 0px 4px 0px 4px !important;
+    background: #000000 !important;
+    transition: 0.2s !important;
+  }
+  .footerCont {
+    padding: 0 !important;
   }
 }

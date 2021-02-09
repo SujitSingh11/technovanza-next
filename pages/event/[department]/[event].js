@@ -47,6 +47,7 @@ const EventDesc = ({ res }) => {
     }
   };
 
+  console.log(event);
   return (
     <>
       <Head>
@@ -140,7 +141,7 @@ const EventDesc = ({ res }) => {
                     src="https://img.icons8.com/fluent/96/000000/planner.png"
                     width="60"
                   />
-                  <span className={Styles.headerMetaDesc}>2020-12-29</span>
+                  <span className={Styles.headerMetaDesc}>{event.date}</span>
                 </div>
                 <div className={Styles.headerMeta}>
                   <img
