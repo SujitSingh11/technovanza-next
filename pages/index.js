@@ -310,10 +310,32 @@ export default function Home() {
             <div className={Styles.scheduleRoot}>
               <div className={Styles.schedule}>
                 <div className={Styles.scheduleDate}>
-                  <span>30 Jan 2021</span>
+                  <span>11 Mar 2021</span>
                 </div>
                 <div className={Styles.scheduleEvent}>
-                  <span>Javaguru, Technohunt</span>
+                  <span>PeRuse</span>
+                </div>
+                <div className={Styles.scheduleTime}>
+                  <span>11AM - 3PM</span>
+                </div>
+              </div>
+              <div className={Styles.schedule}>
+                <div className={Styles.scheduleDate}>
+                  <span>12 Mar 2021</span>
+                </div>
+                <div className={Styles.scheduleEvent}>
+                  <span>Treasurehunt</span>
+                </div>
+                <div className={Styles.scheduleTime}>
+                  <span>6AM - 8PM</span>
+                </div>
+              </div>
+              <div className={Styles.schedule}>
+                <div className={Styles.scheduleDate}>
+                  <span>13 Mar 2021</span>
+                </div>
+                <div className={Styles.scheduleEvent}>
+                  <span>Javaguru</span>
                 </div>
                 <div className={Styles.scheduleTime}>
                   <span>10AM - 2PM</span>
@@ -321,29 +343,40 @@ export default function Home() {
               </div>
               <div className={Styles.schedule}>
                 <div className={Styles.scheduleDate}>
-                  <span>30 Jan 2021</span>
+                  <span>13 Mar 2021</span>
                 </div>
                 <div className={Styles.scheduleEvent}>
-                  <span>CodeStorm</span>
+                  <span>Technohunt</span>
                 </div>
                 <div className={Styles.scheduleTime}>
-                  <span>10AM Onwards</span>
+                  <span>10AM - 2PM</span>
                 </div>
               </div>
               <div className={Styles.schedule}>
                 <div className={Styles.scheduleDate}>
-                  <span>30 Jan 2021</span>
+                  <span>13 Mar 2021</span>
                 </div>
                 <div className={Styles.scheduleEvent}>
-                  <span>Project on problem statement</span>
+                  <span>Codestorm</span>
                 </div>
                 <div className={Styles.scheduleTime}>
-                  <span>3PM Onwards</span>
+                  <span>10AM - 12:30PM</span>
                 </div>
               </div>
               <div className={Styles.schedule}>
                 <div className={Styles.scheduleDate}>
-                  <span>30 Jan 2021</span>
+                  <span>13 Mar 2021</span>
+                </div>
+                <div className={Styles.scheduleEvent}>
+                  <span>Smartcity (School cup)</span>
+                </div>
+                <div className={Styles.scheduleTime}>
+                  <span>3PM - 6PM</span>
+                </div>
+              </div>
+              <div className={Styles.schedule}>
+                <div className={Styles.scheduleDate}>
+                  <span>13 Mar 2021</span>
                 </div>
                 <div className={Styles.scheduleEvent}>
                   <span>Eportfolio</span>
@@ -354,21 +387,32 @@ export default function Home() {
               </div>
               <div className={Styles.schedule}>
                 <div className={Styles.scheduleDate}>
-                  <span>31 Jan 2021</span>
+                  <span>14 Mar 2021</span>
                 </div>
                 <div className={Styles.scheduleEvent}>
-                  <span>C-Way, Sherlocked</span>
+                  <span>C-way</span>
                 </div>
                 <div className={Styles.scheduleTime}>
-                  <span>10AM - 2PM</span>
+                  <span>10PM - 2PM</span>
                 </div>
               </div>
               <div className={Styles.schedule}>
                 <div className={Styles.scheduleDate}>
-                  <span>31 Jan 2021</span>
+                  <span>14 Mar 2021</span>
                 </div>
                 <div className={Styles.scheduleEvent}>
-                  <span>Ultimate Coder</span>
+                  <span>Shrelocked</span>
+                </div>
+                <div className={Styles.scheduleTime}>
+                  <span>10PM - 2PM</span>
+                </div>
+              </div>
+              <div className={Styles.schedule}>
+                <div className={Styles.scheduleDate}>
+                  <span>14 Mar 2021</span>
+                </div>
+                <div className={Styles.scheduleEvent}>
+                  <span>Ultimate coder</span>
                 </div>
                 <div className={Styles.scheduleTime}>
                   <span>3PM - 7PM</span>
@@ -376,18 +420,18 @@ export default function Home() {
               </div>
               <div className={Styles.schedule}>
                 <div className={Styles.scheduleDate}>
-                  <span>31 Jan 2021</span>
+                  <span>14 Mar 2021</span>
                 </div>
                 <div className={Styles.scheduleEvent}>
-                  <span>Smartcity (School Cup)</span>
+                  <span>Project development</span>
                 </div>
                 <div className={Styles.scheduleTime}>
-                  <span>10AM - 1PM</span>
+                  <span>3PM - 7PM</span>
                 </div>
               </div>
               <div className={Styles.schedule}>
                 <div className={Styles.scheduleDate}>
-                  <span>31 Jan 2021</span>
+                  <span>14 Mar 2021</span>
                 </div>
                 <div className={Styles.scheduleEvent}>
                   <span>Smartcity (College Cup)</span>
@@ -398,24 +442,56 @@ export default function Home() {
               </div>
               <div className={Styles.schedule}>
                 <div className={Styles.scheduleDate}>
-                  <span>06 Feb 2021</span>
-                </div>
-                <div className={Styles.scheduleEvent}>
-                  <span>VRC</span>
-                </div>
-                <div className={Styles.scheduleTime}>
-                  <span>10AM Onwards</span>
-                </div>
-              </div>
-              <div className={Styles.schedule}>
-                <div className={Styles.scheduleDate}>
-                  <span>06 Feb 2021</span>
+                  <div>
+                    <span>11 Feb 2021</span>
+                  </div>
+                  <div>
+                    <span>13 Feb 2021</span>
+                  </div>
+                  <div>
+                    <span>14 Feb 2021</span>
+                  </div>
                 </div>
                 <div className={Styles.scheduleEvent}>
                   <span>Robomaze</span>
                 </div>
                 <div className={Styles.scheduleTime}>
-                  <span>10AM Onwards</span>
+                  <div>
+                    <span>10AM onwards</span>
+                  </div>
+                  <div>
+                    <span>10PM - 2PM</span>
+                  </div>
+                  <div>
+                    <span>10PM - 2PM</span>
+                  </div>
+                </div>
+              </div>
+              <div className={Styles.schedule}>
+                <div className={Styles.scheduleDate}>
+                  <div>
+                    <span>11 Feb 2021</span>
+                  </div>
+                  <div>
+                    <span>13 Feb 2021</span>
+                  </div>
+                  <div>
+                    <span>14 Feb 2021</span>
+                  </div>
+                </div>
+                <div className={Styles.scheduleEvent}>
+                  <span>VRC 8.0</span>
+                </div>
+                <div className={Styles.scheduleTime}>
+                  <div>
+                    <span>10AM onwards</span>
+                  </div>
+                  <div>
+                    <span>10PM - 2PM</span>
+                  </div>
+                  <div>
+                    <span>10PM - 2PM</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -545,8 +621,8 @@ export default function Home() {
                 )}
               </Grid>
               <Container>
-                <h1 className="glitch" data-text="See you in January">
-                  See you in January
+                <h1 className="glitch" data-text="See you in Maruary">
+                  See you in Maruary
                 </h1>
               </Container>
             </Container>
