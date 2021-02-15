@@ -5,7 +5,6 @@ export const verifyIdToken = (token) => {
   if (!admin.apps.length) {
     admin.initializeApp({
       credential: admin.credential.cert(serviceAccount),
-      databaseURL: "https://technovanza-3e853.firebaseio.com",
     });
   }
 
