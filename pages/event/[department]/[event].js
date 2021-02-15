@@ -134,7 +134,9 @@ const EventDesc = ({ res }) => {
                     src="https://img.icons8.com/ultraviolet/80/000000/trophy.png"
                     width="60"
                   />
-                  <span className={Styles.headerMetaDesc}>&#x20B9; 5,000</span>
+                  <span className={Styles.headerMetaDesc}>
+                    &#x20B9; {event.Prize}
+                  </span>
                 </div>
                 <div className={Styles.headerMeta}>
                   <img
@@ -197,13 +199,23 @@ const EventDesc = ({ res }) => {
                   </div>
                   <div>
                     {event.EPLink != "" ? (
-                      <Button
-                        href={`/events/problem/${event.EPLink}`}
-                        className={Styles.problemButton}
-                        download
-                      >
-                        Download
-                      </Button>
+                      event.Event === "Robomaze" ? (
+                        <Button
+                          href={event.EPLink}
+                          className={Styles.problemButton}
+                          target="_blank"
+                        >
+                          Download
+                        </Button>
+                      ) : (
+                        <Button
+                          href={`/events/problem/${event.EPLink}`}
+                          className={Styles.problemButton}
+                          target="_blank"
+                        >
+                          Download
+                        </Button>
+                      )
                     ) : (
                       <Button className={Styles.problemButton} disabled>
                         Coming Soon

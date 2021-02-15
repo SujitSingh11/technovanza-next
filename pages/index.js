@@ -42,6 +42,7 @@ export default function Home() {
       isWinPhone,
       isMobileSafari,
       isTablet,
+      isSafari,
     } = require("react-device-detect");
     setIsTouch(
       isTouch ||
@@ -146,15 +147,28 @@ export default function Home() {
         <header>
           {isTouch ? (
             <div className={Styles.player}>
-              <ReactPlayer
-                url="/target.webm"
-                width="100%"
-                height="100%"
-                playing={true}
-                loop={true}
-                muted={true}
-                playsinline={true}
-              />
+              {isMobileSafari ? (
+                <ReactPlayer
+                  url="/target.webm"
+                  width="100%"
+                  height="100%"
+                  playing={true}
+                  loop={true}
+                  muted={true}
+                  playsinline={true}
+                  controls={true}
+                />
+              ) : (
+                <ReactPlayer
+                  url="/target.webm"
+                  width="100%"
+                  height="100%"
+                  playing={true}
+                  loop={true}
+                  muted={true}
+                  playsinline={true}
+                />
+              )}
             </div>
           ) : (
             <div className={Styles.headerParticles}>
@@ -304,6 +318,19 @@ export default function Home() {
           </Grid>
         </section>
         <section>
+          <div>
+            <h1 className={Styles.previousTechTitle}>Technovanza 2020</h1>
+            <div className={Styles.previousTechRoot}>
+              <ReactPlayer
+                url="https://www.youtube.com/watch?v=goWlkP0Hu9I&feature=youtu.be"
+                width="100%"
+                height="100%"
+                controls
+              />
+            </div>
+          </div>
+        </section>
+        <section>
           <div className={Styles.previewTitleRoot}>
             <h1 className={Styles.previewTitle}>Events Schedule</h1>
             <p className={Styles.previewSubTitle}>
@@ -439,8 +466,8 @@ export default function Home() {
                 </div>
                 <div className={Styles.scheduleEvent}>
                   <span>
-                    <Link href="/event/I-CODE/Sherlocked">
-                      <a>Shrelocked</a>
+                    <Link href="/event/I-CODE/Sherklocked">
+                      <a>Sherklocked</a>
                     </Link>
                   </span>
                 </div>
@@ -468,7 +495,7 @@ export default function Home() {
                   <span>14 Mar 2021</span>
                 </div>
                 <div className={Styles.scheduleEvent}>
-                  <span>Project development</span>
+                  <span>Project development (Comming Soon)</span>
                 </div>
                 <div className={Styles.scheduleTime}>
                   <span>3PM - 7PM</span>
@@ -503,7 +530,7 @@ export default function Home() {
                 </div>
                 <div className={Styles.scheduleEvent}>
                   <span>
-                    <Link href="/event/Virtual%20Bot/RoboMaze">
+                    <Link href="/event/Virtual%20Bot/Robomaze">
                       <a>Robomaze</a>
                     </Link>
                   </span>
