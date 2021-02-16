@@ -151,7 +151,7 @@ const EventDesc = ({ res }) => {
                   />
                   <span className={Styles.headerMetaDesc}>Online</span>
                 </div>
-                {event.Event === "Robomaze" || event.Event === "VRC" ? (
+                {/* {event.Event === "Robomaze" || event.Event === "VRC" ? (
                   user ? (
                     <Button
                       onClick={() => {
@@ -169,15 +169,15 @@ const EventDesc = ({ res }) => {
                       Login
                     </Button>
                   )
-                ) : (
-                  <Button
-                    onClick={signInWithGoogle}
-                    className={Styles.registerButton}
-                    disabled
-                  >
-                    Coming Soon
-                  </Button>
-                )}
+                ) : ( */}
+                <Button
+                  onClick={signInWithGoogle}
+                  className={Styles.registerButton}
+                  disabled
+                >
+                  Coming Soon
+                </Button>
+                {/* )} */}
               </Container>
             </Grid>
           </Grid>
@@ -207,7 +207,7 @@ const EventDesc = ({ res }) => {
                     </h1>
                   </div>
                   <div>
-                    {event.Event === "Robomaze" || event.Event === "VRC" ? (
+                    {/* {event.Event === "Robomaze" || event.Event === "VRC" ? (
                       event.EPLink != "" ? (
                         event.Event === "Robomaze" ? (
                           <Button
@@ -231,11 +231,11 @@ const EventDesc = ({ res }) => {
                           Coming Soon
                         </Button>
                       )
-                    ) : (
-                      <Button className={Styles.problemButton} disabled>
-                        Coming Soon
-                      </Button>
-                    )}
+                    ) : ( */}
+                    <Button className={Styles.problemButton} disabled>
+                      Coming Soon
+                    </Button>
+                    {/* )} */}
                   </div>
                 </Container>
               </Grid>
