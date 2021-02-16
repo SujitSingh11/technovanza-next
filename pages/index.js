@@ -466,8 +466,8 @@ export default function Home() {
                 </div>
                 <div className={Styles.scheduleEvent}>
                   <span>
-                    <Link href="/event/I-CODE/Sherklocked">
-                      <a>Sherklocked</a>
+                    <Link href="/event/I-CODE/Sherlocked">
+                      <a>Sherlocked</a>
                     </Link>
                   </span>
                 </div>
@@ -495,7 +495,7 @@ export default function Home() {
                   <span>14 Mar 2021</span>
                 </div>
                 <div className={Styles.scheduleEvent}>
-                  <span>Project development (Comming Soon)</span>
+                  <span>Project development (Coming Soon)</span>
                 </div>
                 <div className={Styles.scheduleTime}>
                   <span>3PM - 7PM</span>

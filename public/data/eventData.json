@@ -14,6 +14,10 @@
         "EPLink": "Virtual VRC.pdf",
         "Contact": [
           {
+            "Name": "Pratik Sawale",
+            "Number": "9765779553"
+          },
+          {
             "Name": "Darshan Kedari",
             "Number": "9326678523"
           }
@@ -30,6 +34,10 @@
         "regLink": "https://forms.gle/sjMTpotsdSkyZ1cA9",
         "EPLink": "https://drive.google.com/file/d/1j2lxlwr4s2jUIW-NlYQgECYWGIz3hT3O/view?usp=sharing",
         "Contact": [
+          {
+            "Name": "Ojaswi Sarve",
+            "Number": "9167612235"
+          },
           {
             "Name": "Dheetilekha Nath",
             "Number": "7738783998"
@@ -62,7 +70,7 @@
         ]
       },
       {
-        "Event": "Sherklocked",
+        "Event": "Sherlocked",
         "Description": "An event based on Sherlock Holmes and his favorite pastime - puzzles, with a dash of Money Heist. As the revered problem solving duo of Sherlock Holmes and Dr. John Watson, help the Professor’s team to carry out the heist successfully with your intelligence. But a big plot twist awaits. /Que empiece la aventura/",
         "date": "14th Mar 2021",
         "Prize": "9500",
@@ -157,6 +165,10 @@
         "EPLink": "",
         "Contact": [
           {
+            "Name": "Saif Kazi",
+            "Number": "9920415194"
+          },
+          {
             "Name": "Dheetilekha Nath",
             "Number": "7738783998"
           }
@@ -172,6 +184,10 @@
         "regLink": "https://forms.gle/dK3End49iMNibeXf6",
         "EPLink": "PORTFOLIO.pdf",
         "Contact": [
+          {
+            "Name": "Meera Pillai",
+            "Number": "9930433192"
+          },
           {
             "Name": "Devdatta Dokhale",
             "Number": "9420158371"
@@ -194,6 +210,10 @@
         "EPLink": "Smart City- School Cup.pdf",
         "Contact": [
           {
+            "Name": "Meera Pillai",
+            "Number": "9930433192"
+          },
+          {
             "Name": "Ritvik Hariharan",
             "Number": "9769920777"
           }
@@ -209,6 +229,10 @@
         "regLink": "https://forms.gle/w2cLDZKbdNuWaE7Y8",
         "EPLink": "Smart City- College Cup.pdf",
         "Contact": [
+          {
+            "Name": "Shrenil Chovatiya",
+            "Number": "9867028257"
+          },
           {
             "Name": "Ritvik Hariharan",
             "Number": "9769920777"
@@ -231,8 +255,12 @@
         "EPLink": "",
         "Contact": [
           {
-            "Name": "Abhay Kaul",
-            "Number": "9682589676"
+            "Name": "Shrenil Chovatiya",
+            "Number": "9867028257"
+          },
+          {
+            "Name": "Vedika Sankpal",
+            "Number": "7620027951"
           }
         ]
       }
@@ -251,6 +279,10 @@
         "regLink": "https://forms.gle/nW2AEjZjb2QLmmkE6",
         "EPLink": "Treasure hunt.pdf",
         "Contact": [
+          {
+            "Name": "Raghav Agarwal",
+            "Number": "7030903931"
+          },
           {
             "Name": "Abhay Kaul",
             "Number": "9682589676"
