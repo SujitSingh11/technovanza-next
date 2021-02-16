@@ -311,7 +311,7 @@ export default function Home() {
                 <p className={Styles.infoDesc}>
                   Technovanza is launching itself online on the following days.
                   Please mark your calendars and brace yourself for the Virtual
-                  Vortex that is about to hit you! <br />
+                  Vortex that is about to take you by storm! <br />
                   <br /> 11th, 12th, 13th, 14th March 2021
                 </p>
               </div>
