@@ -93,7 +93,7 @@ export default function Home() {
         />
         <meta
           name="google-site-verification"
-          content="uGO9l44wXKFaNzJi3TjxNn3usbdk5SiR60suDKdwumY"
+          content="Aw-FexouK2hhzklty49vnnpgW6rCKdMUru0l64W2Boo"
         />
       </Head>
       <NextSeo
