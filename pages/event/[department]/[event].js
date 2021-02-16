@@ -47,7 +47,6 @@ const EventDesc = ({ res }) => {
     }
   };
 
-  console.log(event);
   return (
     <>
       <Head>
@@ -152,21 +151,31 @@ const EventDesc = ({ res }) => {
                   />
                   <span className={Styles.headerMetaDesc}>Online</span>
                 </div>
-                {user ? (
-                  <Button
-                    onClick={() => {
-                      window.open(event.regLink, "_blank");
-                    }}
-                    className={Styles.registerButton}
-                  >
-                    Register
-                  </Button>
+                {event.Event === "Robomaze" || event.Event === "VRC" ? (
+                  user ? (
+                    <Button
+                      onClick={() => {
+                        window.open(event.regLink, "_blank");
+                      }}
+                      className={Styles.registerButton}
+                    >
+                      Register
+                    </Button>
+                  ) : (
+                    <Button
+                      onClick={signInWithGoogle}
+                      className={Styles.registerButton}
+                    >
+                      Login
+                    </Button>
+                  )
                 ) : (
                   <Button
                     onClick={signInWithGoogle}
                     className={Styles.registerButton}
+                    disabled
                   >
-                    Login
+                    Coming Soon
                   </Button>
                 )}
               </Container>
@@ -198,22 +207,28 @@ const EventDesc = ({ res }) => {
                     </h1>
                   </div>
                   <div>
-                    {event.EPLink != "" ? (
-                      event.Event === "Robomaze" ? (
-                        <Button
-                          href={event.EPLink}
-                          className={Styles.problemButton}
-                          target="_blank"
-                        >
-                          Download
-                        </Button>
+                    {event.Event === "Robomaze" || event.Event === "VRC" ? (
+                      event.EPLink != "" ? (
+                        event.Event === "Robomaze" ? (
+                          <Button
+                            href={event.EPLink}
+                            className={Styles.problemButton}
+                            target="_blank"
+                          >
+                            Download
+                          </Button>
+                        ) : (
+                          <Button
+                            href={`/events/problem/${event.EPLink}`}
+                            className={Styles.problemButton}
+                            target="_blank"
+                          >
+                            Download
+                          </Button>
+                        )
                       ) : (
-                        <Button
-                          href={`/events/problem/${event.EPLink}`}
-                          className={Styles.problemButton}
-                          target="_blank"
-                        >
-                          Download
+                        <Button className={Styles.problemButton} disabled>
+                          Coming Soon
                         </Button>
                       )
                     ) : (

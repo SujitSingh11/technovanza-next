@@ -309,8 +309,9 @@ export default function Home() {
               <div className={Styles.infoCollegeRoot}>
                 <h2 className={Styles.infoSubTitle}>Important Dates</h2>
                 <p className={Styles.infoDesc}>
-                  Events are shecduled for weekends so it won't conflict with
-                  your college please make note of this days <br />
+                  Technovanza is launching itself online on the following days.
+                  Please mark your calendars and brace yourself for the Virtual
+                  Vortex that is about to hit you! <br />
                   <br /> 11th, 12th, 13th, 14th March 2021
                 </p>
               </div>
