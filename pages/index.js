@@ -541,10 +541,10 @@ export default function Home() {
                     <span>10AM Onward</span>
                   </div>
                   <div>
-                    <span>10PM - 2PM</span>
+                    <span>10AM - 2PM</span>
                   </div>
                   <div>
-                    <span>10PM - 2PM</span>
+                    <span>10AM - 2PM</span>
                   </div>
                 </div>
               </div>
@@ -572,10 +572,10 @@ export default function Home() {
                     <span>10AM Onward</span>
                   </div>
                   <div>
-                    <span>10PM - 2PM</span>
+                    <span>10AM - 2PM</span>
                   </div>
                   <div>
-                    <span>10PM - 2PM</span>
+                    <span>10AM - 2PM</span>
                   </div>
                 </div>
               </div>
