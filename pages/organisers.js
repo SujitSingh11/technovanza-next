@@ -21,7 +21,7 @@ function Organisers({ res }) {
         <Grid justify="center" className={Styles.featureUpcomingCont} container>
           <Grid className={Styles.featureUpcomingDiv} item>
             <i className={Styles.featureUpcomingDivTop}></i>
-            <h1 className={Styles.featureUpcoming}>Secretaries</h1>
+            <h1 className={Styles.featureUpcoming}>Conveners</h1>
             <i className={Styles.featureUpcomingDivBottom}></i>
           </Grid>
         </Grid>

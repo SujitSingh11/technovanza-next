@@ -18,7 +18,7 @@ function Footer() {
             <Grid alignItems="center" justify="space-between" container>
               <Grid className={Styles.footerSocial} item>
                 <p className={Styles.footerCopy}>
-                  Technovanza 2020 © All Rights Reserved
+                  Technovanza 2020-21 © All Rights Reserved
                 </p>
               </Grid>
               <Grid className={Styles.footerSocial} item>

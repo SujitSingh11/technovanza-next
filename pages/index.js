@@ -267,14 +267,14 @@ export default function Home() {
                 <p className={Styles.infoDesc}>
                   Technovanza is the annual technical fest of VJTI, where
                   students strive for excellence while giving back to the
-                  community. Over the last 18 years, it has grown to become of
-                  the most popular Techno-managerial events in the country and
-                  continues to awe its audience with the quality of events it
-                  hosts : From conducting competitive events, where people all
-                  over India can showcase their talents to hosting exhibitions
-                  and dignitaries from various fields, Technovanza keeps getting
-                  better each year. Keeping up with our motto of “Taking
-                  Technology to the society”, we continue to deliver an
+                  community. Over the last 18 years, it has grown to become one
+                  of the most popular Techno-managerial events in the country
+                  and continues to awe its audience with the quality of events
+                  it hosts : From conducting competitive events, where people
+                  all over India can showcase their talents to hosting
+                  exhibitions and dignitaries from various fields, Technovanza
+                  keeps getting better each year. Keeping up with our motto of
+                  “Taking Technology to the society”, we continue to deliver an
                   exuberant event, virtually this year!
                 </p>
               </div>
@@ -368,7 +368,7 @@ export default function Home() {
                   </span>
                 </div>
                 <div className={Styles.scheduleTime}>
-                  <span>6AM - 8PM</span>
+                  <span>6PM - 8PM</span>
                 </div>
               </div>
               <div className={Styles.schedule}>
@@ -458,7 +458,7 @@ export default function Home() {
                   </span>
                 </div>
                 <div className={Styles.scheduleTime}>
-                  <span>10PM - 2PM</span>
+                  <span>10AM - 2PM</span>
                 </div>
               </div>
               <div className={Styles.schedule}>
@@ -473,7 +473,7 @@ export default function Home() {
                   </span>
                 </div>
                 <div className={Styles.scheduleTime}>
-                  <span>10PM - 2PM</span>
+                  <span>10AM - 2PM</span>
                 </div>
               </div>
               <div className={Styles.schedule}>
@@ -520,13 +520,13 @@ export default function Home() {
               <div className={Styles.schedule}>
                 <div className={Styles.scheduleDate}>
                   <div>
-                    <span>11 Feb 2021</span>
+                    <span>11 Mar 2021</span>
                   </div>
                   <div>
-                    <span>13 Feb 2021</span>
+                    <span>13 Mar 2021</span>
                   </div>
                   <div>
-                    <span>14 Feb 2021</span>
+                    <span>14 Mar 2021</span>
                   </div>
                 </div>
                 <div className={Styles.scheduleEvent}>
@@ -678,7 +678,8 @@ export default function Home() {
                     </li>
                     <li className={Styles.aboutUsLI}>
                       Reaching out to students, industry and the society in
-                      general, Technovanza 2020 promises to be bigger than ever!
+                      general, Technovanza 2020-21 promises to be bigger than
+                      ever!
                     </li>
                   </ul>
                 </Grid>
