@@ -1,5 +1,5 @@
 // Change to your custom URL
-const YOUR_URL = "https://technovanza.vercel.app/";
+const YOUR_URL = "https://technovanza.org/";
 const getDate = new Date().toISOString();
 
 async function generateSiteMap() {
