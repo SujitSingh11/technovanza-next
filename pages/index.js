@@ -551,13 +551,13 @@ export default function Home() {
               <div className={Styles.schedule}>
                 <div className={Styles.scheduleDate}>
                   <div>
-                    <span>11 Feb 2021</span>
+                    <span>11 Mar 2021</span>
                   </div>
                   <div>
-                    <span>13 Feb 2021</span>
+                    <span>13 Mar 2021</span>
                   </div>
                   <div>
-                    <span>14 Feb 2021</span>
+                    <span>14 Mar 2021</span>
                   </div>
                 </div>
                 <div className={Styles.scheduleEvent}>
