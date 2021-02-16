@@ -135,11 +135,7 @@ export default function Home() {
         <nav className={Styles.rootNav}>
           <AppBar className={Styles.navAppBar} position="static" elevation={0}>
             <Toolbar className={Styles.navToolBar}>
-              <img
-                alt="LOGO"
-                src="/TechnovanzaWhite.svg"
-                className={Styles.logo}
-              />
+              <img alt="LOGO" src="/technovanza.svg" className={Styles.logo} />
               <SideMenu />
             </Toolbar>
           </AppBar>
@@ -261,7 +257,7 @@ export default function Home() {
                 </h2>
                 <img
                   alt="LOGO"
-                  src="/TechnovanzaWhite.svg"
+                  src="/technovanza.svg"
                   className={Styles.logoInfo}
                 />
                 <p className={Styles.infoDesc}>
