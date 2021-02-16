@@ -320,7 +320,7 @@ export default function Home() {
         </section>
         <section>
           <div>
-            <h1 className={Styles.previousTechTitle}>Technovanza 2020</h1>
+            <h1 className={Styles.previousTechTitle}>Technovanza 2020-21</h1>
             <div className={Styles.previousTechRoot}>
               <ReactPlayer
                 url="https://www.youtube.com/watch?v=goWlkP0Hu9I&feature=youtu.be"
