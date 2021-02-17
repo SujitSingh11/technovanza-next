@@ -85,7 +85,7 @@ export default function Home() {
         <meta name="twitter:title" content="Technovanza" />
         <meta
           name="twitter:description"
-          content="Technovanza is the annual technical fest of VJTI, where students strive for excellence while giving back to the community. Over the last 18 years, it has grown to become of the most popular Techno-managerial events in the country and continues to awe its audience with the quality of events it hosts : From conducting competitive events, where people all over India can showcase their talents to hosting exhibitions and dignitaries from various fields, Technovanza keeps getting better each year. Keeping up with our motto of “Taking Technology to the society”, we continue to deliver an exuberant event, virtually this year!"
+          content="Technovanza is the annual technical fest of VJTI, where students strive for excellence while giving back to the community."
         />
         <meta
           name="twitter:image"
@@ -98,13 +98,13 @@ export default function Home() {
       </Head>
       <NextSeo
         title="Technovanza | VJTI"
-        description="Technovanza is the annual technical fest of VJTI, where students strive for excellence while giving back to the community. Over the last 18 years, it has grown to become of the most popular Techno-managerial events in the country and continues to awe its audience with the quality of events it hosts : From conducting competitive events, where people all over India can showcase their talents to hosting exhibitions and dignitaries from various fields, Technovanza keeps getting better each year. Keeping up with our motto of “Taking Technology to the society”, we continue to deliver an exuberant event, virtually this year!"
+        description="Technovanza is the annual technical fest of VJTI, where students strive for excellence while giving back to the community."
         canonical="https://www.technovanza.org"
         openGraph={{
           url: "https://www.technovanza.org",
           title: "Technovanza | VJTI",
           description:
-            "Technovanza is the annual technical fest of VJTI, where students strive for excellence while giving back to the community. Over the last 18 years, it has grown to become of the most popular Techno-managerial events in the country and continues to awe its audience with the quality of events it hosts : From conducting competitive events, where people all over India can showcase their talents to hosting exhibitions and dignitaries from various fields, Technovanza keeps getting better each year. Keeping up with our motto of “Taking Technology to the society”, we continue to deliver an exuberant event, virtually this year!",
+            "Technovanza is the annual technical fest of VJTI, where students strive for excellence while giving back to the community.",
           images: [
             {
               url: "https://i.ibb.co/n0QMWDW/Meta-img.png",
@@ -358,8 +358,8 @@ export default function Home() {
                 </div>
                 <div className={Styles.scheduleEvent}>
                   <span>
-                    <Link href="/event/Escapar/Treasure%20Hunt">
-                      <a>Treasurehunt</a>
+                    <Link href="/event/Escapar/Escaperoom">
+                      <a>Escaperoom</a>
                     </Link>
                   </span>
                 </div>
