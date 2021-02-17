@@ -580,7 +580,7 @@ export default function Home() {
         </section>
         <section className={Styles.rootPreview}>
           <div className={Styles.previewTitleRoot}>
-            <h1 className={Styles.previewTitle}>What's In Store</h1>
+            <h2 className={Styles.previewTitle}>What's In Store</h2>
           </div>
           <Container maxWidth="lg">
             <div className={Styles.previewCardRoot}>
@@ -631,7 +631,7 @@ export default function Home() {
         </section>
         <section>
           <div>
-            <h1 className={Styles.previousTechTitle}>Technovanza '19</h1>
+            <h2 className={Styles.previousTechTitle}>Technovanza '19</h2>
             <div className={Styles.previousTechRoot}>
               <ReactPlayer
                 url="https://www.youtube.com/watch?v=1ar1i4r9DOU"
@@ -645,7 +645,7 @@ export default function Home() {
         <section>
           <div className={Styles.aboutUsRoot}>
             <Container className={Styles.aboutUsCont} maxWidth="lg">
-              <h1 className={Styles.aboutUsLabel}>About Us</h1>
+              <h2 className={Styles.aboutUsLabel}>About Us</h2>
               <Grid
                 alignItems="center"
                 className={Styles.aboutUsGridRoot}
@@ -703,9 +703,9 @@ export default function Home() {
                 )}
               </Grid>
               <Container>
-                <h1 className="glitch" data-text="See you in March">
+                <h2 className="glitch" data-text="See you in March">
                   See you in March
-                </h1>
+                </h2>
               </Container>
             </Container>
           </div>
