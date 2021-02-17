@@ -132,7 +132,7 @@ const EventDesc = ({ props }) => {
                   />
                   <span className={Styles.headerMetaDesc}>Online</span>
                 </div>
-                {props.Event === "Robomaze" ? (
+                {props.EPLink != "" ? (
                   user ? (
                     <Button
                       onClick={() => {
@@ -188,7 +188,7 @@ const EventDesc = ({ props }) => {
                     </h1>
                   </div>
                   <div>
-                    {props.EPLink != "" && props.Event === "Robomaze" ? (
+                    {props.EPLink != "" ? (
                       <Button
                         href={`/events/problem/${props.EPLink}`}
                         className={Styles.problemButton}
