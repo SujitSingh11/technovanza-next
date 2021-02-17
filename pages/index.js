@@ -329,7 +329,7 @@ export default function Home() {
         </section>
         <section>
           <div className={Styles.previewTitleRoot}>
-            <h1 className={Styles.previewTitle}>Events Schedule</h1>
+            <h2 className={Styles.previewTitle}>Events Schedule</h2>
             <p className={Styles.previewSubTitle}>
               Make sure you login into this website before registering to any
               events
