@@ -55,7 +55,7 @@ const EventDesc = ({ props }) => {
         />
         <meta
           name="twitter:title"
-          content={`Technovanza | ${router.query.event}`}
+          content={`Technovanza 2020-21 | ${router.query.event}`}
         />
         <meta name="twitter:description" content={props.Description} />
         <meta
@@ -64,12 +64,12 @@ const EventDesc = ({ props }) => {
         />
       </Head>
       <NextSeo
-        title={`Technovanza | ${router.query.event}`}
+        title={`Technovanza 2020-21 | ${router.query.event}`}
         description={props.Description}
         canonical={`https://www.technovanza.org/event/${router.query.event}`}
         openGraph={{
           url: `https://www.technovanza.org/event/${router.query.event}`,
-          title: `Technovanza | ${router.query.event}`,
+          title: `Technovanza 2020-21 | ${router.query.event}`,
           description: props.Description,
           images: [
             {

@@ -32,7 +32,7 @@ const Events = ({ res }) => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="technovanza.org" />
         <meta property="twitter:url" content="https://technovanza.org/events" />
-        <meta name="twitter:title" content="Technovanza | Events" />
+        <meta name="twitter:title" content="Technovanza 2020-21 | Events" />
         <meta
           name="twitter:description"
           content="Technovanza is the annual technical fest of VJTI, where students strive for excellence while giving back to the community. Over the last 18 years, it has grown to become of the most popular Techno-managerial events in the country and continues to awe its audience with the quality of events it hosts : From conducting competitive events, where people all over India can showcase their talents to hosting exhibitions and dignitaries from various fields, Technovanza keeps getting better each year. Keeping up with our motto of “Taking Technology to the society”, we continue to deliver an exuberant event, virtually this year!"
@@ -43,12 +43,12 @@ const Events = ({ res }) => {
         />
       </Head>
       <NextSeo
-        title="Technovanza | Events"
+        title="Technovanza 2020-21 | Events"
         description="Technovanza is the annual technical fest of VJTI, where students strive for excellence while giving back to the community. Over the last 18 years, it has grown to become of the most popular Techno-managerial events in the country and continues to awe its audience with the quality of events it hosts : From conducting competitive events, where people all over India can showcase their talents to hosting exhibitions and dignitaries from various fields, Technovanza keeps getting better each year. Keeping up with our motto of “Taking Technology to the society”, we continue to deliver an exuberant event, virtually this year!"
         canonical="https://www.technovanza.org/events"
         openGraph={{
           url: "https://www.technovanza.org/events",
-          title: "Technovanza | Events",
+          title: "Technovanza 2020-21 | Events",
           description:
             "Technovanza is the annual technical fest of VJTI, where students strive for excellence while giving back to the community. Over the last 18 years, it has grown to become of the most popular Techno-managerial events in the country and continues to awe its audience with the quality of events it hosts : From conducting competitive events, where people all over India can showcase their talents to hosting exhibitions and dignitaries from various fields, Technovanza keeps getting better each year. Keeping up with our motto of “Taking Technology to the society”, we continue to deliver an exuberant event, virtually this year!",
           images: [

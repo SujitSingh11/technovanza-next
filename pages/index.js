@@ -82,7 +82,7 @@ export default function Home() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="technovanza.org" />
         <meta property="twitter:url" content="https://technovanza.org/" />
-        <meta name="twitter:title" content="Technovanza" />
+        <meta name="twitter:title" content="Technovanza 2020-21 | VJTI" />
         <meta
           name="twitter:description"
           content="Technovanza is the annual technical fest of VJTI, where students strive for excellence while giving back to the community."
@@ -97,12 +97,12 @@ export default function Home() {
         />
       </Head>
       <NextSeo
-        title="Technovanza | VJTI"
+        title="Technovanza 2020-21 | VJTI"
         description="Technovanza is the annual technical fest of VJTI, where students strive for excellence while giving back to the community."
         canonical="https://www.technovanza.org"
         openGraph={{
           url: "https://www.technovanza.org",
-          title: "Technovanza | VJTI",
+          title: "Technovanza 2020-21 | VJTI",
           description:
             "Technovanza is the annual technical fest of VJTI, where students strive for excellence while giving back to the community.",
           images: [

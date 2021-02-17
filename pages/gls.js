@@ -56,12 +56,12 @@ const GLS = ({ res }) => {
         />
       </Head>
       <NextSeo
-        title="Technovanza | GLS"
+        title="Technovanza 2020-21 | GLS"
         description="The motto of GLS is to steer the all around development of students so that they can unlock their potential and become individuals of the highest caliber, who not only go on to have valuable contributions in their field of expertise, but also establish themselves as concerned citizens of the society. With a renowned lineup of Guest Lectures over the years, Technovanza has always been a prime platform, where the flame of expertise is effectively transferred to many torches. The pioneers of diverse fields have graced Technovanza with their presence, illuminating more and more minds to new areas of interest."
         canonical="https://www.technovanza.org/gls"
         openGraph={{
           url: "https://www.technovanza.org/gls",
-          title: "Technovanza | GLS",
+          title: "Technovanza 2020-21 | GLS",
           description:
             "The motto of GLS is to steer the all around development of students so that they can unlock their potential and become individuals of the highest caliber, who not only go on to have valuable contributions in their field of expertise, but also establish themselves as concerned citizens of the society. With a renowned lineup of Guest Lectures over the years, Technovanza has always been a prime platform, where the flame of expertise is effectively transferred to many torches. The pioneers of diverse fields have graced Technovanza with their presence, illuminating more and more minds to new areas of interest.",
           images: [
