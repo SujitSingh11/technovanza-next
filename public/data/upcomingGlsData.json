@@ -1,5 +1,15 @@
 [
   {
+    "SpeakerName": "Dr. S Somanath",
+    "IMG": "Somanath_New.jpg",
+    "YouTube_Link": "https://www.youtube.com/watch?v=UiuaVtGao9o"
+  },
+  {
+    "SpeakerName": "Dr. Rajesh Parekh",
+    "IMG": "rajesh.jpg",
+    "YouTube_Link": "https://www.youtube.com/watch?v=Zz-Bv4PB18s"
+  },
+  {
     "SpeakerName": "Mr. Vinod Dham",
     "DayNumber": "27",
     "Day": "Sun",
