@@ -15,28 +15,9 @@ import firebaseClient from "../../../firebaseClient";
 
 const auth = firebaseClient.auth();
 
-const EventDesc = ({ res }) => {
+const EventDesc = ({ props }) => {
   const [user] = useAuthState(auth);
-  const [event, setEvent] = useState({});
-
-  const [loading, setLoading] = useState(true);
-
   const router = useRouter();
-
-  useEffect(() => {
-    res.map((data) => {
-      if (data.Department !== router.query.department) {
-        return;
-      }
-      data.Events.map((e) => {
-        if (e.Event !== router.query.event) {
-          return;
-        }
-        setEvent(e);
-        setLoading(false);
-      });
-    });
-  }, [res]);
 
   const signInWithGoogle = async () => {
     try {
@@ -76,7 +57,7 @@ const EventDesc = ({ res }) => {
           name="twitter:title"
           content={`Technovanza | ${router.query.event}`}
         />
-        <meta name="twitter:description" content={event.Description} />
+        <meta name="twitter:description" content={props.Description} />
         <meta
           name="twitter:image"
           content="https://i.ibb.co/n0QMWDW/Meta-img.png"
@@ -84,12 +65,12 @@ const EventDesc = ({ res }) => {
       </Head>
       <NextSeo
         title={`Technovanza | ${router.query.event}`}
-        description={event.Description}
+        description={props.Description}
         canonical={`https://www.technovanza.org/event/${router.query.event}`}
         openGraph={{
           url: `https://www.technovanza.org/event/${router.query.event}`,
           title: `Technovanza | ${router.query.event}`,
-          description: event.Description,
+          description: props.Description,
           images: [
             {
               url: "https://i.ibb.co/n0QMWDW/Meta-img.png",
@@ -121,12 +102,12 @@ const EventDesc = ({ res }) => {
         <Container maxWidth="md" className={Styles.headerRoot}>
           <Grid container>
             <Grid item lg={6} className={Styles.headerImgRoot}>
-              <img alt="event" src={event.LogoI} className={Styles.headerImg} />
+              <img alt="event" src={props.LogoI} className={Styles.headerImg} />
             </Grid>
             <Grid item lg={6}>
               <Container maxWidth="xs" className={Styles.headerMetaRoot}>
                 <div>
-                  <h1 className={Styles.headerTitle}>{event.Event}</h1>
+                  <h1 className={Styles.headerTitle}>{props.Event}</h1>
                 </div>
                 <div className={Styles.headerMeta}>
                   <img
@@ -134,7 +115,7 @@ const EventDesc = ({ res }) => {
                     width="60"
                   />
                   <span className={Styles.headerMetaDesc}>
-                    &#x20B9; {event.Prize}
+                    &#x20B9; {props.Prize}
                   </span>
                 </div>
                 <div className={Styles.headerMeta}>
@@ -142,7 +123,7 @@ const EventDesc = ({ res }) => {
                     src="https://img.icons8.com/fluent/96/000000/planner.png"
                     width="60"
                   />
-                  <span className={Styles.headerMetaDesc}>{event.date}</span>
+                  <span className={Styles.headerMetaDesc}>{props.date}</span>
                 </div>
                 <div className={Styles.headerMeta}>
                   <img
@@ -151,11 +132,11 @@ const EventDesc = ({ res }) => {
                   />
                   <span className={Styles.headerMetaDesc}>Online</span>
                 </div>
-                {event.Event === "Robomaze" ? (
+                {props.Event === "Robomaze" ? (
                   user ? (
                     <Button
                       onClick={() => {
-                        window.open(event.regLink, "_blank");
+                        window.open(props.regLink, "_blank");
                       }}
                       className={Styles.registerButton}
                     >
@@ -185,10 +166,10 @@ const EventDesc = ({ res }) => {
         <section className={Styles.eventIntroRoot}>
           <Container maxWidth="lg">
             <div className={Styles.eventIntroHeaderRoot}>
-              <h1 className={Styles.eventIntroHeader}>{event.Event}</h1>
+              <h1 className={Styles.eventIntroHeader}>{props.Event}</h1>
             </div>
             <div>
-              <p className={Styles.eventIntro}>{event.Description}</p>
+              <p className={Styles.eventIntro}>{props.Description}</p>
             </div>
           </Container>
         </section>
@@ -207,9 +188,9 @@ const EventDesc = ({ res }) => {
                     </h1>
                   </div>
                   <div>
-                    {event.EPLink != "" && event.Event === "Robomaze" ? (
+                    {props.EPLink != "" && props.Event === "Robomaze" ? (
                       <Button
-                        href={`/events/problem/${event.EPLink}`}
+                        href={`/events/problem/${props.EPLink}`}
                         className={Styles.problemButton}
                         target="_blank"
                       >
@@ -229,17 +210,13 @@ const EventDesc = ({ res }) => {
                     <h1 className={Styles.headerTitleProblem}>Contact</h1>
                   </div>
                   <div>
-                    {loading ? (
-                      <></>
-                    ) : (
-                      event.Contact.map((contact, index) => {
-                        return (
-                          <p key={index} className={Styles.contactText}>
-                            {contact.Name} : +91-{contact.Number}
-                          </p>
-                        );
-                      })
-                    )}
+                    {props.Contact.map((contact, index) => {
+                      return (
+                        <p key={index} className={Styles.contactText}>
+                          {contact.Name} : +91-{contact.Number}
+                        </p>
+                      );
+                    })}
                   </div>
                 </Container>
               </Grid>
@@ -270,10 +247,20 @@ const EventDesc = ({ res }) => {
 
 export default EventDesc;
 
-export async function getServerSideProps(context) {
-  const eventData = fetch(`${process.env.domain}/data/eventData.json`);
-  const res = await (await eventData).json();
+EventDesc.getInitialProps = async (ctx) => {
+  const eventData = await fetch(`${process.env.domain}/data/eventData.json`);
+  const res = await eventData.json();
+  let data = res.filter((d) => {
+    if (d.Department === ctx.query.department) {
+      return d;
+    }
+  });
+  data = data[0].Events.filter((d) => {
+    if (d.Event === ctx.query.event) {
+      return d;
+    }
+  });
   return {
-    props: { res },
+    props: data[0],
   };
-}
+};
