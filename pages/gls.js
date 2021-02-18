@@ -40,8 +40,6 @@ const GLS = ({ res }) => {
           name="keywords"
           content="Technovanza VJTI Matunga Mumbai college GLS Guest Leacture Series"
         />
-        <meta name="robots" content="noindex" />
-
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="technovanza.org" />
         <meta property="twitter:url" content="https://technovanza.org/gls" />

@@ -45,7 +45,6 @@ const EventDesc = ({ props }) => {
           name="keywords"
           content={`Technovanza VJTI Matunga Mumbai college GLS Events workshops hackaton ${router.query.event}`}
         />
-        <meta name="robots" content="noindex" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="technovanza.org" />

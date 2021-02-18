@@ -77,8 +77,6 @@ export default function Home() {
           name="keywords"
           content="Technovanza VJTI Matunga Mumbai college GLS Events workshops hackaton"
         />
-        <meta name="robots" content="noindex" />
-
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="technovanza.org" />
         <meta property="twitter:url" content="https://technovanza.org/" />

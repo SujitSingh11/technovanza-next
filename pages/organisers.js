@@ -30,7 +30,6 @@ function Organisers({ res }) {
           name="keywords"
           content="Technovanza VJTI Matunga Mumbai college Conveners Events workshops hackaton"
         />
-        <meta name="robots" content="noindex" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="technovanza.org" />
