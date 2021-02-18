@@ -1,123 +1,227 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
 <channel>
-  <title>ROR Sitemap for https://technovanza.vercel.app/</title>
-  <link>https://technovanza.vercel.app/</link>
+  <title>ROR Sitemap for https://technovanza.org/</title>
+  <link>https://technovanza.org/</link>
 
 <item>
-     <link>https://technovanza.vercel.app/</link>
-     <title>Technovanza</title>
-     <description>Technovanza 2020 is arriving on 27th, 28th and 29th of january</description>
+     <link>https://technovanza.org/</link>
+     <title>Technovanza | VJTI</title>
+     <description>Technovanza is the annual technical fest of VJTI, where students strive for excellence while giving back to the community.</description>
      <ror:updatePeriod></ror:updatePeriod>
      <ror:sortOrder>0</ror:sortOrder>
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
 <item>
-     <link>https://technovanza.vercel.app/events</link>
-     <title>Technovanza | Events</title>
-     <description>Technovanza | Events</description>
-     <ror:updatePeriod></ror:updatePeriod>
-     <ror:sortOrder>1</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://technovanza.vercel.app/gls</link>
-     <title>Technovanza | GLS</title>
-     <description>Technovanza | GLS</description>
-     <ror:updatePeriod></ror:updatePeriod>
-     <ror:sortOrder>1</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://technovanza.vercel.app/event/Virtual%20Bot/VRC</link>
-     <title>Technovanza | VRC</title>
-     <description>Technovanza | VRC</description>
-     <ror:updatePeriod></ror:updatePeriod>
-     <ror:sortOrder>2</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://technovanza.vercel.app/event/Virtual%20Bot/RoboMaze</link>
-     <title>Technovanza | RoboMaze</title>
-     <description>Technovanza | RoboMaze</description>
-     <ror:updatePeriod></ror:updatePeriod>
-     <ror:sortOrder>2</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://technovanza.vercel.app/event/I-CODE/TechnoHunt</link>
-     <title>Technovanza | TechnoHunt</title>
-     <description>Technovanza | TechnoHunt</description>
-     <ror:updatePeriod></ror:updatePeriod>
-     <ror:sortOrder>2</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://technovanza.vercel.app/event/I-CODE/Sherlocked</link>
-     <title>Technovanza | Sherlocked</title>
-     <description>Technovanza | Sherlocked</description>
-     <ror:updatePeriod></ror:updatePeriod>
-     <ror:sortOrder>2</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://technovanza.vercel.app/event/I-CODE/JavaGuru</link>
-     <title>Technovanza | JavaGuru</title>
-     <description>Technovanza | JavaGuru</description>
-     <ror:updatePeriod></ror:updatePeriod>
-     <ror:sortOrder>2</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://technovanza.vercel.app/event/I-CODE/Ultimate%20Coder</link>
-     <title>Technovanza | Ultimate Coder</title>
-     <description>Technovanza | Ultimate Coder</description>
-     <ror:updatePeriod></ror:updatePeriod>
-     <ror:sortOrder>2</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://technovanza.vercel.app/event/I-CODE/C%20Way</link>
-     <title>Technovanza | C Way</title>
-     <description>Technovanza | C Way</description>
-     <ror:updatePeriod></ror:updatePeriod>
-     <ror:sortOrder>2</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://technovanza.vercel.app/event/Code-if-you-can/Codestorm</link>
-     <title>Technovanza | Codestorm</title>
-     <description>Technovanza | Codestorm</description>
-     <ror:updatePeriod></ror:updatePeriod>
-     <ror:sortOrder>2</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://technovanza.vercel.app/event/Code-if-you-can/EPortfolio</link>
-     <title>Technovanza | EPortfolio</title>
-     <description>Technovanza | EPortfolio</description>
-     <ror:updatePeriod></ror:updatePeriod>
-     <ror:sortOrder>2</ror:sortOrder>
-     <ror:resourceOf>sitemap</ror:resourceOf>
-</item>
-<item>
-     <link>https://technovanza.vercel.app/event/Knowland/PeRUSE</link>
+     <link>https://technovanza.org/event/Knowland/PeRUSE</link>
      <title>Technovanza | PeRUSE</title>
-     <description>Technovanza | PeRUSE</description>
+     <description>New year vibes have passed, all the joy that was felt on 1st of January is fading away. Nature is showing its furious side, cities and cities are being evacuated but to where? No one knows. The doomsday bunkers are to be opened but the password to these bunker is unknown. They are operated by three labs which are spread all over the world and they only communicate using code language that no one knows. It&amp;#x27;s your chance to show how powerful your mind is. Decode the messages and save the worl</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://technovanza.org/event/Escapar/Escaperoom</link>
+     <title>Technovanza | Escaperoom</title>
+     <description>Your worst nightmare of being trapped comes live! Welcome to the &amp;#x27;Castel of Demise&amp;#x27; with walls engraved with mysteries and the only way to escape is to SURVIVE. Challenges awaits you on every step leading you to precarious departure. Get a move endeavouring for the ultimate title- &amp;quot;Survival of the Fittest&amp;quot;! Lose only to find yourself in dire straits. If you believe you are tenacious to face the challenges, then buckle up to escape the dicey situation. It’s time to test your</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://technovanza.org/event/I-CODE/JavaGuru</link>
+     <title>Technovanza | JavaGuru</title>
+     <description>DEA Special Agent Hank Schrader is on the hunt for the drug lord Heisenberg and his accomplice, Jesse Pinkman. He’s recruiting a team and you have been chosen! If you deem yourself worthy, then join us on this thrilling adventure and help Mr. Schrader catch Heisenberg and Jesse Pinkman</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://technovanza.org/event/I-CODE/TechnoHunt</link>
+     <title>Technovanza | TechnoHunt</title>
+     <description>A treasure Hunt based on technology and Harry Potter. The Wizarding World is rife with the rumors of the Dark Lord’s return. As the newest members of the Order of the Phoenix, you have been tasked to find the veracity of these rumors. Will you prove yourself a worthy member or will you find yourself becoming the next Pettigrew? Only one way to find out!</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://technovanza.org/event/Code-if-you-can/Codestorm</link>
+     <title>Technovanza | Codestorm</title>
+     <description>World is growing smarter and smarter everyday. New problems arises and the coders code solutions for them. As the problems get more and more complicated, the coders come together and brainstorm for the solution. We invite all the coders in the world to come and &amp;#x27;Codestorm&amp;#x27; a solution for a difficult problem which only a few have tried to solve so far.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://technovanza.org/event/E-build/SmartCity%20(School%20Cup)</link>
+     <title>Technovanza | SmartCity (School Cup)</title>
+     <description>Greater cities of world are on verge of being reduced to a total chaos. As the city grows and population increases leading to larger demand of basic amenities. With large demand and small supply, the cities are being overrun by lower living standards. Show us how would you plan a city if you were given a chance. You better make it smart and future sustainable that the future is ever evolving and ever demanding new technologies.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://technovanza.org/event/Code-if-you-can/EPortfolio</link>
+     <title>Technovanza | EPortfolio</title>
+     <description>Feast your readers eyes before you feast their mind. Presentation makes all the difference when it comes to selecting between two. One would always opt for something that is presented in such a way that it is easy to understand at a glance and is also attractive to eyes. Make a website out of your resume and showcase your skills and projects on it in a pleasing manner to leave a mark on the reader&amp;#x27;s mind that will never be smothered by anyone else.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://technovanza.org/event/I-CODE/C%20Way</link>
+     <title>Technovanza | C Way</title>
+     <description>A Tale of Unity, Betrayal and the Battle for Supremacy! Go on and Adventure with Captain Jack Sparrow on the hunt for a treasure.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://technovanza.org/event/I-CODE/Sherlocked</link>
+     <title>Technovanza | Sherlocked</title>
+     <description>An event based on Sherlock Holmes and his favorite pastime - puzzles, with a dash of Money Heist. As the revered problem solving duo of Sherlock Holmes and Dr. John Watson, help the Professor’s team to carry out the heist successfully with your intelligence. But a big plot twist awaits. /Que empiece la aventura/</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://technovanza.org/event/I-CODE/Ultimate%20Coder</link>
+     <title>Technovanza | Ultimate Coder</title>
+     <description>A coding challenge that takes you on a journey through time featuring Dark. You have just woken up and you see an envelope on your bedside nightstand. It’s from your future self warning you about the apocalypse. Every decision you make can affect the timeline. Will you find a way to fix the messed up timelines? Do you have what it takes?</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://technovanza.org/event/E-build/SmartCity%20(College%20Cup)</link>
+     <title>Technovanza | SmartCity (College Cup)</title>
+     <description>Greater cities of world are on verge of being reduced to a total chaos. As the city grows and population increases leading to larger demand of basic amenities. With large demand and small supply, the cities are being overrun by lower living standards. Show us how would you plan a city if you were given a chance. You better make it smart and future sustainable that the future is ever evolving and ever demanding new technologies.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://technovanza.org/event/Virtual%20Bot/Robomaze</link>
+     <title>Technovanza | Robomaze</title>
+     <description>World has seen desperate time this year and would be seeing more in near future. But what kept us going through this time was our dear front line warriors who are working day and night. But they are not the only one who kept the world from collapsing to nothing, deliveryman that were constantly running around bringing us medicines and groceries risking their lives also helped us survive this pandemic. Now it&amp;#x27;s time we see what does it take to be in their place. Put yourself in their shoes a</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://technovanza.org/event/Virtual%20Bot/VRC</link>
+     <title>Technovanza | VRC</title>
+     <description>We have finally received the package and now it is time to deliver on our next task. The eighth mission entails a thrilling battle as we unveil our theme for this year. VRC 8.0 recounts the tale of Uri - The Surgical Strike, one of the major events of this decade. Join us as we watch the battle unfold in this exciting simulation of what happened that fateful day. The directives have been received and the timer has started. Are you ready to relive this momentous day through our carefully built si</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://technovanza.org/events</link>
+     <title>Technovanza | Events</title>
+     <description>Technovanza is the annual technical fest of VJTI, where students strive for excellence while giving back to the community. Over the last 18 years, it has grown to become of the most popular Techno-managerial events in the country and continues to awe its audience with the quality of events it hosts : From conducting competitive events, where people all over India can showcase their talents to hosting exhibitions and dignitaries from various fields, Technovanza keeps getting better each year. Kee</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://technovanza.org/gls</link>
+     <title>Technovanza | GLS</title>
+     <description>The motto of GLS is to steer the all around development of students so that they can unlock their potential and become individuals of the highest caliber, who not only go on to have valuable contributions in their field of expertise, but also establish themselves as concerned citizens of the society. With a renowned lineup of Guest Lectures over the years, Technovanza has always been a prime platform, where the flame of expertise is effectively transferred to many torches. The pioneers of divers</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://technovanza.org/events/problem/PeRUSE%202020-21.pdf</link>
+     <title></title>
+     
      <ror:updatePeriod></ror:updatePeriod>
      <ror:sortOrder>2</ror:sortOrder>
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
 <item>
-     <link>https://technovanza.vercel.app/event/E-build/SmartCity</link>
-     <title>Technovanza | SmartCity</title>
-     <description>Technovanza | SmartCity</description>
+     <link>https://technovanza.org/events/problem/JAVAGURU2020.pdf</link>
+     <title></title>
+     
      <ror:updatePeriod></ror:updatePeriod>
      <ror:sortOrder>2</ror:sortOrder>
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
 <item>
-     <link>https://technovanza.vercel.app/previousgls/Quarantine_Edition</link>
+     <link>https://technovanza.org/events/problem/TECHNOHUNT2020.pdf</link>
+     <title></title>
+     
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://technovanza.org/events/problem/Smart%20City-%20School%20Cup.pdf</link>
+     <title></title>
+     
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://technovanza.org/events/problem/Eportfolio.pdf</link>
+     <title></title>
+     
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://technovanza.org/events/problem/C-WAY2020.pdf</link>
+     <title></title>
+     
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://technovanza.org/events/problem/SHERLOCKED2020.pdf</link>
+     <title></title>
+     
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://technovanza.org/events/problem/ULTIMATECODER2020.pdf</link>
+     <title></title>
+     
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://technovanza.org/events/problem/Smart%20City-%20College%20Cup.pdf</link>
+     <title></title>
+     
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://technovanza.org/events/problem/MAZE%20FINAL.pdf</link>
+     <title></title>
+     
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://technovanza.org/events/problem/Virtual%20VRC%20Final.pdf</link>
+     <title></title>
+     
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>2</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://technovanza.org/previousgls/Quarantine_Edition</link>
      <title>Technovanza | Quarantine_Edition</title>
      <description>Technovanza | Quarantine_Edition</description>
      <ror:updatePeriod></ror:updatePeriod>
@@ -125,7 +229,7 @@
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
 <item>
-     <link>https://technovanza.vercel.app/previousgls/Hourglass_Edition</link>
+     <link>https://technovanza.org/previousgls/Hourglass_Edition</link>
      <title>Technovanza | Hourglass_Edition</title>
      <description>Technovanza | Hourglass_Edition</description>
      <ror:updatePeriod></ror:updatePeriod>
@@ -133,11 +237,11 @@
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
 <item>
-     <link>https://technovanza.vercel.app/events/problem/E-Portfolio2020.pdf</link>
-     <title></title>
-     
+     <link>https://technovanza.org/previousgls/Previous_GLS</link>
+     <title>Technovanza | Previous_GLS</title>
+     <description>Technovanza | Previous_GLS</description>
      <ror:updatePeriod></ror:updatePeriod>
-     <ror:sortOrder>3</ror:sortOrder>
+     <ror:sortOrder>2</ror:sortOrder>
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
 </channel>

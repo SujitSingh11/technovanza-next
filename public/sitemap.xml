@@ -9,97 +9,152 @@
 
 <url>
   <loc>https://technovanza.org/</loc>
-  <lastmod>2021-02-16T14:48:43+00:00</lastmod>
+  <lastmod>2021-02-18T19:04:38+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://technovanza.org/event/Knowland/PeRUSE</loc>
-  <lastmod>2021-02-16T14:48:43+00:00</lastmod>
+  <lastmod>2021-02-18T19:04:38+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://technovanza.org/event/Escapar/Treasure%20Hunt</loc>
-  <lastmod>2021-02-16T14:48:43+00:00</lastmod>
+  <loc>https://technovanza.org/event/Escapar/Escaperoom</loc>
+  <lastmod>2021-02-18T19:04:38+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://technovanza.org/event/I-CODE/JavaGuru</loc>
-  <lastmod>2021-02-16T14:48:43+00:00</lastmod>
+  <lastmod>2021-02-18T19:04:38+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://technovanza.org/event/I-CODE/TechnoHunt</loc>
-  <lastmod>2021-02-16T14:48:43+00:00</lastmod>
+  <lastmod>2021-02-18T19:04:38+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://technovanza.org/event/Code-if-you-can/Codestorm</loc>
-  <lastmod>2021-02-16T14:48:43+00:00</lastmod>
+  <lastmod>2021-02-18T19:04:38+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://technovanza.org/event/E-build/SmartCity%20(School%20Cup)</loc>
-  <lastmod>2021-02-16T14:48:43+00:00</lastmod>
+  <lastmod>2021-02-18T19:04:38+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://technovanza.org/event/Code-if-you-can/EPortfolio</loc>
-  <lastmod>2021-02-16T14:48:43+00:00</lastmod>
+  <lastmod>2021-02-18T19:04:38+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://technovanza.org/event/I-CODE/C%20Way</loc>
-  <lastmod>2021-02-16T14:48:43+00:00</lastmod>
+  <lastmod>2021-02-18T19:04:38+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://technovanza.org/event/I-CODE/Sherlocked</loc>
-  <lastmod>2021-02-16T14:48:43+00:00</lastmod>
+  <lastmod>2021-02-18T19:04:38+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://technovanza.org/event/I-CODE/Ultimate%20Coder</loc>
-  <lastmod>2021-02-16T14:48:43+00:00</lastmod>
+  <lastmod>2021-02-18T19:04:38+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://technovanza.org/event/E-build/SmartCity%20(College%20Cup)</loc>
-  <lastmod>2021-02-16T14:48:43+00:00</lastmod>
+  <lastmod>2021-02-18T19:04:38+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://technovanza.org/event/Virtual%20Bot/Robomaze</loc>
-  <lastmod>2021-02-16T14:48:43+00:00</lastmod>
+  <lastmod>2021-02-18T19:04:38+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://technovanza.org/event/Virtual%20Bot/VRC</loc>
-  <lastmod>2021-02-16T14:48:43+00:00</lastmod>
+  <lastmod>2021-02-18T19:04:38+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://technovanza.org/events</loc>
-  <lastmod>2021-02-16T14:48:43+00:00</lastmod>
+  <lastmod>2021-02-18T19:04:38+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://technovanza.org/gls</loc>
-  <lastmod>2021-02-16T14:48:43+00:00</lastmod>
+  <lastmod>2021-02-18T19:04:38+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://technovanza.org/events/problem/PeRUSE%202020-21.pdf</loc>
+  <lastmod>2021-02-18T19:04:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://technovanza.org/events/problem/JAVAGURU2020.pdf</loc>
+  <lastmod>2021-02-18T19:04:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://technovanza.org/events/problem/TECHNOHUNT2020.pdf</loc>
+  <lastmod>2021-02-18T19:04:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://technovanza.org/events/problem/Smart%20City-%20School%20Cup.pdf</loc>
+  <lastmod>2021-02-18T19:04:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://technovanza.org/events/problem/Eportfolio.pdf</loc>
+  <lastmod>2021-02-18T19:04:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://technovanza.org/events/problem/C-WAY2020.pdf</loc>
+  <lastmod>2021-02-18T19:04:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://technovanza.org/events/problem/SHERLOCKED2020.pdf</loc>
+  <lastmod>2021-02-18T19:04:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://technovanza.org/events/problem/ULTIMATECODER2020.pdf</loc>
+  <lastmod>2021-02-18T19:04:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://technovanza.org/events/problem/Smart%20City-%20College%20Cup.pdf</loc>
+  <lastmod>2021-02-18T19:04:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://technovanza.org/events/problem/MAZE%20FINAL.pdf</loc>
+  <lastmod>2021-02-18T19:04:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://technovanza.org/events/problem/Virtual%20VRC%20Final.pdf</loc>
+  <lastmod>2021-02-18T19:04:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
   <loc>https://technovanza.org/previousgls/Quarantine_Edition</loc>
-  <lastmod>2021-02-16T14:48:43+00:00</lastmod>
+  <lastmod>2021-02-18T19:04:38+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://technovanza.org/previousgls/Hourglass_Edition</loc>
-  <lastmod>2021-02-16T14:48:43+00:00</lastmod>
+  <lastmod>2021-02-18T19:04:38+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://technovanza.org/previousgls/Previous_GLS</loc>
-  <lastmod>2021-02-16T14:48:43+00:00</lastmod>
+  <lastmod>2021-02-18T19:04:38+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
