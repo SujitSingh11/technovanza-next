@@ -63,7 +63,7 @@ const EventDesc = ({ props }) => {
         />
       </Head>
       <NextSeo
-        title={`Technovanza 2020-21 | ${router.query.event}`}
+        title={`Technovanza | ${router.query.event}`}
         description={props.Description}
         canonical={`https://www.technovanza.org/event/${router.query.event}`}
         openGraph={{

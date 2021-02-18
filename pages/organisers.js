@@ -49,7 +49,7 @@ function Organisers({ res }) {
         />
       </Head>
       <NextSeo
-        title="Technovanza 2020-21 | Conveners"
+        title="Technovanza | Conveners"
         description="Technovanza is the annual technical fest of VJTI, where students strive for excellence while giving back to the community."
         canonical="https://www.technovanza.org"
         openGraph={{

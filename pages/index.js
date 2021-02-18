@@ -95,7 +95,7 @@ export default function Home() {
         />
       </Head>
       <NextSeo
-        title="Technovanza 2020-21 | VJTI"
+        title="Technovanza | VJTI"
         description="Technovanza is the annual technical fest of VJTI, where students strive for excellence while giving back to the community."
         canonical="https://www.technovanza.org"
         openGraph={{
