@@ -193,7 +193,13 @@ const EventDesc = ({ props }) => {
                         className={Styles.problemButton}
                         target="_blank"
                       >
-                        Download
+                        <a
+                          target="_blank"
+                          href={`/events/problem/${props.EPLink}`}
+                          className={Styles.problemButtonA}
+                        >
+                          Download
+                        </a>
                       </Button>
                     ) : (
                       <Button className={Styles.problemButton} disabled>

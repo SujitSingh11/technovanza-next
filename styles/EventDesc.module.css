@@ -136,6 +136,10 @@
   position: absolute;
 }
 
+.problemButtonA {
+  color: #000;
+}
+
 .registerButton2 {
   font-family: "Nunito", sans-serif !important;
   border-color: #2effcc !important;
