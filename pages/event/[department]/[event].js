@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Head from "next/head";
 import { NextSeo } from "next-seo";
 import { useRouter } from "next/router";
@@ -131,7 +131,7 @@ const EventDesc = ({ props }) => {
                   />
                   <span className={Styles.headerMetaDesc}>Online</span>
                 </div>
-                {props.EPLink != "" ? (
+                {props.EPLink != "" || props.Event === "Codestorm" ? (
                   user ? (
                     <Button
                       onClick={() => {
@@ -182,9 +182,9 @@ const EventDesc = ({ props }) => {
               <Grid lg={6} xs={12} className={Styles.problem} item>
                 <Container maxWidth="xs">
                   <div className={Styles.marginBottom}>
-                    <h1 className={Styles.headerTitleProblem}>
+                    <h2 className={Styles.headerTitleProblem}>
                       Event Proposal
-                    </h1>
+                    </h2>
                   </div>
                   <div>
                     {props.EPLink != "" ? (
@@ -212,7 +212,7 @@ const EventDesc = ({ props }) => {
               <Grid lg={6} xs={12} className={Styles.contact} item>
                 <Container maxWidth="xs">
                   <div className={Styles.marginBottom}>
-                    <h1 className={Styles.headerTitleProblem}>Contact</h1>
+                    <h2 className={Styles.headerTitleProblem}>Contact</h2>
                   </div>
                   <div>
                     {props.Contact.map((contact, index) => {
@@ -228,8 +228,8 @@ const EventDesc = ({ props }) => {
             </Grid>
           </div>
         </section>
-        <section className={Styles.regSection}>
-          <Container className={Styles.regCont} maxWidth="md">
+        {/* <section className={Styles.regSection}>
+          <Container className={Styles.regCont} maxWidth="lg">
             <form className={Styles.regRoot}>
               <div className={Styles.regHead}>
                 <div className={Styles.regHeadItems}>
@@ -239,11 +239,61 @@ const EventDesc = ({ props }) => {
                 </div>
               </div>
               <div className={Styles.regBody}>
-                <h1 className={Styles.regTitle}>ROADMAP</h1>
+                <h2 className={Styles.regTitle}>Registration Process</h2>
+                <div className={Styles.regSteps}>
+                  <div className={Styles.regStep}>
+                    <h3 className={Styles.regSubTitle}>Step-I</h3>
+                    <img
+                      className={Styles.regfaqImg}
+                      alt="FAQ step-1"
+                      src="/faq/FAQ-1.jpg"
+                    />
+                    <p className={Styles.regpara}>
+                      You can find the login button on the Sidebar or on the
+                      event description page.
+                    </p>
+                  </div>
+                  <div className={Styles.regStep}>
+                    <h3 className={Styles.regSubTitle}>Step-II</h3>
+                    <img
+                      className={Styles.regfaqImg}
+                      alt="FAQ step-2"
+                      src="/faq/FAQ-2.jpg"
+                    />
+                    <p className={Styles.regpara}>
+                      After login successful you will be redirected to the
+                      registration form, It is import to fill it up before
+                      registering for any event.
+                    </p>
+                  </div>
+                  <div className={Styles.regStep}>
+                    <h3 className={Styles.regSubTitle}>Step-III</h3>
+                    <img
+                      className={Styles.regfaqImg}
+                      alt="FAQ step-3"
+                      src="/faq/FAQ-3.jpg"
+                    />
+                    <p className={Styles.regpara}>
+                      Finally, you can find your Techno ID on the Sidebar and it
+                      will be always available to you for further registration
+                      of any events. You will have to click on the "Click to
+                      copy" Box to copy your Techno ID.
+                    </p>
+                    <img
+                      className={Styles.regfaqImg}
+                      alt="FAQ step-3.1"
+                      src="/faq/FAQ-3.1.jpg"
+                    />
+                    <p className={Styles.regpara}>
+                      Above is an example of what a Techno ID looks like, it's a
+                      long chain of Alphanumeric text.
+                    </p>
+                  </div>
+                </div>
               </div>
             </form>
           </Container>
-        </section>
+        </section> */}
       </main>
       <Footer />
     </>
