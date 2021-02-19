@@ -100,7 +100,9 @@ const Events = ({ res }) => {
                   department.Department === "I-CODE"
                     ? Styles.previewCardRootICode
                     : department.Department === "Knowland" ||
-                      department.Department === "Escapar"
+                      department.Department === "Escapar" ||
+                      department.Department === "Project Development" ||
+                      department.Department === "Workshops"
                     ? Styles.previewCardRootSingle
                     : Styles.previewCardRoot
                 }

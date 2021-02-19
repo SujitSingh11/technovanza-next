@@ -152,6 +152,40 @@
     ]
   },
   {
+    "Department": "Project Development",
+    "Events": [
+      {
+        "Event": "BIZDEV",
+        "Description": [
+          "It's a national level tech based business case study competition. If various tech based industries intrigue you or ever aspire to have tech based startup, then give it a run.",
+          "Stage 1: Quiz to guage the basic technical and business sense of an individual. Consisting of question related to tech based industries in India and others who will be entering soon! (like Tesla)",
+          "Stage 2: A Problem statement in the form of a business case study will be provided to selected candidates. They're supposed to prepare a PPT of no more than 10 slides (excluding the appendix and  team details) to showcase their solution to the problem statement.",
+          "Stage 3: The top 5 teams  to present their case study PPts in front of panel of judges."
+        ],
+        "date": "14th Mar 2021",
+        "Prize": "16000",
+        "Logo": "/events/BIZDEV.svg",
+        "LogoI": "/events/BIZDEV_W.svg",
+        "regLink": "",
+        "EPLink": "",
+        "Contact": [
+          {
+            "Name": "Shrenil Chovatiya",
+            "Number": "9867028257"
+          },
+          {
+            "Name": "Harshada Patil",
+            "Number": "9766473265"
+          },
+          {
+            "Name": "Vedika Sankpal",
+            "Number": "7620027951"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "Department": "Code-if-you-can",
     "Events": [
       {
@@ -286,6 +320,34 @@
           {
             "Name": "Abhay Kaul",
             "Number": "9682589676"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Department": "Workshops",
+    "Events": [
+      {
+        "Event": "ROS Workshop",
+        "Description": [
+          "Robots, artificial intelligence and neural networks- the servants of today's technological era, are the rulers of tomorrow. With technology taking gargantuan leaps and bounds each day, there may soon come a day when humans are outwitted.",
+          "Technovanza is proud to announce its ROS Workshop, a learning opportunity where you are trained how to simulate robots on the Robot Operating System! With the advancements in technology waiting for no one, this is your chance to glean everything there is about our self-thinking friends!"
+        ],
+        "date": "5th 6th 7th Mar 2021",
+        "Prize": "",
+        "Logo": "/events/ROS.svg",
+        "LogoI": "/events/ROS_W.svg",
+        "regLink": "",
+        "EPLink": "",
+        "Contact": [
+          {
+            "Name": "Shrenil Chovatiya",
+            "Number": "9867028257"
+          },
+          {
+            "Name": "Vedika Sankpal",
+            "Number": "7620027951"
           }
         ]
       }

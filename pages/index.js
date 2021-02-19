@@ -490,7 +490,11 @@ export default function Home() {
                   <span>14 Mar 2021</span>
                 </div>
                 <div className={Styles.scheduleEvent}>
-                  <span>Project development (Coming Soon)</span>
+                  <span>
+                    <Link href="/event/Project%20Development/BIZDEV">
+                      <a>BIZDEV</a>
+                    </Link>
+                  </span>
                 </div>
                 <div className={Styles.scheduleTime}>
                   <span>3PM - 7PM</span>
@@ -572,6 +576,27 @@ export default function Home() {
                     <span>10AM - 2PM</span>
                   </div>
                 </div>
+              </div>
+              <div className={Styles.schedule}>
+                <div className={Styles.scheduleDate}>
+                  <div>
+                    <span>5 Mar 2021</span>
+                  </div>
+                  <div>
+                    <span>6 Mar 2021</span>
+                  </div>
+                  <div>
+                    <span>7 Mar 2021</span>
+                  </div>
+                </div>
+                <div className={Styles.scheduleEvent}>
+                  <span>
+                    <Link href="/event/Workshops/ROS%20Workshop">
+                      <a>ROS Workshop</a>
+                    </Link>
+                  </span>
+                </div>
+                <div className={Styles.scheduleTime}></div>
               </div>
             </div>
           </Container>

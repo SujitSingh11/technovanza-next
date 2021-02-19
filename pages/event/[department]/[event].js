@@ -108,15 +108,19 @@ const EventDesc = ({ props }) => {
                 <div>
                   <h1 className={Styles.headerTitle}>{props.Event}</h1>
                 </div>
-                <div className={Styles.headerMeta}>
-                  <img
-                    src="https://img.icons8.com/ultraviolet/80/000000/trophy.png"
-                    width="60"
-                  />
-                  <span className={Styles.headerMetaDesc}>
-                    &#x20B9; {props.Prize}
-                  </span>
-                </div>
+                {props.Prize === "" ? (
+                  <></>
+                ) : (
+                  <div className={Styles.headerMeta}>
+                    <img
+                      src="https://img.icons8.com/ultraviolet/80/000000/trophy.png"
+                      width="60"
+                    />
+                    <span className={Styles.headerMetaDesc}>
+                      &#x20B9; {props.Prize}
+                    </span>
+                  </div>
+                )}
                 <div className={Styles.headerMeta}>
                   <img
                     src="https://img.icons8.com/fluent/96/000000/planner.png"
@@ -168,7 +172,9 @@ const EventDesc = ({ props }) => {
               <h1 className={Styles.eventIntroHeader}>{props.Event}</h1>
             </div>
             <div>
-              <p className={Styles.eventIntro}>{props.Description}</p>
+              {props.Description.map((desc) => (
+                <p className={Styles.eventIntro}>{desc}</p>
+              ))}
             </div>
           </Container>
         </section>
@@ -201,6 +207,12 @@ const EventDesc = ({ props }) => {
                           Download
                         </a>
                       </Button>
+                    ) : props.Event === "BIZDEV" ||
+                      props.Event === "Codestorm" ||
+                      props.Event === "ROS Workshop" ? (
+                      <Button className={Styles.problemButton} disabled>
+                        No Docs
+                      </Button>
                     ) : (
                       <Button className={Styles.problemButton} disabled>
                         Coming Soon
@@ -229,7 +241,7 @@ const EventDesc = ({ props }) => {
           </div>
         </section>
         <section className={Styles.regSection}>
-          <Container className={Styles.regCont} maxWidth="lg">
+          <Container className={Styles.regCont} maxWidth="md">
             <form className={Styles.regRoot}>
               <div className={Styles.regHead}>
                 <div className={Styles.regHeadItems}>

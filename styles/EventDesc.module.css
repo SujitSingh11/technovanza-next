@@ -54,6 +54,10 @@
   font-weight: 500;
 }
 
+.eventIntro {
+  padding-bottom: 10px !important;
+}
+
 .registerButton {
   font-family: "Nunito", sans-serif !important;
   border-color: #3384e0 !important;
