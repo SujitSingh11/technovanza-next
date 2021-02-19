@@ -211,12 +211,6 @@ const EventDesc = ({ props }) => {
                           Download
                         </a>
                       </Button>
-                    ) : props.Event === "BIZDEV" ||
-                      props.Event === "Codestorm" ||
-                      props.Event === "ROS Workshop" ? (
-                      <Button className={Styles.problemButton} disabled>
-                        No Docs
-                      </Button>
                     ) : (
                       <Button className={Styles.problemButton} disabled>
                         Coming Soon

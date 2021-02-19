@@ -9,9 +9,11 @@ https://technovanza.org/event/Code-if-you-can/EPortfolio
 https://technovanza.org/event/I-CODE/C%20Way
 https://technovanza.org/event/I-CODE/Sherlocked
 https://technovanza.org/event/I-CODE/Ultimate%20Coder
+https://technovanza.org/event/Project%20Development/BIZDEV
 https://technovanza.org/event/E-build/SmartCity%20(College%20Cup)
 https://technovanza.org/event/Virtual%20Bot/Robomaze
 https://technovanza.org/event/Virtual%20Bot/VRC
+https://technovanza.org/event/Workshops/ROS%20Workshop
 https://technovanza.org/events
 https://technovanza.org/gls
 https://technovanza.org/events/problem/PeRUSE%202020-21.pdf
