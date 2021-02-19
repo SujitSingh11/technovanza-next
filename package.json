@@ -28,6 +28,8 @@
     "react-scroll-up-button": "^1.6.4"
   },
   "devDependencies": {
-    "globby": "^11.0.2"
+    "globby": "^11.0.2",
+    "next-secure-headers": "^2.1.0",
+    "webpack-subresource-integrity": "^1.5.2"
   }
 }
