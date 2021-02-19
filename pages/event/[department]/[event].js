@@ -172,9 +172,13 @@ const EventDesc = ({ props }) => {
               <h1 className={Styles.eventIntroHeader}>{props.Event}</h1>
             </div>
             <div>
-              {props.Description.map((desc) => (
-                <p className={Styles.eventIntro}>{desc}</p>
-              ))}
+              {Array.isArray(props.Description) ? (
+                props.Description.map((desc) => (
+                  <p className={Styles.eventIntro}>{desc}</p>
+                ))
+              ) : (
+                <p className={Styles.eventIntro}>{props.Description}</p>
+              )}
             </div>
           </Container>
         </section>
