@@ -228,7 +228,7 @@ const EventDesc = ({ props }) => {
             </Grid>
           </div>
         </section>
-        {/* <section className={Styles.regSection}>
+        <section className={Styles.regSection}>
           <Container className={Styles.regCont} maxWidth="lg">
             <form className={Styles.regRoot}>
               <div className={Styles.regHead}>
@@ -293,7 +293,7 @@ const EventDesc = ({ props }) => {
               </div>
             </form>
           </Container>
-        </section> */}
+        </section>
       </main>
       <Footer />
     </>
