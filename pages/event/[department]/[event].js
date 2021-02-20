@@ -135,7 +135,7 @@ const EventDesc = ({ props }) => {
                   />
                   <span className={Styles.headerMetaDesc}>Online</span>
                 </div>
-                {props.EPLink != "" || props.Event === "Codestorm" ? (
+                {props.regLink != "" || props.Event === "Codestorm" ? (
                   user ? (
                     <Button
                       onClick={() => {
