@@ -21,7 +21,7 @@
   width: 27px;
   height: 27px;
   border-bottom: 4px solid #02d7f2;
-  background-color: #000;
+  background-color: #030303;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   position: absolute;
@@ -33,7 +33,7 @@
   width: 27px;
   height: 27px;
   border-bottom: 4px solid #02d7f2;
-  background-color: #000;
+  background-color: #030303;
   -webkit-transform: rotate(225deg);
   transform: rotate(225deg);
   position: absolute;
@@ -103,7 +103,7 @@
   bottom: 0px;
   left: 20px;
   position: absolute;
-  color: #000;
+  color: #030303;
   z-index: 100;
 }
 

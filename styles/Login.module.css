@@ -20,7 +20,7 @@
   content: "";
   height: 0;
   width: 0;
-  border-color: #000 transparent transparent;
+  border-color: #030303 transparent transparent;
   border-style: solid;
   border-width: 17px 17px 0 0;
   position: absolute;
@@ -31,7 +31,7 @@
   content: "";
   height: 0;
   width: 0;
-  border-color: #000 transparent transparent;
+  border-color: #030303 transparent transparent;
   border-style: solid;
   border-width: 17px 17px 0 0;
   transform: rotate(180deg);
@@ -195,7 +195,7 @@
   border-color: #2effcc !important;
   border-width: 2.5px !important;
   border-radius: 0px !important;
-  color: #000 !important;
+  color: #030303 !important;
   background: #2effcc !important;
   font-weight: 800 !important;
   width: 200px;

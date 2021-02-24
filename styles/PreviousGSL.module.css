@@ -6,7 +6,7 @@
 .GLSVideoDiv {
   height: 530px;
   margin: 2.5em 0px;
-  background: #000;
+  background: #030303;
 }
 .GLSVideo {
   margin: auto;
@@ -47,7 +47,7 @@
   width: 27px;
   height: 27px;
   border-bottom: 4px solid #02d7f2;
-  background-color: #000;
+  background-color: #030303;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   position: absolute;
@@ -59,7 +59,7 @@
   width: 27px;
   height: 27px;
   border-bottom: 4px solid #02d7f2;
-  background-color: #000;
+  background-color: #030303;
   -webkit-transform: rotate(225deg);
   transform: rotate(225deg);
   position: absolute;

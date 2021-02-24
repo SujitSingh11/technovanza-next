@@ -4,7 +4,7 @@
   background: #9345ff;
   width: 100%;
   position: relative;
-  color: #000;
+  color: #030303;
 }
 
 .footerDiv::before {
@@ -37,7 +37,7 @@
 
 .iconButton {
   margin: 0px 8px 0px 8px !important;
-  background: #000000 !important;
+  background: #030303 !important;
   transition: 0.2s !important;
 }
 
@@ -86,7 +86,7 @@
   }
   .iconButton {
     margin: 0px 4px 0px 4px !important;
-    background: #000000 !important;
+    background: #030303 !important;
     transition: 0.2s !important;
   }
   .footerCont {

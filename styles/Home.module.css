@@ -1,5 +1,5 @@
 .navAppBar {
-  background: #000 !important;
+  background: #030303 !important;
 }
 
 .rootNav {
@@ -66,7 +66,7 @@
 }
 
 .aboutRight {
-  color: #000;
+  color: #030303;
   background-color: #9345ff;
   display: flex;
   align-items: center;
@@ -129,7 +129,7 @@
 }
 
 .rootPreview {
-  background: #000000;
+  background: #030303;
   padding: 50px 0px;
 }
 
@@ -214,7 +214,7 @@
   left: 20px;
   position: absolute; */
   text-align: center;
-  color: #000;
+  color: #030303;
   z-index: 100;
 }
 
