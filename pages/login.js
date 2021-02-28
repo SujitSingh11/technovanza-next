@@ -92,6 +92,7 @@ const Login = () => {
                   className={Styles.regInput}
                   onChange={(e) => setCollege(e.target.value)}
                   value={college}
+                  required
                 />
               </div>
               <div className={Styles.reg}>
@@ -105,6 +106,7 @@ const Login = () => {
                   className={Styles.regInputInline}
                   onChange={(e) => setCourse(e.target.value)}
                   value={course}
+                  required
                 />
               </div>
               <div className={Styles.reg}>
@@ -177,6 +179,7 @@ const Login = () => {
                   className={Styles.regInputInlineAge}
                   onChange={(e) => setAge(e.target.value)}
                   value={age}
+                  required
                 />
               </div>
               <div className={Styles.regButton}>
