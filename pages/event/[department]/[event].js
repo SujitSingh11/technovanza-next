@@ -212,9 +212,10 @@ const EventDesc = ({ props }) => {
                         </a>
                       </Button>
                     ) : (
-                      <Button className={Styles.problemButton} disabled>
-                        Coming Soon
-                      </Button>
+                      <p className={Styles.contactText}>
+                        No Proposal for this event, please register above
+                        directly.
+                      </p>
                     )}
                   </div>
                 </Container>
