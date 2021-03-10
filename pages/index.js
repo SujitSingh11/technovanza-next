@@ -564,7 +564,7 @@ export default function Home() {
                 </div>
                 <div className={Styles.scheduleTime}>
                   <div>
-                    <span>10AM - 2PM</span>
+                    <span>10am onwards</span>
                   </div>
                   <div>
                     <span>10AM - 2PM</span>
