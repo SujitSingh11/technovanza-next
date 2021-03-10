@@ -564,10 +564,10 @@ export default function Home() {
                 </div>
                 <div className={Styles.scheduleTime}>
                   <div>
-                    <span>10am onwards</span>
+                    <span>10am Onwards</span>
                   </div>
                   <div>
-                    <span>10AM - 2PM</span>
+                    <span>10am Onwards</span>
                   </div>
                 </div>
               </div>
