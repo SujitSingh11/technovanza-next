@@ -317,7 +317,7 @@ export default function Home() {
             <h1 className={Styles.previousTechTitle}>Technovanza 2020-21</h1>
             <div className={Styles.previousTechRoot}>
               <ReactPlayer
-                url="https://www.youtube.com/watch?v=goWlkP0Hu9I&feature=youtu.be"
+                url="https://youtu.be/u-kWRi3r11Q"
                 width="100%"
                 height="100%"
                 controls
@@ -549,9 +549,6 @@ export default function Home() {
               <div className={Styles.schedule}>
                 <div className={Styles.scheduleDate}>
                   <div>
-                    <span>11 Mar 2021</span>
-                  </div>
-                  <div>
                     <span>13 Mar 2021</span>
                   </div>
                   <div>
@@ -566,9 +563,6 @@ export default function Home() {
                   </span>
                 </div>
                 <div className={Styles.scheduleTime}>
-                  <div>
-                    <span>10AM Onward</span>
-                  </div>
                   <div>
                     <span>10AM - 2PM</span>
                   </div>
