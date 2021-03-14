@@ -36,3 +36,4 @@ yarn-error.log*
 #secrets
 #secrets.json
 #schema-reg.json
+pages/api/getreg.js
