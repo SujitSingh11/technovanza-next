@@ -662,6 +662,65 @@ export default function Home() {
         <section>
           <div className={Styles.aboutUsRoot}>
             <Container className={Styles.aboutUsCont} maxWidth="lg">
+              <h2 className={Styles.aboutUsLabel}>Digital Partners</h2>
+              <Grid alignItems="center" className={Styles.dpGridRoot} container>
+                <Grid
+                  className={Styles.dpGrid}
+                  lg={6}
+                  md={6}
+                  sm={12}
+                  xs={12}
+                  item
+                >
+                  <img alt="DP-1" src="./DP-1.png" className={Styles.dpimg} />
+                </Grid>
+                <Grid
+                  className={Styles.dpGrid}
+                  lg={6}
+                  md={6}
+                  sm={12}
+                  xs={12}
+                  item
+                >
+                  <img alt="DP-2" src="./DP-2.png" className={Styles.dpimg} />
+                </Grid>
+                <Grid
+                  className={Styles.dpGrid}
+                  lg={4}
+                  md={4}
+                  sm={12}
+                  xs={12}
+                  item
+                >
+                  <img alt="DP-3" src="./DP-3.jpeg" className={Styles.dpimg} />
+                </Grid>
+                <Grid
+                  className={Styles.dpGrid}
+                  lg={4}
+                  md={4}
+                  sm={12}
+                  xs={12}
+                  item
+                >
+                  <img alt="DP-4" src="./DP-4.jpeg" className={Styles.dpimg} />
+                </Grid>
+                <Grid
+                  className={Styles.dpGrid}
+                  lg={4}
+                  md={4}
+                  sm={12}
+                  xs={12}
+                  item
+                >
+                  <img alt="DP-5" src="./DP-5.jpeg" className={Styles.dpimg} />
+                </Grid>
+              </Grid>
+            </Container>
+          </div>
+        </section>
+        <section>
+          <div className={Styles.aboutUsRoot}>
+            <Container className={Styles.aboutUsCont} maxWidth="lg">
               <h2 className={Styles.aboutUsLabel}>About Us</h2>
               <Grid
                 alignItems="center"

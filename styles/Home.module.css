@@ -278,6 +278,15 @@
   margin: 15px auto 15px 15px;
 }
 
+.dpGridRoot {
+  text-align: center;
+}
+
+.dpimg {
+  height: 240px;
+  padding: 10px;
+}
+
 @media (max-width: 768px) {
   .previewCardRoot {
     grid-template-columns: 1fr;
