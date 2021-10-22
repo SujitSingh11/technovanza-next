@@ -273,7 +273,7 @@ const EventDesc = ({ props }) => {
                     />
                     <p className={Styles.regpara}>
                       After login successful you will be redirected to the
-                      registration form, It is import to fill it up before
+                      registration form, It is important to fill it up before
                       registering for any event.
                     </p>
                   </div>
