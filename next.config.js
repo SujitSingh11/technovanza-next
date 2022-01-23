@@ -110,7 +110,7 @@ module.exports = (phase, { defaultConfig }) => {
       messagingSenderId: "911645212434",
       appId: "1:911645212434:web:c81de3a8db41bb2e4dfdcb",
       measurementId: "G-2JJGCYXZDR",
-      domain: "https://technovanza.org",
+      domain: "https://technovanza-sujitsingh11.vercel.app/",
     },
   };
 };
