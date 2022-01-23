@@ -111,7 +111,7 @@ module.exports = (phase, { defaultConfig }) => {
       storageBucket: "technovanza-3e853.appspot.com",
       messagingSenderId: "163729170268",
       appId: "1:163729170268:web:e60535731c1c2aebebeb99",
-      measurementId: "G-6T8LTS2VJT"
+      measurementId: "G-6T8LTS2VJT",
       domain: "https://technovanza-sujitsingh11.vercel.app/",
     },
   };
